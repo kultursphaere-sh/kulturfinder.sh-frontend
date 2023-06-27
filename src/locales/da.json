@@ -1,0 +1,326 @@
+{
+  "common": {
+    "contact": "Kontakt",
+    "website": "Hjemmeside",
+    "email": "Email",
+    "www": "www.kulturfinder.sh",
+    "link": "kulturfinder.sh",
+    "mailto": "info@kultursphaere.sh",
+    "favorites": "Bogmærker",
+    "filters": "Filtrene",
+    "categories": "Kategorier",
+    "tags": "Tilbud",
+    "map": "Kort",
+    "route": "Tilkørsel",
+    "details": "Detaljer",
+    "list": "Liste",
+    "museums-card": "MuseumsCard",
+    "distance": "Afstand",
+    "~": " ~",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "youtube": "YouTube",
+    "vimeo": "Vimeo",
+    "close": "Lukke",
+    "open": "Åbne",
+    "back": "Tilbage",
+    "gotIt": "Forstået",
+    "downloadApp": "App downloade",
+    "loading": "Belaster kultur..."
+  },
+  "SEO":{
+    "title": "kulturfinder.sh",
+    "dashboardTitle": "kulturfinder.sh - Kultur i din hånd",
+    "description": "The kulturfinder.sh app has all the information about culture in Schleswig-Holstein that you need. With more than 300 cultural institutions featured, you can have a look into descriptions, opening-times or digital services of each institution.",
+    "commonKeywords": "Kulturfinder, culture, app, Schleswig-Holstein, Kultursphäre, digital, Living Images, kulturfinder.sh, cultural institutions"
+  },
+  "locales": {
+    "de": {
+      "name": "Deutsch"
+    },
+    "en": {
+      "name": "English"
+    },
+    "da": {
+      "name": "Dansk"
+    }
+  },
+  "navbar": {
+    "aboutUs": "Om os",
+    "logo": "kulturfinder.sh-logo",
+    "settings": "Indstillinger",
+    "saveAsFavorite": "Gem som bogmærke",
+    "start": "Start",
+    "legalNotice": "Data beskyttelse & Om os",
+    "search": "Søg",
+    "noResults": "Ingen resultater",
+    "noGPS": "GPS fordele"
+  },
+  "about": {
+    "description": "kultursphäre.sh er et projekt hos Institut for Media på Fachhochschule Kiel. Projektet støttes af Ministeriet for Uddannelse, Forskning og Kultur i Slesvig-Holstén – i samarbejde med digiCULT og det Slesvig-Holsténske Delstatsbibliotek.",
+    "leadingLegal": "Ledelse & kolofon",
+    "address0": "Prof. Dr. Tobias Hochscherf",
+    "address1": "FH Kiel | Fachbereich Medien",
+    "address2": "Grenzstraße 3",
+    "address3": "24149 Kiel",
+    "privacy": "Data beskyttelse",
+    "noThirdParties": "Brugen af denne app er normalt mulig uden at give personlige data. Disse data videresendes ikke til tredjepart uden dit udtrykkelige samtykke.",
+    "matomo": "Områdemåling med Matomo",
+    "matomoConsent": "Tillad webanalyse",
+    "matomoDescription": "Webanalysen (rækkevidde måling) bruges til at evaluere strømmen af besøgende til vores online tilbud og kan omfatte adfærd, interesser eller demografiske oplysninger om de besøgende. Ved hjælp af rækkevideanalysen kan vi for eksempel genkende på hvilket tidspunkt vores online tilbud eller dets funktioner eller indhold bruges oftest og forstå, hvilke områder der skal optimeres. Til disse formål kan såkaldte anonymiserede brugerdata oprettes og gemmes i en fil (cookie), eller lignende processer kan bruges til samme formål. Til denne information, f.eks. Indhold vist, besøgt websteder og elementer og teknisk information brugt der, såsom den anvendte browser, det anvendte computersystem og oplysninger om tidspunkter og placeringer af brug. IP-adresser gemmes pseudonymiseret ved at forkorte IP-adressen (IP-maskering) for at beskytte brugere. Der gemmes ingen klare brugerdata. Oplysningerne, der genereres af cookien om din brug af dette websted, gemmes kun på vores server og videresendes ikke til tredjepart.",
+    "matomoDescription2": "Du har til enhver tid mulighed for at gøre indsigelse mod områdeanalysen med fremtidig virkning. I dette tilfælde gemmes en såkaldt opt-out-cookie i din browser, hvilket betyder, at Matomo ikke længere indsamler nogen sessiondata. Hvis brugerne sletter deres cookies, betyder det imidlertid, at fravigelsescookien også slettes og derfor skal aktiveres igen af brugerne.",
+    "legalNotice": "Bemærkninger om retsgrundlag",
+    "legalNoticeDescription": "Hvis vi beder brugerne om deres samtykke til brug af tredjepartsudbydere, er det juridiske grundlag for behandling af data samtykke. Ellers behandles brugerens data på grundlag af vores legitime interesser (dvs. interesse i effektive, økonomiske og modtagervenlige tjenester). I denne sammenhæng vil vi også gerne henlede opmærksomheden på oplysningerne om brugen af cookies i denne databeskyttelseserklæring.",
+    "legalNoticePoint0": "Tjenesteudbyder: webanalyse / måling af rækkevidde i selvhosting",
+    "legalNoticePoint1": "Behandlede datatyper: brugsdata (f.eks. Besøgt websteder, interesse for indhold, adgangstider), meta / kommunikationsdata (f.eks. Enhedsinformation, IP-adresser).",
+    "legalNoticePoint2": "Berørte personer: brugere (f.eks. Besøgende på webstedet, brugere af onlinetjenester).",
+    "legalNoticePoint3": "Formål med behandling: rækkevidde måling (f.eks. Adgangsstatistik, genkendelse af tilbagevendende besøgende), sporing (f.eks. Interesse / adfærdsrelateret profilering, brug af cookies), besøg af evaluering af handlinger, profilering (oprettelse af brugerprofiler).",
+    "legalNoticePoint4": "Sikkerhedsforanstaltninger: IP-maskering (pseudonymisering af IP-adressen).",
+    "legalNoticePoint5": "Sletning af data: Cookiesne har en maksimal opbevaringsperiode på 13 måneder",
+    "legalNoticePoint6": "Oppositionsindstilling (fravalg): Brugere kan når som helst gøre indsigelse mod behandlingen af deres data af Matomo med fremtidig virkning. I dette tilfælde gemmes en såkaldt opt-out-cookie i din browser, hvilket betyder, at Matomo ikke længere indsamler nogen sessiondata. Hvis brugerne sletter deres cookies, betyder det imidlertid, at fravigelsescookien også slettes og derfor skal aktiveres igen af brugerne.",
+    "legalNoticePoint7": "Retsgrundlag: samtykke (artikel 6, stk. 1, stk. 1 a) GDPR), legitime interesser (artikel 6, stk. 1, stk. 1, litra GDPR).",
+    "legalNoticeProducedBy": "Oprettet ved hjælp af den gratis Datenschutz-Generator.de af Dr. Thomas Schwenke",
+    "positionRelatedData": "Positionsrelaterede data",
+    "positionRelatedDataProcessing": "I forbindelse med denne app er det muligt at bestemme brugerens geografiske position, såfremt brugeren har givet tilladelse til det i indstillingerne på sin terminal. Til positionsbestemmelsen anvendes en række teknologier, som f. eks. IP-adresse og GPS-data. Disse data anvendes udelukkende på brugerens terminal.",
+    "accessibility": {
+      "declarationsHeadline": "Erklärung zur Barrierefreiheit",
+      "LBGG_BITV": "Das Team des kulturfinder.sh bemüht sich, die Website kulturfinder.sh im Einklang mit dem Gesetz zur Gleichstellung von Menschen mit Behinderung in Schleswig Holstein (LBGG) und der Barrierefreie-Informationstechnik-Verordnung (BITV) barrierefrei zugänglich zu machen. Diese Erklärung zur Barrierefreiheit gilt für den gesamten Internetauftritt kulturfinder.sh",
+      "currentStatusHeadline": "Stand der Vereinbarkeit mit den Anforderungen",
+      "currentStatus": "Die Website ist mit der BITV teilweise vereinbar. Die „gute Zugänglichkeit“ ist sichergestellt.\nBei folgenden Inhalten wurden beim Barrierefreiheitstest Mängel festgestellt und sind nicht vereinbar mit den genannten Rechtsvorschriften:",
+      "faults": {
+        "0": "Konsistenz der Navigation: Die Navigation ist teilweise nicht einheitlich gestaltet und schränkt das Verständnis ein.",
+        "1": "Einfache Sprache: Erklärungen der Seite und dessen Bedienung sind nicht in einfacher Sprache verfügbar."
+      },
+      "correcting": "Eine Verbesserung der Zugänglichkeit ist weithin geplant.",
+      "declarationCreatedHeadline": "Erstellung dieser Erklärung zur Barrierefreiheit",
+      "declarationCreated": "Auf Grundlage einer Selbstbewertung vom 04.12.2020 wurde diese Erklärung am 04.12.2020 erstellt.",
+      "feedbackHeadline": "Feedback und Kontaktangaben",
+      "feedbackExplanation": "Wenn Sie weitere Fragen zur Umsetzung der Barrierefreiheit haben oder Ihnen Mängel in Bezug auf die Einhaltung der Barrierefreiheitsanforderungen auffallen, dann nehmen Sie mit uns über die auf dieser Seite genannten Möglichkeiten Kontakt auf.",
+      "complaintsOfficeHeadline": "Beschwerdestelle",
+      "complaintsOfficeExplanation": "Falls Sie der Ansicht sind, dass Sie durch eine nicht barrierefreie Gestaltung benachteiligt sind, können Sie sich an die Beschwerdestelle Schleswig Holstein wenden:",
+      "complaintsOffice": {
+        "name": "Beschwerdestelle zu Barrieren bei Informationen öffentlicher Stellen im Internet",
+        "street": "Karolinenweg 1",
+        "city": "24105 Kiel",
+        "phone": "0431 988-1620",
+        "email": "bbit@landtag.ltsh.de"
+      }
+    }
+  },
+  "licenses": {
+    "oss-third-party": "Open source-licenser for tredjepartspakker",
+    "licenses": "Licenser",
+    "license": "Licens",
+    "amount": "Nummer",
+    "colon": ":",
+    "summary": "Resumé",
+    "author": "Forfatter: ",
+    "multi": "Udvælgelse til flerkoncessioner",
+    "choice": "Udvalgt licens"
+  },
+  "noData": {
+    "welcome": "Willkommen beim kulturfinder.sh!",
+    "notDownloadable": "Leider konnten wir notwendige Daten nicht von unserem Kooperationspartner herunterladen. Bitte haben Sie ein wenig Geduld, es wird bereits an einer Lösung gearbeitet.",
+    "reload": "Erneut laden"
+  },
+  "updateModal": {
+    "newPwaVersionTitle": "Ny version tilgængelig!",
+    "newPwaVersionText": "Denne side genindlæses."
+  },
+  "pwaBanner": {
+    "iosPwaClaim": "Always available as an app.",
+    "iosPwaAdd": "Add to homescreen"
+  },
+  "pwaModal": {
+    "title": "App installere",
+    "text": "You can download and install the kulturfinder.sh app. Then you will be able to use the app online und have access to the culture of Schleswig-Holstein at all times.",
+    "android": {
+      "step1": "1. Open the browser menu.",
+      "step2": "2. Select 'Add to home screen'.",
+      "step3": "3. Press the 'Add' button'."
+    },
+    "iOS": {
+      "step1": "1. Press the share button",
+      "step2": "2. Select 'Add to Home Screen'",
+      "step3": "3. 3. Press the 'Add' button."
+    },
+    "windows": {
+      "step1": "1. Click on the plus icon in the address bar.",
+      "step2": "2. Click on the blue button."
+    },
+    "mac": {
+      "step1": "1. Open the menu and click on 'install kulturfinder.sh...' or directly click on the plus icon in the address bar.",
+      "step2": "2. Click on the blue button."
+    }
+  },
+  "noGPS": {
+    "title": "GPS deaktiveret",
+    "description": "Aktivér GPS for at få nyttige oplysninger.",
+    "yourBenefits": "Brugerens fordele:",
+    "benefit1": "Begivenhedsforslag fra brugerens omgivelser",
+    "benefit2": "Afstand til alle destinationer",
+    "enableGPS": "GPS aktivere",
+    "howToHandle": "Your location for this site is blocked.",
+    "howToHandle2" : "Please check the settings of your device and refresh this website, to use the location functions of kulturfinder.sh"
+  },
+  "noNetwork": {
+    "title": "No internet connection",
+    "description": "We are currently not able to get any details, please check your internet connection."
+  },
+  "dashboard": {
+    "inYourArea": "I nærheden af, hvor du er",
+    "suggestions": "Forslag",
+    "schietwetter": "Møgvejr",
+    "videoclips": "Videoclips",
+    "museums-card": "MuseumsCard",
+    "living-images": "Living Images",
+    "living-images1": "Living",
+    "living-images2": "Images",
+    "gpsDisabled": "GPS inaktivt",
+    "signLanguage": "Tegnsprog",
+    "showAllResults": "Vis alle resultater",
+    "toResultsPage": "Til listen",
+    "signLanguageModal": {
+      "title": "Explanation video in sign language",
+      "noVideo": "Your browser sadly does not support this video. Update or change your browser to see the sign language video."
+    }
+  },
+  "details": {
+    "banner": "Billede af institutionen",
+    "noWebsite": "Ingen hjemmeside",
+    "noDescription": "Undskyld. Denne tekst er endnu ikke tilgængelig på alle sprog. Vi arbejder på sagen.",
+    "favorite": "Favorit",
+    "share": "Dele",
+    "shareSubject": "Prøv at se, hvad jeg har fundet til dig in din kulturfinder-app:",
+    "showOnMap": "Vis på kort",
+    "routeViaNavigationApp": "Vis kørselsvejledning i kort-applikation",
+    "socialMedia": "Sociale netværk",
+    "digitalContents": "Digitale tilbud",
+    "digitalContent": "Digitale tilbud",
+    "iOSApp": "iOS-app",
+    "audioGuides": "Audioguides",
+    "address": "Adresse",
+    "emailAddress": "Email-adresse",
+    "telephone": "Telefon",
+    "openingHours": "Åbningstider",
+    "noOpeningHours": "Vi har endnu ingen åbningstider på denne institution. Check venligst institutionens hjemmeside.",
+    "monday": "Mandag",
+    "tuesday": "Tirsdag",
+    "wednesday": "Onsdag",
+    "thursday": "Torsdag",
+    "friday": "Fredag",
+    "saturday": "Lørdag",
+    "sunday": "Søndag",
+    "closed": "Lukket",
+    "closedHolidays": "Lukket på følgende helligdage:",
+    "coronaWarningText": "Currently, there might be different opening hours due to the coronavirus. Please also check the institution's website.",
+    "coronaWarningTextDecember": "Nearly all cultural institutions are closed. Please check the insitution's website for respective information.",
+    "until": "–",
+    "noGuarantee": "Ingen garanti for åbningstiders rigtighed. Disse kan især afvige på helligdage. Check venligst også oplysningerne på institutionens hjemmeside.",
+    "comma": ",",
+    "noCategories": "Der er ikke allokeret nogen kategorier.",
+    "noTags": "Der er ikke fundet nogen tilbud.",
+    "livingImagesTitle": "Living Images",
+    "livingImagesDescription": "Find vores interaktive billeder og væk dem til live!",
+    "livingImagesCallToAction": "Living Images – væk dem nu!",
+    "livingImagesIOSWebAppWrongVersion": "We're sorry, but our Living Images are not supported by your operating system. Please update your iOS version.",
+    "livingImagesIsDesktop": "You need a mobile device to view the Living Images.",
+    "livingImagesNotSupported": "We're sorry, but our Living Images are not supported by your browser.",
+    "holidays": {
+      "sd0001": "Nytårsdag",
+      "sd0006": "Langfredag",
+      "sd0008": "Påskemandag",
+      "sd0009": "1. maj",
+      "sd0012": "Pinsemandag",
+      "sd0010": "Kristi Himmelfart",
+      "sd0014": "Tysk Genforeningsdag (3. oktober)",
+      "sd0016": "Juleaftensdag",
+      "sd0017": "1. Juledag",
+      "sd0018": "2. Juledag",
+      "sd0019": "Nytårsaftensdag",
+      "sd0025": "Reformationsdag (31. oktober)"
+    },
+    "feedback": "Feedback",
+    "feedbackEmail": "info@kultursphaere.sh",
+    "feedbackIntro": "Any comments, ideas, or feedback about the app? Please contact our team at kulturfinder.sh. We would very much appreciate to hear from you!",
+    "feedbackInstitutionHeadline": "Would you like to contact the institution directly?",
+    "feedbackInstitutionText": "For questions or inqueries concerning the institution, please check out the 'contact' section for each institution.",
+    "feedbackWrongOpeningHoursHeadline": "Åbningstider forkerte?",
+    "feedbackWrongOpeningHoursText": "Trods max. omhu kan vi desværre ikke give nogen garanti for åbningstiders rigtighed og fuldstændighed. Især på helligdage kan tiderne være anderledes – eller de ændres alt efter sæson flere gange i årets løb. Vi beklager, hvis du/i skulle være kommet ud for ulemper i den forbindelse, og det ville i givet fald glæde os at modtage en tilbagemelding om fejlen. På forhånd mange tak!",
+    "museumscard": {
+      "title": "MuseumsCard 2022",
+      "text1": "Free entrance",
+      "text2": "for everybody under 18.",
+      "url": "www.meine-museumscard.de"
+    }
+  },
+  "favorites": {
+    "noFavorites": "Der findes ingen bogmærker endnu."
+  },
+  "filter": {
+    "resetButtonLabel": "Nullstille",
+    "fabButtonLabel": "Filter ({count})",
+    "resultCount": "{count} resultater",
+    "showResultsButtonLabelCount": "Vis {count} resultater",
+    "showResultsButtonLabelNoResults": "Ingen resultater",
+    "favoritesOnly": "Kun bogmærker",
+    "all": "(alle)"
+  },
+  "museumscard": {
+    "description": "MuseumsCard er gyldigt for alle børn og unge under 18 år og ungdomsledere med et Juleica. Kortet giver hver sommer gratis adgang til over 100 museer i Slesvig-Holsten og Danmark.",
+    "info": "MuseumsCard kan bestilles online, printes ud på www.meine-museumscard.de eller bruges digitalt her på kulturfinder.sh.",
+    "description2": "MuseumsCard er et initiativ fra de slesvig-holstenske sparekasser, ministeriet for uddannelse, videnskab og kultur og Landesjugendringen i samarbejde med museumsforeningen i Slesvig-Holsten og Hamborg og NAH.SH - den lokale kollektive transport i Slesvig-Holsten.",
+    "tickets": "Billet"
+  },
+  "list": {
+    "noClaim": "",
+    "showDetails": "Til detailsiden."
+  },
+  "map": {
+    "highContrast": "Høj kontrast"
+  },
+  "nahSh": {
+    "showDepartures": "Vis afgangstider for NAH.SH",
+    "location": {
+      "start": "Din position"
+    }
+  },
+  "socialLinks": {
+    "noSocialMedia": "Der findes ingen sociale netværk."
+  },
+  "categories": {
+    "http://digicult": {
+      "vocnet": {
+        "org/portal/p0264": "Udendørs",
+        "org/portal/p0294": "Film",
+        "org/portal/p0295": "Viden & natur",
+        "org/portal/p0296": "Musik",
+        "org/portal/p0297": "Museum & udstilling",
+        "org/portal/p0298": "Litteratur",
+        "org/portal/p0299": "Scene"
+      }
+    }
+  },
+  "tags": {
+    "opt001": "Gratis",
+    "opt004": "P-plads",
+    "opt006": "Rundvisninger med jævne mellemrum",
+    "opt012": "Tilbud for synshæmmede",
+    "opt013": "Tilbud for hørehæmmede",
+    "opt014": "Tilbud for mentalt handicappede",
+    "opt017": "Barrierefri adgang",
+    "opt020": "Handicap-P-plads",
+    "opt021": "Butik",
+    "opt022": "Gastronomi",
+    "opt024": "Handicaptoilet",
+    "opt033": "familievenligt",
+    "opt035": "Tilbud til skoleklasser",
+    "opt036": "Møgvejr",
+    "opt037": "Open air",
+    "opt039": "MuseumsCard",
+    "opt041": "Videoclips",
+    "optlang_en": "Tilbud på engelsk",
+    "optlang_dk": "Tilbud på dansk"
+  }
+}

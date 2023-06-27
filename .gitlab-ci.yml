@@ -1,0 +1,41 @@
+stages:
+  - build
+  - test
+  - deploy
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .npm
+
+build:
+  image: node:lts
+  stage: build
+  artifacts:
+    paths:
+      - dist
+  script:
+    - npm ci --cache .npm --prefer-offline --legacy-peer-deps
+    - npm run build
+
+lint:
+  image: node:lts
+  stage: test
+  script:
+    - npm ci --cache .npm --prefer-offline --legacy-peer-deps
+    - npm run lint
+
+audit:
+  image: node:lts
+  stage: test
+  script:
+    - npm ci --cache .npm --prefer-offline --legacy-peer-deps
+    - npm audit --production
+
+deploy_ftp:
+  image: mwienk/docker-lftp:latest
+  stage: deploy
+  only:
+    - prod
+  script:
+    - lftp -c "set ftp:ssl-allow no ; set net:timeout 10 ; set sftp:auto-confirm yes ; open -u $SFTP_USERNAME,$SFTP_PASSWORD $SFTP_URL ; mirror -e -R -p dist . ; quit"

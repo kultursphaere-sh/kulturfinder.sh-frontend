@@ -1,0 +1,78 @@
+@import './variables.scss';
+
+.slick-prev,
+.slick-next {
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-20px);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left:0;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    transform: rotate(45deg);
+  }
+}
+
+.slick-prev {
+  left: 10px;
+
+  &::before,
+  &::after {
+    left: 10px;
+    right: unset;
+  }
+  &::before {
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+  }
+  &::after {
+    border-left: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+  }
+
+}
+
+.slick-next {
+  right: 10px;
+
+  &::before,
+  &::after {
+    left: unset;
+    right: 10px;
+  }
+  &::before {
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+  }
+  &::after {
+    border-right: 2px solid $primary;
+    border-top: 2px solid $primary
+  }
+}
+
+.slick-dots {
+  bottom: 10px;
+
+  li.slick-active button::before {
+    opacity: 1;
+  }
+
+  li button::before {
+    content: '';
+    color: #fff;
+    opacity: 0.5;
+    background: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $primary;
+    margin: 5px;
+  }
+}

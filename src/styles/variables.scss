@@ -1,0 +1,52 @@
+// Your variable overrides
+$primary: #003064; // SH Blau
+$primary-light: #014b99;
+$secondary: #fff;
+
+$yellow: #fdf8da; // Light-Yellow
+$yellow-dark: #f8f1c6; // Light-Yellow
+$red: #d4004b; // SH Rot
+$red-dark: #ad013d;
+$cyan: #0089ca; // SH Cyan
+$green: #509500; // Used for "Drive-To" in Map-Window
+$white: #fff;
+$gray: #f0f0f0; // Grau
+$gray-dark: #e6e6e6;  // SH Dark Grey
+$background: #fcfcfc;
+$gray-very-dark: #333333; // SH Very Dark Grey for Text
+
+$info: $cyan;
+$warning: #efce0d;
+$warning-light: rgb(255, 227, 68);
+$muted: $gray-dark;
+$light: $gray;
+$dark: $gray-very-dark;
+
+// breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+//grid options
+/* $grid-columns: 12;
+$grid-gutter-width: 30px; */
+
+// set internal breakpoints for b-components
+$grid-breakpoints: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm, // phone
+  md: $breakpoint-md, // tabled
+  lg: $breakpoint-lg, // desktop
+  xl: $breakpoint-xl // large screens
+);
+
+// set container max width for b-container breakpoints
+$container-max-widths: (
+  xs: 920px
+);
+
+.rounded {
+  border-radius: 7px;
+}
