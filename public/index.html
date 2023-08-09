@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"
+      id="meta-viewport"
+    >
+    <link href="/favicon.svg" rel="icon">
+    <link href="/manifest.json" rel="manifest">
+    <title>kulturfinder.sh - Kultur in deiner Hand</title>
+    <link rel="preload" href="/img/loadingIcon.svg" as="image">
+    <meta property="og:title" content="kulturfinder.sh">
+    <meta name="twitter:title" content="kulturfinder.sh">
+    <meta name="description" content="Der kulturfinder.sh ist eine neue App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in ganz Schleswig-Holstein zu finden. Geobasiert werden Kultureinrichtungen im Umkreis des Standortes des Nutzers auf einer Landkarte angezeigt. Zu jeder Institution gibt es zudem ein Foto sowie eine Beschreibung, die Adresse und weitere Angebote.">
+    <meta itemprop="description" content="Der kulturfinder.sh ist eine neue App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in ganz Schleswig-Holstein zu finden. Geobasiert werden Kultureinrichtungen im Umkreis des Standortes des Nutzers auf einer Landkarte angezeigt. Zu jeder Institution gibt es zudem ein Foto sowie eine Beschreibung, die Adresse und weitere Angebote.">
+    <meta property="og:description" content="Der kulturfinder.sh ist eine neue App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in ganz Schleswig-Holstein zu finden. Geobasiert werden Kultureinrichtungen im Umkreis des Standortes des Nutzers auf einer Landkarte angezeigt. Zu jeder Institution gibt es zudem ein Foto sowie eine Beschreibung, die Adresse und weitere Angebote.">
+    <meta name="twitter:description" content="Der kulturfinder.sh ist eine neue App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in ganz Schleswig-Holstein zu finden. Geobasiert werden Kultureinrichtungen im Umkreis des Standortes des Nutzers auf einer Landkarte angezeigt. Zu jeder Institution gibt es zudem ein Foto sowie eine Beschreibung, die Adresse und weitere Angebote.">
+    <meta name="keywords" content="Kulturfinder, Kultur, App, Schleswig-Holstein, Kultursphäre, Digitalisierung, Living Images, Schietwetter, Kulturinstitution">
+    <meta itemprop="image" content="..\src\assets\images\logos\kf_logo.png">
+    <meta property="og:image" content="..\src\assets\images\logos\kf_logo.png">
+    <meta name="twitter:image" content="..\src\assets\images\logos\kf_logo.png">
+    <meta property="og:locale" content="de">
+    <meta property="og:url" content="https://kulturfinder.sh">
+    <meta name="twitter:url" content="https://kulturfinder.sh">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="kulturfinder.sh">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-48x48.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-80x80.png" sizes="80x80">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-150x150.png" sizes="150x150">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-167x167.png" sizes="167x167">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-180x180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="img/icons/apple-icon-1024x1024.png" sizes="1024x1024">
+    <meta name="msapplication-TileImage" content="img/icons/app-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="application-name" content="kulturfinder.sh">
+    <link rel="author" href="https://www.kultursphaere.sh">
+  </head>
+  <style>
+      .loading-screen {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1001;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+      }
+      #loading-screen-logo {
+          height: 15%;
+          width: auto;
+      }
+      @keyframes change-size {
+          50% {
+              transform:scale(1.1);
+          }
+      }
+  </style>
+  <body>
+    <noscript>
+      <h2>kulturfinder.sh | Kultur in deiner Hand</h2>
+      <p>
+        Der kulturfinder.sh ist eine neue App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in ganz Schleswig-Holstein zu finden. Geobasiert werden Kultureinrichtungen im Umkreis des Standortes des Nutzers auf einer Landkarte angezeigt. Zu jeder Institution gibt es zudem ein Foto sowie eine Beschreibung, die Adresse und weitere Angebote.
+      </p>
+      <p>
+        Es sieht so aus, als würde Ihr Gerät kein JavaScript unterstützen.<br>
+        Sollten Sie es absichtlich deaktiviert haben, aktivieren Sie es bitte wieder, denn unsere Seite funktioniert ohne JavaScript nicht.
+      </p>
+      <p>Sollten Sie weiterhin Probleme haben, kontaktieren Sie uns bitte unter folgender Email-Adresse: <a href="mailto:info@kultursphaere.sh">info@kultursphaere.sh</a></p>
+    </noscript>
+    <div id="loadingScreen" class="loading-screen">
+        <img
+            id="loading-screen-logo"
+            alt="kulturfinder.sh Logo"
+            src="/img/loadingIcon.svg"
+        >
+    </div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+<!-- TODO before build: reset start_url to "./index.html" in manifest.json -->

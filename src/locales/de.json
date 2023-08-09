@@ -1,0 +1,325 @@
+{
+  "common": {
+    "contact": "Kontakt",
+    "website": "Webseite",
+    "email": "Email",
+    "www": "www.kulturfinder.sh",
+    "link": "kulturfinder.sh",
+    "mailto": "info@kultursphaere.sh",
+    "favorites": "Favoriten",
+    "filters": "Filter",
+    "categories": "Kategorien",
+    "tags": "Angebote",
+    "map": "Karte",
+    "route": "Anfahrt",
+    "details": "Details",
+    "list": "Liste",
+    "museums-card": "MuseumsCard",
+    "distance": "Entfernung",
+    "~": " ~",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "youtube": "YouTube",
+    "vimeo": "Vimeo",
+    "close": "Schließen",
+    "open": "Öffnen",
+    "back": "Zurück",
+    "gotIt": "Verstanden",
+    "downloadApp": "App herunterladen",
+    "loading": "Lädt Kultur..."
+  },
+  "SEO":{
+    "title": "kulturfinder.sh",
+    "dashboardTitle": "kulturfinder.sh - Kultur in deiner Hand",
+    "description": "Der kulturfinder.sh ist eine neue App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in ganz Schleswig-Holstein zu finden. Geobasiert werden Kultureinrichtungen im Umkreis des Standortes des Nutzers auf einer Landkarte angezeigt. Zu jeder Institution gibt es zudem ein Foto sowie eine Beschreibung, die Adresse und weitere Angebote.",
+    "commonKeywords": "Kulturfinder, Kultur, App, Schleswig-Holstein, Kultursphäre, Digitalisierung, Living Images, Schietwetter, kulturfinder.sh, Kulturinstitution"
+  },
+  "locales": {
+    "de": {
+      "name": "Deutsch"
+    },
+    "en": {
+      "name": "English"
+    },
+    "da": {
+      "name": "Dansk"
+    }
+  },
+  "navbar": {
+    "aboutUs": "Über uns",
+    "logo": "Logo des kulturfinder.sh",
+    "settings": "Einstellungen",
+    "saveAsFavorite": "Als Favorit speichern",
+    "start": "Start",
+    "legalNotice": "Datenschutz, Impressum, Barrierefreiheit",
+    "search": "Suche",
+    "noResults": "Keine Ergebnisse",
+    "noGPS": "GPS-Vorteile",
+    "noData": "Keine Daten geladen"
+  },
+  "about": {
+    "description": "Die kultursphäre.sh ist ein Projekt des Fachbereiches Medien der Fachhochschule Kiel. Das Projekt wird gefördert vom Ministerium für Bildung, Wissenschaft und Kultur des Landes Schleswig-Holstein. In Kooperation mit digiCULT und der Schleswig-Holsteinischen Landesbibliothek.",
+    "leadingLegal": "Leitung & Impressum",
+    "address0": "Prof. Dr. Tobias Hochscherf",
+    "address1": "FH Kiel | Fachbereich Medien",
+    "address2": "Grenzstraße 3",
+    "address3": "24149 Kiel",
+    "privacy": "Datenschutzerklärung",
+    "noThirdParties": "Die Nutzung dieser App ist in der Regel ohne Angabe personenbezogener Daten möglich. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.",
+    "matomo": "Reichweitenmessung mit Matomo",
+    "matomoConsent": "Webanalyse erlauben",
+    "matomoDescription": "Die Webanalyse (Reichweitenmessung) dient der Auswertung der Besucherströme unseres Onlineangebotes und kann Verhalten, Interessen oder demographische Informationen zu den Besuchern umfassen. Mit Hilfe der Reichweitenanalyse können wir beispielsweise erkennen, zu welcher Zeit unser Onlineangebot oder dessen Funktionen oder Inhalte am häufigsten genutzt werden und nachvollziehen, welche Bereiche der Optimierung bedürfen. Zu diesen Zwecken können sogenannte anonymisierte Nutzerdaten angelegt und in einer Datei (Cookie) gespeichert oder ähnliche Verfahren mit dem gleichen Zweck genutzt. Zu diesen Angaben können z.B. betrachtete Inhalte, besuchte Webseiten und dort genutzte Elemente und technische Angaben, wie der verwendete Browser, das verwendete Computersystem sowie Angaben zu Nutzungszeiten oder -orten gehören. IP-Adressen werden durch Kürzung der IP-Adresse (IP-Masking) zum Schutz der Nutzer pseudonymisiert gespeichert. Es werden keine Klardaten der Nutzer gespeichert. Die durch das Cookie erzeugte Informationen über Ihre Benutzung dieser Webseite werden nur auf unserem Server gespeichert und nicht an Dritte weitergegeben.",
+    "matomoDescription2": "Sie haben jederzeit die Möglichkeit, der Reichweitenanalyse mit Wirkung für die Zukunft widersprechen. In diesem Fall wird in ihrem Browser ein sog. Opt-Out-Cookie abgelegt, was zur Folge hat, dass Matomo keinerlei Sitzungsdaten mehr erhebt. Wenn Nutzer ihre Cookies löschen, so hat dies jedoch zur Folge, dass auch das Opt-Out-Cookie gelöscht wird und daher von den Nutzern erneut aktiviert werden muss.",
+    "legalNotice": "Hinweise zu Rechtsgrundlagen",
+    "legalNoticeDescription": "Sofern wir die Nutzer um deren Einwilligung in den Einsatz der Drittanbieter bitten, ist die Rechtsgrundlage der Verarbeitung von Daten die Einwilligung. Ansonsten werden die Daten der Nutzer auf Grundlage unserer berechtigten Interessen (d.h. Interesse an effizienten, wirtschaftlichen und empfängerfreundlichen Leistungen) verarbeitet. In diesem Zusammenhang möchten wir Sie auch auf die Informationen zur Verwendung von Cookies in dieser Datenschutzerklärung hinweisen.",
+    "legalNoticePoint0": "Dienstanbieter: Webanalyse/ Reichweitenmessung im Selbsthosting",
+    "legalNoticePoint1": "Verarbeitete Datenarten: Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten), Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).",
+    "legalNoticePoint2": "Betroffene Personen: Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).",
+    "legalNoticePoint3": "Zwecke der Verarbeitung: Reichweitenmessung (z.B. Zugriffsstatistiken, Erkennung wiederkehrender Besucher), Tracking (z.B. interessens-/verhaltensbezogenes Profiling, Nutzung von Cookies), Besuchsaktionsauswertung, Profiling (Erstellen von Nutzerprofilen).",
+    "legalNoticePoint4": "Sicherheitsmaßnahmen: IP-Masking (Pseudonymisierung der IP-Adresse).",
+    "legalNoticePoint5": "Löschung von Daten: Die Cookies habeneine Speicherdauer von maximal 13 Monaten",
+    "legalNoticePoint6": "Widerspruchsmöglichkeit (Opt-Out): Nutzer können der Verarbeitung ihrer Daten durch Matomo jederzeit mit Wirkung für die Zukunft widersprechen. In diesem Fall wird in ihrem Browser ein sog. Opt-Out-Cookie abgelegt, was zur Folge hat, dass Matomo keinerlei Sitzungsdaten mehr erhebt. Wenn Nutzer ihre Cookies löschen, so hat dies jedoch zur Folge, dass auch das Opt-Out-Cookie gelöscht wird und daher von den Nutzern erneut aktiviert werden muss.",
+    "legalNoticePoint7": "Rechtsgrundlagen: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a DSGVO), Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).",
+    "legalNoticeProducedBy": "Erstellt mit Hilfe des kostenlosen Datenschutz-Generator.de von Dr. Thomas Schwenke",
+    "positionRelatedData": "Ortsbezogene Daten",
+    "positionRelatedDataProcessing": "Innerhalb der App ist es möglich Ihren Standort bestimmen zu lassen, wenn sie dies in den Einstellungen ihres Endgerätes zugelassen haben. Für die Standortbestimmung werden verschiedene Technologien verwendet, wie bspw. IP-Adresse und GPS Daten. Diese Daten werden ausschließlich auf Ihrem Endgerät verarbeitet.",
+    "accessibility": {
+      "declarationsHeadline": "Erklärung zur Barrierefreiheit",
+      "LBGG_BITV": "Das Team des kulturfinder.sh bemüht sich, die Website kulturfinder.sh im Einklang mit dem Gesetz zur Gleichstellung von Menschen mit Behinderung in Schleswig Holstein (LBGG) und der Barrierefreie-Informationstechnik-Verordnung (BITV) barrierefrei zugänglich zu machen. Diese Erklärung zur Barrierefreiheit gilt für den gesamten Internetauftritt kulturfinder.sh",
+      "currentStatusHeadline": "Stand der Vereinbarkeit mit den Anforderungen",
+      "currentStatus": "Die Website ist mit der BITV teilweise vereinbar. Die „gute Zugänglichkeit“ ist sichergestellt.\nBei folgenden Inhalten wurden beim Barrierefreiheitstest Mängel festgestellt und sind nicht vereinbar mit den genannten Rechtsvorschriften:",
+      "faults": {
+        "0": "Konsistenz der Navigation: Die Navigation ist teilweise nicht einheitlich gestaltet und schränkt das Verständnis ein.",
+        "1": "Einfache Sprache: Erklärungen der Seite und dessen Bedienung sind nicht in einfacher Sprache verfügbar."
+      },
+      "correcting": "Eine Verbesserung der Zugänglichkeit ist weithin geplant.",
+      "declarationCreatedHeadline": "Erstellung dieser Erklärung zur Barrierefreiheit",
+      "declarationCreated": "Auf Grundlage einer Selbstbewertung vom 04.12.2020 wurde diese Erklärung am 04.12.2020 erstellt.",
+      "feedbackHeadline": "Feedback und Kontaktangaben",
+      "feedbackExplanation": "Wenn Sie weitere Fragen zur Umsetzung der Barrierefreiheit haben oder Ihnen Mängel in Bezug auf die Einhaltung der Barrierefreiheitsanforderungen auffallen, dann nehmen Sie mit uns über die auf dieser Seite genannten Möglichkeiten Kontakt auf.",
+      "complaintsOfficeHeadline": "Beschwerdestelle",
+      "complaintsOfficeExplanation": "Falls Sie der Ansicht sind, dass Sie durch eine nicht barrierefreie Gestaltung benachteiligt sind, können Sie sich an die Beschwerdestelle Schleswig Holstein wenden:",
+      "complaintsOffice": {
+        "name": "Beschwerdestelle zu Barrieren bei Informationen öffentlicher Stellen im Internet",
+        "street": "Karolinenweg 1",
+        "city": "24105 Kiel",
+        "phone": "0431 988-1620",
+        "email": "bbit@landtag.ltsh.de"
+      }
+    }
+  },
+  "licenses": {
+    "oss-third-party": "Open Source Lizenzen von Drittpaketen",
+    "licenses": "Lizenzen",
+    "license": "Lizenz",
+    "amount": "Anzahl",
+    "colon": ":",
+    "summary": "Zusammenfassung",
+    "author": "Author: ",
+    "multi": "Auswahl bei Multi-Lizenzen",
+    "choice": "Gewählte Lizenz"
+  },
+  "noData": {
+    "welcome": "Willkommen beim kulturfinder.sh!",
+    "notDownloadable": "Leider konnten wir notwendige Daten nicht von unserem Kooperationspartner herunterladen. Bitte haben Sie ein wenig Geduld, es wird bereits an einer Lösung gearbeitet.",
+    "reload": "Erneut laden"
+  },
+  "updateModal": {
+    "newPwaVersionTitle": "Neue Version verfügbar!",
+    "newPwaVersionText": "Die Seite wird neu geladen."
+  },
+  "pwaBanner": {
+    "iosPwaClaim": "Mit einem Klick Kultur finden, auch offline.",
+    "iosPwaAdd": "Zum Home-Screen hinzufügen"
+  },
+  "pwaModal": {
+    "text": "Sie können den kulturfinder.sh als App herunterladen und installieren. Dann steht er Ihnen auch offline zur Verfügung und Sie können jederzeit direkt vom Homescreen auf die Kultur Schleswig-Holsteins zugreifen.",
+    "android": {
+      "step1": "1. Öffnen Sie das Browser-Menü.",
+      "step2": "2. Wählen sie 'Zum Startbildschirm zufügen' aus.",
+      "step3": "3. Drücken Sie auf 'Hinzufügen'."
+    },
+    "iOS": {
+      "step1": "1. Drücken Sie auf die 'Teilen'-Schaltfläche.",
+      "step2": "2. Wählen sie 'Zum Home-Bildschirm' aus.",
+      "step3": "3. Drücken Sie auf 'Hinzufügen'."
+    },
+    "windows": {
+      "step1": "1. Klicken Sie auf das Plus-Symbol in der Adresszeile.",
+      "step2": "2. Abschließend klicken Sie auf die blaue Schaltfläche."
+    },
+    "mac": {
+      "step1": "1. Öffnen Sie das Menü und klicken auf 'kulturfinder.sh installieren...' oder klicken Sie direkt auf das Plus-Symbol in der Adresszeile.",
+      "step2": "2. Abschließend klicken Sie auf die blaue Schaltfläche."
+    }
+  },
+  "noGPS": {
+    "title": "GPS ist deaktiviert",
+    "description": "Aktivieren Sie GPS, um hilfreiche Informationen zu erhalten.",
+    "yourBenefits": "Ihre Vorteile:",
+    "benefit1": "Veranstaltungsvorschläge aus ihrer Umgebung",
+    "benefit2": "Entfernung zu allen Zielen",
+    "enableGPS": "GPS aktivieren",
+    "howToHandle": "Ihre Geräteeinstellungen blockieren den Zugriff auf ihren GPS-Standort.",
+    "howToHandle2" : "Prüfen sie die Einstellungen ihres Gerätes und aktualisieren sie die Website, um die Standortfunktion vom kulturfinder.sh nutzen zu können."
+  },
+  "noNetwork": {
+    "title": "Kein Internet",
+    "description": "Es konnten keine Details heruntergeladen werden, bitte überprüfen Sie Ihre Internetverbindung."
+  },
+  "dashboard": {
+    "inYourArea": "In Ihrer Nähe",
+    "suggestions": "Vorschläge",
+    "schietwetter": "Schietwetter",
+    "videoclips": "Videoclips",
+    "living-images": "Living Images",
+    "living-images1": "Living",
+    "living-images2": "Images",
+    "gpsDisabled": "GPS inaktiv",
+    "signLanguage": "Gebärdensprache",
+    "showAllResults": "Alle Ergebnisse anzeigen",
+    "toResultsPage": "Zur Liste",
+    "signLanguageModal": {
+      "title": "Erklärvideo in Gebärdensprache",
+      "noVideo": "Leider unterstützt ihr Browser dieses Video-Format nicht. Versuchen sie Ihren Browser zu aktualisieren um das Gebärdensprachen Video sehen zu können."
+    }
+  },
+  "details": {
+    "banner": "Institutionsbanner",
+    "noWebsite": "Keine Webseite",
+    "noDescription": "Es tut uns leid. Zu dieser Institution fehlt die Beschreibung. Wir arbeiten dran.",
+    "favorite": "Favorit",
+    "share": "Teilen",
+    "shareSubject": "Schau einmal, was ich für dich in der kulturfinder.sh-App gefunden habe:",
+    "showOnMap": "Auf Karte anzeigen",
+    "routeViaNavigationApp": "Anfahrt in Karten-Anwendung öffnen",
+    "socialMedia": "Soziale Netzwerke",
+    "digitalContents": "Digitale Angebote",
+    "digitalContent": "Digitales Angebot",
+    "iOSApp": "iOS-App",
+    "audioGuides": "Audioguides",
+    "address": "Adresse",
+    "emailAddress": "Email-Adresse",
+    "telephone": "Telefon",
+    "openingHours": "Öffnungszeiten",
+    "noOpeningHours": "Zu dieser Institution liegen uns noch keine Öffnungszeiten vor. Bitte informieren Sie sich auf der Homepage der Einrichtung.",
+    "monday": "Montag",
+    "tuesday": "Dienstag",
+    "wednesday": "Mittwoch",
+    "thursday": "Donnerstag",
+    "friday": "Freitag",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen",
+    "closedHolidays": "An folgenden Feiertagen geschlossen:",
+    "coronaWarningText": "Zurzeit kann es wegen COVID-19 zu Änderungen der Öffnungszeiten kommen. Bitte informieren Sie sich dahingehend auf der Webseite.",
+    "coronaWarningTextDecember": "Die meisten Kultur- und Freizeiteinrichtungen bleiben vorübergehend geschlossen. Bitte informieren Sie sich dahingehend auf der Webseite.",
+    "until": "–",
+    "noGuarantee": "Keine Gewähr für die Richtigkeit der Öffnungszeiten. Vor allem an Feiertagen können diese abweichen. Bitte informieren Sie sich auch auf der Homepage der Einrichtung.",
+    "comma": ",",
+    "noCategories": "Es sind keine Kategorien zugewiesen.",
+    "noTags": "Es sind keine Angebote zugewiesen.",
+    "livingImagesTitle": "Living Images",
+    "livingImagesDescription": "Finden sie unsere interaktiven Bilder und erwecken Sie sie zum Leben!",
+    "livingImagesCallToAction": "Living Images jetzt erwecken!",
+    "livingImagesIOSWebAppWrongVersion": "Die Living Images werden von Ihrem Betriebssystem leider nicht unterstützt. Bitte aktualisieren Sie ihre iOS-Version.",
+    "livingImagesIsDesktop": "Um die Living Images aufrufen zu können, wird ein Mobilgerät benötigt.",
+    "livingImagesNotSupported": "Leider werden die Living Images nicht von Ihrem Browser unterstützt.",
+    "holidays": {
+      "sd0001": "Neujahr",
+      "sd0006": "Karfreitag",
+      "sd0008": "Ostermontag",
+      "sd0009": "Tag der Arbeit",
+      "sd0012": "Pfingstmontag",
+      "sd0010": "Christi Himmelfahrt",
+      "sd0014": "Tag der Deutschen Einheit",
+      "sd0016": "Heiligabend",
+      "sd0017": "1. Weihnachtstag",
+      "sd0018": "2. Weihnachtstag",
+      "sd0019": "Silvester",
+      "sd0025": "Reformationstag"
+    },
+    "feedback": "Feedback",
+    "feedbackEmail": "info@kultursphaere.sh",
+    "feedbackIntro": "Haben Sie Wünsche oder Kritik? Melden Sie sich gerne beim Team vom kulturfinder.sh. Wir freuen uns über Feedback!",
+    "feedbackInstitutionHeadline": "Sie möchten direkt mit einer Institution in Kontakt treten?",
+    "feedbackInstitutionText": "Melden sie sich bei Anliegen und Fragen bitte direkt bei der Institution. Informationen hierzu finden sie unter 'Kontakt' auf der Seite der Institution.",
+    "feedbackWrongOpeningHoursHeadline": "Öffnungszeiten falsch?",
+    "feedbackWrongOpeningHoursText": "Trotz größter Sorgfalt können wir leider keine Gewähr für die Richtigkeit und Vollständigkeit der Öffnungszeiten geben. Vor allem an Feiertagen können diese abweichen oder werden saisonal mehrmals jährlich geändert. Es tut uns leid, wenn Ihnen hierdurch Unannehmlichkeiten entstanden sind und würden uns freuen, wenn Sie uns auf Fehler aufmerksam machen würden. Vielen Dank!",
+    "museumscard": {
+      "title": "MuseumsCard 2022",
+      "text1": "Kostenloser Eintritt",
+      "text2": "für alle unter 18 Jahren.",
+      "url": "www.meine-museumscard.de"
+    }
+  },
+  "favorites": {
+    "noFavorites": "Es sind noch keine Favoriten vorhanden."
+  },
+  "filter": {
+    "resetButtonLabel": "Entfernen",
+    "fabButtonLabel": "Filter ({count})",
+    "resultCount": "{count} Ergebnisse",
+    "showResultsButtonLabelCount": "Zeige {count} Ergebnisse",
+    "showResultsButtonLabelNoResults": "Keine Ergebnisse",
+    "favoritesOnly": "Nur Favoriten",
+    "all": "(alle)"
+  },
+  "museumscard": {
+    "description": "Die MuseumsCard gilt für alle Kinder und Jugendlichen unter 18 Jahren und Jugendleiter*innen mit Juleica. Mit der Karte gibt es jeden Sommer freien Eintritt in über 100 Museen in Schleswig-Holstein und Dänemark.",
+    "info": "Die MuseumsCard kann online bestellt, unter www.meine-museumscard.de ausgedruckt oder digital hier im kulturfinder.sh genutzt werden.",
+    "description2": "Die MuseumsCard ist eine Initiative der schleswig-holsteinischen Sparkassen, des Ministeriums für Bildung, Wissenschaft und Kultur und des Landesjugendrings in Kooperation mit dem Museumsverband Schleswig-Holstein und Hamburg und NAH.SH – dem Nahverkehr in Schleswig-Holstein.",
+    "tickets": "Eintrittskarte"
+  },
+  "list": {
+    "noClaim": "",
+    "showDetails": "Klick hier, um zur Detailseite zu gelangen!"
+  },
+  "map": {
+    "highContrast": "Kontrastreich"
+  },
+  "nahSh": {
+    "showDepartures": "NAH.SH Fahrzeiten anzeigen",
+    "location": {
+      "start": "Ihr Standort"
+    }
+  },
+  "socialLinks": {
+    "noSocialMedia": "Keine sozialen Netzwerke vorhanden."
+  },
+  "categories": {
+    "http://digicult": {
+      "vocnet": {
+        "org/portal/p0264": "Draußen",
+        "org/portal/p0294": "Film",
+        "org/portal/p0295": "Wissen & Natur",
+        "org/portal/p0296": "Musik",
+        "org/portal/p0297": "Museum & Ausstellung",
+        "org/portal/p0298": "Literatur",
+        "org/portal/p0299": "Bühne"
+      }
+    }
+  },
+  "tags": {
+    "opt001": "Kostenfrei",
+    "opt004": "Parkplatz",
+    "opt006": "Regelmäßige Führungen",
+    "opt012": "Angebot für Sehbehinderte",
+    "opt013": "Angebot für Hörbehinderte",
+    "opt014": "Angebot für geistig Behinderte",
+    "opt017": "Barrierefrei zugänglich",
+    "opt020": "Behindertenparkplatz",
+    "opt021": "Shop",
+    "opt022": "Gastronomie",
+    "opt024": "Behinderten-WC",
+    "opt033": "Familienfreundlich",
+    "opt035": "Angebot für Schulklassen",
+    "opt036": "Schietwetter",
+    "opt037": "Open Air",
+    "opt039": "MuseumsCard",
+    "opt041": "Videoclips",
+    "optlang_en": "Angebot auf Englisch",
+    "optlang_dk": "Angebot auf Dänisch"
+  }
+}
