@@ -5,9 +5,10 @@
     :ok-title="$t('common.gotIt')"
     id="feedback-modal"
     :title="$t('details.feedback')"
+    data-cy="feedbackModal"
   >
     <template>
-      <b-container id="feedbackText" fluid>
+      <b-container id="feedbackText" fluid data-cy="feedbackText">
         <b-row>
           <span>{{ $t('details.feedbackIntro') }}</span>
         </b-row>

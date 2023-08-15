@@ -7,6 +7,7 @@
     :options="{ zoomControl: false, worldCopyJump:true //worldCopyJump is used to let the location points jump to the next tile if a user starts scrolling to another map tile
     }"
     :data-is-high-contrast="isHighContrast"
+    data-cy="map"
   >
     <v-controllayer position="topright"/>
     <v-tilelayer
@@ -59,7 +60,7 @@
         >
           <div class="info-window">
             <div class="info-window-header">
-              <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.id}`" class="label py-3">
+              <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="label py-3">
                 <span>{{ currentInstitution.name }}</span>
               </router-link>
               <a @click="closePopup">
@@ -90,10 +91,10 @@
                 </icon-base>
                 <span>{{ $t("common.route") }}</span>
               </a>
-              <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.id}`" class="claim-info">
+              <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="claim-info">
                 <span v-if="currentInstitution.teaser" class="py-2 px-2">{{ currentInstitution.teaser }}</span>
               </router-link>
-              <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.id}`" class="link-to my-auto">
+              <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="link-to my-auto">
                 <icon-base title="Zur Detailseite" color="#869094" width="14">
                   <icon-arrow-right/>
                 </icon-base>

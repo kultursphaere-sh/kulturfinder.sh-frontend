@@ -97,15 +97,17 @@ img, .card-icon {
 }
 .ks-card-sm-mc{
   .ks-card-icon-container {
-    height: 90%;
+    padding-top: 2px;
+    height: 118%;
   }
 }
 .ks-card-mc{
   .ks-card-icon-container {
-    height: 68%;
+    padding-bottom: 3px;
+    height: 52%;
   }
   .ks-card-text {
-    font-weight: 400;
+    font-weight: 500;
     color: $primary;
   }
 }

@@ -8,12 +8,14 @@
       >
         <div class="left ml-2 ml-lg-1">
           <slot name="left">
-            <b-button pill :to="backRoute">
+            <!-- Back Button -->
+            <b-button class="backButton" pill @click="goBack">
               <icon-base
-                :title="backLabel"
+                :title="$t('common.back')"
                 color="#3c4d61"
                 role="img"
                 height="18"
+                data-cy="backButton"
               >
                 <icon-arrow-left/>
               </icon-base>
@@ -79,15 +81,6 @@ export default {
       }
       return parentRoute
     },
-    backRoute() {
-      const fallbackRoute = this.parentRoute
-        ? { name: this.parentRoute.name, params: this.$route.params }
-        : `/${this.$route.params.locale}`
-
-      const backTargetWithCurrentParams = { params: this.$route.params, ...this.backTarget }
-
-      return this.backTarget ? backTargetWithCurrentParams : fallbackRoute
-    },
     backLabel() {
       return this.parentRoute && this.parentRoute.meta && this.parentRoute.meta.title
         ? this.parentRoute.meta.title
@@ -100,24 +93,13 @@ export default {
         if (route.children) routes = routes.concat(this.getAllChildRoutes(route.children))
       })
       return routes
+    },
+    goBack() {
+      return this.$router.go(-1)
     }
   }
 }
 </script>
-
-<style scoped>
-.btn {
-  padding: 4px;
-}
-.btn:focus, .btn:hover {
-  background-color: #fff !important;
-  box-shadow: none;
-  border: 1px solid #fff;
-}
-.btn:active {
-  background-color: rgb(247, 247, 247) !important;
-}
-</style>
 
 <style lang="scss">
 header {
@@ -176,6 +158,13 @@ header {
   #info-bar {
     border-top: 1px solid #eee;
     z-index: 11;
+  }
+
+  .backButton {
+    padding: 5px;
+  }
+  .backButton:focus, .backButton:hover {
+    border: 1px solid #fff;
   }
 }
 

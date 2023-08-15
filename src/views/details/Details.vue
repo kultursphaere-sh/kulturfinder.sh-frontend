@@ -8,7 +8,19 @@
       og-locale="de"
       url="https://kulturfinder.sh"
     />
-    <ks-header :back-target="backRoute">
+    <ks-header>
+      <template #center>
+        <b-nav-item router-link :to="`/${$route.params.locale}/`">
+          <img
+            height="40px"
+            class="logo p-0"
+            src="@/assets/images/logos/kf_logo.png"
+            :alt="$t('navbar.logo')"
+            role="img"
+            data-cy="kulturfinderLogo"
+          >
+        </b-nav-item>
+      </template>
       <template class="d-flex" #right>
         <b-button pill class="labeled-button mr-1" @click="onFavoriteClick">
           <icon-base
@@ -18,6 +30,7 @@
             height="18"
             class="m-auto"
             role="img"
+            data-cy="favoriteButton"
           >
             <icon-favorite :filled="institution.isFavorite"/>
           </icon-base>
@@ -27,6 +40,7 @@
           :url="sharingUrl"
           :title="sharingTitle"
           :text="$t('details.shareSubject')"
+          data-cy="shareButton"
         />
       </template>
     </ks-header>
@@ -39,11 +53,12 @@
           :images="institution.images"
           :audio="institution.audio"
           :video="institution.video"
+          data-cy="imageCarousel"
         />
         <template v-if="!loading">
           <b-container class="w-md-90 px-4 pt-4 pt-sm-5 pb-3">
             <!-- Headline -->
-            <div class="headline text-primary">
+            <div class="headline text-primary" data-cy="institutionHeadline">
               <h2 class="mb-1">{{ institution.name }}</h2>
               <p id="claim" v-if="institution.claim">
                 {{ institution.claim }}
@@ -51,7 +66,7 @@
             </div>
             <b-row>
               <!-- Description -->
-              <b-col>
+              <b-col data-cy="institutionDescription">
                 <p class="m-0" v-if="institution.description">{{ institution.description }}</p>
                 <p class="m-0 mt-3" v-else>{{ $t('details.noDescription') }}</p>
               </b-col>
@@ -62,6 +77,7 @@
                 cols="12"
                 md="5"
                 class="d-none d-md-block"
+                data-cy="museumsCard"
               >
                 <hr class="mb-4 mt-5 d-md-none">
                 <museums-card class="mt-5 mt-md-0"/>
@@ -123,10 +139,10 @@
           <hr v-else class="my-4">
           <b-container class="px-4">
             <!-- Navigation -->
-            <section id="navigation" class="py-3">
+            <section id="navigation" class="py-3" data-cy="navigation">
               <div class="row p-0 m-0 justify-content-between">
                 <!-- Show on Map -->
-                <info-detail :img-alt="$t('common.map')">
+                <info-detail :img-alt="$t('common.map')" data-cy="showOnMap">
                   <template #icon>
                     <icon-pin/>
                   </template>
@@ -137,7 +153,7 @@
                   </template>
                 </info-detail>
                 <!-- Drive-To -->
-                <info-detail :img-alt="$t('common.route')" v-if="institution.address">
+                <info-detail :img-alt="$t('common.route')" v-if="institution.address" data-cy="driveToDestination">
                   <template #icon>
                     <icon-navigation/>
                   </template>
@@ -156,12 +172,13 @@
                   :start-pos="userPosition"
                   :end-pos="institution.position"
                   :end-name="institution.name"
+                  data-cy="nahSH"
                 />
               </div>
             </section>
             <hr class="mb-4">
             <!-- Contact -->
-            <section id="contact" class="py-3">
+            <section id="contact" class="py-3" data-cy="contact">
               <h3 class="mb-3">{{ $t('common.contact') }}</h3>
               <div class="row m-0 p-0 justify-content-between">
                 <!-- Address -->
@@ -231,6 +248,7 @@
             <section
               id="opening-times"
               class="py-3"
+              data-cy="openingTimes"
             >
               <h3>{{ $t('details.openingHours') }}</h3>
               <p v-if="!institution.openingTimes">
@@ -440,7 +458,7 @@
               class="py-3"
             >
               <h3>{{ $t('common.tags') }}</h3>
-              <div v-if="institution.tags" class="chip-container pt-2">
+              <div v-if="institution.tags" class="chip-container pt-2" data-cy="institutionTags">
                 <router-link
                   v-for="(tag, index) in institution.tags"
                   :key="index"
@@ -453,6 +471,7 @@
               </div>
             </section>
             <hr class="mt-4 mb-2">
+            <!-- Footer -->
             <section
               id="footer"
               class="w-100 m-0 pb-3 text-center"
@@ -461,12 +480,12 @@
                 variant="link"
                 v-b-modal.feedback-modal
                 class="footer-text px-2 text-decoration-none"
+                data-cy="feedbackButton"
               >
                 {{ $t("details.feedback") }}
               </b-button>
               <feedback-modal :institution-name="institution.name"/>
-              <!-- To Do: Fix Route to Impressum -->
-              <router-link :to="`/${$route.params.locale}/institutions/${listType}/details/${actId}/about`" class="footer-text px-2 ">
+              <router-link :to="`/${$route.params.locale}/institutions/${listType}/details/${actId}/about`" class="footer-text px-2" data-cy="impressum">
                 {{ $t("navbar.legalNotice") }}
               </router-link>
             </section>
@@ -520,11 +539,6 @@ export default {
     ...mapGetters({
       userPosition: 'userPosition/getPosition'
     }),
-    backRoute() {
-      return !this.$route.params.listType
-        ? `/${this.$route.params.locale}/institutions/${this.listType}`
-        : ''
-    },
     sharingUrl() {
       let getUrl = window.location
       let baseUrl = getUrl.protocol + '//' + getUrl.host
@@ -563,13 +577,15 @@ export default {
         lt(this.detectRTC.osVersion, '13.4.1')
     },
     livingImagesEnabled() {
-      return detectRTC.isWebRTCSupported && detectRTC.isMobileDevice
+      // eslint-disable-next-line no-mixed-operators
+      return detectRTC.isWebRTCSupported && detectRTC.isMobileDevice || screen.width < 1000
     },
     chipRouteBase() {
       return this.listType === 'dashboard'
         ? `/${this.$route.params.locale}/institutions/map`
         : `/${this.$route.params.locale}/institutions/${this.listType}`
     }
+
   },
   methods: {
     onFavoriteClick: async function () {
@@ -579,6 +595,7 @@ export default {
       // (sunday = 0, monday = 1 ... saturday = 6)
       return new Date().getDay() === day
     }
+
   },
   filters: {
     time(value, locale) {

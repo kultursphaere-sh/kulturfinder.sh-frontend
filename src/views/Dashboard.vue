@@ -10,16 +10,18 @@
     />
     <ks-header :shadow="false" :toggle-bar-open="searchbarOpen">
       <template #left>
-        <locale-changer/>
+        <locale-changer data-cy="localeChanger"/>
       </template>
+      <!-- Kulturfinder Logo -->
       <template #center>
         <b-nav-item router-link :to="`/${$route.params.locale}/`">
           <img
-            height="54px"
+            height="56px"
             class="logo p-0"
             src="@/assets/images/logos/kf_logo.png"
             :alt="$t('navbar.logo')"
             role="img"
+            data-cy="mainLogo"
           >
         </b-nav-item>
       </template>
@@ -29,6 +31,7 @@
           class="align-items-center border-0 p-2 mr-1"
           @click="onToggleSearchbar"
           role="button"
+          data-cy="searchBarButton"
         >
           <icon-base
             :title="searchbarOpen ? $t('common.close') : $t('navbar.search')"
@@ -54,6 +57,7 @@
             :searchbar-open="searchbarOpen"
             :show-to-list-button="true"
             @enter="searchBarEnterHandler"
+            data-cy="searchBarInput"
           />
           <div
             id="search-preview"
@@ -62,6 +66,7 @@
               'has-results': $store.state.filters.searchQuery && filteredInstitutions.length,
               'show-more-results-button': $store.state.filters.searchQuery && filteredInstitutions.length > first5FilteredInstitutions.length
             }"
+            data-cy="searchPreview"
           >
             <ks-list :change-title="false" :institutions="first5FilteredInstitutions"
                      list-type="institutions/dashboard"
@@ -89,11 +94,13 @@
               :route="`/${$route.params.locale}/institutions/map?isFavorite=false`"
               :text="$t('common.map')"
               :image-source="require(`@/assets/images/icons/cards/map.svg`)"
+              data-cy="mapCard"
             />
             <ks-card
               :route="`/${$route.params.locale}/institutions/list?isFavorite=false`"
               :text="$t('common.list')"
               :image-source="require(`@/assets/images/icons/cards/list.svg`)"
+              data-cy="listCard"
             />
           </b-row>
           <b-row class="justify-content-center">
@@ -102,12 +109,14 @@
               :text="$t('common.favorites')"
               :image-source="require(`@/assets/images/icons/cards/favorites.svg`)"
               :small="true"
+              data-cy="favoritesCard"
             />
             <ks-card
               :route="`/${$route.params.locale}/institutions/map/filters`"
               :text="$t('common.filters')"
               :image-source="require(`@/assets/images/icons/cards/filter.svg`)"
               :small="true"
+              data-cy="filtersCard"
             />
           </b-row>
           <b-row class="justify-content-center">
@@ -116,13 +125,15 @@
               :text="$t('dashboard.living-images')"
               :image-source="require(`@/assets/images/icons/cards/livingImages.svg`)"
               :small="true"
+              data-cy="livingImagesCard"
             />
             <ks-card
               v-if="museumsCardEnabled"
-              :route="`/${$route.params.locale}/institutions/map/museumscard`"
-              :image-source="require(`@/assets/images/logos/museumscardLogo-blau.png`)"
+              :route="`/${$route.params.locale}/museumscard`"
+              :image-source="require(`@/assets/images/logos/museumscard_logo2023_blue.png`)"
               :small="true"
               :museumscard-small="true"
+              data-cy="museumsCardKachel"
             />
             <ks-card
               v-else
@@ -130,6 +141,7 @@
               :text="$t('dashboard.videoclips')"
               :image-source="require(`@/assets/images/icons/cards/videos.svg`)"
               :small="true"
+              data-cy="videoClipsCard"
             />
             <!-- SCHIETWETTER DASHBOARD-BUTTON
                 <ks-card
@@ -161,6 +173,7 @@
             variant="link"
             v-b-modal.sign-language-modal
             class="footer-text px-2 pt-0 pb-3 text-decoration-none"
+            data-cy="signLanguage"
           >
             <icon-base
               width="18"
@@ -175,6 +188,7 @@
           <router-link
             :to="`/${$route.params.locale}/about`"
             class="footer-text px-2 pt-0 pb-3"
+            data-cy="impressum"
           >
             <icon-base
               width="18"

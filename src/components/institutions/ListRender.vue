@@ -18,13 +18,15 @@
           height="18"
           class="m-auto"
           role="img"
+          data-cy="favoriteButton"
         >
           <icon-favorite :filled="institution.isFavorite"/>
         </icon-base>
       </b-button>
       <router-link
-        :to="`${currentPath}/details/${institution.id}`"
+        :to="`${currentPath}/details/${institution.name}`"
         class="li-container"
+        data-cy="institutionsList"
       >
         <div class="thumbnail-container">
           <img
@@ -82,6 +84,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'ListRender',
   data() {
@@ -181,8 +184,6 @@ export default {
 }
 .list-favorite-icon{
   position: absolute;
-  top: 0px;
-  left: 0px;
   z-index: 100;
   width: 45px;
 }

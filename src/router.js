@@ -74,6 +74,15 @@ const router = new Router({
           }
         },
         {
+          path: 'institutions/:listType/museumscard',
+          name: 'museumscard',
+          component: () => import('./views/MuseumsCard.vue'),
+          props: true,
+          meta: {
+            title: 'MuseumsCard'
+          }
+        },
+        {
           path: 'institutions',
           name: 'institutions',
           component: () => import('./views/Institutions.vue'),
@@ -109,15 +118,6 @@ const router = new Router({
           props: true,
           meta: {
             title: 'Filter'
-          }
-        },
-        {
-          path: 'institutions/:listType/museumscard',
-          name: 'museumscard',
-          component: () => import('./views/MuseumsCard.vue'),
-          props: true,
-          meta: {
-            title: 'MuseumsCard'
           }
         },
         {

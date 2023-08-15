@@ -15,6 +15,7 @@
         height="103px"
         class="museumscard-logo alert-success"
         alt="Museumscard"
+        data-cy="MuseumsCardLogo"
       >
     </b-row>
     <b-row>

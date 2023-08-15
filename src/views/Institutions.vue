@@ -15,6 +15,7 @@
       }"
       :toggle-bar-open="searchbarOpen"
     >
+      <!-- Tab containers to toggle between Map and List -->
       <template #center>
         <div class="tab-container d-flex justify-content-center align-items-center align-self-center">
           <b-button
@@ -34,6 +35,7 @@
         </div>
       </template>
       <template #right>
+        <!-- Searchbar Button-->
         <b-button
           pill
           class="align-items-center border-0"
@@ -50,6 +52,15 @@
             <icon-search v-else :alt="$t('navbar.search')"/>
           </icon-base>
         </b-button>
+        <!-- Home Button -->
+        <b-nav-item router-link :to="'/${$route.params.locale}/'">
+          <img
+            alt="HomeButton"
+            height="20px"
+            src="@/assets/images/icons/cards/HomeFull1.svg"
+            class="homeButton"
+          >
+        </b-nav-item>
       </template>
       <template #toggle-bar>
         <div
@@ -80,6 +91,7 @@
         id="no-results-container"
         class="p-3 text-center"
         v-if="institutions.length === 0"
+        data-cy="noResultsContainer"
       >
         <span v-if="isFavorite">{{ $t("favorites.noFavorites") }}</span>
         <span v-else>{{ $t("navbar.noResults") }}</span>
@@ -93,9 +105,11 @@
         />
       </keep-alive>
 
+      <!-- Filter Button -->
       <b-button
         v-if="!isFavorite"
         id="filter-btn"
+        data-cy="filterButton"
         :class="[isFilterActive
           ? 'bg-primary text-white filter-btn-active'
           : 'bg-white text-primary filter-btn-passive']"

@@ -8,7 +8,8 @@ module.exports = {
     'plugin:vue/essential',
     'plugin:vue/strongly-recommended',
     '@vue/standard',
-    'plugin:vue-i18n/recommended'
+    'plugin:vue-i18n/recommended',
+    "plugin:cypress/recommended"
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'off',

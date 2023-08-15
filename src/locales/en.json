@@ -58,7 +58,7 @@
     "noGPS": "GPS benefits"
   },
   "about": {
-    "description": "kultursphäre.sh is a project by the media department of Kiel University of Applied Sciences. The project is funded by the Ministry of Education, Science, and Culture of the state of Schleswig-Holstein. In cooperation with digiCULT and the Schleswig-Holstein State Library.",
+    "description": "kultursphäre.sh is a project by the media department of Kiel University of Applied Sciences. The project is funded by the Ministry of Education, Training, Science, Research and Culture of the state of Schleswig-Holstein. In cooperation with digiCULT and the Schleswig-Holstein State Library.",
     "leadingLegal": "Management & legal notice",
     "address0": "Prof Dr Tobias Hochscherf",
     "address1": "FH Kiel | Media Department",
@@ -249,7 +249,7 @@
     "feedbackWrongOpeningHoursHeadline": "Wrong opening hours?",
     "feedbackWrongOpeningHoursText": "Despite taking the utmost care, we cannot guarantee the accuracy of the opening hours. Especially on public holidays, they can vary, or they may change several times a year depending on the season. We apologise for any inconvenience this may cause and would be grateful if you could inform us of any mistakes we have made. Thank you!",
     "museumscard": {
-      "title": "MuseumsCard 2022",
+      "title": "MuseumsCard 2023",
       "text1": "Free admission",
       "text2": "for everyone under 18.",
       "url": "www.meine-museumscard.de"
@@ -268,10 +268,12 @@
     "all": "(all)"
   },
   "museumscard": {
-    "description": "The MuseumsCard is valid for all children and young people under 18 and youth leaders with Juleica. The card gives free admission to over 100 museums in Schleswig-Holstein and Denmark every summer.",
-    "info": "The MuseumsCard can be ordered online, printed out at www.meine-museumscard.de or used digitally here in the kulturfinder.sh.",
-    "description2": "The MuseumsCard is an initiative of the Sparkassen in Schleswig-Holstein, the Ministry of Education, Science and Culture and the Landesjugendring in cooperation with the Museum Association of Schleswig-Holstein and Hamburg and NAH.SH - the local public transport in Schleswig-Holstein.",
-    "tickets": "Ticket"
+    "description": "From 1 July to 12 November you have free admission to over 130 museums in Schleswig-Holstein! This applies to all under 18s and holders of a Juleica.",
+    "nahverkehr": "On 19 and 26 October, your MuseumsCard is valid as a ticket (for anyone under 18 or with a Juleica) on all local trains, 2nd class, in Schleswig-Holstein as well as Hamburg Altona and Hamburg Hbf and on scheduled buses in Schleswig-Holstein.",
+    "info": "The MuseumsCard can be ordered online, printed out at www.meine-museumscard.de or used digitally here in kulturfinder.sh.",
+    "description2": "The MuseumsCard is an initiative of the Ministry of Education, Science, Research and Culture of the State of Schleswig-Holstein and the Savings Banks and Giro Association of Schleswig-Holstein in cooperation with the Landesjugendring Schleswig-Holstein and the Museumsverband Schleswig-Holstein und Hamburg. Another cooperation partner is Nahverkehr Schleswig-Holstein.",
+    "tickets": "Ticket",
+    "website": "Website"
   },
   "list": {
     "noClaim": "",

@@ -3,6 +3,7 @@
     id="no-gps-bar"
     class="py-2"
     v-b-modal.no-gps-modal
+    data-cy="noGPSBar"
   >
     <div id="no-gps-bar-wrapper">
       <div id="no-gps-center-box">
@@ -20,7 +21,7 @@
           {{ $t("noGPS.enableGPS") }}
         </div>
       </div>
-      
+
       <b-button
         id="no-gps-close-button"
         pill

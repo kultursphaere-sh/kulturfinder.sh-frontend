@@ -12,6 +12,7 @@
     :title="$t('navbar.noGPS')"
     ref="no-gps-modal-ref"
     scrollable
+    data-cy="noGPSModal"
   >
     <template v-slot:modal-header class="gps-info">
       <b-row class="gps-info w-100 pt-0 d-flex pl-3 mt-0">
