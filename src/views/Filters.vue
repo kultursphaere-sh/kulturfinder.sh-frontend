@@ -10,11 +10,13 @@
     />
     <ks-header :header-title="$t('common.filters')">
       <template #right>
+        <!-- Reset Button -->
         <b-button
           id="reset-button"
           class="labeled-button"
           pill
           :to="`/${$route.params.locale}/institutions/${listType}/filters?tags=`"
+          data-cy="resetButton"
         >
           <icon-base
             :title="$t('filter.resetButtonLabel')"
@@ -27,23 +29,35 @@
           </icon-base>
           <label id="reset-label" class="labeled-button-label">{{ $t("filter.resetButtonLabel") }}</label>
         </b-button>
+        <!-- Home Button -->
+        <b-nav-item router-link :to="'/${$route.params.locale}/'">
+          <img
+            alt="HomeButton"
+            height="20px"
+            src="@/assets/images/icons/cards/HomeFull1.svg"
+            class="homeButton"
+            data-cy="homeButton"
+          >
+        </b-nav-item>
       </template>
     </ks-header>
 
     <div id="main-container" v-scroll-lock="true">
       <div id="main-content">
         <b-container class="px-4 px-md-5">
-          <p id="results" class="text-center py-4 m-0">
+          <p id="results" class="text-center py-4 m-0" data-cy="results">
             {{ $t('filter.resultCount', { count: resultCount }) }}
           </p>
+          <!-- Categories -->
           <div class="control-group">
             <b-form-checkbox
               aria-describedby="filter-categories"
               aria-controls="filter-categories"
               v-model="isToggleAllCategories"
               @change="toggleAll"
+              data-cy="allCategoriesCheckbox"
             >
-              <legend id="categories-label">
+              <legend id="categories-label" data-cy="categoriesLabel">
                 <h2 class="mr-1 ml-md-3 text-dark">
                   {{ $t('common.categories') }}
                   <span>{{ $t('filter.all') }}</span>
@@ -51,7 +65,7 @@
               </legend>
             </b-form-checkbox>
             <hr>
-            <b-form-group id="categories-group" aria-labeledby="categories-label">
+            <b-form-group id="categories-group" aria-labeledby="categories-label" data-cy="categoriesGroup">
               <b-form-checkbox-group
                 id="filter-categories"
                 v-model="activeCategories"
@@ -59,12 +73,14 @@
                 name="categories"
                 class="control-group"
                 stacked
+                data-cy="filterCategories"
               />
             </b-form-group>
           </div>
           <hr class="mt-5">
           <hr class="mb-5">
-          <legend id="tags-label">
+          <!-- Tags -->
+          <legend id="tags-label" data-cy="tagsLabel">
             <h2 class="mt-4 mb-3 mx-md-3 text-dark">{{ $t('common.tags') }}</h2>
           </legend>
           <div class="mx-md-3">
@@ -75,6 +91,7 @@
                 name="tags"
                 class="checkbox-pill text-primary"
                 stacked
+                data-cy="filterTags"
               />
             </b-form-group>
           </div>
@@ -85,6 +102,7 @@
               size="lg"
               :to="{ name: listType, query: filter, params: { listType, locale: $route.params.locale } }"
               :disabled="!resultCount"
+              data-cy="resultsButton"
             >
               {{ resultCount
                 ? $t('filter.showResultsButtonLabelCount', { count: resultCount })
@@ -157,6 +175,10 @@ export default {
 </script>
 
 <style lang="scss">
+.homeButton {
+  padding-right: 5px;
+}
+
 .control-group .custom-control.custom-checkbox {
   padding-left: 0;
   padding-right: 1.5rem

@@ -6,6 +6,7 @@
     hide-footer
     id="sign-language-modal"
     :title="$t('dashboard.signLanguageModal.title')"
+    data-cy="signLanguageModal"
   >
     <video-player :fluid="true" :video="video"/>
   </b-modal>

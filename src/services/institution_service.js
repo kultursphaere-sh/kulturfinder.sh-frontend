@@ -12,7 +12,8 @@ const LivingImagesIds = [
   'act001621', // Mediendom
   'act0002152', // Bunker-D
   'act001610', // Computermuseum
-  'act001651' // Weihnachtskarte-Storm-2021
+  'act001651', // Weihnachtskarte-Storm-2021
+  'act0002598' // Focke-Museum
 ]
 
 function posToPosition(pos) {

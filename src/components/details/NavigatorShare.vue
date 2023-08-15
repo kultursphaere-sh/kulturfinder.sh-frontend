@@ -15,7 +15,7 @@
       >
         <icon-share/>
       </icon-base>
-      <label class="labeled-button-label">{{ $t("details.share") }}</label>
+      <label class="labeled-button-label" data-cy="shareLabel">{{ $t("details.share") }}</label>
     </b-button>
     <b-modal
       ref="fallback-modal"
@@ -24,12 +24,14 @@
       centered
       id="fallback-modal"
       :title="$t('details.share')"
+      data-cy="socialPopUp"
     >
       <b-button class="fallback-social-button">
         <facebook
           :url="this.url"
           :title="$t('details.shareSubject')"
           scale="2"
+          data-cy="facebookSocial"
         />
       </b-button>
       <b-button class="fallback-social-button">
@@ -37,6 +39,7 @@
           :url="this.url"
           :title="$t('details.shareSubject')"
           scale="2"
+          data-cy="twitterSocial"
         />
       </b-button>
       <b-button class="fallback-social-button">
@@ -44,6 +47,7 @@
           :url="this.url"
           :title="$t('details.shareSubject')"
           scale="2"
+          data-cy="telegramSocial"
         />
       </b-button>
       <b-button class="fallback-social-button">
@@ -51,6 +55,7 @@
           :url="this.url"
           :title="$t('details.shareSubject')"
           scale="2"
+          data-cy="whatsappSocial"
         />
       </b-button>
       <b-button class="fallback-social-button">
@@ -58,6 +63,7 @@
           :url="this.url"
           :subject="$t('details.shareSubject')"
           scale="2"
+          data-cy="emailSocial"
         />
       </b-button>
     </b-modal>

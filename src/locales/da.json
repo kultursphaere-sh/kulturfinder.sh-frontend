@@ -58,7 +58,7 @@
     "noGPS": "GPS fordele"
   },
   "about": {
-    "description": "kultursphäre.sh er et projekt hos Institut for Media på Fachhochschule Kiel. Projektet støttes af Ministeriet for Uddannelse, Forskning og Kultur i Slesvig-Holstén – i samarbejde med digiCULT og det Slesvig-Holsténske Delstatsbibliotek.",
+    "description": "kultursphäre.sh er et projekt hos Institut for Media på Fachhochschule Kiel. Projektet støttes af Ministeriet for uddannelse, videnskab, forskning og kultur i Slesvig-Holstén – i samarbejde med digiCULT og det Slesvig-Holsténske Delstatsbibliotek.",
     "leadingLegal": "Ledelse & kolofon",
     "address0": "Prof. Dr. Tobias Hochscherf",
     "address1": "FH Kiel | Fachbereich Medien",
@@ -249,7 +249,7 @@
     "feedbackWrongOpeningHoursHeadline": "Åbningstider forkerte?",
     "feedbackWrongOpeningHoursText": "Trods max. omhu kan vi desværre ikke give nogen garanti for åbningstiders rigtighed og fuldstændighed. Især på helligdage kan tiderne være anderledes – eller de ændres alt efter sæson flere gange i årets løb. Vi beklager, hvis du/i skulle være kommet ud for ulemper i den forbindelse, og det ville i givet fald glæde os at modtage en tilbagemelding om fejlen. På forhånd mange tak!",
     "museumscard": {
-      "title": "MuseumsCard 2022",
+      "title": "MuseumsCard 2023",
       "text1": "Free entrance",
       "text2": "for everybody under 18.",
       "url": "www.meine-museumscard.de"
@@ -268,10 +268,12 @@
     "all": "(alle)"
   },
   "museumscard": {
-    "description": "MuseumsCard er gyldigt for alle børn og unge under 18 år og ungdomsledere med et Juleica. Kortet giver hver sommer gratis adgang til over 100 museer i Slesvig-Holsten og Danmark.",
-    "info": "MuseumsCard kan bestilles online, printes ud på www.meine-museumscard.de eller bruges digitalt her på kulturfinder.sh.",
-    "description2": "MuseumsCard er et initiativ fra de slesvig-holstenske sparekasser, ministeriet for uddannelse, videnskab og kultur og Landesjugendringen i samarbejde med museumsforeningen i Slesvig-Holsten og Hamborg og NAH.SH - den lokale kollektive transport i Slesvig-Holsten.",
-    "tickets": "Billet"
+    "description": "Fra 1. juli til 12. november har du gratis adgang til over 130 museer i Slesvig-Holsten! Det gælder for alle under 18 år og indehavere af en Juleica.",
+    "nahverkehr": "Den 19. og 26. oktober gælder dit MuseumsCard som billet (for alle under 18 år eller med en Juleica) i alle lokaltog på 2. klasse i Slesvig-Holsten samt til Hamburg Altona eller Hamburg Hbf og i rutebusser i Slesvig-Holsten.",
+    "info": "Museumskortet kan bestilles online, printes ud på www.meine-museumscard.de eller bruges digitalt her på kulturfinder.sh.",
+    "description2": "MuseumsCard er et initiativ fra Ministeriet for Uddannelse, Videnskab, Forskning og Kultur i delstaten Slesvig-Holsten og Sparekasse- og Giroforeningen i Slesvig-Holsten i samarbejde med Landesjugendring Schleswig-Holstein og Museumsverband Schleswig-Holstein und Hamburg. En anden samarbejdspartner er Nahverkehr Schleswig-Holstein.",
+    "tickets": "Billet",
+    "website": "Webside"
   },
   "list": {
     "noClaim": "",

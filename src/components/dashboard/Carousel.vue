@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard-carousel bg-white">
+  <div class="dashboard-carousel bg-white" data-cy="intitutionCarousel">
     <vue-slick-carousel
       v-bind="settings"
       class="carousel-slick"
@@ -21,7 +21,7 @@
           :src="slide.imageList.preview"
           :alt="slide.name"
           :title="`Weitere Infos zu: ${slide.name}`"
-          :data-slide-id="slide.id"
+          :data-slide-id="slide.name"
           role="img"
           loading="lazy"
           draggable="false"
@@ -52,7 +52,7 @@
 
     <b-container fluid class="pt-2 pb-3 text-center">
       <router-link
-        :to="`/${$route.params.locale}/institutions/dashboard/details/${currentSlide ? currentSlide.id : null}`"
+        :to="`/${$route.params.locale}/institutions/dashboard/details/${currentSlide ? currentSlide.name : null}`"
         id="slider-title"
       >
         {{ currentSlide ? currentSlide.name : nullValue }}

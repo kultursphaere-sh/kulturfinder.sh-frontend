@@ -8,7 +8,19 @@
       og-locale="de"
       url="https://kulturfinder.sh"
     />
-    <ks-header :header-title="$t('navbar.aboutUs')"/>
+    <ks-header :header-title="$t('navbar.aboutUs')">
+      <template #right>
+        <!-- Home Button -->
+        <b-nav-item router-link :to="'/${$route.params.locale}/'">
+          <img
+            alt="HomeButton"
+            height="20px"
+            src="@/assets/images/icons/cards/HomeFull1.svg"
+            class="homeButton"
+          >
+        </b-nav-item>
+      </template>
+    </ks-header>
 
     <div id="main-container" v-scroll-lock="true">
       <div id="main-content">

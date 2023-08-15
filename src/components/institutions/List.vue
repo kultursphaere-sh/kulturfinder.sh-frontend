@@ -137,8 +137,6 @@ export default {
 }
 .list-favorite-icon{
   position: absolute;
-  top: 0px;
-  left: 0px;
   z-index: 100;
   width: 45px;
 }

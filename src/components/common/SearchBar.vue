@@ -1,5 +1,5 @@
 <template>
-  <div class="search-bar">
+  <div class="search-bar" data-cy="searchBarInput">
     <div class="search-input w-100">
       <b-nav-form @submit.prevent>
         <b-input-group

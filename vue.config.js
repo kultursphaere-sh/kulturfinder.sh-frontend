@@ -63,8 +63,8 @@ module.exports = {
     msTileColor: '#ffffff',
     appleMobileWebAppStatusBarStyle: 'white',
     iconPaths: {
-      favicon32: 'favicon.svg',
-      favicon16: 'favicon.svg',
+      favicon32: 'favicon.png',
+      favicon16: 'favicon.png',
       appleTouchIcon: 'img/icons/apple-icon-152x152.png',
       maskIcon: 'img/icons/app-icon-152x152.png',
       msTileImage: 'img/icons/app-icon-152x152.png'
