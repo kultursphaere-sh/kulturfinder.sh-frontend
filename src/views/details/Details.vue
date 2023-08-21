@@ -245,11 +245,10 @@
               <hr class="mb-4 mt-5">
             </section>
             <!-- Event Calender -->
-            <!-- If institution has Events - v-if="hasEventLink"-->
             <section
               id="event-calender"
               class="py-3"
-              v-if="institution.address"
+              v-if="institution.eventCalender"
             >
               <h3>{{ $t('details.eventCalender') }}</h3>
               <b-container>
@@ -258,7 +257,7 @@
                     <icon-calender/>
                   </template>
                   <template #text>
-                    <a :href="institution.website.identifier" target="_blank">
+                    <a :href="institution.eventCalender.identifier" target="_blank">
                       {{ $t('details.showEvents') }}
                     </a>
                   </template>
