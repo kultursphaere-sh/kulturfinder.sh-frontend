@@ -20,7 +20,7 @@
     "detectrtc": "^1.4.1",
     "focus-visible": "^5.2.0",
     "jquery": "^3.6.3",
-    "leaflet": "^1.9.2",
+    "leaflet": "^1.9.4",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
