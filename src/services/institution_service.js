@@ -198,6 +198,10 @@ class InstitutionService {
       institution.website = institution.webResource.find(item => item.source_id === 'webpage')
       if (!institution.website) institution.website = false
 
+      // get event calender (identifier: webResource.source_id = c00297)
+      institution.eventCalender = institution.webResource.find(item => item.source_id === 'c00297')
+      if (!institution.eventCalender) institution.eventCalender = false
+
       // get social media (identifier: webResource.source_id = socialMedia)
       const socialMedia = institution.webResource.filter(item => item.source_id === 'socialMedia' && item.label)
       if (socialMedia.length > 0) {
