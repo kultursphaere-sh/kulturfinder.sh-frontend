@@ -212,6 +212,8 @@
     "friday": "Fredag",
     "saturday": "Lørdag",
     "sunday": "Søndag",
+    "currentlyOpened": "Åbent i øjeblikket",
+    "currentlyClosed": "I øjeblikket lukket",
     "closed": "Lukket",
     "closedHolidays": "Lukket på følgende helligdage:",
     "coronaWarningText": "Currently, there might be different opening hours due to the coronavirus. Please also check the institution's website.",
