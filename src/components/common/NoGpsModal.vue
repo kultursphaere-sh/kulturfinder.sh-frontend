@@ -109,6 +109,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 #no-gps-modal .gps-info{
   border-bottom:0;
   background-color: $yellow !important;

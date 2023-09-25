@@ -175,6 +175,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 .homeButton {
   padding-right: 5px;
 }
@@ -196,7 +198,7 @@ export default {
 }
 #filter-categories {
   .custom-control-label {
-    padding: 0.5rem 0rem 0.5rem 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
   }
 }
 .control-group .custom-control-label::before,
@@ -245,6 +247,8 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
+
 h2 span {
   font-weight: 300;
   font-size: 1.1rem;

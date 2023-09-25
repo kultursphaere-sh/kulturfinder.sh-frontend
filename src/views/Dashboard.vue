@@ -284,6 +284,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
+
 #main-content {
   background-color: $gray;
 }
@@ -302,7 +304,7 @@ export default {
 
 #search-preview {
   display: none;
-  box-shadow: 0px 11px 10px #00000066;
+  box-shadow: 0 11px 10px #00000066;
   left: 0;
   right: 0;
   padding: 4px;

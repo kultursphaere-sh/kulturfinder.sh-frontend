@@ -683,6 +683,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
+
 input[type=submit] {
   font-size: inherit;
 }

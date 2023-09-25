@@ -15,7 +15,7 @@ import i18n from './i18n'
 import VScrollLock from 'v-scroll-lock'
 import vueHeadful from 'vue-headful'
 import 'focus-visible/dist/focus-visible.min'
- 
+
 Vue.component('vue-headful', vueHeadful)
 
 Vue.config.productionTip = false

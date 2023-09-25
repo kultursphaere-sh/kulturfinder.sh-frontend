@@ -81,6 +81,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 
 #search-preview {
   display: flex; // Set flex here and not as bootstrap class to enable v-show display toggling

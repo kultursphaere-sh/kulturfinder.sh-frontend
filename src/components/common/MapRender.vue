@@ -254,6 +254,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
+@import "~leaflet/dist/leaflet.css";
+@import "~leaflet.markercluster/dist/MarkerCluster.css";
+@import "~leaflet.markercluster/dist/MarkerCluster.Default.css";
+@import "~leaflet/dist/leaflet.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "@/styles/variables.scss";
+
 .map {
   height:100%;
 }
@@ -360,15 +368,9 @@ export default {
 }
 </style>
 
-<style scoped>
-  @import "~leaflet/dist/leaflet.css";
-  @import "~leaflet.markercluster/dist/MarkerCluster.css";
-  @import "~leaflet.markercluster/dist/MarkerCluster.Default.css";
-  @import "~leaflet/dist/leaflet.css";
-  @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-</style>
-
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 #map {
   z-index: 0;
 

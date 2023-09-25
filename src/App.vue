@@ -120,6 +120,7 @@ export default {
 // Import Bootstrap and Bootstrap-Vue source SCSS files
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
+@import "@/styles/variables.scss";
 
 html, body {
   height: 100%;
