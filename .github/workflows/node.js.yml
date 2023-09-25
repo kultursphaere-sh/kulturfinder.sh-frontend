@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: 18.x
           cache: 'npm'
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npm run lint
       - run: npm audit --omit=dev
