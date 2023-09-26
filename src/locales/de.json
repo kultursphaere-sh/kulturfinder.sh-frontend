@@ -213,6 +213,7 @@
     "sunday": "Sonntag",
     "currentlyOpened": "Derzeit Geöffnet",
     "opens": "Öffnet",
+    "at": "um",
     "closes": "Schließt um",
     "currentlyClosed": "Derzeit Geschlossen",
     "closed": "Geschlossen",
