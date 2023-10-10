@@ -208,6 +208,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
+
 header .btn {
   padding: 4px;
 }
@@ -244,7 +246,7 @@ a.activeTab:hover {
 #filter-btn {
   width: 140px;
   height: 40px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;
   border: 1px solid $primary;
   border-radius: 7px;
   display: flex;
@@ -287,6 +289,6 @@ margin-top: -40px;
 }
 .no-gps-bar-slide-enter-to,
 .no-gps-bar-slide-leave {
-margin-top: 0px;
+margin-top: 0;
 }
 </style>

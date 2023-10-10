@@ -102,6 +102,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 header {
   z-index: 11;
   background-color: #fff !important;

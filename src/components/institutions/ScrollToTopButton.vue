@@ -56,6 +56,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
+
 .scroll-to-top-button {
   width: 40px;
   height: 40px;

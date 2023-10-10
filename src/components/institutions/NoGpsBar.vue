@@ -47,6 +47,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
+
 #no-gps-bar {
   width: 100%;
   background-color: $yellow;

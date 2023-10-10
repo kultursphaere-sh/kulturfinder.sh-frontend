@@ -77,6 +77,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 #locales-dropdown .dropdown-menu {
   min-width: 0;
   width: 52px;
