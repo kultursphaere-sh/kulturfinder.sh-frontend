@@ -33,6 +33,8 @@ the Ministry of Education, Science, and Culture of the state of Schleswig-Holste
 
 ### Project setup
 
+[How to contribute](./docs/CONTRIBUTING.md)
+
 ```
 npm install
 ```
