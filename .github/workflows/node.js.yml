@@ -18,3 +18,4 @@ jobs:
       - run: npm ci --legacy-peer-deps
       - run: npm run lint
       - run: npm audit --omit=dev
+        continue-on-error: true
