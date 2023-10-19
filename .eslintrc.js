@@ -9,11 +9,11 @@ module.exports = {
     'plugin:vue/strongly-recommended',
     '@vue/standard',
     'plugin:vue-i18n/recommended',
-    "plugin:cypress/recommended"
+    'plugin:cypress/recommended'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'off' : 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'space-before-function-paren': ['error', {
       'anonymous': 'always',
       'named': 'never',

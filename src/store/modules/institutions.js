@@ -1,4 +1,4 @@
-import { some, map, flatten, countBy, compact, orderBy, uniq } from 'lodash'
+import { compact, countBy, flatten, map, orderBy, some, uniq } from 'lodash'
 import institutionService from '@/services/institution_service'
 import { localforageFavorites } from '@/localforage'
 import geolocationUtilities from 'vuex-geolocation/dist/geolocation-utilities'
@@ -120,7 +120,7 @@ export default {
     },
     async fetchInstitutions({ dispatch, commit, rootGetters }) {
       try {
-        const institutions = await institutionService.fetchInstitutions()
+        const institutions = await institutionService.getInstitutions()
         const userPosition = rootGetters['userPosition/getPosition']
 
         commit('save', institutions)
@@ -131,15 +131,12 @@ export default {
           dispatch('sortInstitutionsByDistance', userPosition)
         }
       } catch (e) {
-        /* if (e.ok !== undefined) {
-          commit('saveTimeout', !e.ok)
-        } */
         commit('saveTimeout', true)
       }
     },
     async fetchDetails({ commit, getters }, { id, locale }) {
       try {
-        const institution = await institutionService.fetchInstitution(id, locale)
+        const institution = await institutionService.getInstitution(id, locale)
         if (institution !== undefined) {
           commit('saveDetails', institution)
           return getters.getById(institution.id)

@@ -658,7 +658,7 @@ export default {
     // get details data from vuex store
     this.loading = true
     this.institution = {}
-    this.$store.dispatch('institutions/fetchDetails', { id: this.actId, locale: this.$i18n.locale })
+    this.$store.dispatch('institutions/fetchDetails', { id: this.actId })
       .then((institution, _) => {
         if (institution) this.institution = institution
         if (institution && institution.hasDetails === false) this.$bvModal.show('no-network-modal')
