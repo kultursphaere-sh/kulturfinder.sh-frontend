@@ -1,3 +1,4 @@
+
 <template>
   <b-list-group v-show="institutions">
     <b-list-group-item
@@ -24,7 +25,7 @@
         </icon-base>
       </b-button>
       <router-link
-        :to="`${currentPath}/details/${institution.name}`"
+        :to="`/${$route.params.locale}/institutions/list/details/${institution.name}`"
         class="li-container"
         data-cy="institutionsList"
       >
