@@ -50,7 +50,7 @@ export default {
     if (!this.loading) this.loading = true
     let data = await this.$store.getters['institutions/getById'](this.actId)
     if (data === undefined) {
-      await this.$store.dispatch('institutions/fetchDetails', { id: this.actId, locale: this.$i18n.locale })
+      await this.$store.dispatch('institutions/fetchDetails', { id: this.actId })
       data = await this.$store.getters['institutions/getById'](this.actId)
     }
     this.center = data.position

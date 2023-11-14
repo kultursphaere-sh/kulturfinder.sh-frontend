@@ -27,9 +27,13 @@ Ministerium für Bildung, Wissenschaft und Kultur des Landes Schleswig-Holstein.
 kultursphäre.sh is a project by the media department of Kiel University of Applied Sciences. The project is funded by
 the Ministry of Education, Science, and Culture of the state of Schleswig-Holstein.
 
-## Development
+## Contributing
+
+[Contributor License Agreement](./docs/CONTRIBUTOR-AGREEMENT.md)
 
 ### Project setup
+
+[How to contribute](./docs/CONTRIBUTING.md)
 
 ```
 npm install

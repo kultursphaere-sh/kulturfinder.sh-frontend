@@ -58,7 +58,7 @@ export default {
     if (id && !this.id.match(actIdRegex)) {
       const res = this.$store.getters['institutions/getActIdByTitle'](id)
       if (!res) {
-        await this.$store.dispatch('institutions/fetchDetails', { id: this.id, locale: this.$i18n.locale })
+        await this.$store.dispatch('institutions/fetchDetails', { id: this.id })
           .then((institution, error) => {
             if (institution) id = institution.id
             if (institution && institution.hasDetails === false) this.$bvModal.show('no-network-modal')

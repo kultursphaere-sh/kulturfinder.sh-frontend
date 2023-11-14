@@ -244,6 +244,27 @@
               <museums-card class="mt-5 mt-md-0"/>
               <hr class="mb-4 mt-5">
             </section>
+            <!-- Event Calender -->
+            <section
+              id="event-calender"
+              class="py-3"
+              v-if="institution.eventCalender"
+            >
+              <h3>{{ $t('details.eventCalender') }}</h3>
+              <b-container>
+                <info-detail :img-alt="$t('details.eventCalender')" class="pt-3">
+                  <template #icon>
+                    <icon-calender/>
+                  </template>
+                  <template #text>
+                    <a :href="institution.eventCalender.identifier" target="_blank">
+                      {{ $t('details.showEvents') }}
+                    </a>
+                  </template>
+                </info-detail>
+              </b-container>
+              <hr class="mb-4 mt-4">
+            </section>
             <!-- Opening Times -->
             <section
               id="opening-times"
@@ -536,6 +557,7 @@ import { mapGetters, mapState } from 'vuex'
 import moment from 'moment'
 import detectRTC from 'detectrtc'
 import { lt } from 'semver'
+import IconCalender from '@/components/icons/IconCalender.vue'
 
 export default {
   name: 'Details',
@@ -967,6 +989,7 @@ export default {
   },
   mixins: [ScrollPosition, Navigation],
   components: {
+    IconCalender,
     KsHeader,
     KsCarousel,
     SkeletonScreen,
@@ -992,7 +1015,7 @@ export default {
     // get details data from vuex store
     this.loading = true
     this.institution = {}
-    this.$store.dispatch('institutions/fetchDetails', { id: this.actId, locale: this.$i18n.locale })
+    this.$store.dispatch('institutions/fetchDetails', { id: this.actId })
       .then((institution, _) => {
         if (institution) this.institution = institution
         if (institution && institution.hasDetails === false) this.$bvModal.show('no-network-modal')
