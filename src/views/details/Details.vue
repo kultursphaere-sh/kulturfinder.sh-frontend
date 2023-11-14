@@ -257,7 +257,7 @@
               <div v-else id="opening-hours-container">
                 <!-- Opening Status -->
                 <div v-if="institution.openingTimes.week" id="opening-status">
-                  <b-row v-if="getCurrentState">
+                  <b-row v-if="getCurrentState()">
                     <b-col cols="3">
                       <div id="opened" class="py-2 mt-4 mb-2">
                         {{ $t('details.currentlyOpened') }}
@@ -274,7 +274,7 @@
                       </div>
                     </b-col>
                     <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
-                      <p>{{ $t('details.opens') }} {{ getNextOpeningDay() }} {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }}</p>
+                      <p>{{ getCurrentState() }} {{ $t('details.opens') }} <!--{{ getNextOpeningDay() }}--> {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }}</p>
                     </b-col>
                   </b-row>
                 </div>
@@ -411,7 +411,7 @@
                      href="#"
                   >{{ $t('details.feedbackWrongOpeningHoursHeadline') }}</a>
                 </p>
-              <!--Corona Warning Banner -->
+                <!--Corona Warning Banner -->
                 <!-- <b-alert
                   show
                   variant="warning"
@@ -545,7 +545,7 @@ export default {
       loading: true,
       dataLocale: 'de',
       museumsCardEnabled: process.env.VUE_APP_MUSEUMSCARD === 'true',
-      currentDay: new Date().getDay(),
+      observedDay: new Date().getDay(),
       day: new Date().getDay()
     }
   },
@@ -576,10 +576,10 @@ export default {
     hasSocial() {
       if (!this.institution) return false
       return !!(this.institution.facebook ||
-          this.institution.twitter ||
-          this.institution.instagram ||
-          this.institution.youtube ||
-          this.institution.vimeo)
+        this.institution.twitter ||
+        this.institution.instagram ||
+        this.institution.youtube ||
+        this.institution.vimeo)
     },
     hasDigitalServices() {
       if (!this.institution.apps && !this.institution.digitalServices) return false
@@ -609,7 +609,17 @@ export default {
       return this.listType === 'dashboard'
         ? `/${this.$route.params.locale}/institutions/map`
         : `/${this.$route.params.locale}/institutions/${this.listType}`
+    }
+  },
+  methods: {
+    onFavoriteClick: async function () {
+      await this.$store.dispatch('institutions/updateIsFavorite', this.institution)
     },
+    compareDay(day) {
+      // (sunday = 0, monday = 1 ... saturday = 6)
+      return new Date().getDay() === day
+    },
+    // returns true if institution is opened and false if institution is closed
     getCurrentState() {
       // day of the week as number -> (sunday = 0, monday = 1 ... saturday = 6)
       // const currentDay = new Date().getDay()
@@ -623,129 +633,143 @@ export default {
 
       if (
         // Monday first
-        this.currentDay === 1 &&
+        this.observedDay === 1 &&
         this.institution.openingTimes.week.mon &&
         this.institution.openingTimes.week.mon.first &&
         formattedTime > this.institution.openingTimes.week.mon.first.timeStart &&
         formattedTime < this.institution.openingTimes.week.mon.first.timeEnd
       ) {
+        console.log('Mon first')
         return true
       } else if (
         // Monday second
-        this.currentDay === 2 &&
+        this.observedDay === 2 &&
         this.institution.openingTimes.week.mon &&
         this.institution.openingTimes.week.mon.second &&
         formattedTime > this.institution.openingTimes.week.mon.second.timeStart &&
         formattedTime < this.institution.openingTimes.week.mon.second.timeEnd
       ) {
+        console.log('Mon second')
         return true
       } else if (
         // Tuesday first
-        this.currentDay === 2 &&
+        this.observedDay === 2 &&
         this.institution.openingTimes.week.tue &&
         this.institution.openingTimes.week.tue.first &&
         formattedTime > this.institution.openingTimes.week.tue.first.timeStart &&
         formattedTime < this.institution.openingTimes.week.tue.first.timeEnd
       ) {
+        console.log('Tue first')
         return true
       } else if (
         // Tuesday second
-        this.currentDay === 2 &&
+        this.observedDay === 2 &&
         this.institution.openingTimes.week.tue &&
         this.institution.openingTimes.week.tue.second &&
         formattedTime > this.institution.openingTimes.week.tue.second.timeStart &&
         formattedTime < this.institution.openingTimes.week.tue.second.timeEnd
       ) {
+        console.log('Tue second')
         return true
       } else if (
         // Wednesday first
-        this.currentDay === 3 &&
+        this.observedDay === 3 &&
         this.institution.openingTimes.week.wen &&
         this.institution.openingTimes.week.wen.first &&
         formattedTime > this.institution.openingTimes.week.wen.first.timeStart &&
         formattedTime < this.institution.openingTimes.week.wen.first.timeEnd
       ) {
+        console.log('Wed first')
         return true
       } else if (
         // Wednesday second
-        this.currentDay === 3 &&
+        this.observedDay === 3 &&
         this.institution.openingTimes.week.wen &&
         this.institution.openingTimes.week.wen.second &&
         formattedTime > this.institution.openingTimes.week.wen.second.timeStart &&
         formattedTime < this.institution.openingTimes.week.wen.second.timeEnd
       ) {
+        console.log('Wed second')
         return true
       } else if (
         // Thursday first
-        this.currentDay === 4 &&
+        this.observedDay === 4 &&
         this.institution.openingTimes.week.thu &&
         this.institution.openingTimes.week.thu.first &&
         formattedTime > this.institution.openingTimes.week.thu.first.timeStart &&
         formattedTime < this.institution.openingTimes.week.thu.first.timeEnd
       ) {
+        console.log('Thu first')
         return true
       } else if (
         // Thursday second
-        this.currentDay === 4 &&
+        this.observedDay === 4 &&
         this.institution.openingTimes.week.thu &&
         this.institution.openingTimes.week.thu.second &&
         formattedTime > this.institution.openingTimes.week.thu.second.timeStart &&
         formattedTime < this.institution.openingTimes.week.thu.second.timeEnd
       ) {
+        console.log('Thu second')
         return true
       } else if (
         // Friday first
-        this.currentDay === 5 &&
+        this.observedDay === 5 &&
         this.institution.openingTimes.week.fri &&
         this.institution.openingTimes.week.fri.first &&
         formattedTime > this.institution.openingTimes.week.fri.first.timeStart &&
         formattedTime < this.institution.openingTimes.week.fri.first.timeEnd
       ) {
+        console.log('Fri first')
         return true
       } else if (
         // Friday second
-        this.currentDay === 5 &&
+        this.observedDay === 5 &&
         this.institution.openingTimes.week.fri &&
         this.institution.openingTimes.week.fri.second &&
         formattedTime > this.institution.openingTimes.week.fri.second.timeStart &&
         formattedTime < this.institution.openingTimes.week.fri.second.timeEnd
       ) {
+        console.log('Fri second')
         return true
       } else if (
         // Saturday first
-        this.currentDay === 6 &&
+        this.observedDay === 6 &&
         this.institution.openingTimes.week.sat &&
         this.institution.openingTimes.week.sat.first &&
         formattedTime > this.institution.openingTimes.week.sat.first.timeStart &&
         formattedTime < this.institution.openingTimes.week.sat.first.timeEnd
       ) {
+        console.log('Sat first')
         return true
       } else if (
         // Saturday second
-        this.currentDay === 6 &&
+        this.observedDay === 6 &&
         this.institution.openingTimes.week.sat &&
         this.institution.openingTimes.week.sat.second &&
         formattedTime > this.institution.openingTimes.week.sat.second.timeStart &&
         formattedTime < this.institution.openingTimes.week.sat.second.timeEnd
       ) {
+        console.log('Sat second')
         return true
       } else if (
         // Sunday first
-        this.currentDay === 0 &&
+        this.observedDay === 0 &&
         this.institution.openingTimes.week.sun &&
         this.institution.openingTimes.week.sun.first &&
         formattedTime > this.institution.openingTimes.week.sun.first.timeStart &&
         formattedTime < this.institution.openingTimes.week.sun.first.timeEnd
       ) {
+        console.log('Sun first')
         return true
       } else if (
         // Sunday second
-        this.currentDay === 0 &&
+        this.observedDay === 0 &&
         this.institution.openingTimes.week.sun &&
         this.institution.openingTimes.week.sun.second &&
         formattedTime > this.institution.openingTimes.week.sun.second.timeStart &&
         formattedTime < this.institution.openingTimes.week.sun.second.timeEnd
       ) {
+        console.log('Sun second')
         return true
       } else {
         return false
@@ -753,40 +777,34 @@ export default {
     },
     // return true if the current day has opening hours
     getOpenDayState() {
-      // console.log(this.currentDay)
-      if (this.currentDay === 1 && this.institution.openingTimes.week.mon !== undefined) {
-        console.log(this.currentDay)
+      const openingTimes = this.institution.openingTimes.week
+      if (this.observedDay === 1 && openingTimes.mon !== undefined) {
+        console.log(this.observedDay)
         console.log(this.institution.openingTimes.week.mon)
         return true
-      } else if (this.currentDay === 2 && this.institution.openingTimes.week.tue !== undefined) {
-        console.log(this.currentDay)
+      } else if (this.observedDay === 2 && openingTimes.tue !== undefined) {
+        console.log('Observed Day:', this.observedDay)
+        console.log('Institution Opening time', this.institution.openingTimes.week.tue)
+        console.log('Opening Time', openingTimes.tue)
         return true
-      } else if (this.currentDay === 3 && this.institution.openingTimes.week.wed !== undefined) {
-        console.log(this.currentDay)
+      } else if (this.observedDay === 3 && openingTimes.wed !== undefined) {
+        console.log(this.observedDay)
         return true
-      } else if (this.currentDay === 4 && this.institution.openingTimes.week.thu !== undefined) {
-        console.log(this.currentDay)
+      } else if (this.observedDay === 4 && openingTimes.thu !== undefined) {
+        console.log(this.observedDay)
         return true
-      } else if (this.currentDay === 5 && this.institution.openingTimes.week.fri !== undefined) {
-        console.log(this.currentDay)
+      } else if (this.observedDay === 5 && openingTimes.fri !== undefined) {
+        console.log(this.observedDay)
         return true
-      } else if (this.currentDay === 6 && this.institution.openingTimes.week.sat !== undefined) {
-        console.log(this.currentDay)
+      } else if (this.observedDay === 6 && openingTimes.sat !== undefined) {
+        console.log('b' + this.observedDay)
         return true
-      } else if (this.currentDay === 0 && this.institution.openingTimes.week.sun !== undefined) {
-        console.log(this.currentDay)
+      } else if (this.observedDay === 0 && openingTimes.sun !== undefined) {
+        console.log(this.observedDay)
         return true
       } else return false
-    }
-  },
-  methods: {
-    onFavoriteClick: async function () {
-      await this.$store.dispatch('institutions/updateIsFavorite', this.institution)
     },
-    compareDay(day) {
-      // (sunday = 0, monday = 1 ... saturday = 6)
-      return new Date().getDay() === day
-    },
+    // returns the closing time if the institution is opened
     getNextClosingTime() {
       // (sunday = 0, monday = 1 ... saturday = 6)
       const currentDay = new Date().getDay()
@@ -798,7 +816,8 @@ export default {
       const formattedCurrentTime = `T${currentTime}`
 
       // institution is opened -> return time institution will close
-      if (this.getCurrentState === true) {
+      if (this.getCurrentState() === true) {
+        console.log('Current State: ', this.getCurrentState())
         if (currentDay === 1 && formattedCurrentTime < this.institution.openingTimes.week.mon.first.timeEnd) {
           return this.institution.openingTimes.week.mon.first.timeEnd
         } else if (currentDay === 1 && formattedCurrentTime > this.institution.openingTimes.week.mon.second.timeStart) {
@@ -830,7 +849,9 @@ export default {
         }
       }
     },
+    // returns the opening time if the institution is closed
     getNextOpeningTime() {
+      console.log('this func')
       // (sunday = 0, monday = 1 ... saturday = 6)
       const currentDay = new Date().getDay()
       const currentTime = new Date().toLocaleTimeString('de-DE', {
@@ -840,7 +861,7 @@ export default {
       })
 
       const formattedCurrentTime = `T${currentTime}`
-      const openState = this.getCurrentState
+      const openState = this.getCurrentState()
       // const openDayState = this.getOpenDayState
       // institution is closed -> find next time and day institution is opened
       if (openState === false) {
@@ -879,14 +900,15 @@ export default {
         }
 
         for (let i = currentDay + 1; i !== currentDay; i++) {
-          this.currentDay = i
+          console.log('in for')
+          this.observedDay = i
           if (i === 7) {
             // sunday
             i = 0
           }
           // institution is closed and won't open the same day
           // find next opened day -> return first opening hours of that day
-          if (this.getOpenDayState === true) {
+          if (this.getOpenDayState() === true) {
             if (i === 1) {
               console.log(i)
               return this.institution.openingTimes.week.mon.first.timeStart
@@ -903,7 +925,7 @@ export default {
               console.log(i)
               return this.institution.openingTimes.week.fri.first.timeStart
             } else if (i === 6) {
-              console.log(i)
+              console.log('getNextOpeningTime', i)
               return this.institution.openingTimes.week.sat.first.timeStart
             } else if (i === 0) {
               console.log(i)
@@ -912,22 +934,25 @@ export default {
           }
         }
       } return formattedCurrentTime
-    },
-    getNextOpeningDay() {
+    }
+    // returns day the institution will open
+    /* getNextOpeningDay() {
       // current day as number (sunday = 0, monday = 1, ...)
-      // this.currentDay = new Date().getDay()
-      for (let i = this.currentDay; i !== this.currentDay + 1; i++) {
+      const currentDay = new Date().getDay()
+      for (let i = this.observedDay; i !== currentDay; i++) {
+        console.log('this.currentDay: ', this.observedDay)
+        console.log('currentDay: ', currentDay)
         if (i === 7) {
           i = 0
         }
-        if (this.getOpenDayState === true && this.getCurrentState === false) {
+        if (this.getOpenDayState() === true && this.getCurrentState() === false) {
           return i
         }
         // console.log(i)
         // console.log(this.getOpenDayState)
       }
       return 7
-    }
+    } */
   },
   filters: {
     time(value, locale) {
@@ -1000,10 +1025,10 @@ input[type=submit] {
   background-color: $gray;
 }
 #claim {
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-style: italic;
-    color: $primary;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: $primary;
 }
 
 .text-padding{
@@ -1027,7 +1052,7 @@ input[type=submit] {
   color: #869094;
 }
 #opening-hours-container{
-color: $dark !important;
+  color: $dark !important;
 }
 #opening-status{
   font-size: 1.0rem;
