@@ -285,7 +285,7 @@
                       </div>
                     </b-col>
                     <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
-                      <p>{{ $t('details.closes') }} {{ getNextClosingTime() | time($i18n.locale) }}</p>
+                      <p>{{ $t('details.closes') }} {{ $t('details.at') }} {{ getNextClosingTime() | time($i18n.locale) }}</p>
                     </b-col>
                   </b-row>
                   <b-row v-else>
@@ -295,7 +295,10 @@
                       </div>
                     </b-col>
                     <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
-                      <p>{{ $t('details.opens') }} {{ getNextOpeningDay() }} {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }} {{ test2() }}</p>
+                      <p>
+                        {{ $t('details.opens') }} {{ $t(`details.${getNextOpeningDay()}`) }} {{ $t('details.at') }}
+                        {{ getNextOpeningTime() | time($i18n.locale) }} {{ test2() }}
+                      </p>
                     </b-col>
                   </b-row>
                 </div>
@@ -576,7 +579,8 @@ export default {
         minute: '2-digit',
         second: '2-digit'
       }),
-      openingTimeDay: {}
+      openingTimeDay: {},
+      dayName: {}
     }
   },
   props: {
@@ -782,7 +786,7 @@ export default {
     },
 
     getDayName(dayIndex) {
-      const days = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag']
+      const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
       return days[dayIndex]
     }
   },
