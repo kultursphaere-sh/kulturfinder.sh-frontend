@@ -291,8 +291,11 @@
                   <b-row v-else>
                     <b-col cols="3">
                       <div id="closed" class="py-2 mt-4 mb-2">
-                        {{ $t('details.currentlyClosed') }}
+                        {{ $t('details.currentlyClosed') }} {{ test1() }}
                       </div>
+                    </b-col>
+                    <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
+                      <p>{{ $t('details.opens') }} {{ getNextOpeningDay() }} {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }} {{ test2() }}</p>
                     </b-col>
                   </b-row>
                 </div>
@@ -646,20 +649,20 @@ export default {
       // (sunday = 0, monday = 1 ... saturday = 6)
       return new Date().getDay() === day
     },
-    getDayTimes() {
-      if (this.day === 1) {
+    getDayTimes(day) {
+      if (day === 1) {
         this.openingTimeDay = this.institution.openingTimes.week.mon
-      } else if (this.day === 2) {
+      } else if (day === 2) {
         this.openingTimeDay = this.institution.openingTimes.week.tue
-      } else if (this.day === 3) {
+      } else if (day === 3) {
         this.openingTimeDay = this.institution.openingTimes.week.wed
-      } else if (this.day === 4) {
+      } else if (day === 4) {
         this.openingTimeDay = this.institution.openingTimes.week.thu
-      } else if (this.day === 5) {
+      } else if (day === 5) {
         this.openingTimeDay = this.institution.openingTimes.week.fri
-      } else if (this.day === 6) {
+      } else if (day === 6) {
         this.openingTimeDay = this.institution.openingTimes.week.sat
-      } else if (this.day === 0) {
+      } else if (day === 0) {
         this.openingTimeDay = this.institution.openingTimes.week.sun
       } return this.openingTimeDay
     },
@@ -667,7 +670,7 @@ export default {
     // returns true if institution is opened and false if institution is closed
     getCurrentState() {
       const formattedTime = `T${this.currentTime}`
-      const openingTimes = this.getDayTimes()
+      const openingTimes = this.getDayTimes(new Date().getDay())
 
       if (
         // first opening time
@@ -694,7 +697,7 @@ export default {
     // returns the closing time if the institution is opened
     getNextClosingTime() {
       const formattedTime = `T${this.currentTime}`
-      const openingTimes = this.getDayTimes()
+      const openingTimes = this.getDayTimes(new Date().getDay())
 
       // institution is opened -> return time institution will close
       if (this.getCurrentState() === true) {
@@ -707,6 +710,80 @@ export default {
           return openingTimes.second.timeEnd
         }
       }
+    },
+
+    test1() {
+      console.log('Test 1')
+    },
+    test2() {
+      console.log('Test 2')
+    },
+
+    // returns if day has openingTimes
+    getOpenDayState(day) {
+      const openingTimes = this.getDayTimes(day)
+      return openingTimes !== undefined
+    },
+
+    // find next time institution is opened
+    getNextOpeningTime() {
+      console.log('getNextOpeningTime()')
+      const formattedCurrentTime = `T${this.currentTime}`
+      const openState = this.getCurrentState()
+      const openingTimes = this.getDayTimes(new Date().getDay())
+
+      if (openState === false) { // TODO Test if if-statement is relevant
+        // institution is closed but will open the same day (return firstOpeningHours)
+        if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
+          return openingTimes.first.timeStart
+        }
+
+        // institution is closed, has been open that day and will open again the same day (return second opening time)
+        if (openingTimes && openingTimes.second &&
+          formattedCurrentTime < openingTimes.second.timeStart &&
+          formattedCurrentTime > openingTimes.first.timeEnd) {
+          return openingTimes.second.timeStart
+        }
+
+        for (let i = this.day + 1; i !== this.day; i++) {
+          console.log(i)
+          // this.observedDay = i
+          const observedOpeningTimes = this.getDayTimes(i)
+
+          if (i === 7) {
+            // sunday
+            i = 0
+          }
+
+          // institution is closed and won't open the same day
+          // find next opened day -> return first opening hours of that day
+          if (observedOpeningTimes !== undefined) {
+            console.log('nextOpeningTime: ', i)
+            return observedOpeningTimes.first.timeStart
+          }
+        }
+      } return formattedCurrentTime
+    },
+
+    getNextOpeningDay() {
+      for (let i = this.day + 1; i !== this.day; i++) {
+        console.log('nextOpeningDay')
+        // this.observedDay = i
+
+        if (i === 7) {
+          i = 0
+        }
+
+        if (this.getOpenDayState(i) === true && this.getCurrentState() === false) {
+          console.log('nextOpeningDay: ', i)
+          return this.getDayName(i)
+        }
+      }
+    },
+
+    getDayName(dayIndex) {
+      const days = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag']
+      return days[dayIndex]
     }
   },
   filters: {
