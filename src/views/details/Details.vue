@@ -278,7 +278,7 @@
               <div v-else id="opening-hours-container">
                 <!-- Opening Status -->
                 <div v-if="institution.openingTimes.week" id="opening-status">
-                  <b-row v-if="getCurrentState()">
+                  <b-row v-if="getCurrentOpeningState()">
                     <b-col cols="3">
                       <div id="opened" class="py-2 mt-4 mb-2">
                         {{ $t('details.currentlyOpened') }}
@@ -291,13 +291,16 @@
                   <b-row v-else>
                     <b-col cols="3">
                       <div id="closed" class="py-2 mt-4 mb-2">
-                        {{ $t('details.currentlyClosed') }} {{ test1() }}
+                        {{ $t('details.currentlyClosed') }}
                       </div>
                     </b-col>
                     <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
                       <p>
-                        {{ $t('details.opens') }} {{ $t(`details.${getNextOpeningDay()}`) }} {{ $t('details.at') }}
-                        {{ getNextOpeningTime() | time($i18n.locale) }} {{ test2() }}
+                        {{ $t('details.opens') }}
+                        <span v-if="getNextOpeningDay() !== getDayName(new Date().getDay())">
+                          {{ $t(`details.${getNextOpeningDay()}`) }}
+                        </span>
+                        {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }}
                       </p>
                     </b-col>
                   </b-row>
@@ -672,142 +675,99 @@ export default {
       } return openingTimeDay || null
     },
 
-    // returns true if institution is opened and false if institution is closed
-    getCurrentState() {
+    getCurrentOpeningState() {
       const formattedTime = `T${this.currentTime}`
       const openingTimes = this.getDayTimes(new Date().getDay())
 
       if (
-        // first opening time
         openingTimes && openingTimes.first &&
         formattedTime > openingTimes.first.timeStart &&
         formattedTime < openingTimes.first.timeEnd
       ) {
         return true
-      } else if (
-        // second opening time
-        openingTimes && openingTimes.second &&
-        formattedTime > openingTimes.second.timeStart &&
-        formattedTime < openingTimes.second.timeEnd
-      ) {
-        return true
       } else {
-        return false
+        return !!(openingTimes && openingTimes.second &&
+          formattedTime > openingTimes.second.timeStart &&
+          formattedTime < openingTimes.second.timeEnd)
       }
     },
 
-    // returns the closing time if the institution is opened
     getNextClosingTime() {
       const formattedTime = `T${this.currentTime}`
       const openingTimes = this.getDayTimes(new Date().getDay())
       let closingTime
 
-      // institution is opened -> return time institution will close
-      if (this.getCurrentState() === true) { // TODO Can remove if statement?
-        // First
-        if (formattedTime < openingTimes.first.timeEnd) {
-          closingTime = openingTimes.first.timeEnd
-        // Second
-        } else if (formattedTime > openingTimes.second.timeStart) {
-          closingTime = openingTimes.second.timeEnd
-        }
+      if (formattedTime < openingTimes.first.timeEnd) {
+        closingTime = openingTimes.first.timeEnd
+      } else if (formattedTime > openingTimes.second.timeStart) {
+        closingTime = openingTimes.second.timeEnd
       } return closingTime
     },
 
-    test1() {
-      console.log('Test 1')
-    },
-    test2() {
-      console.log('Test 2')
-    },
-
-    // returns if day has openingTimes
+    // returns true if day has openingTimes
     getOpenDayState(day) {
       const openingTimes = this.getDayTimes(day)
-      if (day === 3) {
-        console.log('Day: ', 3, 'OpeningTimes: ', openingTimes)
-        console.log('Day: ', 3, 'getDayTimes: ', this.getDayTimes(day))
-      }
-      if (openingTimes === undefined || openingTimes === null) {
-        return false
-      } else return true
+      return !(openingTimes === undefined || openingTimes === null)
     },
 
-    // find next time institution is opened
     getNextOpeningTime() {
-      console.log('getNextOpeningTime()')
       const formattedCurrentTime = `T${this.currentTime}`
-      const openState = this.getCurrentState()
       let openingTimes = this.getDayTimes(new Date().getDay())
+      const nextDay = this.day + 1
 
-      if (openState === false) { // TODO Test if if-statement is relevant
-        // institution is closed but will open the same day (return firstOpeningHours)
-        if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
-          return openingTimes.first.timeStart
-        }
+      // institution is closed but will open the same day (return first opening time)
+      if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
+        return openingTimes.first.timeStart
+      }
 
-        // institution is closed, has been open that day and will open again the same day (return second opening time)
-        if (openingTimes && openingTimes.second &&
+      // institution is closed, has been open that day and will open again the same day (return second opening time)
+      if (openingTimes && openingTimes.second &&
           formattedCurrentTime < openingTimes.second.timeStart &&
           formattedCurrentTime > openingTimes.first.timeEnd) {
-          return openingTimes.second.timeStart
+        return openingTimes.second.timeStart
+      }
+
+      // institution is closed and won't open the same day
+      // find next day with opening times
+      for (let i = nextDay; i !== this.day; i++) {
+        if (i === 7) {
+          // sunday
+          i = 0
         }
 
-        const nextDay = this.day + 1
-        for (let i = nextDay; i !== this.day; i++) {
-          // this.observedDay = i
-          const observedOpeningTimes = this.getDayTimes(i)
-
-          if (i === 7) {
-            // sunday
-            i = 0
-          }
-
-          // institution is closed and won't open the same day
-          // find next opened day -> return first opening hours of that day
-          if (this.getOpenDayState(i) === true && this.getCurrentState() === false) {
-            console.log('getDayTimes: ', this.getDayTimes(i))
-            console.log('ObservedOpeningTimes', observedOpeningTimes)
-            console.log('nextOpeningTime: ', i)
-            openingTimes = observedOpeningTimes
-            console.log('OpeningTimes: ', openingTimes)
-            return this.getDayTimes(i).first.timeStart
-            // return openingTimes.first.timeStart (first konnte nicht erkannt werden (Sonntag))
-          }
+        if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
+          return this.getDayTimes(i).first.timeStart
         }
-      } return formattedCurrentTime
+      } return openingTimes.first.timeStart
     },
 
     getNextOpeningDay() {
       const formattedCurrentTime = `T${this.currentTime}`
       let openingTimes = this.getDayTimes(new Date().getDay())
-      let openingDay = new Date().getDay()
+      let openingDayNum = new Date().getDay()
 
-      // institution is closed but will open the same day (return firstOpeningHours)
+      // institution is closed but will open the same day
       if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
-        return this.getDayName(openingDay)
+        return this.getDayName(openingDayNum)
       }
 
-      // institution is closed, has been open that day and will open again the same day (return second opening time)
+      // institution is closed, has been open that day and will open again the same day
       if (openingTimes && openingTimes.second &&
         formattedCurrentTime < openingTimes.second.timeStart &&
         formattedCurrentTime > openingTimes.first.timeEnd) {
-        return this.getDayName(openingDay)
+        return this.getDayName(openingDayNum)
       }
 
       const nextDay = this.day + 1
       for (let i = nextDay; i !== this.day; i++) {
-        // this.observedDay = i
-
         if (i === 7) {
           i = 0
         }
 
-        if (this.getOpenDayState(i) === true && this.getCurrentState() === false) {
-          console.log('nextOpeningDay: ', i)
+        if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
           return this.getDayName(i)
         }
-      }
+      } return this.getDayName(openingDayNum)
     },
 
     getDayName(dayIndex) {
