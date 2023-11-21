@@ -654,21 +654,22 @@ export default {
       return new Date().getDay() === day
     },
     getDayTimes(day) {
+      let openingTimeDay
       if (day === 1) {
-        this.openingTimeDay = this.institution.openingTimes.week.mon
+        openingTimeDay = this.institution.openingTimes.week.mon
       } else if (day === 2) {
-        this.openingTimeDay = this.institution.openingTimes.week.tue
+        openingTimeDay = this.institution.openingTimes.week.tue
       } else if (day === 3) {
-        this.openingTimeDay = this.institution.openingTimes.week.wed
+        openingTimeDay = this.institution.openingTimes.week.wen
       } else if (day === 4) {
-        this.openingTimeDay = this.institution.openingTimes.week.thu
+        openingTimeDay = this.institution.openingTimes.week.thu
       } else if (day === 5) {
-        this.openingTimeDay = this.institution.openingTimes.week.fri
+        openingTimeDay = this.institution.openingTimes.week.fri
       } else if (day === 6) {
-        this.openingTimeDay = this.institution.openingTimes.week.sat
+        openingTimeDay = this.institution.openingTimes.week.sat
       } else if (day === 0) {
-        this.openingTimeDay = this.institution.openingTimes.week.sun
-      } return this.openingTimeDay
+        openingTimeDay = this.institution.openingTimes.week.sun
+      } return openingTimeDay || null
     },
 
     // returns true if institution is opened and false if institution is closed
@@ -682,7 +683,6 @@ export default {
         formattedTime > openingTimes.first.timeStart &&
         formattedTime < openingTimes.first.timeEnd
       ) {
-        console.log('First')
         return true
       } else if (
         // second opening time
@@ -690,10 +690,8 @@ export default {
         formattedTime > openingTimes.second.timeStart &&
         formattedTime < openingTimes.second.timeEnd
       ) {
-        console.log('Second')
         return true
       } else {
-        console.log('Sadly Closed')
         return false
       }
     },
@@ -702,18 +700,18 @@ export default {
     getNextClosingTime() {
       const formattedTime = `T${this.currentTime}`
       const openingTimes = this.getDayTimes(new Date().getDay())
+      let closingTime
 
       // institution is opened -> return time institution will close
-      if (this.getCurrentState() === true) {
-        console.log('Current State: ', this.getCurrentState())
+      if (this.getCurrentState() === true) { // TODO Can remove if statement?
         // First
         if (formattedTime < openingTimes.first.timeEnd) {
-          return openingTimes.first.timeEnd
+          closingTime = openingTimes.first.timeEnd
         // Second
         } else if (formattedTime > openingTimes.second.timeStart) {
-          return openingTimes.second.timeEnd
+          closingTime = openingTimes.second.timeEnd
         }
-      }
+      } return closingTime
     },
 
     test1() {
@@ -726,7 +724,13 @@ export default {
     // returns if day has openingTimes
     getOpenDayState(day) {
       const openingTimes = this.getDayTimes(day)
-      return openingTimes !== undefined
+      if (day === 3) {
+        console.log('Day: ', 3, 'OpeningTimes: ', openingTimes)
+        console.log('Day: ', 3, 'getDayTimes: ', this.getDayTimes(day))
+      }
+      if (openingTimes === undefined || openingTimes === null) {
+        return false
+      } else return true
     },
 
     // find next time institution is opened
@@ -734,7 +738,7 @@ export default {
       console.log('getNextOpeningTime()')
       const formattedCurrentTime = `T${this.currentTime}`
       const openState = this.getCurrentState()
-      const openingTimes = this.getDayTimes(new Date().getDay())
+      let openingTimes = this.getDayTimes(new Date().getDay())
 
       if (openState === false) { // TODO Test if if-statement is relevant
         // institution is closed but will open the same day (return firstOpeningHours)
@@ -749,8 +753,8 @@ export default {
           return openingTimes.second.timeStart
         }
 
-        for (let i = this.day + 1; i !== this.day; i++) {
-          console.log(i)
+        const nextDay = this.day + 1
+        for (let i = nextDay; i !== this.day; i++) {
           // this.observedDay = i
           const observedOpeningTimes = this.getDayTimes(i)
 
@@ -761,17 +765,38 @@ export default {
 
           // institution is closed and won't open the same day
           // find next opened day -> return first opening hours of that day
-          if (observedOpeningTimes !== undefined) {
+          if (this.getOpenDayState(i) === true && this.getCurrentState() === false) {
+            console.log('getDayTimes: ', this.getDayTimes(i))
+            console.log('ObservedOpeningTimes', observedOpeningTimes)
             console.log('nextOpeningTime: ', i)
-            return observedOpeningTimes.first.timeStart
+            openingTimes = observedOpeningTimes
+            console.log('OpeningTimes: ', openingTimes)
+            return this.getDayTimes(i).first.timeStart
+            // return openingTimes.first.timeStart (first konnte nicht erkannt werden (Sonntag))
           }
         }
       } return formattedCurrentTime
     },
 
     getNextOpeningDay() {
-      for (let i = this.day + 1; i !== this.day; i++) {
-        console.log('nextOpeningDay')
+      const formattedCurrentTime = `T${this.currentTime}`
+      let openingTimes = this.getDayTimes(new Date().getDay())
+      let openingDay = new Date().getDay()
+
+      // institution is closed but will open the same day (return firstOpeningHours)
+      if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
+        return this.getDayName(openingDay)
+      }
+
+      // institution is closed, has been open that day and will open again the same day (return second opening time)
+      if (openingTimes && openingTimes.second &&
+        formattedCurrentTime < openingTimes.second.timeStart &&
+        formattedCurrentTime > openingTimes.first.timeEnd) {
+        return this.getDayName(openingDay)
+      }
+
+      const nextDay = this.day + 1
+      for (let i = nextDay; i !== this.day; i++) {
         // this.observedDay = i
 
         if (i === 7) {
