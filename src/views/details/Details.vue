@@ -715,12 +715,12 @@ export default {
       let openingTimes = this.getDayTimes(new Date().getDay())
       const nextDay = this.day + 1
 
-      // institution is closed but will open the same day (return first opening time)
+      // institution is closed but will open the same day
       if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
         return openingTimes.first.timeStart
       }
 
-      // institution is closed, has been open that day and will open again the same day (return second opening time)
+      // institution is closed, has been open that day and will open again the same day
       if (openingTimes && openingTimes.second &&
           formattedCurrentTime < openingTimes.second.timeStart &&
           formattedCurrentTime > openingTimes.first.timeEnd) {
