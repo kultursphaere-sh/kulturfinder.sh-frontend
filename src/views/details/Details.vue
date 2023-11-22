@@ -734,7 +734,6 @@ export default {
           // sunday
           i = 0
         }
-
         if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
           return this.getDayTimes(i).first.timeStart
         }
@@ -745,6 +744,7 @@ export default {
       const formattedCurrentTime = `T${this.currentTime}`
       let openingTimes = this.getDayTimes(new Date().getDay())
       let openingDayNum = new Date().getDay()
+      const nextDay = this.day + 1
 
       // institution is closed but will open the same day
       if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
@@ -758,12 +758,10 @@ export default {
         return this.getDayName(openingDayNum)
       }
 
-      const nextDay = this.day + 1
       for (let i = nextDay; i !== this.day; i++) {
         if (i === 7) {
           i = 0
         }
-
         if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
           return this.getDayName(i)
         }
