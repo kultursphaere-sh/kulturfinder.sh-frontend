@@ -15,12 +15,11 @@
         :title="text"
         width="50"
         height="50"
-        color="#003064"
         role="img"
         class="card-icon mx-auto"
         v-if="icon"
       >
-        <component :is="'icon-' + icon"/>
+        <component :is="icon"/>
       </icon-base>
     </div>
     <span class="ks-card-text">{{ text }}</span>
@@ -82,6 +81,7 @@ export default {
 }
 img, .card-icon {
   height: 100%;
+  fill: $primary
 }
 .ks-card-icon-container {
   height: 60%;

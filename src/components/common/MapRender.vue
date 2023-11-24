@@ -18,7 +18,7 @@
       :url="tileProvider.url"
       :attribution="tileProvider.attribution"
       layer-type="base"
-    /> <!-- :continuous-world="false" :no-wrap="true"  // can be used in v-tilelayer to show only one tile at the time-->
+    />
     <v-locatecontrol
       :options="{
         position: 'bottomright',
@@ -414,7 +414,7 @@ export default {
   background-color: #ffffff;
   border-radius: 50%;
   text-align: center;
-  border-color: #243F6E;
+  border-color: $primary;
   border-style: solid;
   border-width: 2px;
   font-weight: bold;
@@ -426,7 +426,7 @@ export default {
 
 /* prevent bad mobile styling */
 .leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;
   border: none;
 }
 

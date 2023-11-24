@@ -11,7 +11,7 @@
           <img
             :alt="$t('navbar.logo')"
             id="ios-pwa-logo"
-            src="@/assets/images/logos/app-icon.svg"
+            src="/img/icons/app-icon.svg"
             class="mt-3 mx-3"
           >
           <div class="ios-pwa-info-text col-9 mt-3 p-0 d-flex flex-column justify-between">

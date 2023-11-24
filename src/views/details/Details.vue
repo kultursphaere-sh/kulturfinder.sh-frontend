@@ -14,7 +14,7 @@
           <img
             height="40px"
             class="logo p-0"
-            src="@/assets/images/logos/kf_logo.png"
+            src="/img/logos/kf_logo.png"
             :alt="$t('navbar.logo')"
             role="img"
             data-cy="kulturfinderLogo"
@@ -187,7 +187,7 @@
                     <icon-address/>
                   </template>
                   <template #text>
-                    <div class="text-dark">
+                    <div class="text-primary">
                       {{ institution.address.street }}<br>
                       {{ institution.address.zip }} {{ institution.address.place }}
                     </div>

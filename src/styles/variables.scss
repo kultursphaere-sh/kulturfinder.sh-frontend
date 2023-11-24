@@ -1,7 +1,4 @@
-// Your variable overrides
-$primary: #003064; // SH Blau
-$primary-light: #014b99;
-$secondary: #fff;
+@import "@/styles/tenant-colors.scss";
 
 $yellow: #fdf8da; // Light-Yellow
 $yellow-dark: #f8f1c6; // Light-Yellow
@@ -46,6 +43,11 @@ $grid-breakpoints: (
 $container-max-widths: (
   xs: 920px
 );
+
+.btn-secondary {
+  background-color: unset;
+  border: none;
+}
 
 .rounded {
   border-radius: 7px;

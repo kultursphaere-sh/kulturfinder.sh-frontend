@@ -54,12 +54,12 @@
         </b-button>
         <!-- Home Button -->
         <b-nav-item router-link :to="'/${$route.params.locale}/'">
-          <img
-            alt="HomeButton"
-            height="20px"
-            src="@/assets/images/icons/cards/HomeFull1.svg"
+          <icon-base
+            title="Home-Button"
             class="homeButton"
           >
+            <icon-home/>
+          </icon-base>
         </b-nav-item>
       </template>
       <template #toggle-bar>
@@ -118,7 +118,7 @@
       >
         <icon-base
           :title="$t('common.filters')"
-          :color="isFilterActive ? '#fff' : '#003064'"
+          :color="isFilterActive ? '#fff' : '#3c4d61'"
           class="mr-2"
         >
           <icon-controls/>
@@ -134,6 +134,7 @@ import SearchBar from '@/components/common/SearchBar.vue'
 import KsHeader from '@/components/layout/Header.vue'
 import NoGpsBar from '@/components/institutions/NoGpsBar.vue'
 import { mapGetters } from 'vuex'
+import IconHome from '@/components/icons/IconHome.vue'
 
 export default {
   name: 'Institutions',
@@ -200,6 +201,7 @@ export default {
     }
   },
   components: {
+    IconHome,
     KsHeader,
     SearchBar,
     NoGpsBar
@@ -211,6 +213,11 @@ export default {
 header .btn {
   padding: 4px;
 }
+
+.homeButton {
+  fill: $primary
+}
+
 .tab {
   display: flex;
   align-items: center;
