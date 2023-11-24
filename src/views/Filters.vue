@@ -31,13 +31,12 @@
         </b-button>
         <!-- Home Button -->
         <b-nav-item router-link :to="'/${$route.params.locale}/'">
-          <img
-            alt="HomeButton"
-            height="20px"
-            src="@/assets/images/icons/cards/HomeFull1.svg"
+          <icon-base
+            title="Home-Button"
             class="homeButton"
-            data-cy="homeButton"
           >
+            <icon-home/>
+          </icon-base>
         </b-nav-item>
       </template>
     </ks-header>
@@ -119,6 +118,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import KsHeader from '@/components/layout/Header.vue'
+import IconHome from '@/components/icons/IconHome.vue'
 
 export default {
   name: 'Filters',
@@ -129,6 +129,7 @@ export default {
     }
   },
   components: {
+    IconHome,
     KsHeader
   },
   computed: {
@@ -176,7 +177,7 @@ export default {
 
 <style lang="scss">
 .homeButton {
-  padding-right: 5px;
+  fill: $primary
 }
 
 .control-group .custom-control.custom-checkbox {

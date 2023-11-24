@@ -129,7 +129,7 @@ function migrateCommonValues(element) {
     }
     switch (media.mediaType) {
       case 'Image':
-        if (media.order === 1) {
+        if (media.order === 0) {
           institution.imageList = imageList
         }
         institution.images.push({ imageList: imageList })

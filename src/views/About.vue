@@ -26,7 +26,7 @@
       <div id="main-content">
         <b-container class="p-4">
           <b-container class="about-logo">
-            <img :alt="$t('navbar.logo')" id="logo" src="@/assets/images/logos/kf_logo.png">
+            <img :alt="$t('navbar.logo')" id="logo" src="/img/logos/kf_logo.png">
           </b-container>
           <hr>
           <b-row class="social-media">
