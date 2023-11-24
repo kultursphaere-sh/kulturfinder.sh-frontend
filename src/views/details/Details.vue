@@ -1,12 +1,12 @@
 <template>
   <div id="details">
     <vue-headful
-      :title="(institution.name ? institution.name : $t('common.loading')) + ' | ' + $t('SEO.title')"
-      :description="institution.claim + ' - ' + institution.description + ' || ' + $t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords') + ', '+ institution.tags + ', '+ institution.categories"
+      :title="(institution.name ? institution.name : $t('common.loading')) + ' | ' + appName"
+      :description="institution.claim + ' - ' + institution.description + ' || ' + appDescription"
+      :keywords="appKeywords + ', '+ institution.tags + ', '+ institution.categories"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header>
       <template #center>
@@ -14,7 +14,7 @@
           <img
             height="40px"
             class="logo p-0"
-            src="/img/logos/kf_logo.png"
+            :src="'/' + tenant + '/img/logos/kf_logo.png'"
             :alt="$t('navbar.logo')"
             role="img"
             data-cy="kulturfinderLogo"
@@ -627,7 +627,12 @@ export default {
       return this.listType === 'dashboard'
         ? `/${this.$route.params.locale}/institutions/map`
         : `/${this.$route.params.locale}/institutions/${this.listType}`
-    }
+    },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT }
   },
   methods: {
     onFavoriteClick: async function () {

@@ -1,12 +1,12 @@
 <template>
   <div id="about">
     <vue-headful
-      :title="$t('navbar.noData') + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :title="$t('navbar.noData') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header :header-title="$t('navbar.noData')">
       <template #left>
@@ -107,7 +107,11 @@ export default {
     ...mapGetters({
       institutions: 'institutions/getAll',
       timeout: 'institutions/getTimeout'
-    })
+    }),
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
   },
   mounted() {
     if (this.institutions.length > 0) {

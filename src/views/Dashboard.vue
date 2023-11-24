@@ -1,12 +1,12 @@
 <template>
   <div id="dashboard">
     <vue-headful
-      :title="$t('SEO.dashboardTitle')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :title="appName"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      :url=" tenant === 'hb' ? 'kulturfinder.bremen.de' : 'https://kulturfinder.sh'"
+      :url="appURL"
     />
     <ks-header :shadow="false" :toggle-bar-open="searchbarOpen">
       <template #left>
@@ -18,7 +18,7 @@
           <img
             height="56px"
             class="logo p-0"
-            src="/img/logos/kf_logo.png"
+            :src="'/' + tenant + '/img/logos/kf_logo.png'"
             :alt="$t('navbar.logo')"
             role="img"
             data-cy="mainLogo"
@@ -259,6 +259,10 @@ export default {
       console.log(this.searchbarOpen, this.$refs.searchCollapse.contains(document.activeElement))
       return this.$refs.searchCollapse.contains(document.activeElement)
     },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
     tenant: function () { return process.env.VUE_APP_TENANT }
   },
   methods: {
@@ -344,7 +348,6 @@ export default {
 
 #dropdown-1__BV_toggle_{
   display: flex !important;
-  // flex-direction: row !important;
   align-items: center !important;
 }
 

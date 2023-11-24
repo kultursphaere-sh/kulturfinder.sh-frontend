@@ -1,12 +1,12 @@
 <template>
   <div id="licenses">
     <vue-headful
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :title="$t('about.licenses.licenses') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
-      :title="$t('about.licenses.licenses') + ' | ' + $t('SEO.title')"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header :header-title="$t('licenses.licenses')"/>
 
@@ -73,6 +73,12 @@ export default {
         { name: 'amdefine', choice: 'MIT' }
       ]
     }
+  },
+  computed: {
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
   },
   created() {
     fetch('/sbom.json')

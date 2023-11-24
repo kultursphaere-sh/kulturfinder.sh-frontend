@@ -157,7 +157,7 @@ export default {
       },
       popupAnchor: window.L.point(1, -5),
       icon: window.L.icon({
-        iconUrl: '/img/single-location.svg',
+        iconUrl: '/' + process.env.VUE_APP_TENANT + '/img/single-location.svg',
         iconSize: [23, 33],
         iconAnchor: [11, 33]
       }),
