@@ -1,12 +1,12 @@
 <template>
   <div id="filters">
     <vue-headful
-      :title="$t('common.filters') + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :title="$t('common.filters') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header :header-title="$t('common.filters')">
       <template #right>
@@ -160,7 +160,11 @@ export default {
       set(value) {
         this.$store.dispatch('filters/updateTags', value)
       }
-    }
+    },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
   },
   methods: {
     toggleAll(checked) {

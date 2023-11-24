@@ -1,12 +1,12 @@
 <template>
   <div id="museumscard">
     <vue-headful
-      :title="$t('common.museums-card') + ' | ' + $t('SEO.title')"
+      :title="$t('common.museums-card') + ' | ' + appName"
       :description="$t('common.museums-card')"
-      :keywords="$t('SEO.commonKeywords')"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header>
       <!-- Logo mit Link zur Homepage -->
@@ -101,7 +101,12 @@ export default {
     KsCard,
     KsHeader
   },
-  mixins: [ScrollPosition]
+  mixins: [ScrollPosition],
+  computed: {
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
+  }
 }
 
 </script>

@@ -1,17 +1,17 @@
 <template>
   <div id="about">
     <vue-headful
-      :title="$t('navbar.aboutUs') + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :title="$t('navbar.aboutUs') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header :header-title="$t('navbar.aboutUs')">
       <template #right>
         <!-- Home Button -->
-        <b-nav-item router-link :to="'/${$route.params.locale}/'">
+        <b-nav-item router-link :to="`/${$route.params.locale}/`">
           <img
             alt="HomeButton"
             height="20px"
@@ -26,7 +26,7 @@
       <div id="main-content">
         <b-container class="p-4">
           <b-container class="about-logo">
-            <img :alt="$t('navbar.logo')" id="logo" src="/img/logos/kf_logo.png">
+            <img :alt="$t('navbar.logo')" id="logo" :src="'/' + tenant + '/img/logos/kf_logo.png'">
           </b-container>
           <hr>
           <b-row class="social-media">
@@ -352,6 +352,10 @@ export default {
   },
   computed: {
     matomoActive: function () { return process.env.VUE_APP_MATOMO === 'true' },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
     tenant: function () { return process.env.VUE_APP_TENANT }
   },
   methods: {
@@ -383,10 +387,10 @@ export default {
       const ca = document.cookie.split(';')
       for (let i = 0; i < ca.length; i++) {
         let c = ca[i]
-        while (c.charAt(0) === ' ') {
+        while (c.startsWith(' ')) {
           c = c.substring(1)
         }
-        if (c.indexOf(name) === 0) {
+        if (c.startsWith(name)) {
           return c.substring(name.length, c.length)
         }
       }

@@ -2,11 +2,11 @@
   <div id="institutions">
     <vue-headful
       :title="titleString"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header
       :back-target="{
@@ -164,18 +164,21 @@ export default {
     },
     titleString() {
       if (this.$store.state.filters.isFavorite) {
-        return this.$t('common.favorites') + ' | ' + this.$t('SEO.title')
+        return this.$t('common.favorites') + ' | ' + process.env.VUE_APP_NAME
       } else {
         if (this.listType === 'list') {
-          return this.$t('common.list') + ' | ' + this.$t('SEO.title')
+          return this.$t('common.list') + ' | ' + process.env.VUE_APP_NAME
         } else {
           if (this.listType === 'map') {
-            return this.$t('common.map') + ' | ' + this.$t('SEO.title')
+            return this.$t('common.map') + ' | ' + process.env.VUE_APP_NAME
           }
         }
       }
-      return this.$t('common.loading') + ' | ' + this.$t('SEO.title')
-    }
+      return this.$t('common.loading') + ' | ' + process.env.VUE_APP_NAME
+    },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
   },
   methods: {
     onToggleSearchbar() {
