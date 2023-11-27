@@ -1,3 +1,4 @@
+
 <template>
   <b-list-group v-show="institutions">
     <b-list-group-item
@@ -24,15 +25,16 @@
         </icon-base>
       </b-button>
       <router-link
-        :to="`${currentPath}/details/${institution.name}`"
+        :to="`/${$route.params.locale}/institutions/list/details/${institution.name}`"
         class="li-container"
         data-cy="institutionsList"
       >
-        <div class="thumbnail-container">
+        <div class="thumbnail-container" v-if="institution.imageList && institution.imageList.thumbnail">
           <img
             :src="institution.imageList.thumbnail"
             class="thumbnail"
             aria-hidden="true"
+            alt="Thumbnail"
           >
         </div>
         <div class="text-container">
