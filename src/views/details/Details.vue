@@ -438,6 +438,21 @@
                      href="#"
                   >{{ $t('details.feedbackWrongOpeningHoursHeadline') }}</a>
                 </p>
+                <!--Corona Warning Banner -->
+                <!-- <b-alert
+                  show
+                  variant="warning"
+                  class="warning"
+                >
+                  <b-row>
+                    <b-col class="col-auto pr-0">
+                      <icon-base width="20" height="20">
+                        <icon-warning />
+                      </icon-base>
+                    </b-col>
+                    <b-col>{{ $t('details.coronaWarningText') }}</b-col>
+                  </b-row>
+                </b-alert> -->
               </div>
             </section>
             <hr class="mb-4">
@@ -558,13 +573,17 @@ export default {
       loading: true,
       dataLocale: 'de',
       museumsCardEnabled: process.env.VUE_APP_MUSEUMSCARD === 'true',
+      // TODO Change double data
+      observedDay: new Date().getDay(),
       day: new Date().getDay(),
       // sunday = 0, monday = 1 ... saturday = 6
       currentTime: new Date().toLocaleTimeString('de-DE', {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit'
-      })
+      }),
+      openingTimeDay: {},
+      dayName: {}
     }
   },
   props: {
@@ -682,8 +701,7 @@ export default {
         closingTime = openingTimes.first.timeEnd
       } else if (formattedTime > openingTimes.second.timeStart) {
         closingTime = openingTimes.second.timeEnd
-      }
-      return closingTime
+      } return closingTime
     },
 
     // returns true if day has openingTimes
@@ -742,7 +760,6 @@ export default {
 
       for (let i = nextDay; i !== this.day; i++) {
         if (i === 7) {
-          // sunday
           i = 0
         }
         if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
