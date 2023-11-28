@@ -570,7 +570,7 @@ export default {
   props: {
     actId: {
       type: String,
-      default: 'act007'
+      default: process.env.VUE_APP_NEW_API !== 'true' ? 'act007' : '0'
     },
     listType: {
       type: String,

@@ -31,9 +31,14 @@ the Ministry of Education, Science, and Culture of the state of Schleswig-Holste
 
 [Contributor License Agreement](./docs/CONTRIBUTOR-AGREEMENT.md)
 
-### Project setup
-
 [How to contribute](./docs/CONTRIBUTING.md)
+
+### Environment-Variables
+
+You can change some behavior via environment variables. Replace the values inside `.env` or create a file `.env.local`
+(will not be checked in). Full docs for each variable are inside the `.env` file.
+
+### Project setup
 
 ```
 npm install
