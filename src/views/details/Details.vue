@@ -275,9 +275,38 @@
               <p v-if="!institution.openingTimes">
                 {{ $t('details.noOpeningHours') }}
               </p>
-
               <div v-else id="opening-hours-container">
+                <!-- Opening Status -->
+                <div v-if="institution.openingTimes.week" id="opening-status">
+                  <b-row v-if="getCurrentOpeningState()">
+                    <b-col cols="3">
+                      <div id="opened" class="py-2 mt-4 mb-2">
+                        {{ $t('details.currentlyOpened') }}
+                      </div>
+                    </b-col>
+                    <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
+                      <p>{{ $t('details.closes') }} {{ $t('details.at') }} {{ getNextClosingTime() | time($i18n.locale) }}</p>
+                    </b-col>
+                  </b-row>
+                  <b-row v-else>
+                    <b-col cols="3">
+                      <div id="closed" class="py-2 mt-4 mb-2">
+                        {{ $t('details.currentlyClosed') }}
+                      </div>
+                    </b-col>
+                    <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
+                      <p>
+                        {{ $t('details.opens') }}
+                        <span v-if="getNextOpeningDay() !== getDayName(new Date().getDay())">
+                          {{ $t(`details.${getNextOpeningDay()}`) }}
+                        </span>
+                        {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }}
+                      </p>
+                    </b-col>
+                  </b-row>
+                </div>
                 <div id="opening-hours-list" v-if="institution.openingTimes.week">
+                  <!-- Highlights the current day of the week -->
                   <div :class="{'opening-hours-row': true, 'opening-hours-row-active': compareDay(1)}">
                     <div class="opening-hours-day">
                       {{ $t('details.monday') }}
@@ -409,21 +438,6 @@
                      href="#"
                   >{{ $t('details.feedbackWrongOpeningHoursHeadline') }}</a>
                 </p>
-              <!--Corona Warning Banner -->
-                <!-- <b-alert
-                  show
-                  variant="warning"
-                  class="warning"
-                >
-                  <b-row>
-                    <b-col class="col-auto pr-0">
-                      <icon-base width="20" height="20">
-                        <icon-warning />
-                      </icon-base>
-                    </b-col>
-                    <b-col>{{ $t('details.coronaWarningText') }}</b-col>
-                  </b-row>
-                </b-alert> -->
               </div>
             </section>
             <hr class="mb-4">
@@ -543,7 +557,14 @@ export default {
       institution: {},
       loading: true,
       dataLocale: 'de',
-      museumsCardEnabled: process.env.VUE_APP_MUSEUMSCARD === 'true'
+      museumsCardEnabled: process.env.VUE_APP_MUSEUMSCARD === 'true',
+      day: new Date().getDay(),
+      // sunday = 0, monday = 1 ... saturday = 6
+      currentTime: new Date().toLocaleTimeString('de-DE', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      })
     }
   },
   props: {
@@ -573,10 +594,10 @@ export default {
     hasSocial() {
       if (!this.institution) return false
       return !!(this.institution.facebook ||
-          this.institution.twitter ||
-          this.institution.instagram ||
-          this.institution.youtube ||
-          this.institution.vimeo)
+        this.institution.twitter ||
+        this.institution.instagram ||
+        this.institution.youtube ||
+        this.institution.vimeo)
     },
     hasDigitalServices() {
       if (!this.institution.apps && !this.institution.digitalServices) return false
@@ -607,7 +628,6 @@ export default {
         ? `/${this.$route.params.locale}/institutions/map`
         : `/${this.$route.params.locale}/institutions/${this.listType}`
     }
-
   },
   methods: {
     onFavoriteClick: async function () {
@@ -616,8 +636,125 @@ export default {
     compareDay(day) {
       // (sunday = 0, monday = 1 ... saturday = 6)
       return new Date().getDay() === day
-    }
+    },
+    getDayTimes(day) {
+      let openingTimeDay
+      if (day === 1) {
+        openingTimeDay = this.institution.openingTimes.week.mon
+      } else if (day === 2) {
+        openingTimeDay = this.institution.openingTimes.week.tue
+      } else if (day === 3) {
+        openingTimeDay = this.institution.openingTimes.week.wen
+      } else if (day === 4) {
+        openingTimeDay = this.institution.openingTimes.week.thu
+      } else if (day === 5) {
+        openingTimeDay = this.institution.openingTimes.week.fri
+      } else if (day === 6) {
+        openingTimeDay = this.institution.openingTimes.week.sat
+      } else if (day === 0) {
+        openingTimeDay = this.institution.openingTimes.week.sun
+      } return openingTimeDay || null
+    },
 
+    getCurrentOpeningState() {
+      const formattedTime = `T${this.currentTime}`
+      const openingTimes = this.getDayTimes(new Date().getDay())
+
+      if (
+        openingTimes && openingTimes.first &&
+        formattedTime > openingTimes.first.timeStart &&
+        formattedTime < openingTimes.first.timeEnd
+      ) {
+        return true
+      } else {
+        return !!(openingTimes && openingTimes.second &&
+          formattedTime > openingTimes.second.timeStart &&
+          formattedTime < openingTimes.second.timeEnd)
+      }
+    },
+
+    getNextClosingTime() {
+      const formattedTime = `T${this.currentTime}`
+      const openingTimes = this.getDayTimes(new Date().getDay())
+      let closingTime
+
+      if (formattedTime < openingTimes.first.timeEnd) {
+        closingTime = openingTimes.first.timeEnd
+      } else if (formattedTime > openingTimes.second.timeStart) {
+        closingTime = openingTimes.second.timeEnd
+      }
+      return closingTime
+    },
+
+    // returns true if day has openingTimes
+    getOpenDayState(day) {
+      const openingTimes = this.getDayTimes(day)
+      return !(openingTimes === undefined || openingTimes === null)
+    },
+
+    getNextOpeningTime() {
+      const formattedCurrentTime = `T${this.currentTime}`
+      let openingTimes = this.getDayTimes(new Date().getDay())
+      const nextDay = this.day + 1
+
+      // institution is closed but will open the same day
+      if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
+        return openingTimes.first.timeStart
+      }
+
+      // institution is closed, has been open that day and will open again the same day
+      if (openingTimes && openingTimes.second &&
+          formattedCurrentTime < openingTimes.second.timeStart &&
+          formattedCurrentTime > openingTimes.first.timeEnd) {
+        return openingTimes.second.timeStart
+      }
+
+      // institution is closed and won't open the same day
+      // find next day with opening times
+      for (let i = nextDay; i !== this.day; i++) {
+        if (i === 7) {
+          // sunday
+          i = 0
+        }
+        if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
+          return this.getDayTimes(i).first.timeStart
+        }
+      } return openingTimes.first.timeStart
+    },
+
+    getNextOpeningDay() {
+      const formattedCurrentTime = `T${this.currentTime}`
+      let openingTimes = this.getDayTimes(new Date().getDay())
+      let openingDayNum = new Date().getDay()
+      const nextDay = this.day + 1
+
+      // institution is closed but will open the same day
+      if (openingTimes && formattedCurrentTime < openingTimes.first.timeStart) {
+        return this.getDayName(openingDayNum)
+      }
+
+      // institution is closed, has been open that day and will open again the same day
+      if (openingTimes && openingTimes.second &&
+        formattedCurrentTime < openingTimes.second.timeStart &&
+        formattedCurrentTime > openingTimes.first.timeEnd) {
+        return this.getDayName(openingDayNum)
+      }
+
+      for (let i = nextDay; i !== this.day; i++) {
+        if (i === 7) {
+          // sunday
+          i = 0
+        }
+        if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
+          return this.getDayName(i)
+        }
+      } return this.getDayName(openingDayNum)
+    },
+
+    getDayName(dayIndex) {
+      const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+      return days[dayIndex]
+    }
   },
   filters: {
     time(value, locale) {
@@ -667,7 +804,7 @@ export default {
     this.dataLocale = this.$i18n.locale
   },
   updated() {
-    // check if banner available and wait until is has finished loading to remove skeleton screen
+    // check if banner available and wait until it has finished loading to remove skeleton screen
     if (!this.institution.name || !this.loading) return
     const banner = document.querySelector('.carousel-image.banner-0')
     if (banner && this.institution.images.length) {
@@ -691,10 +828,10 @@ input[type=submit] {
   background-color: $gray;
 }
 #claim {
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-style: italic;
-    color: $primary;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: $primary;
 }
 
 .text-padding{
@@ -718,7 +855,27 @@ input[type=submit] {
   color: #869094;
 }
 #opening-hours-container{
-color: $dark !important;
+  color: $dark !important;
+}
+#opening-status{
+  font-size: 1.0rem;
+  font-weight: 405;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+}
+#opened{
+  background-color: rgba(151 247 151 / 0.5);
+  border-radius: 0.5rem;
+}
+#closed{
+  background-color: rgba(237 133 133 / 0.5);
+  border-radius: 0.5rem;
+}
+#nextOpened{
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: left;
 }
 #opening-hours-list {
   margin-bottom: 1rem;
