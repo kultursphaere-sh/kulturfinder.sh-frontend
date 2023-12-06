@@ -351,7 +351,7 @@ export default {
     this.analyticsConsent = checkConsentCookie !== 'false'
   },
   computed: {
-    matomoActive: function () { return process.env.VUE_APP_TENANT === 'sh' },
+    matomoActive: function () { return process.env.VUE_APP_MATOMO === 'true' },
     tenant: function () { return process.env.VUE_APP_TENANT }
   },
   methods: {

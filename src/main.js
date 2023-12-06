@@ -81,7 +81,7 @@ function checkAnalyticsCookie() {
   const analyticsCookie = getCookie('CookieConsent')
   return analyticsCookie !== 'false'
 }
-if (process.env.VUE_APP_TENANT === 'sh') {
+if (process.env.VUE_APP_MATOMO === 'true') {
   Vue.use(VueMatomo, {
     // Configure your matomo server and site by providing
     host: 'https://matomo.digicult-verbund.de/',
