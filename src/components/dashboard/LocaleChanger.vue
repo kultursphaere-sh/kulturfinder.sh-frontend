@@ -63,11 +63,14 @@ export default {
   computed: {
     currentLocale() {
       return this.locales[this.getLocale()]
-    }
+    },
+    matomoActive: function () { return process.env.VUE_APP_MATOMO === 'true' }
   },
   methods: {
     changeLocale(locale) {
-      this.$matomo.trackEvent(['locale', 'set locale', 'locale', locale])
+      if (this.matomoActive) {
+        this.$matomo.trackEvent(['locale', 'set locale', 'locale', locale])
+      }
       this.$router.push(`/${locale}`)
     },
     getLocale() {
