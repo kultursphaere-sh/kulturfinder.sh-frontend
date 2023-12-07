@@ -119,7 +119,9 @@ function migrateCommonValues(element) {
   institution.categories = [...new Set(element.categories.map(category => category.name))].sort()
   institution.tags = [...element.tags.map(tag => tag.text)].sort()
 
+  if (!institution.audio) institution.audio = []
   if (!institution.images) institution.images = []
+  if (!institution.video) institution.video = []
   if (!institution.imageList) institution.imageList = {}
   element.media.forEach(media => {
     const imageList = {
@@ -135,8 +137,10 @@ function migrateCommonValues(element) {
         institution.images.push({ imageList: imageList })
         break
       case 'Audio':
+        institution.audio.push(`${URL}/Media/GetMedia?id=${media.id}`)
         break
       case 'Video':
+        institution.video.push(`${URL}/Media/GetMedia?id=${media.id}`)
         break
     }
   })
