@@ -128,11 +128,17 @@ export default {
   mixins: [Navigation],
   data() {
     return {
-      center: {
-        lat: 54.219367,
-        lng: 9.696117 // 54.219367, 9.696117 is the center of Schleswig-Holstein
-      },
-      zoom: 7, // used for zooming
+      center:
+        process.env.VUE_APP_TENANT === 'hb'
+          ? {
+            lat: 53.315317,
+            lng: 8.667360
+          }
+          : {
+            lat: 54.219367,
+            lng: 9.696117 // 54.219367, 9.696117 is the center of Schleswig-Holstein
+          },
+      zoom: process.env.VUE_APP_TENANT === 'hb' ? 9 : 7,
       boundsMap: [
         [54.86228799417661, 11.501708984375002],
         [53.226123744371364, 7.8001464843750004]
