@@ -344,6 +344,9 @@
       "start": "Ihr Standort"
     }
   },
+  "vbn": {
+    "showDepartures": "VBN Fahrzeiten anzeigen"
+  },
   "socialLinks": {
     "noSocialMedia": "Keine sozialen Netzwerke vorhanden."
   },

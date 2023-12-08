@@ -345,6 +345,9 @@
       "start": "Your location"
     }
   },
+  "vbn": {
+    "showDepartures": "Show VBN timetable"
+  },
   "socialLinks": {
     "noSocialMedia": "No existing social networks."
   },

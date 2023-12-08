@@ -8,6 +8,7 @@ import IconSearch from './components/icons/IconSearch.vue'
 import IconSettings from './components/icons/IconSettings.vue'
 import IconTriangleUp from './components/icons/IconTriangleUp.vue'
 import IconTriangleDown from './components/icons/IconTriangleDown.vue'
+import IconVbn from './components/icons/IconVbn.vue'
 import IconControls from './components/icons/IconControls.vue'
 import IconClose from './components/icons/IconClose.vue'
 import IconInfo from './components/icons/IconInfo.vue'
@@ -56,6 +57,7 @@ Vue.component('IconSearch', IconSearch)
 Vue.component('IconSettings', IconSettings)
 Vue.component('IconTriangleUp', IconTriangleUp)
 Vue.component('IconTriangleDown', IconTriangleDown)
+Vue.component('IconVbn', IconVbn)
 Vue.component('IconControls', IconControls)
 Vue.component('IconClose', IconClose)
 Vue.component('IconInfo', IconInfo)

@@ -345,6 +345,9 @@
       "start": "Din position"
     }
   },
+  "vbn": {
+    "showDepartures": "Vis afgangstider for VBN"
+  },
   "socialLinks": {
     "noSocialMedia": "Der findes ingen sociale netværk."
   },
