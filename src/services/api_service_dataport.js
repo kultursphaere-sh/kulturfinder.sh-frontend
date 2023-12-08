@@ -29,6 +29,7 @@ import router from '@/router'
  * @property {string} city
  * @property {string} latitude
  * @property {string} longitude
+ * @property {boolean} hasLivingImages
  */
 
 /** @typedef InstitutionsDto
@@ -110,14 +111,14 @@ function migrateCommonValues(element) {
   }
   institution.street = element.address
   institution.place = element.city
-  institution.hasLivingImages = false
+  institution.hasLivingImages = element.hasLivingImages
 
   if (element.latitude && element.longitude) {
     Object.assign(institution, latLngToPos(element.latitude, element.longitude))
   }
 
   institution.categories = [...new Set(element.categories.map(category => category.name))].sort()
-  institution.tags = [...element.tags.map(tag => tag.text)].sort()
+  institution.tags = [...element.tags.map(tag => tag.name)].sort()
 
   if (!institution.audio) institution.audio = []
   if (!institution.images) institution.images = []
