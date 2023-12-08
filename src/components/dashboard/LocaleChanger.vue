@@ -45,18 +45,24 @@ export default {
   data() {
     return {
       locales: {
-        de: {
-          icon: localeIconDeutsch,
-          name: i18n.t('locales.de.name')
-        },
-        en: {
-          icon: localeIconEnglish,
-          name: i18n.t('locales.en.name')
-        },
-        da: {
-          icon: localeIconDansk,
-          name: i18n.t('locales.da.name')
-        }
+        ...(process.env.VUE_APP_LANGUAGES.includes('de') && {
+          de: {
+            icon: localeIconDeutsch,
+            name: i18n.t('locales.de.name')
+          }
+        }),
+        ...(process.env.VUE_APP_LANGUAGES.includes('en') && {
+          en: {
+            icon: localeIconEnglish,
+            name: i18n.t('locales.en.name')
+          }
+        }),
+        ...(process.env.VUE_APP_LANGUAGES.includes('da') && {
+          da: {
+            icon: localeIconDansk,
+            name: i18n.t('locales.da.name')
+          }
+        })
       }
     }
   },
