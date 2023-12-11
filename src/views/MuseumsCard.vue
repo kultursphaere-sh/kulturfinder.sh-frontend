@@ -15,7 +15,7 @@
           <img
             height="40px"
             class="logo p-0"
-            src="/img/logos/kf_logo.png"
+            :src="'/' + tenant + '/img/logos/kf_logo.png'"
             :alt="$t('navbar.logo')"
             role="img"
             data-cy="kulturfinderLogo"
@@ -105,7 +105,8 @@ export default {
   computed: {
     appURL: function () { return process.env.VUE_APP_URL },
     appName: function () { return process.env.VUE_APP_NAME },
-    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT }
   }
 }
 

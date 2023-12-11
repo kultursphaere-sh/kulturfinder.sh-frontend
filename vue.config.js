@@ -35,8 +35,7 @@ module.exports = {
     workboxPluginMode: 'GenerateSW',
     workboxOptions: {
       cleanupOutdatedCaches: true,
-      navigateFallback: '/index.html',
-      exclude: [],
+      ...(process.env.VUE_APP_TENANT !== 'hb' && { navigateFallback: '/index.html' }),
       runtimeCaching: [
         {
           urlPattern: /^https:\/\/museumsbilder\.digicult-verbund\.de\//,
@@ -53,6 +52,19 @@ module.exports = {
         },
         {
           urlPattern: /^https:\/\/kultursphaere\.sh\/corsproxy\.php\?url=http:\/\/xtree-actor-api\.digicult-verbund\.de/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'data',
+            expiration: {
+              maxAgeSeconds: 86400
+            },
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          }
+        },
+        {
+          urlPattern: /^https:\/\/kulturfinder\.bremen\.sh\/api/,
           handler: 'CacheFirst',
           options: {
             cacheName: 'data',

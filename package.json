@@ -5,8 +5,8 @@
   "scripts": {
     "serve-sh": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service serve",
     "serve-hb": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service serve --mode hb",
-    "build-sh": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service build",
-    "build-hb": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service build --mode hb",
+    "build-sh": "export NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production; vue-cli-service build",
+    "build-hb": "export NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production; vue-cli-service build --mode hb",
     "lint": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service lint",
     "e2e-local": "npx cypress open",
     "e2e-ci": "npx cypress run",
@@ -68,10 +68,11 @@
     "eslint-plugin-vue": "^6.2.2",
     "eslint-plugin-vue-i18n": "^0.3.0",
     "node-fetch": "^2.6.7",
-    "node-sass": "7.0.3",
+    "node-sass": "9.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^0.23.1",
     "vue-cli-plugin-i18n": "^0.6.1",
-    "vue-template-compiler": "^2.7.14"
+    "vue-template-compiler": "^2.7.14",
+    "workbox-webpack-plugin": "^7.0.0"
   }
 }
