@@ -145,6 +145,23 @@ function migrateCommonValues(element) {
         break
     }
   })
+
+  if (institution.images.length === 0) {
+    const randomValue = Math.floor(Math.random() * 2)
+    institution.imageList = {
+      preview: `/hb/img/placeholder_${randomValue}.jpg`,
+      provided: `/hb/img/placeholder_${randomValue}.jpg`,
+      thumbnail: `/hb/img/placeholder_${randomValue}.jpg`
+    }
+    institution.images.push({
+      imageList: {
+        preview: `/hb/img/placeholder_${randomValue}.jpg`,
+        provided: `/hb/img/placeholder_${randomValue}.jpg`,
+        thumbnail: `/hb/img/placeholder_${randomValue}.jpg`
+      }
+    })
+  }
+
   return institution
 }
 
