@@ -4,7 +4,7 @@
       :title="$t('common.filters') + ' | ' + appName"
       :description="appDescription"
       :keywords="appKeywords"
-      :lang="`/${$route.params.locale}/`"
+      :lang="`/${this.$i18n.locale}/`"
       og-locale="de"
       :url="appURL"
     />
@@ -30,7 +30,7 @@
           <label id="reset-label" class="labeled-button-label">{{ $t("filter.resetButtonLabel") }}</label>
         </b-button>
         <!-- Home Button -->
-        <b-nav-item router-link :to="'/${$route.params.locale}/'">
+        <b-nav-item router-link :to="`/${this.$i18n.locale}/`">
           <icon-base
             title="Home-Button"
             class="homeButton"
@@ -201,7 +201,7 @@ export default {
 }
 #filter-categories {
   .custom-control-label {
-    padding: 0.5rem 0rem 0.5rem 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
   }
 }
 .control-group .custom-control-label::before,
