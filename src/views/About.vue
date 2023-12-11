@@ -4,14 +4,14 @@
       :title="$t('navbar.aboutUs') + ' | ' + appName"
       :description="appDescription"
       :keywords="appKeywords"
-      :lang="`/${$route.params.locale}/`"
+      :lang="`/${this.$i18n.locale}/`"
       og-locale="de"
       :url="appURL"
     />
     <ks-header :header-title="$t('navbar.aboutUs')">
       <template #right>
         <!-- Home Button -->
-        <b-nav-item router-link :to="`/${$route.params.locale}/`">
+        <b-nav-item router-link :to="`/${this.$i18n.locale}/`">
           <img
             alt="HomeButton"
             height="20px"

@@ -4,7 +4,7 @@
       :title="$t('navbar.noData') + ' | ' + appName"
       :description="appDescription"
       :keywords="appKeywords"
-      :lang="`/${$route.params.locale}/`"
+      :lang="`/${this.$i18n.locale}/`"
       og-locale="de"
       :url="appURL"
     />
