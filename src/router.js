@@ -20,6 +20,7 @@ const router = new Router({
     /* Temp christmas routes end */
     { path: '/sbom.json' },
     { path: '/api/*' },
+    { path: '/service-worker.js' },
     {
       path: '/:locale(de|en|da)?',
       component: {

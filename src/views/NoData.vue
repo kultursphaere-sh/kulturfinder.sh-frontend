@@ -34,7 +34,11 @@
       <div id="main-content">
         <b-container class="p-4">
           <b-container class="about-logo">
-            <img :alt="$t('navbar.logo')" id="logo" src="/img/logos/kf_logo.png">
+            <img
+              :alt="$t('navbar.logo')"
+              id="logo"
+              :src="'/' + tenant + '/img/logos/kf_logo.png'"
+            >
           </b-container>
           <hr>
           <p class="mt-4">
@@ -111,7 +115,8 @@ export default {
     appURL: function () { return process.env.VUE_APP_URL },
     appName: function () { return process.env.VUE_APP_NAME },
     appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
-    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT }
   },
   mounted() {
     if (this.institutions.length > 0) {
