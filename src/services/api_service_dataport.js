@@ -361,8 +361,9 @@ export class ApiServiceDataport {
     })
 
     Object.assign(institution, migrateOpeningHours(institutionDto))
+    if (!institution.openingTimes) institution.openingTimes = {}
     if (institutionDto.specialOpeningHours) institution.openingTimes.description = institutionDto.specialOpeningHours
-    if (institutionDto.closedDays) {
+    if (institutionDto.closedDays && institutionDto.closedDays.length > 0) {
       if (!institution.closedHolidays) institution.closedHolidays = []
       institutionDto.closedDays.map(element => institution.closedHolidays.push(element.text))
     }
