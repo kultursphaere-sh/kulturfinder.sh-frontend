@@ -4,7 +4,7 @@
       :title="titleString"
       :description="appDescription"
       :keywords="appKeywords"
-      :lang="`/${$route.params.locale}/`"
+      :lang="`${locale}`"
       og-locale="de"
       :url="appURL"
     />
@@ -53,7 +53,7 @@
           </icon-base>
         </b-button>
         <!-- Home Button -->
-        <b-nav-item router-link :to="`/${this.$i18n.locale}/`">
+        <b-nav-item router-link :to="`/${locale}`">
           <icon-base
             title="Home-Button"
             class="homeButton"
@@ -135,6 +135,7 @@ import KsHeader from '@/components/layout/Header.vue'
 import NoGpsBar from '@/components/institutions/NoGpsBar.vue'
 import { mapGetters } from 'vuex'
 import IconHome from '@/components/icons/IconHome.vue'
+import i18n from '@/i18n'
 
 export default {
   name: 'Institutions',
@@ -178,7 +179,8 @@ export default {
     },
     appURL: function () { return process.env.VUE_APP_URL },
     appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
-    appKeywords: function () { return process.env.VUE_APP_KEYWORDS }
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    locale: function () { return i18n.locale }
   },
   methods: {
     onToggleSearchbar() {

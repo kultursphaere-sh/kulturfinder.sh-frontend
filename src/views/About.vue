@@ -4,14 +4,14 @@
       :title="$t('navbar.aboutUs') + ' | ' + appName"
       :description="appDescription"
       :keywords="appKeywords"
-      :lang="`/${this.$i18n.locale}/`"
+      :lang="`${locale}`"
       og-locale="de"
       :url="appURL"
     />
     <ks-header :header-title="$t('navbar.aboutUs')">
       <template #right>
         <!-- Home Button -->
-        <b-nav-item router-link :to="`/${this.$i18n.locale}/`">
+        <b-nav-item router-link :to="`/${locale}`">
           <img
             alt="HomeButton"
             height="20px"
@@ -301,6 +301,7 @@
 <script>
 import KsHeader from '@/components/layout/Header.vue'
 import ScrollPosition from '@/mixins/scrollposition'
+import i18n from '@/i18n'
 
 export default {
   name: 'About',
@@ -356,7 +357,8 @@ export default {
     appName: function () { return process.env.VUE_APP_NAME },
     appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
     appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
-    tenant: function () { return process.env.VUE_APP_TENANT }
+    tenant: function () { return process.env.VUE_APP_TENANT },
+    locale: function () { return i18n.locale }
   },
   methods: {
     changeAnalyticsConsent() {
