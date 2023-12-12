@@ -4,7 +4,7 @@
       :title="$t('navbar.noData') + ' | ' + appName"
       :description="appDescription"
       :keywords="appKeywords"
-      :lang="`/${this.$i18n.locale}/`"
+      :lang="`${locale}`"
       og-locale="de"
       :url="appURL"
     />
@@ -104,6 +104,7 @@ import { mapGetters } from 'vuex'
 import KsHeader from '@/components/layout/Header.vue'
 import ScrollPosition from '@/mixins/scrollposition'
 import SignLanguageModal from '../components/dashboard/SignLanguageModal.vue'
+import i18n from '@/i18n'
 
 export default {
   name: 'NoData',
@@ -116,7 +117,8 @@ export default {
     appName: function () { return process.env.VUE_APP_NAME },
     appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
     appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
-    tenant: function () { return process.env.VUE_APP_TENANT }
+    tenant: function () { return process.env.VUE_APP_TENANT },
+    locale: function () { return i18n.locale }
   },
   mounted() {
     if (this.institutions.length > 0) {
