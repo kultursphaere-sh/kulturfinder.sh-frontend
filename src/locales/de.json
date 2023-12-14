@@ -184,7 +184,7 @@
     "iosPwaAdd": "Zum Home-Screen hinzufügen"
   },
   "pwaModal": {
-    "text": "Sie können den kulturfinder.sh als App herunterladen und installieren. Dann steht er Ihnen auch offline zur Verfügung und Sie können jederzeit direkt vom Homescreen auf die Kultur Schleswig-Holsteins zugreifen.",
+    "text": "Sie können den kulturfinder als App herunterladen und installieren. Dann steht er Ihnen auch offline zur Verfügung und Sie können jederzeit direkt vom Homescreen Kultur in Ihrer Nähe finden.",
     "android": {
       "step1": "1. Öffnen Sie das Browser-Menü.",
       "step2": "2. Wählen sie 'Zum Startbildschirm zufügen' aus.",
