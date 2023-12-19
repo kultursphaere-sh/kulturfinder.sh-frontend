@@ -52,7 +52,7 @@ import router from '@/router'
  * @property {string} tel
  * @property {string} email
  * @property {string} website
- * @property {string} eventCalender
+ * @property {Object<{identifier: string}>} eventCalender
  * @property {string} facebook
  * @property {string} twitter
  * @property {string} youtube
@@ -117,8 +117,10 @@ function migrateCommonValues(element) {
     Object.assign(institution, latLngToPos(element.latitude, element.longitude))
   }
 
-  institution.categories = [...new Set(element.categories.map(category => category.name))].sort()
-  institution.tags = [...element.tags.map(tag => tag.name)].sort()
+  institution.categories = [...new Set(element.categories.map(category => category.name))]
+    .sort((a, b) => { return a - b })
+  institution.tags = [...element.tags.map(tag => tag.name)]
+    .sort((a, b) => { return a - b })
 
   if (!institution.audio) institution.audio = []
   if (!institution.images) institution.images = []
@@ -331,7 +333,9 @@ export class ApiServiceDataport {
           institution.website = communication.value
           break
         case 'EventUrl':
-          institution.eventCalender = communication.value
+          institution.eventCalender = {
+            identifier: communication.value
+          }
           break
         case 'Facebook':
           institution.facebook = communication.value
