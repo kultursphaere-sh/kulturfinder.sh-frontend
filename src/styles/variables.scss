@@ -21,14 +21,11 @@ $dark: $gray-very-dark;
 
 // breakpoints
 $breakpoint-xs: 0;
+$breakpoint-logo-xs: 360px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-
-//grid options
-/* $grid-columns: 12;
-$grid-gutter-width: 30px; */
 
 // set internal breakpoints for b-components
 $grid-breakpoints: (

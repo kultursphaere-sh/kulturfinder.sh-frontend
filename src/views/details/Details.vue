@@ -22,7 +22,7 @@
         </b-nav-item>
       </template>
       <template class="d-flex" #right>
-        <b-button pill class="labeled-button mr-1" @click="onFavoriteClick">
+        <b-button pill class="labeled-button pr-0" @click="onFavoriteClick">
           <icon-base
             :title="$t('navbar.saveAsFavorite')"
             color="#003064"
@@ -613,8 +613,8 @@ export default {
     },
     isIOSWebAppWrongVersion() {
       // getUserMedia only works as iOS-PWA with iOS 13.4.1 and higher
-      const iOS = !!window.navigator.userAgent.match(/iPad/i) ||
-        !!window.navigator.userAgent.match(/iPhone/i)
+      const iOS = !!RegExp(/iPad/i).exec(window.navigator.userAgent) ||
+        !!RegExp(/iPhone/i).exec(window.navigator.userAgent)
       return iOS &&
         window.matchMedia('(display-mode: standalone)').matches &&
         lt(this.detectRTC.osVersion, '13.4.1')
@@ -658,7 +658,8 @@ export default {
         openingTimeDay = this.institution.openingTimes.week.sat
       } else if (day === 0) {
         openingTimeDay = this.institution.openingTimes.week.sun
-      } return openingTimeDay || null
+      }
+      return openingTimeDay || null
     },
 
     getCurrentOpeningState() {
@@ -825,6 +826,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.logo {
+  @media (max-width: $breakpoint-logo-xs) {
+    width: 120px;
+    height: auto;
+  }
+  @media (min-width: $breakpoint-logo-xs) {
+    width: auto;
+    height: 40px;
+  }
+}
+
 input[type=submit] {
   font-size: inherit;
 }
