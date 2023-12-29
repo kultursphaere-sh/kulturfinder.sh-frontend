@@ -1,4 +1,12 @@
 {
+  "cityOfLiterature": {
+    "shortTitle": "City of Literature",
+    "longTitle": "Bremen UNESCO City of Literature",
+    "siteDescription": "Die UNESCO hat Bremen am 31. Oktober in das internationale Netzwerk der Creative Cities aufgenommen und den Titel \"Stadt der Literatur\" verliehen. Damit ist Bremen die siebte Kreativstadt in Deutschland, die von der Weltkulturorganisation ausgezeichnet wurde.",
+    "bremenWebsite": "bremen.de",
+    "intro": "Seit dem 31. Oktober 2023 steht fest, dass Bremen dauerhaft den UNESCO-Titel \"City of Literature\" tragen darf und damit sowohl dem illustren \"City of Literature\"-Netzwerk als auch dem noch viel größeren Kreativstädtenetzwerks (bestehend aus circa 350 Städten weltweit) angehört.",
+    "background": "Das UNESCO-Programm Creative Cities existiert seit 2004. Heute vernetzt es weltweit Städte, die ihre Erfahrungen, Strategien, Ideen und gute Praxis im Bereich zeitgenössischer Kunst und Kultur miteinander teilen. Mitglieder des Netzwerks sind Exzellenz-Zentren in einem der sieben Bereiche Film, Musik, Design, Gastronomie, Medienkunst, Handwerk und Literatur."
+  },
   "common": {
     "contact": "Kontakt",
     "website": "Webseite",

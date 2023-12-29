@@ -1,4 +1,12 @@
 {
+  "cityOfLiterature": {
+    "shortTitle": "City of Literature",
+    "longTitle": "Bremen UNESCO City of Literature",
+    "siteDescription": "On 31 October, UNESCO included Bremen in the international network of Creative Cities and awarded it the title \"City of Literature\". This makes Bremen the seventh creative city in Germany to be honoured by the world cultural organisation.",
+    "bremenWebsite": "bremen.de",
+    "intro": "Since 31 October 2023, it has been clear that Bremen may permanently bear the UNESCO title of \"City of Literature\" and thus belongs to both the illustrious \"City of Literature\" network and the much larger Creative Cities Network (consisting of around 350 cities worldwide).",
+    "background": "The UNESCO Creative Cities programme has existed since 2004 and today connects cities worldwide that share their experiences, strategies, ideas and good practice in the field of contemporary art and culture. Members of the network are centres of excellence in one of seven areas: film, music, design, gastronomy, media arts, crafts and literature."
+  },
   "common": {
     "contact": "Contact",
     "website": "Website",

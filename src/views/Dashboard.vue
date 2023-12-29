@@ -108,14 +108,14 @@
               :route="`/${$route.params.locale}/institutions/list?isFavorite=true`"
               :text="$t('common.favorites')"
               icon="IconFavorites"
-              :small="true"
+              :small="(tenant === 'sh')"
               data-cy="favoritesCard"
             />
             <ks-card
               :route="`/${$route.params.locale}/institutions/map/filters`"
               :text="$t('common.filters')"
               icon="IconFilter"
-              :small="true"
+              :small="(tenant === 'sh')"
               data-cy="filtersCard"
             />
           </b-row>
@@ -125,7 +125,7 @@
               :route="`/${$route.params.locale}/institutions/list?tags=Living%20Image`"
               :text="$t('dashboard.living-images')"
               icon="IconLivingImages"
-              :small="true"
+              :small="(tenant === 'sh')"
               data-cy="livingImagesCard"
             />
             <ks-card
@@ -133,23 +133,31 @@
               :route="`/${$route.params.locale}/institutions/map?tags=Schietwetter`"
               :text="$t('dashboard.schietwetter')"
               icon="IconIndoor"
-              :small="true"
+              :small="(tenant === 'sh')"
               data-cy="indoorCard"
             />
             <ks-card
               v-if="museumsCardEnabled && tenant === 'sh'"
               :route="`/${$route.params.locale}/museumscard`"
               :image-source="require(`@/assets/images/logos/museumsCard2024greenBackground.png`)"
-              :small="true"
+              :small="(tenant === 'sh')"
               :museumscard-small="true"
               data-cy="museumsCardKachel"
             />
             <ks-card
-              v-if="!museumsCardEnabled || tenant === 'hb'"
+              v-if="cityOfLiteratureEnabled && tenant === 'hb'"
+              :route="`/${$route.params.locale}/cityOfLiterature`"
+              :image-source="require(`@/assets/images/logos/logo_cityOfLiterature.png`)"
+              :text="$t('cityOfLiterature.shortTitle')"
+              :small="false"
+              data-cy="cityOfLiteratureCard"
+            />
+            <ks-card
+              v-if="!museumsCardEnabled && !cityOfLiteratureEnabled"
               :route="`/${$route.params.locale}/institutions/list?tags=Videoclips`"
               :text="$t('dashboard.videoclips')"
               icon="IconVideos"
-              :small="true"
+              :small="(tenant === 'sh')"
               data-cy="videoClipsCard"
             />
           </b-row>
@@ -218,6 +226,7 @@ import LocaleChanger from '../components/dashboard/LocaleChanger'
 import SignLanguageModal from '../components/dashboard/SignLanguageModal.vue'
 import ScrollPosition from '@/mixins/scrollposition'
 import detectRTC from 'detectrtc'
+import i18n from '@/i18n'
 
 export default {
   name: 'Dashboard',
@@ -229,8 +238,7 @@ export default {
         'Mac',
         'Android',
         'iOS'
-      ],
-      museumsCardEnabled: process.env.VUE_APP_MUSEUMSCARD === 'true'
+      ]
     }
   },
   components: {
@@ -259,11 +267,14 @@ export default {
       console.log(this.searchbarOpen, this.$refs.searchCollapse.contains(document.activeElement))
       return this.$refs.searchCollapse.contains(document.activeElement)
     },
+    museumsCardEnabled: function () { return process.env.VUE_APP_MUSEUMSCARD === 'true' },
+    cityOfLiteratureEnabled: function () { return process.env.VUE_APP_CITY_OF_LITERATURE === 'true' },
     appURL: function () { return process.env.VUE_APP_URL },
     appName: function () { return process.env.VUE_APP_NAME },
     appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
     appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
-    tenant: function () { return process.env.VUE_APP_TENANT }
+    tenant: function () { return process.env.VUE_APP_TENANT },
+    locale: function () { return i18n.locale }
   },
   methods: {
     onToggleSearchbar() {
