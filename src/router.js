@@ -6,7 +6,7 @@ import store from '@/store/store'
 
 let lastLocale = ''
 const defaultListType = 'map'
-const actIdRegex = /^act[0-9]{6,7}$/
+const actIdRegex = /^act\d{6,7}$/
 
 Vue.use(Router)
 
@@ -80,6 +80,15 @@ const router = new Router({
           props: true,
           meta: {
             title: 'MuseumsCard'
+          }
+        },
+        {
+          path: 'institutions/:listType/cityOfLiterature',
+          name: 'cityOfLiterature',
+          component: () => import('./views/CityOfLiterature.vue'),
+          props: true,
+          meta: {
+            title: 'City of Literature'
           }
         },
         {
@@ -178,15 +187,8 @@ router.onReady(async () => {
   startListeningToRouteChanges()
 })
 
-// const waitForStorageToBeReady = async (to, from, next) => {
-//   await store.restored
-//   next()
-// }
-
-// router.beforeEach(waitForStorageToBeReady)
-
 const setInitialFilterStateFromUrl = () => {
-  store.dispatch('filters/updateState', queryStringsToState(router.currentRoute.query))
+  store.dispatch('filters/updateState', queryStringsToState(router.currentRoute.query)).then()
 }
 
 /*

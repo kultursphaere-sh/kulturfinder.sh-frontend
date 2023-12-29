@@ -81,7 +81,8 @@ export default {
 }
 img, .card-icon {
   height: 100%;
-  fill: $primary
+  fill: $primary;
+  object-fit: contain;
 }
 .ks-card-icon-container {
   height: 60%;
@@ -138,6 +139,9 @@ img, .card-icon {
 @media (max-width: 340px) {
   .ks-card {
     width: 40%;
+  }
+  img {
+    width: 100%;
   }
   #living-images-card {
     width: 86%;
