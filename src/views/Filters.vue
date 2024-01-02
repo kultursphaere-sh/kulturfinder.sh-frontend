@@ -1,12 +1,12 @@
 <template>
   <div id="filters">
     <vue-headful
-      :title="$t('common.filters') + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
-      :lang="`/${$route.params.locale}/`"
+      :title="$t('common.filters') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
+      :lang="`${locale}`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header :header-title="$t('common.filters')">
       <template #right>
@@ -30,14 +30,13 @@
           <label id="reset-label" class="labeled-button-label">{{ $t("filter.resetButtonLabel") }}</label>
         </b-button>
         <!-- Home Button -->
-        <b-nav-item router-link :to="'/${$route.params.locale}/'">
-          <img
-            alt="HomeButton"
-            height="20px"
-            src="@/assets/images/icons/cards/HomeFull1.svg"
+        <b-nav-item router-link :to="`/${locale}`">
+          <icon-base
+            title="Home-Button"
             class="homeButton"
-            data-cy="homeButton"
           >
+            <icon-home/>
+          </icon-base>
         </b-nav-item>
       </template>
     </ks-header>
@@ -119,6 +118,8 @@
 <script>
 import { mapGetters } from 'vuex'
 import KsHeader from '@/components/layout/Header.vue'
+import IconHome from '@/components/icons/IconHome.vue'
+import i18n from '@/i18n'
 
 export default {
   name: 'Filters',
@@ -129,6 +130,7 @@ export default {
     }
   },
   components: {
+    IconHome,
     KsHeader
   },
   computed: {
@@ -159,7 +161,12 @@ export default {
       set(value) {
         this.$store.dispatch('filters/updateTags', value)
       }
-    }
+    },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    locale: function () { return i18n.locale }
   },
   methods: {
     toggleAll(checked) {
@@ -176,7 +183,7 @@ export default {
 
 <style lang="scss">
 .homeButton {
-  padding-right: 5px;
+  fill: $primary
 }
 
 .control-group .custom-control.custom-checkbox {
@@ -196,7 +203,7 @@ export default {
 }
 #filter-categories {
   .custom-control-label {
-    padding: 0.5rem 0rem 0.5rem 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
   }
 }
 .control-group .custom-control-label::before,

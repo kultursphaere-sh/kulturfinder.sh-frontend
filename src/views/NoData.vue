@@ -1,12 +1,12 @@
 <template>
   <div id="about">
     <vue-headful
-      :title="$t('navbar.noData') + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
-      :lang="`/${$route.params.locale}/`"
+      :title="$t('navbar.noData') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
+      :lang="`${locale}`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header :header-title="$t('navbar.noData')">
       <template #left>
@@ -34,7 +34,11 @@
       <div id="main-content">
         <b-container class="p-4">
           <b-container class="about-logo">
-            <img :alt="$t('navbar.logo')" id="logo" src="@/assets/images/logos/kf_logo.png">
+            <img
+              :alt="$t('navbar.logo')"
+              id="logo"
+              :src="'/' + tenant + '/img/logos/kf_logo.png'"
+            >
           </b-container>
           <hr>
           <p class="mt-4">
@@ -100,6 +104,7 @@ import { mapGetters } from 'vuex'
 import KsHeader from '@/components/layout/Header.vue'
 import ScrollPosition from '@/mixins/scrollposition'
 import SignLanguageModal from '../components/dashboard/SignLanguageModal.vue'
+import i18n from '@/i18n'
 
 export default {
   name: 'NoData',
@@ -107,7 +112,13 @@ export default {
     ...mapGetters({
       institutions: 'institutions/getAll',
       timeout: 'institutions/getTimeout'
-    })
+    }),
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT },
+    locale: function () { return i18n.locale }
   },
   mounted() {
     if (this.institutions.length > 0) {
@@ -140,9 +151,6 @@ export default {
   max-height: 75px;
 }
 
-.empty-nav-item{
-  width: 5vw;
-}
 .contact {
   display: flex;
   align-items: center;

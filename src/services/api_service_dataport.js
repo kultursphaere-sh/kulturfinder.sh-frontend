@@ -29,6 +29,7 @@ import router from '@/router'
  * @property {string} city
  * @property {string} latitude
  * @property {string} longitude
+ * @property {boolean} hasLivingImages
  */
 
 /** @typedef InstitutionsDto
@@ -51,7 +52,7 @@ import router from '@/router'
  * @property {string} tel
  * @property {string} email
  * @property {string} website
- * @property {string} eventCalender
+ * @property {Object<{identifier: string}>} eventCalender
  * @property {string} facebook
  * @property {string} twitter
  * @property {string} youtube
@@ -110,16 +111,20 @@ function migrateCommonValues(element) {
   }
   institution.street = element.address
   institution.place = element.city
-  institution.hasLivingImages = false
+  institution.hasLivingImages = element.hasLivingImages
 
   if (element.latitude && element.longitude) {
     Object.assign(institution, latLngToPos(element.latitude, element.longitude))
   }
 
-  institution.categories = [...new Set(element.categories.map(category => category.name))].sort()
-  institution.tags = [...element.tags.map(tag => tag.text)].sort()
+  institution.categories = [...new Set(element.categories.map(category => category.name))]
+    .sort((a, b) => { return a - b })
+  institution.tags = [...element.tags.map(tag => tag.name)]
+    .sort((a, b) => { return a - b })
 
+  if (!institution.audio) institution.audio = []
   if (!institution.images) institution.images = []
+  if (!institution.video) institution.video = []
   if (!institution.imageList) institution.imageList = {}
   element.media.forEach(media => {
     const imageList = {
@@ -129,17 +134,36 @@ function migrateCommonValues(element) {
     }
     switch (media.mediaType) {
       case 'Image':
-        if (media.order === 1) {
+        if (media.order === 0) {
           institution.imageList = imageList
         }
         institution.images.push({ imageList: imageList })
         break
       case 'Audio':
+        institution.audio.push(`${URL}/Media/GetMedia?id=${media.id}`)
         break
       case 'Video':
+        institution.video.push(`${URL}/Media/GetMedia?id=${media.id}`)
         break
     }
   })
+
+  if (institution.images.length === 0) {
+    const randomValue = Math.floor(Math.random() * 2)
+    institution.imageList = {
+      preview: `/hb/img/placeholder_${randomValue}.jpg`,
+      provided: `/hb/img/placeholder_${randomValue}.jpg`,
+      thumbnail: `/hb/img/placeholder_${randomValue}.jpg`
+    }
+    institution.images.push({
+      imageList: {
+        preview: `/hb/img/placeholder_${randomValue}.jpg`,
+        provided: `/hb/img/placeholder_${randomValue}.jpg`,
+        thumbnail: `/hb/img/placeholder_${randomValue}.jpg`
+      }
+    })
+  }
+
   return institution
 }
 
@@ -309,7 +333,9 @@ export class ApiServiceDataport {
           institution.website = communication.value
           break
         case 'EventUrl':
-          institution.eventCalender = communication.value
+          institution.eventCalender = {
+            identifier: communication.value
+          }
           break
         case 'Facebook':
           institution.facebook = communication.value
@@ -339,8 +365,9 @@ export class ApiServiceDataport {
     })
 
     Object.assign(institution, migrateOpeningHours(institutionDto))
+    if (!institution.openingTimes) institution.openingTimes = {}
     if (institutionDto.specialOpeningHours) institution.openingTimes.description = institutionDto.specialOpeningHours
-    if (institutionDto.closedDays) {
+    if (institutionDto.closedDays && institutionDto.closedDays.length > 0) {
       if (!institution.closedHolidays) institution.closedHolidays = []
       institutionDto.closedDays.map(element => institution.closedHolidays.push(element.text))
     }

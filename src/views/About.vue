@@ -1,17 +1,17 @@
 <template>
   <div id="about">
     <vue-headful
-      :title="$t('navbar.aboutUs') + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
-      :lang="`/${$route.params.locale}/`"
+      :title="$t('navbar.aboutUs') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
+      :lang="`${locale}`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header :header-title="$t('navbar.aboutUs')">
       <template #right>
         <!-- Home Button -->
-        <b-nav-item router-link :to="'/${$route.params.locale}/'">
+        <b-nav-item router-link :to="`/${locale}`">
           <img
             alt="HomeButton"
             height="20px"
@@ -26,7 +26,7 @@
       <div id="main-content">
         <b-container class="p-4">
           <b-container class="about-logo">
-            <img :alt="$t('navbar.logo')" id="logo" src="@/assets/images/logos/kf_logo.png">
+            <img :alt="$t('navbar.logo')" id="logo" :src="'/' + tenant + '/img/logos/kf_logo.png'">
           </b-container>
           <hr>
           <b-row class="social-media">
@@ -301,6 +301,7 @@
 <script>
 import KsHeader from '@/components/layout/Header.vue'
 import ScrollPosition from '@/mixins/scrollposition'
+import i18n from '@/i18n'
 
 export default {
   name: 'About',
@@ -351,8 +352,13 @@ export default {
     this.analyticsConsent = checkConsentCookie !== 'false'
   },
   computed: {
-    matomoActive: function () { return process.env.VUE_APP_TENANT === 'sh' },
-    tenant: function () { return process.env.VUE_APP_TENANT }
+    matomoActive: function () { return process.env.VUE_APP_MATOMO === 'true' },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT },
+    locale: function () { return i18n.locale }
   },
   methods: {
     changeAnalyticsConsent() {
@@ -383,10 +389,10 @@ export default {
       const ca = document.cookie.split(';')
       for (let i = 0; i < ca.length; i++) {
         let c = ca[i]
-        while (c.charAt(0) === ' ') {
+        while (c.startsWith(' ')) {
           c = c.substring(1)
         }
-        if (c.indexOf(name) === 0) {
+        if (c.startsWith(name)) {
           return c.substring(name.length, c.length)
         }
       }

@@ -18,7 +18,7 @@
       :url="tileProvider.url"
       :attribution="tileProvider.attribution"
       layer-type="base"
-    /> <!-- :continuous-world="false" :no-wrap="true"  // can be used in v-tilelayer to show only one tile at the time-->
+    />
     <v-locatecontrol
       :options="{
         position: 'bottomright',
@@ -128,11 +128,17 @@ export default {
   mixins: [Navigation],
   data() {
     return {
-      center: {
-        lat: 54.219367,
-        lng: 9.696117 // 54.219367, 9.696117 is the center of Schleswig-Holstein
-      },
-      zoom: 7, // used for zooming
+      center:
+        process.env.VUE_APP_TENANT === 'hb'
+          ? {
+            lat: 53.315317,
+            lng: 8.667360
+          }
+          : {
+            lat: 54.219367,
+            lng: 9.696117 // 54.219367, 9.696117 is the center of Schleswig-Holstein
+          },
+      zoom: process.env.VUE_APP_TENANT === 'hb' ? 9 : 7,
       boundsMap: [
         [54.86228799417661, 11.501708984375002],
         [53.226123744371364, 7.8001464843750004]
@@ -157,7 +163,7 @@ export default {
       },
       popupAnchor: window.L.point(1, -5),
       icon: window.L.icon({
-        iconUrl: '/img/single-location.svg',
+        iconUrl: '/' + process.env.VUE_APP_TENANT + '/img/single-location.svg',
         iconSize: [23, 33],
         iconAnchor: [11, 33]
       }),
@@ -414,7 +420,7 @@ export default {
   background-color: #ffffff;
   border-radius: 50%;
   text-align: center;
-  border-color: #243F6E;
+  border-color: $primary;
   border-style: solid;
   border-width: 2px;
   font-weight: bold;
@@ -426,7 +432,7 @@ export default {
 
 /* prevent bad mobile styling */
 .leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;
   border: none;
 }
 

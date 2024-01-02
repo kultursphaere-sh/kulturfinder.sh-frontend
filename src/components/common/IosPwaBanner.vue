@@ -11,12 +11,12 @@
           <img
             :alt="$t('navbar.logo')"
             id="ios-pwa-logo"
-            src="@/assets/images/logos/app-icon.svg"
+            :src="'/' + tenant + '/img/icons/app-icon.svg'"
             class="mt-3 mx-3"
           >
           <div class="ios-pwa-info-text col-9 mt-3 p-0 d-flex flex-column justify-between">
             <span>{{ $t('pwaBanner.iosPwaClaim') }}</span>
-            <p>{{ $t('common.link') }}</p>
+            <p>{{ appName }}</p>
           </div>
         </b-row>
         <b-button
@@ -61,6 +61,10 @@ export default {
       this.iosBanner = false
       this.$bvModal.show('pwa-modal')
     }
+  },
+  computed: {
+    tenant: function () { return process.env.VUE_APP_TENANT },
+    appName: function () { return process.env.VUE_APP_NAME }
   },
   mounted() {
     this.ios = /iPhone|iPad|iPod/i.test(navigator.userAgent)

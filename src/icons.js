@@ -8,16 +8,22 @@ import IconSearch from './components/icons/IconSearch.vue'
 import IconSettings from './components/icons/IconSettings.vue'
 import IconTriangleUp from './components/icons/IconTriangleUp.vue'
 import IconTriangleDown from './components/icons/IconTriangleDown.vue'
+import IconVbn from './components/icons/IconVbn.vue'
 import IconControls from './components/icons/IconControls.vue'
 import IconClose from './components/icons/IconClose.vue'
 import IconInfo from './components/icons/IconInfo.vue'
+import IconList from './components/icons/IconList.vue'
 import IconFavorite from './components/icons/IconFavorite.vue'
+import IconFavorites from './components/icons/IconFavorites.vue'
+import IconFilter from './components/icons/IconFilter.vue'
 import IconShare from './components/icons/IconShare.vue'
 import IconGlobe from './components/icons/IconGlobe.vue'
+import IconIndoor from './components/icons/IconIndoor.vue'
 import IconExternalLink from './components/icons/IconExternalLink.vue'
 import IconDriveTo from './components/icons/IconDriveTo.vue'
 import IconPhone from './components/icons/IconPhone.vue'
 import IconMail from './components/icons/IconMail.vue'
+import IconMap from './components/icons/IconMap.vue'
 import IconAddress from './components/icons/IconAddress.vue'
 import IconNavigation from './components/icons/IconNavigation.vue'
 import IconNahSh from './components/icons/IconNahSh.vue'
@@ -39,6 +45,7 @@ import IconAugmentedReality from './components/icons/IconAugmentedReality.vue'
 import IconChatbot from './components/icons/IconChatbot.vue'
 import IconMultimedia from './components/icons/IconMultimedia.vue'
 import IconVideo from './components/icons/IconVideo.vue'
+import IconVideos from './components/icons/IconVideos.vue'
 import IconVirtualReality from './components/icons/IconVirtualReality.vue'
 
 Vue.component('IconBase', IconBase)
@@ -50,16 +57,22 @@ Vue.component('IconSearch', IconSearch)
 Vue.component('IconSettings', IconSettings)
 Vue.component('IconTriangleUp', IconTriangleUp)
 Vue.component('IconTriangleDown', IconTriangleDown)
+Vue.component('IconVbn', IconVbn)
 Vue.component('IconControls', IconControls)
 Vue.component('IconClose', IconClose)
 Vue.component('IconInfo', IconInfo)
+Vue.component('IconList', IconList)
 Vue.component('IconFavorite', IconFavorite)
+Vue.component('IconFavorites', IconFavorites)
+Vue.component('IconFilter', IconFilter)
 Vue.component('IconShare', IconShare)
 Vue.component('IconGlobe', IconGlobe)
+Vue.component('IconIndoor', IconIndoor)
 Vue.component('IconExternalLink', IconExternalLink)
 Vue.component('IconDriveTo', IconDriveTo)
 Vue.component('IconPhone', IconPhone)
 Vue.component('IconMail', IconMail)
+Vue.component('IconMap', IconMap)
 Vue.component('IconAddress', IconAddress)
 Vue.component('IconNavigation', IconNavigation)
 Vue.component('IconNahSh', IconNahSh)
@@ -81,4 +94,5 @@ Vue.component('IconAugmentedReality', IconAugmentedReality)
 Vue.component('IconChatbot', IconChatbot)
 Vue.component('IconMultimedia', IconMultimedia)
 Vue.component('IconVideo', IconVideo)
+Vue.component('IconVideos', IconVideos)
 Vue.component('IconVirtualReality', IconVirtualReality)

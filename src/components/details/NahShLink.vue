@@ -1,7 +1,12 @@
 <template>
-  <info-detail img-alt="NAH.SH">
+  <info-detail img-alt="ÖPNV">
     <template #icon>
-      <icon-nah-sh/>
+      <icon-vbn
+        v-if="tenant === 'hb'"
+      />
+      <icon-nah-sh
+        v-else
+      />
     </template>
     <template #text>
       <a :href="nahShLink" target="_blank">{{ linkText }}</a>
@@ -19,7 +24,7 @@ export default {
   props: {
     linkText: {
       type: String,
-      default: i18n.t('nahSh.showDepartures')
+      default: process.env.VUE_APP_TENANT === 'hb' ? i18n.t('vbn.showDepartures') : i18n.t('nahSh.showDepartures')
     },
     startPos: {
       type: [Object, Boolean],
@@ -36,6 +41,9 @@ export default {
   },
   computed: {
     nahShLink() {
+      if (process.env.VUE_APP_TENANT === 'hb') {
+        return 'https://www.vbn.de/fahrplaner'
+      }
       return `https://nah.sh.hafas.de/bin/query.exe/dn?SID=${this.nahShSID}&ZID=${this.nahShZID}&date=${this.nahShDate}&time=${this.nahShTime}&timesel=depart&externalCall=yes&start=yes`
     },
     nahShSID() {
@@ -60,7 +68,8 @@ export default {
     },
     nahShTime() {
       return moment().format('HH:mm')
-    }
+    },
+    tenant: function () { return process.env.VUE_APP_TENANT }
   },
   methods: {
     /*

@@ -63,7 +63,6 @@ export default {
       const expireDate = new Date()
       expireDate.setTime(expireDate.getTime() + (50 * 365 * 24 * 60 * 60 * 1000))
       document.cookie = 'CookieConsent=true; expires=' + expireDate.toUTCString() + '; path=/;'
-      // this.$matomo.rememberConsentGiven()
       window.location.reload(true)
       this.showAnalyticsModal = false
     },
@@ -71,7 +70,6 @@ export default {
       // Create Deny Cookie
       // Create until the end of the browsersession for now
       document.cookie = 'CookieConsent=false; expires=; path=/;'
-      // this.$matomo.disableCookies()
       // window._paq.push(['disableCookies'])
       this.showAnalyticsModal = false
     }
@@ -91,7 +89,7 @@ export default {
 }
 #analytics-banner-close-icon{
   position:absolute;
-  right:0px;
+  right:0;
   top:7px;
 }
 #analytics-logo{

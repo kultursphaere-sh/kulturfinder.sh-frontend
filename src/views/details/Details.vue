@@ -1,12 +1,12 @@
 <template>
   <div id="details">
     <vue-headful
-      :title="(institution.name ? institution.name : $t('common.loading')) + ' | ' + $t('SEO.title')"
-      :description="institution.claim + ' - ' + institution.description + ' || ' + $t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords') + ', '+ institution.tags + ', '+ institution.categories"
+      :title="(institution.name ? institution.name : $t('common.loading')) + ' | ' + appName"
+      :description="institution.claim + ' - ' + institution.description + ' || ' + appDescription"
+      :keywords="appKeywords + ', '+ institution.tags + ', '+ institution.categories"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header>
       <template #center>
@@ -14,7 +14,7 @@
           <img
             height="40px"
             class="logo p-0"
-            src="@/assets/images/logos/kf_logo.png"
+            :src="'/' + tenant + '/img/logos/kf_logo.png'"
             :alt="$t('navbar.logo')"
             role="img"
             data-cy="kulturfinderLogo"
@@ -22,7 +22,7 @@
         </b-nav-item>
       </template>
       <template class="d-flex" #right>
-        <b-button pill class="labeled-button mr-1" @click="onFavoriteClick">
+        <b-button pill class="labeled-button pr-0" @click="onFavoriteClick">
           <icon-base
             :title="$t('navbar.saveAsFavorite')"
             color="#003064"
@@ -187,7 +187,7 @@
                     <icon-address/>
                   </template>
                   <template #text>
-                    <div class="text-dark">
+                    <div class="text-primary">
                       {{ institution.address.street }}<br>
                       {{ institution.address.zip }} {{ institution.address.place }}
                     </div>
@@ -613,8 +613,8 @@ export default {
     },
     isIOSWebAppWrongVersion() {
       // getUserMedia only works as iOS-PWA with iOS 13.4.1 and higher
-      const iOS = !!window.navigator.userAgent.match(/iPad/i) ||
-        !!window.navigator.userAgent.match(/iPhone/i)
+      const iOS = !!RegExp(/iPad/i).exec(window.navigator.userAgent) ||
+        !!RegExp(/iPhone/i).exec(window.navigator.userAgent)
       return iOS &&
         window.matchMedia('(display-mode: standalone)').matches &&
         lt(this.detectRTC.osVersion, '13.4.1')
@@ -627,7 +627,12 @@ export default {
       return this.listType === 'dashboard'
         ? `/${this.$route.params.locale}/institutions/map`
         : `/${this.$route.params.locale}/institutions/${this.listType}`
-    }
+    },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT }
   },
   methods: {
     onFavoriteClick: async function () {
@@ -653,7 +658,8 @@ export default {
         openingTimeDay = this.institution.openingTimes.week.sat
       } else if (day === 0) {
         openingTimeDay = this.institution.openingTimes.week.sun
-      } return openingTimeDay || null
+      }
+      return openingTimeDay || null
     },
 
     getCurrentOpeningState() {
@@ -820,6 +826,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.logo {
+  @media (max-width: $breakpoint-logo-xs) {
+    width: 120px;
+    height: auto;
+  }
+  @media (min-width: $breakpoint-logo-xs) {
+    width: auto;
+    height: 40px;
+  }
+}
+
 input[type=submit] {
   font-size: inherit;
 }

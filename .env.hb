@@ -1,0 +1,13 @@
+VUE_APP_I18N_LOCALE=de
+VUE_APP_I18N_FALLBACK_LOCALE=en
+VUE_APP_MUSEUMSCARD=false
+VUE_APP_LANGUAGES=de,en
+VUE_APP_NEW_API=true
+VUE_APP_TENANT=hb
+VUE_APP_MATOMO=false
+VUE_APP_HTML_TITLE=Kulturfinder Bremen & Bremerhaven
+VUE_APP_NAME=kulturfinder.bremen.de
+VUE_APP_DESCRIPTION=Der kulturfinder.bremen.de ist eine App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in Bremen und Bremerhaven zu finden. Geobasiert werden Kultureinrichtungen im Umkreis des Standortes des Nutzers auf einer Landkarte angezeigt. Zu jeder Institution gibt es zudem ein Foto sowie eine Beschreibung, die Adresse und weitere Angebote.
+VUE_APP_DESCRIPTION=Der kulturfinder.bremen.de ist eine App, die es den Nutzer:innen ermöglicht, mobil auf ihrem Smartphone Kulturinstitutionen in Bremen und Bremerhaven zu finden.
+VUE_APP_KEYWORDS=Kulturfinder, Kultur, App, Bremen, Bremerhaven, Digitalisierung, Schietwetter, Kulturinstitution
+VUE_APP_URL=https://kulturfinder.bremen.de

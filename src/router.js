@@ -18,9 +18,9 @@ const router = new Router({
     { path: '/weihnachtshaus', redirect: '/de/institutions/list/details/act001696' },
     { path: '/weihnachtsgruss', redirect: '/de/institutions/list/details/act001696/living-images' },
     /* Temp christmas routes end */
-    {
-      path: 'sbom.json'
-    },
+    { path: '/sbom.json' },
+    { path: '/api/*' },
+    { path: '/service-worker.js' },
     {
       path: '/:locale(de|en|da)?',
       component: {

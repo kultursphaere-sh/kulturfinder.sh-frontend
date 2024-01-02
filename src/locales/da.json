@@ -184,7 +184,7 @@
   },
   "pwaModal": {
     "title": "App installere",
-    "text": "You can download and install the kulturfinder.sh app. Then you will be able to use the app online und have access to the culture of Schleswig-Holstein at all times.",
+    "text": "You can download and install the kulturfinder app. You can then use the app offline, let you find cultural institutions at any time straight from your home screen.",
     "android": {
       "step1": "1. Open the browser menu.",
       "step2": "2. Select 'Add to home screen'.",
@@ -344,6 +344,9 @@
     "location": {
       "start": "Din position"
     }
+  },
+  "vbn": {
+    "showDepartures": "Vis afgangstider for VBN"
   },
   "socialLinks": {
     "noSocialMedia": "Der findes ingen sociale netværk."

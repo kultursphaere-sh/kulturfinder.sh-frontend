@@ -196,19 +196,6 @@ export default {
   background-color: #f6f6f6 !important;
 }
 
-.cluster-marker {
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
-  background-color: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  border-color: #243F6E;
-  border-style: solid;
-  border-width: 2px;
-  font-weight: bold;
-}
-
 .leaflet-control-locate.active {
     color: #1c3f6e !important; /* has to be css*/
 }

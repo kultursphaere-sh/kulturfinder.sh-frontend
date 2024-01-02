@@ -9,9 +9,13 @@
     role="presentation"
   >
     <title>{{ title }}</title>
-    <g :fill="color">
+    <g
+      v-if="color"
+      :fill="color"
+    >
       <slot/>
     </g>
+    <slot v-if="!color"/>
   </svg>
 </template>
 
@@ -33,7 +37,7 @@ export default {
     },
     color: {
       type: String,
-      default: 'currentColor'
+      default: ''
     }
   }
 }

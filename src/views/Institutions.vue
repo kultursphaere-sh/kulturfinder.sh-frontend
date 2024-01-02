@@ -2,11 +2,11 @@
   <div id="institutions">
     <vue-headful
       :title="titleString"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
-      :lang="`/${$route.params.locale}/`"
+      :description="appDescription"
+      :keywords="appKeywords"
+      :lang="`${locale}`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <ks-header
       :back-target="{
@@ -53,13 +53,13 @@
           </icon-base>
         </b-button>
         <!-- Home Button -->
-        <b-nav-item router-link :to="'/${$route.params.locale}/'">
-          <img
-            alt="HomeButton"
-            height="20px"
-            src="@/assets/images/icons/cards/HomeFull1.svg"
+        <b-nav-item router-link :to="`/${locale}`">
+          <icon-base
+            title="Home-Button"
             class="homeButton"
           >
+            <icon-home/>
+          </icon-base>
         </b-nav-item>
       </template>
       <template #toggle-bar>
@@ -118,7 +118,7 @@
       >
         <icon-base
           :title="$t('common.filters')"
-          :color="isFilterActive ? '#fff' : '#003064'"
+          :color="isFilterActive ? '#fff' : '#3c4d61'"
           class="mr-2"
         >
           <icon-controls/>
@@ -134,6 +134,8 @@ import SearchBar from '@/components/common/SearchBar.vue'
 import KsHeader from '@/components/layout/Header.vue'
 import NoGpsBar from '@/components/institutions/NoGpsBar.vue'
 import { mapGetters } from 'vuex'
+import IconHome from '@/components/icons/IconHome.vue'
+import i18n from '@/i18n'
 
 export default {
   name: 'Institutions',
@@ -163,18 +165,22 @@ export default {
     },
     titleString() {
       if (this.$store.state.filters.isFavorite) {
-        return this.$t('common.favorites') + ' | ' + this.$t('SEO.title')
+        return this.$t('common.favorites') + ' | ' + process.env.VUE_APP_NAME
       } else {
         if (this.listType === 'list') {
-          return this.$t('common.list') + ' | ' + this.$t('SEO.title')
+          return this.$t('common.list') + ' | ' + process.env.VUE_APP_NAME
         } else {
           if (this.listType === 'map') {
-            return this.$t('common.map') + ' | ' + this.$t('SEO.title')
+            return this.$t('common.map') + ' | ' + process.env.VUE_APP_NAME
           }
         }
       }
-      return this.$t('common.loading') + ' | ' + this.$t('SEO.title')
-    }
+      return this.$t('common.loading') + ' | ' + process.env.VUE_APP_NAME
+    },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    locale: function () { return i18n.locale }
   },
   methods: {
     onToggleSearchbar() {
@@ -200,6 +206,7 @@ export default {
     }
   },
   components: {
+    IconHome,
     KsHeader,
     SearchBar,
     NoGpsBar
@@ -211,6 +218,11 @@ export default {
 header .btn {
   padding: 4px;
 }
+
+.homeButton {
+  fill: $primary
+}
+
 .tab {
   display: flex;
   align-items: center;
@@ -244,7 +256,7 @@ a.activeTab:hover {
 #filter-btn {
   width: 140px;
   height: 40px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;
   border: 1px solid $primary;
   border-radius: 7px;
   display: flex;
@@ -287,6 +299,6 @@ margin-top: -40px;
 }
 .no-gps-bar-slide-enter-to,
 .no-gps-bar-slide-leave {
-margin-top: 0px;
+margin-top: 0;
 }
 </style>
