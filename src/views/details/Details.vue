@@ -777,9 +777,7 @@ export default {
         if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
           return this.getDayName(i)
         }
-        console.log('i: ', i)
-      } console.log('getNextOpeningDay false')
-      return false
+      } return false
     },
 
     getDayName(dayIndex) {
