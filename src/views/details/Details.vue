@@ -278,6 +278,7 @@
               <div v-else id="opening-hours-container">
                 <!-- Opening Status -->
                 <div v-if="institution.openingTimes.week" id="opening-status">
+                  <!-- Institution currently opened -->
                   <b-row v-if="getCurrentOpeningState()">
                     <b-col cols="3">
                       <div id="opened" class="py-2 mt-4 mb-2">
@@ -288,16 +289,25 @@
                       <p>{{ $t('details.closes') }} {{ $t('details.at') }} {{ getNextClosingTime() | time($i18n.locale) }}</p>
                     </b-col>
                   </b-row>
-                  <b-row v-else>
+                  <!-- Institution always closed -->
+                  <b-row v-if="getNextOpeningDay() === false && !getCurrentOpeningState()">
                     <b-col cols="3">
                       <div id="closed" class="py-2 mt-4 mb-2">
+                        {{ $t('details.closed') }}
+                      </div>
+                    </b-col>
+                  </b-row>
+                  <!-- Institution currently closed -->
+                  <b-row v-if="!getCurrentOpeningState()">
+                    <b-col cols="3">
+                      <div id="closed" class="py-2 mt-4 mb-2 px-1">
                         {{ $t('details.currentlyClosed') }}
                       </div>
                     </b-col>
                     <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
                       <p>
                         {{ $t('details.opens') }}
-                        <span v-if="getNextOpeningDay() !== getDayName(new Date().getDay())">
+                        <span v-if="getNextOpeningDay() !== getDayName(new Date().getDay()) && getNextOpeningDay() !== false">
                           {{ $t(`details.${getNextOpeningDay()}`) }}
                         </span>
                         {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }}
@@ -695,6 +705,19 @@ export default {
     // returns true if day has openingTimes
     getOpenDayState(day) {
       const openingTimes = this.getDayTimes(day)
+
+      if (
+        openingTimes &&
+        openingTimes.first &&
+        openingTimes.first.timeStart === '' &&
+        openingTimes.first.timeEnd === '' &&
+        openingTimes.second &&
+        openingTimes.second.timeStart === '' &&
+        openingTimes.second.timeEnd === ''
+      ) {
+        return false
+      }
+
       return !(openingTimes === undefined || openingTimes === null)
     },
 
@@ -754,7 +777,9 @@ export default {
         if (this.getOpenDayState(i) === true && this.getCurrentOpeningState() === false) {
           return this.getDayName(i)
         }
-      } return this.getDayName(openingDayNum)
+        console.log('i: ', i)
+      } console.log('getNextOpeningDay false')
+      return false
     },
 
     getDayName(dayIndex) {
