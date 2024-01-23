@@ -278,38 +278,31 @@
               <div v-else id="opening-hours-container">
                 <!-- Opening Status -->
                 <div v-if="institution.openingTimes.week" id="opening-status">
-                  <!-- Institution currently opened -->
-                  <b-row v-if="getCurrentOpeningState()">
-                    <b-col cols="3">
-                      <div id="opened" class="py-2 mt-4 mb-2">
+                  <b-row>
+                    <b-col cols="12" md="4">
+                      <!-- Institution currently opened -->
+                      <div v-if="getCurrentOpeningState()" id="opened" class="py-2 mt-4 mb-2">
                         {{ $t('details.currentlyOpened') }}
                       </div>
-                    </b-col>
-                    <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
-                      <p>{{ $t('details.closes') }} {{ $t('details.at') }} {{ getNextClosingTime() | time($i18n.locale) }}</p>
-                    </b-col>
-                  </b-row>
-                  <!-- Institution always closed -->
-                  <b-row v-if="getNextOpeningDay() === false && !getCurrentOpeningState()">
-                    <b-col cols="3">
-                      <div id="closed" class="py-2 mt-4 mb-2">
+                      <!-- Institution currently closed -->
+                      <div v-if="!getCurrentOpeningState() && getNextOpeningDay() !== false" id="closed" class="py-2 mt-4 mb-2">
+                        {{ $t('details.currentlyClosed') }}
+                      </div>
+                      <!-- Institution always closed -->
+                      <div v-if="getNextOpeningDay() === false && !getCurrentOpeningState()" id="closed" class="py-2 mt-4 mb-2">
                         {{ $t('details.closed') }}
                       </div>
                     </b-col>
-                  </b-row>
-                  <!-- Institution currently closed -->
-                  <b-row v-if="!getCurrentOpeningState()">
-                    <b-col cols="3">
-                      <div id="closed" class="py-2 mt-4 mb-2 px-1">
-                        {{ $t('details.currentlyClosed') }}
-                      </div>
-                    </b-col>
-                    <b-col cols="4" id="nextOpened" class="pt-2 mt-4 mb-2">
-                      <p>
-                        {{ $t('details.opens') }}
-                        <span v-if="getNextOpeningDay() !== getDayName(new Date().getDay()) && getNextOpeningDay() !== false">
-                          {{ $t(`details.${getNextOpeningDay()}`) }}
-                        </span>
+                    <b-col cols="12" md="4" id="nextOpened"
+                           class="pt-2 mb-2 desktop-mt mobile-mt"
+                    >
+                      <!-- Institution currently opened -->
+                      <p v-if="getCurrentOpeningState()">
+                        {{ $t('details.closes') }} {{ $t('details.at') }} {{ getNextClosingTime() | time($i18n.locale) }}
+                      </p>
+                      <!-- Institution currently closed -->
+                      <p v-if="!getCurrentOpeningState() && getNextOpeningDay() !== false">
+                        {{ $t('details.opens') }} {{ $t(`details.${getNextOpeningDay()}`) }}
                         {{ $t('details.at') }} {{ getNextOpeningTime() | time($i18n.locale) }}
                       </p>
                     </b-col>
@@ -997,4 +990,18 @@ input[type=submit] {
     width: 100%;
   }
 }
+
+@media (min-width: 500px) { /* Für Desktop */
+  .desktop-mt {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) { /* Für Mobilgeräte */
+  .mobile-mt {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
 </style>
