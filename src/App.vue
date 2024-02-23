@@ -74,7 +74,6 @@ export default {
     }
   },
   mounted() {
-    // TODO (maybe on destroyed without button?)
     if ('serviceWorker' in navigator) {
       console.log('CHECK_SW')
       const wb = new Workbox('/service-worker.js')
@@ -137,11 +136,6 @@ html, body {
   width: 100%;
   min-width: 312px;
   background-color: $background;
-  /*   background-image: linear-gradient(to bottom, $white 0%, $background 80%);
-    background-image: -moz-linear-gradient(to bottom, $white 0%, $background 80%);
-    background-image: -webkit-linear-gradient(bottom, $white 0%, $background 80%);
-    background-image: -o-linear-gradient(to bottom, $white 0%, $background 80%);
-    background-image: -ms-linear-gradient(to bottom, $white 0%, $background 80%); */
 }
 
 #main-container {
@@ -220,14 +214,5 @@ h6 {
 hr {
   margin-right: 4rem;
   margin-left: 4rem;
-}
-
-/*
-  This will hide the focus indicator if the element receives focus via the mouse,
-  but it will still show up on keyboard focus.
-*/
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 </style>

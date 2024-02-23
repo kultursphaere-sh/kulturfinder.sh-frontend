@@ -3,9 +3,9 @@
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
   "version": 1,
-  "serialNumber": "urn:uuid:8cdde50a-bc9b-44f8-b58d-1ab200e6acbb",
+  "serialNumber": "urn:uuid:52597d6c-9715-4aa4-9b0a-2517e880a7e6",
   "metadata": {
-    "timestamp": "2023-10-17T08:06:19.718Z",
+    "timestamp": "2024-03-04T11:13:25.520Z",
     "tools": [
       {
         "vendor": "@cyclonedx",
@@ -695,125 +695,6 @@
     },
     {
       "type": "library",
-      "name": "encoding",
-      "version": "0.1.13",
-      "bom-ref": "encoding@0.1.13",
-      "author": "Andris Reinman",
-      "description": "Convert encodings, uses iconv-lite",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/encoding@0.1.13?vcs_url=git%2Bhttps%3A//github.com/andris9/encoding.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/andris9/encoding.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/andris9/encoding#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/andris9/encoding/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/encoding"
-        }
-      ],
-      "components": [
-        {
-          "type": "library",
-          "name": "iconv-lite",
-          "version": "0.6.3",
-          "bom-ref": "encoding@0.1.13|iconv-lite@0.6.3",
-          "author": "Alexander Shtuchkin",
-          "description": "Convert character encodings in pure javascript.",
-          "licenses": [
-            {
-              "license": {
-                "id": "MIT"
-              }
-            }
-          ],
-          "purl": "pkg:npm/iconv-lite@0.6.3?vcs_url=git%3A//github.com/ashtuchkin/iconv-lite.git",
-          "externalReferences": [
-            {
-              "url": "git://github.com/ashtuchkin/iconv-lite.git",
-              "type": "vcs",
-              "comment": "as detected from PackageJson property \"repository.url\""
-            },
-            {
-              "url": "https://github.com/ashtuchkin/iconv-lite",
-              "type": "website",
-              "comment": "as detected from PackageJson property \"homepage\""
-            },
-            {
-              "url": "https://github.com/ashtuchkin/iconv-lite/issues",
-              "type": "issue-tracker",
-              "comment": "as detected from PackageJson property \"bugs.url\""
-            }
-          ],
-          "properties": [
-            {
-              "name": "cdx:npm:package:path",
-              "value": "node_modules/encoding/node_modules/iconv-lite"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "safer-buffer",
-      "version": "2.1.2",
-      "bom-ref": "safer-buffer@2.1.2",
-      "author": "Nikita Skovoroda",
-      "description": "Modern Buffer API polyfill without footguns",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/safer-buffer@2.1.2?vcs_url=git%2Bhttps%3A//github.com/ChALkeR/safer-buffer.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/ChALkeR/safer-buffer.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/ChALkeR/safer-buffer#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/ChALkeR/safer-buffer/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/safer-buffer"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "whatwg-url",
       "version": "5.0.0",
       "bom-ref": "whatwg-url@5.0.0",
@@ -971,10 +852,16 @@
     {
       "type": "library",
       "name": "jquery",
-      "version": "3.6.3",
-      "bom-ref": "jquery@3.6.3",
+      "version": "3.7.1",
+      "bom-ref": "jquery@3.7.1",
       "author": "OpenJS Foundation and other contributors",
       "description": "JavaScript library for DOM operations",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9b86afafcc8bf2498537ca6cadb14516607f21fd7888de68f67c3f3609e733e9326c326946c0329d5d81b1fa5362b4d1cac6147400d50fb0a45148b3824a4b7e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -982,7 +869,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/jquery@3.6.3?vcs_url=git%2Bhttps%3A//github.com/jquery/jquery.git",
+      "purl": "pkg:npm/jquery@3.7.1",
       "externalReferences": [
         {
           "url": "git+https://github.com/jquery/jquery.git",
@@ -998,6 +885,11 @@
           "url": "https://github.com/jquery/jquery/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz",
+          "type": "distribution",
+          "comment": "as detected from npm-ls property \"resolved\""
         }
       ],
       "properties": [
@@ -1131,13 +1023,6 @@
           "bom-ref": "vue@2.7.14|@vue/compiler-sfc@2.7.14",
           "description": "compiler-sfc for Vue 2",
           "purl": "pkg:npm/%40vue/compiler-sfc@2.7.14",
-          "externalReferences": [
-            {
-              "url": "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-2.7.14.tgz",
-              "type": "distribution",
-              "comment": "as detected from npm-ls property \"resolved\""
-            }
-          ],
           "properties": [
             {
               "name": "cdx:npm:package:path",
@@ -1159,7 +1044,7 @@
               }
             }
           ],
-          "purl": "pkg:npm/postcss@8.4.31",
+          "purl": "pkg:npm/postcss@8.4.31?vcs_url=git%2Bhttps%3A//github.com/postcss/postcss.git",
           "externalReferences": [
             {
               "url": "git+https://github.com/postcss/postcss.git",
@@ -1175,11 +1060,6 @@
               "url": "https://github.com/postcss/postcss/issues",
               "type": "issue-tracker",
               "comment": "as detected from PackageJson property \"bugs.url\""
-            },
-            {
-              "url": "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz",
-              "type": "distribution",
-              "comment": "as detected from npm-ls property \"resolved\""
             }
           ],
           "properties": [
@@ -1203,7 +1083,7 @@
               }
             }
           ],
-          "purl": "pkg:npm/picocolors@1.0.0",
+          "purl": "pkg:npm/picocolors@1.0.0?vcs_url=git%2Bhttps%3A//github.com/alexeyraspopov/picocolors.git",
           "externalReferences": [
             {
               "url": "git+https://github.com/alexeyraspopov/picocolors.git",
@@ -1219,11 +1099,6 @@
               "url": "https://github.com/alexeyraspopov/picocolors/issues",
               "type": "issue-tracker",
               "comment": "as detected from PackageJson property \"bugs.url\""
-            },
-            {
-              "url": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
-              "type": "distribution",
-              "comment": "as detected from npm-ls property \"resolved\""
             }
           ],
           "properties": [
@@ -1315,45 +1190,6 @@
     },
     {
       "type": "library",
-      "name": "focus-visible",
-      "version": "5.2.0",
-      "bom-ref": "focus-visible@5.2.0",
-      "author": "WICG",
-      "description": "Polyfill for :focus-visible pseudo-selector",
-      "licenses": [
-        {
-          "license": {
-            "id": "W3C"
-          }
-        }
-      ],
-      "purl": "pkg:npm/focus-visible@5.2.0?vcs_url=git%2Bhttps%3A//github.com/WICG/focus-visible.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/WICG/focus-visible.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/WICG/focus-visible",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/WICG/focus-visible/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/focus-visible"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "leaflet",
       "version": "1.9.4",
       "bom-ref": "leaflet@1.9.4",
@@ -1365,7 +1201,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/leaflet@1.9.4",
+      "purl": "pkg:npm/leaflet@1.9.4?vcs_url=git%3A//github.com/Leaflet/Leaflet.git",
       "externalReferences": [
         {
           "url": "git://github.com/Leaflet/Leaflet.git",
@@ -1381,11 +1217,6 @@
           "url": "https://github.com/Leaflet/Leaflet/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
-        },
-        {
-          "url": "https://registry.npmjs.org/leaflet/-/leaflet-1.9.4.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \"resolved\""
         }
       ],
       "properties": [
@@ -2021,44 +1852,6 @@
     },
     {
       "type": "library",
-      "name": "fsevents",
-      "version": "2.3.2",
-      "bom-ref": "fsevents@2.3.2",
-      "description": "Native Access to MacOS FSEvents",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/fsevents@2.3.2?vcs_url=git%2Bhttps%3A//github.com/fsevents/fsevents.git",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/fsevents/fsevents.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/fsevents/fsevents",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/fsevents/fsevents/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/fsevents"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "is-glob",
       "version": "4.0.3",
       "bom-ref": "is-glob@4.0.3",
@@ -2344,7 +2137,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/semver@7.5.4",
+      "purl": "pkg:npm/semver@7.5.4?vcs_url=git%2Bhttps%3A//github.com/npm/node-semver.git",
       "externalReferences": [
         {
           "url": "git+https://github.com/npm/node-semver.git",
@@ -2360,11 +2153,6 @@
           "url": "https://github.com/npm/node-semver/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
-        },
-        {
-          "url": "https://registry.npmjs.org/semver/-/semver-7.5.4.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \"resolved\""
         }
       ],
       "properties": [
@@ -5551,6 +5339,45 @@
     },
     {
       "type": "library",
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "bom-ref": "safer-buffer@2.1.2",
+      "author": "Nikita Skovoroda",
+      "description": "Modern Buffer API polyfill without footguns",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/safer-buffer@2.1.2?vcs_url=git%2Bhttps%3A//github.com/ChALkeR/safer-buffer.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/ChALkeR/safer-buffer.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/ChALkeR/safer-buffer#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/ChALkeR/safer-buffer/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/safer-buffer"
+        }
+      ]
+    },
+    {
+      "type": "library",
       "name": "mkdirp",
       "version": "0.5.6",
       "bom-ref": "mkdirp@0.5.6",
@@ -7547,10 +7374,16 @@
       "type": "library",
       "name": "parser",
       "group": "@babel",
-      "version": "7.22.5",
-      "bom-ref": "@babel/parser@7.22.5",
+      "version": "7.23.3",
+      "bom-ref": "@babel/parser@7.23.3",
       "author": "The Babel Team",
       "description": "A JavaScript parser",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "b95b1636f955b089e29d5da9acdcffde51c26fee4227e7be21405f6e34e8007383b5f1982df085b98e0053b4ec908f9d00a93e9e3b0f8818ead60293bd93816b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7558,7 +7391,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40babel/parser@7.22.5?vcs_url=git%2Bhttps%3A//github.com/babel/babel.git#packages/babel-parser",
+      "purl": "pkg:npm/%40babel/parser@7.23.3#packages/babel-parser",
       "externalReferences": [
         {
           "url": "git+https://github.com/babel/babel.git#packages/babel-parser",
@@ -7574,6 +7407,11 @@
           "url": "https://github.com/babel/babel/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22pkg%3A+parser+%28babylon%29%22+is%3Aopen",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/@babel/parser/-/parser-7.23.3.tgz",
+          "type": "distribution",
+          "comment": "as detected from npm-ls property \"resolved\""
         }
       ],
       "properties": [
@@ -7597,7 +7435,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/nanoid@3.3.6",
+      "purl": "pkg:npm/nanoid@3.3.6?vcs_url=git%2Bhttps%3A//github.com/ai/nanoid.git",
       "externalReferences": [
         {
           "url": "git+https://github.com/ai/nanoid.git",
@@ -7613,11 +7451,6 @@
           "url": "https://github.com/ai/nanoid/issues",
           "type": "issue-tracker",
           "comment": "as detected from PackageJson property \"bugs.url\""
-        },
-        {
-          "url": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.6.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \"resolved\""
         }
       ],
       "properties": [
@@ -7862,89 +7695,6 @@
     },
     {
       "type": "library",
-      "name": "leaflet",
-      "group": "@types",
-      "version": "1.9.6",
-      "bom-ref": "@types/leaflet@1.9.6",
-      "description": "TypeScript definitions for Leaflet.js",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40types/leaflet@1.9.6#types/leaflet",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/leaflet",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/leaflet",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        },
-        {
-          "url": "https://registry.npmjs.org/@types/leaflet/-/leaflet-1.9.6.tgz",
-          "type": "distribution",
-          "comment": "as detected from npm-ls property \"resolved\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@types/leaflet"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "geojson",
-      "group": "@types",
-      "version": "7946.0.10",
-      "bom-ref": "@types/geojson@7946.0.10",
-      "description": "TypeScript definitions for geojson",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40types/geojson@7946.0.10?vcs_url=git%2Bhttps%3A//github.com/DefinitelyTyped/DefinitelyTyped.git#types/geojson",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/geojson",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/geojson",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@types/geojson"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "vuex-geolocation",
       "version": "1.2.0",
       "bom-ref": "vuex-geolocation@1.2.0",
@@ -8109,8 +7859,7 @@
         "ajv@6.12.6",
         "bootstrap-vue@2.23.1",
         "detectrtc@1.4.1",
-        "focus-visible@5.2.0",
-        "jquery@3.6.3",
+        "jquery@3.7.1",
         "leaflet@1.9.4",
         "localforage@1.10.0",
         "lodash@4.17.21",
@@ -8223,24 +7972,8 @@
     {
       "ref": "node-fetch@2.6.9",
       "dependsOn": [
-        "encoding@0.1.13",
         "whatwg-url@5.0.0"
       ]
-    },
-    {
-      "ref": "encoding@0.1.13",
-      "dependsOn": [
-        "encoding@0.1.13|iconv-lite@0.6.3"
-      ]
-    },
-    {
-      "ref": "encoding@0.1.13|iconv-lite@0.6.3",
-      "dependsOn": [
-        "safer-buffer@2.1.2"
-      ]
-    },
-    {
-      "ref": "safer-buffer@2.1.2"
     },
     {
       "ref": "whatwg-url@5.0.0",
@@ -8258,12 +7991,12 @@
     {
       "ref": "bootstrap@4.6.2",
       "dependsOn": [
-        "jquery@3.6.3",
+        "jquery@3.7.1",
         "popper.js@1.16.1"
       ]
     },
     {
-      "ref": "jquery@3.6.3"
+      "ref": "jquery@3.7.1"
     },
     {
       "ref": "popper.js@1.16.1"
@@ -8284,7 +8017,7 @@
     {
       "ref": "vue@2.7.14|@vue/compiler-sfc@2.7.14",
       "dependsOn": [
-        "@babel/parser@7.22.5",
+        "@babel/parser@7.23.3",
         "vue@2.7.14|postcss@8.4.31",
         "source-map@0.6.1"
       ]
@@ -8305,9 +8038,6 @@
     },
     {
       "ref": "detectrtc@1.4.1"
-    },
-    {
-      "ref": "focus-visible@5.2.0"
     },
     {
       "ref": "leaflet@1.9.4"
@@ -8349,7 +8079,6 @@
       "dependsOn": [
         "anymatch@3.1.3",
         "chokidar@3.5.3|braces@3.0.2",
-        "fsevents@2.3.2",
         "chokidar@3.5.3|glob-parent@5.1.2",
         "is-binary-path@2.1.0",
         "is-glob@4.0.3",
@@ -8396,9 +8125,6 @@
     },
     {
       "ref": "picomatch@2.3.1"
-    },
-    {
-      "ref": "fsevents@2.3.2"
     },
     {
       "ref": "is-glob@4.0.3",
@@ -8888,6 +8614,9 @@
       ]
     },
     {
+      "ref": "safer-buffer@2.1.2"
+    },
+    {
       "ref": "mkdirp@0.5.6",
       "dependsOn": [
         "minimist@1.2.8"
@@ -9136,7 +8865,7 @@
       ]
     },
     {
-      "ref": "@babel/parser@7.22.5"
+      "ref": "@babel/parser@7.23.3"
     },
     {
       "ref": "nanoid@3.3.6"
@@ -9169,19 +8898,9 @@
     {
       "ref": "vue2-leaflet@2.7.1",
       "dependsOn": [
-        "@types/leaflet@1.9.6",
         "leaflet@1.9.4",
         "vue@2.7.14"
       ]
-    },
-    {
-      "ref": "@types/leaflet@1.9.6",
-      "dependsOn": [
-        "@types/geojson@7946.0.10"
-      ]
-    },
-    {
-      "ref": "@types/geojson@7946.0.10"
     },
     {
       "ref": "vuex-geolocation@1.2.0",
