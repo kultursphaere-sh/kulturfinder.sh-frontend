@@ -14,7 +14,6 @@ import 'leaflet/dist/leaflet.css'
 import i18n from './i18n'
 import VScrollLock from 'v-scroll-lock'
 import vueHeadful from 'vue-headful'
-import 'focus-visible/dist/focus-visible.min'
 
 Vue.component('vue-headful', vueHeadful)
 
@@ -44,11 +43,6 @@ Vue.use(Vue2Leaflet)
 Vue.use(VueResource)
 Vue.use(VScrollLock)
 
-// Root der API - im Moment dient die corsproxy.php als CORS-Proxy
-/* Vue.http.options.root =
-  'https://kultursphaere .sh/corsproxy.php?url='; */
-// TODO(change off to error in eslintc.js at no-console and no-debugger)
-
 new Vue({
   router,
   store,
@@ -65,15 +59,14 @@ new Vue({
 function getCookie(cname) {
   const name = cname + '='
   const ca = document.cookie.split(';')
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i]
-    while (c.charAt(0) === ' ') {
+  ca.forEach(c => {
+    while (c.startsWith(' ')) {
       c = c.substring(1)
     }
-    if (c.indexOf(name) === 0) {
+    if (c.startsWith(name)) {
       return c.substring(name.length, c.length)
     }
-  }
+  })
   return ''
 }
 
