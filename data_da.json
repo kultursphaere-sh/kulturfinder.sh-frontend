@@ -74,7 +74,7 @@
     "pos": "9.9960026 53.6639516",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -239,7 +239,7 @@
       "Parkering tilgængelig",
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -303,7 +303,7 @@
       "Friluft",
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032"
+      "Børn/Unge"
     ],
     "icon": [
       {
@@ -378,7 +378,7 @@
       "Gratis",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -625,7 +625,7 @@
     "tags": [
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -695,7 +695,7 @@
       "Kørestolsadgang",
       "Butik",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -784,7 +784,7 @@
       "Kørestolsadgang",
       "Butik",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -866,7 +866,7 @@
     "teaser": "Oplev naturen midt i vadehavet",
     "tags": [
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -1009,7 +1009,7 @@
     "street": "Burgstaaken 89",
     "pos": "11.19227695465 54.4194831848",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -1062,7 +1062,7 @@
       "Kørestolsadgang",
       "Butik",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -1161,7 +1161,7 @@
     "tags": [
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -1263,7 +1263,7 @@
       "Gratis",
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr",
       "Videoklip tilgængelige"
@@ -1369,9 +1369,9 @@
     "tags": [
       "Kørestolsadgang",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -1438,9 +1438,9 @@
     "teaser": "Udstilling naturoplevelser Femern",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -1494,9 +1494,9 @@
     "teaser": "Besøg på en u-båd og museum",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -1553,7 +1553,7 @@
     "pos": "9.43947982788 54.790641784668",
     "teaser": "Frit teater i Flensborg",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -1614,7 +1614,7 @@
       "Butik",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Friluft"
@@ -1712,7 +1712,7 @@
     "tags": [
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -1777,9 +1777,9 @@
     "teaser": "Frøslevlejrens historie 1944-45",
     "tags": [
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Parkering tilgængelig",
       "Butik",
@@ -1853,7 +1853,7 @@
     "teaser": "Beskyttelse af biodiversitet",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -1917,7 +1917,7 @@
       "Handicapparkering",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -1993,7 +1993,7 @@
     "teaser": "Vigtigste danske industriminder",
     "tags": [
       "Parkering tilgængelig",
-      "opt018",
+      "Kørestolsadgang",
       "Handicaptoilet",
       "Aktiviteter for dårligt vejr",
       "opt005",
@@ -2064,7 +2064,7 @@
     "tags": [
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -2228,7 +2228,7 @@
     "pos": "10.33374595642 53.530666",
     "teaser": "Tropisk hus og parkområde",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -2279,81 +2279,6 @@
     },
     "links": {
       "self": "http://xtree-actor-api.digicult-verbund.de/getRepositoryItem?id=act0002583"
-    }
-  },
-  {
-    "id": "act0002598",
-    "name": "Focke-Museum",
-    "place": "Bremen",
-    "street": "Schwachhauser Heerstraße 240",
-    "pos": "8.862920761108 53.090335845947",
-    "tags": [
-      "Kørestolsadgang",
-      "Handicapparkering",
-      "Parkering tilgængelig",
-      "opt032",
-      "Børnevenlig",
-      "opt034",
-      "Tilbud for skoleklasser",
-      "Aktiviteter for dårligt vejr",
-      "Regelmæssige rundvisninger"
-    ],
-    "icon": [
-      {
-        "type": "general",
-        "id": "opt017"
-      },
-      {
-        "type": "general",
-        "id": "opt020"
-      },
-      {
-        "type": "general",
-        "id": "opt004"
-      },
-      {
-        "type": "general",
-        "id": "opt032"
-      },
-      {
-        "type": "general",
-        "id": "opt033"
-      },
-      {
-        "type": "general",
-        "id": "opt034"
-      },
-      {
-        "type": "general",
-        "id": "opt035"
-      },
-      {
-        "type": "general",
-        "id": "opt036"
-      },
-      {
-        "type": "general",
-        "id": "opt006"
-      }
-    ],
-    "classification": [
-      {
-        "type": "tourismustyp",
-        "uri": "http://digicult.vocnet.org/portal/p0297"
-      },
-      {
-        "type": "kulturtyp",
-        "uri": "http://digicult.vocnet.org/portal/"
-      }
-    ],
-    "resource": {
-      "resourceRepresentation": {
-        "type": "image_thumbnail",
-        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m636a156f43161/Focke-Museum/Focke+Museum+Bremen"
-      }
-    },
-    "links": {
-      "self": "http://xtree-actor-api.digicult-verbund.de/getRepositoryItem?id=act0002598"
     }
   },
   {
@@ -2425,9 +2350,9 @@
       "opt019",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft"
@@ -2974,7 +2899,7 @@
       "Gratis",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr",
       "Tilbud på engelsk"
@@ -3038,7 +2963,7 @@
     "tags": [
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -3151,7 +3076,7 @@
       "Regelmæssige rundvisninger",
       "Gastronomi",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -3219,9 +3144,9 @@
     "pos": "9.65356201557692 53.7553927",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "opt019"
     ],
@@ -3393,12 +3318,12 @@
     "teaser": "Kritisk og satirisk grafik",
     "tags": [
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Parkering tilgængelig",
-      "opt034",
+      "Seniorer",
       "Museumskort"
     ],
     "icon": [
@@ -3525,7 +3450,7 @@
     "tags": [
       "Gratis",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser"
     ],
@@ -3585,7 +3510,7 @@
     "tags": [
       "Gratis",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Friluft",
@@ -3714,12 +3639,12 @@
     "pos": "10.4819964 53.720098",
     "teaser": "Håndværk i forskellige epoker",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Gratis",
-      "opt018",
+      "Kørestolsadgang",
       "Handicaptoilet",
       "Museumskort"
     ],
@@ -3789,7 +3714,7 @@
     "pos": "9.4400844 54.785485",
     "teaser": "Teater | literaturlæsninger",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -3847,7 +3772,7 @@
       "opt002",
       "Butik",
       "Aktiviteter for dårligt vejr",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig"
     ],
     "icon": [
@@ -3904,7 +3829,7 @@
     "pos": "10.120177 54.324383",
     "teaser": "Prøv noget godt – lyt til plat!",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -3950,7 +3875,7 @@
     "pos": "9.841272 54.173474",
     "teaser": "Plattysk teater siden 1934",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -4003,7 +3928,7 @@
     "tags": [
       "Parkering tilgængelig",
       "Kørestolsadgang",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -4054,9 +3979,9 @@
     "teaser": "Slesvig-holsténsk adelskultur",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft",
@@ -4139,9 +4064,9 @@
     "teaser": "Museumsbane | køreture",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -4204,9 +4129,9 @@
     "pos": "10.1485472418525 54.3303304",
     "teaser": "Habitater i Nord- og Østersøen",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Kørestolsadgang"
@@ -4267,7 +4192,7 @@
     "teaser": "Arbejde med heste",
     "tags": [
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -4325,9 +4250,9 @@
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -4401,9 +4326,9 @@
     "tags": [
       "opt003",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft"
     ],
@@ -4484,7 +4409,7 @@
     "tags": [
       "Gratis",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Tilbud for skoleklasser"
     ],
@@ -4633,7 +4558,7 @@
     "tags": [
       "Gratis",
       "Aktiviteter for dårligt vejr",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser"
     ],
@@ -4688,13 +4613,13 @@
     "pos": "10.3704894 54.3949801",
     "teaser": "Barndom under forandring",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Parkering tilgængelig",
       "Kørestolsadgang",
-      "opt034",
+      "Seniorer",
       "Museumskort"
     ],
     "icon": [
@@ -4766,9 +4691,9 @@
     "tags": [
       "Gratis",
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft"
@@ -5031,9 +4956,9 @@
       "Regelmæssige rundvisninger",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -5118,7 +5043,7 @@
     "teaser": "Byhistorie",
     "tags": [
       "Gratis",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -5169,7 +5094,7 @@
     "teaser": "Billedkunst af BBK-SH-medlemmer",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -5217,12 +5142,12 @@
     "tags": [
       "opt003",
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Butik",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -5390,7 +5315,7 @@
     "tags": [
       "Aktiviteter for dårligt vejr",
       "Børnevenlig",
-      "opt034"
+      "Seniorer"
     ],
     "icon": [
       {
@@ -5438,9 +5363,9 @@
       "Gratis",
       "Regelmæssige rundvisninger",
       "opt023",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -5516,9 +5441,9 @@
       "Regelmæssige rundvisninger",
       "opt023",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -5660,7 +5585,7 @@
     "pos": "10.4776773 53.5060722",
     "teaser": "Kunstudstillinger | begivenheder ",
     "tags": [
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -5715,7 +5640,7 @@
     "tags": [
       "Gastronomi",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -5816,7 +5741,7 @@
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -5905,7 +5830,7 @@
     "tags": [
       "Gratis",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -5969,12 +5894,12 @@
     "teaser": "Ditmarskens historie",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Butik",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -6048,7 +5973,7 @@
       "Gratis",
       "Gastronomi",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -6112,9 +6037,9 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -6187,7 +6112,7 @@
     "teaser": "Apotek, skibsfart, erhverv",
     "tags": [
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Museumskort"
@@ -6244,7 +6169,7 @@
     "tags": [
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -6352,9 +6277,9 @@
       "opt002",
       "Regelmæssige rundvisninger",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -6429,9 +6354,9 @@
     "pos": "9.0487519 54.4796382",
     "teaser": "Theodor Storm | dukketeatermuseum",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -6499,9 +6424,9 @@
       "Butik",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser"
     ],
     "icon": [
@@ -6597,9 +6522,9 @@
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -6683,7 +6608,7 @@
       "Kørestolsadgang",
       "Handicapparkering",
       "opt026",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "opt031"
@@ -6793,7 +6718,7 @@
     "teaser": "Egnsmuseum ",
     "tags": [
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -6924,9 +6849,9 @@
     "tags": [
       "opt003",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Kørestolsadgang",
@@ -7006,7 +6931,7 @@
       "Parkering tilgængelig",
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -7084,9 +7009,9 @@
     "tags": [
       "Gratis",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -7168,9 +7093,9 @@
       "Handicapparkering",
       "Butik",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -7318,9 +7243,9 @@
     "pos": "10.7735437 53.6982108",
     "teaser": "Museum | begivenheder | arkiv",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -7379,9 +7304,9 @@
     "pos": "9.69899521937041 53.58370285",
     "teaser": "Barndomshus | udstilling",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "opt003"
@@ -7499,7 +7424,7 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "opt031",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Børnevenlig",
@@ -7572,7 +7497,7 @@
       "opt003",
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -7658,9 +7583,9 @@
       "Kørestolsadgang",
       "Aktiviteter for dårligt vejr",
       "Tilbud for skoleklasser",
-      "opt034",
+      "Seniorer",
       "Børnevenlig",
-      "opt032",
+      "Børn/Unge",
       "Gastronomi",
       "Butik",
       "opt003",
@@ -7855,12 +7780,12 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Tilbud for synshæmmede",
-      "opt018",
+      "Kørestolsadgang",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -7950,9 +7875,9 @@
       "Butik",
       "Gastronomi",
       "opt023",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -8035,7 +7960,7 @@
     "pos": "11.1965265148209 54.436332",
     "teaser": "Egnsmuseum Femern ",
     "tags": [
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -8083,9 +8008,9 @@
     "teaser": "Ustilling ombord",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034"
+      "Seniorer"
     ],
     "icon": [
       {
@@ -8140,7 +8065,7 @@
     "tags": [
       "Kørestolsadgang",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -8202,7 +8127,7 @@
       "opt003",
       "Regelmæssige rundvisninger",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Videoklip tilgængelige"
@@ -8275,10 +8200,10 @@
     "tags": [
       "Gratis",
       "Parkering tilgængelig",
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -8356,9 +8281,9 @@
       "Gratis",
       "opt003",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Friluft"
     ],
     "icon": [
@@ -8427,9 +8352,9 @@
       "opt003",
       "Parkering tilgængelig",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft"
     ],
@@ -8501,7 +8426,7 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -8580,7 +8505,7 @@
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "opt014",
-      "opt032",
+      "Børn/Unge",
       "Museumskort"
     ],
     "icon": [
@@ -8656,11 +8581,11 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Gratis",
-      "opt018"
+      "Kørestolsadgang"
     ],
     "icon": [
       {
@@ -8723,7 +8648,7 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -8785,13 +8710,13 @@
     "tags": [
       "Parkering tilgængelig",
       "opt005",
-      "opt018",
+      "Kørestolsadgang",
       "Handicapparkering",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft",
       "Museumskort"
@@ -8940,9 +8865,9 @@
       "Gratis",
       "opt002",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034"
+      "Seniorer"
     ],
     "icon": [
       {
@@ -9001,9 +8926,9 @@
     "tags": [
       "opt003",
       "Parkering tilgængelig",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Friluft",
       "Museumskort"
     ],
@@ -9068,7 +8993,7 @@
     "tags": [
       "Gratis",
       "opt023",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
@@ -9141,10 +9066,10 @@
       "opt023",
       "opt026",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Museumskort"
     ],
     "icon": [
@@ -9211,9 +9136,9 @@
     "teaser": "Museum på folkehøjskolen i Bad Segeberg ",
     "tags": [
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Regelmæssige rundvisninger",
       "Museumskort"
@@ -9276,9 +9201,9 @@
     "pos": "10.879182 53.960635",
     "teaser": "Maritimt museum | udsigtsplatform",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "opt003"
     ],
@@ -9333,7 +9258,7 @@
     "teaser": "Gammelt og nyt smedehåndværk",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -9385,7 +9310,7 @@
     "teaser": "Alfred Nobel | energi og forskning ",
     "tags": [
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Gratis"
@@ -9447,7 +9372,7 @@
     "tags": [
       "Gratis",
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -9568,9 +9493,9 @@
     "pos": "9.5417712 54.5095562",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Museumskort"
     ],
@@ -9637,7 +9562,7 @@
     "pos": "9.7602448423296 53.78292905",
     "teaser": "Slots-ø | kulturhistorisk arv",
     "tags": [
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -9730,13 +9655,13 @@
     "teaser": "Forum for litteratur og billedkunst ",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Butik",
       "Handicaptoilet",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -9822,7 +9747,7 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Friluft",
       "opt026"
@@ -9946,9 +9871,9 @@
       "Butik",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -10045,9 +9970,9 @@
     "tags": [
       "opt003",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -10187,7 +10112,7 @@
     "tags": [
       "opt026",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -10244,11 +10169,11 @@
       "Tilbud for synshæmmede",
       "opt014",
       "opt031",
-      "opt034",
+      "Seniorer",
       "Kørestolsadgang",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Friluft",
@@ -10341,9 +10266,9 @@
     "pos": "10.9809840700704 54.372512",
     "teaser": "Byhistorie | Theodor Storm ",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -10407,10 +10332,10 @@
     "pos": "7.8872756 54.1851964",
     "teaser": "Historie og information",
     "tags": [
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -10509,12 +10434,12 @@
     "pos": "9.991031 54.07181",
     "teaser": "Skulpturpark | udstillinger",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Friluft",
-      "opt018",
+      "Kørestolsadgang",
       "Museumskort"
     ],
     "icon": [
@@ -10586,7 +10511,7 @@
       "Gratis",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Friluft"
@@ -10654,7 +10579,7 @@
     "pos": "8.94656972067864 54.31509195",
     "teaser": "Tönnings byhistorie",
     "tags": [
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Gratis"
     ],
@@ -10704,7 +10629,7 @@
       "opt003",
       "Regelmæssige rundvisninger",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -10764,10 +10689,10 @@
     "teaser": "Industrihistorie",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -10841,7 +10766,7 @@
     "tags": [
       "Gratis",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -10897,9 +10822,9 @@
     "teaser": "Fotodokumentation om bydelen",
     "tags": [
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Gratis",
       "Kørestolsadgang",
@@ -10973,10 +10898,10 @@
     "teaser": "Hansestaden Lübecks vartegn ",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -11051,7 +10976,7 @@
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft",
@@ -11190,10 +11115,10 @@
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "opt002",
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Friluft"
     ],
     "icon": [
@@ -11420,7 +11345,7 @@
     "teaser": "Politisk og militär historie",
     "tags": [
       "Aktiviteter for dårligt vejr",
-      "opt032",
+      "Børn/Unge",
       "Tilbud for skoleklasser",
       "Tilbud på dansk"
     ],
@@ -11471,7 +11396,7 @@
     "teaser": "Musikskole | musik | kultur",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -11523,9 +11448,9 @@
       "Aktiviteter for dårligt vejr",
       "opt002",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034"
+      "Seniorer"
     ],
     "icon": [
       {
@@ -11589,9 +11514,9 @@
     "ISIL": "DE-MUS-296815",
     "pos": "9.6683465 54.2992596",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -11660,9 +11585,9 @@
     "teaser": "Samling omkring emnet jul",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Butik",
       "Museumskort"
@@ -11728,9 +11653,9 @@
       "opt003",
       "Parkering tilgængelig",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser"
     ],
     "icon": [
@@ -11797,9 +11722,9 @@
     "teaser": "Museum ved slusen",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "opt003",
@@ -11934,9 +11859,9 @@
     "tags": [
       "opt003",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034"
+      "Seniorer"
     ],
     "icon": [
       {
@@ -11994,9 +11919,9 @@
     "teaser": "Egnsmuseum | klasseværelse",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -12097,7 +12022,7 @@
     "teaser": "Alternativ kultur, biograf, koncerter",
     "tags": [
       "Parkering tilgængelig",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -12159,7 +12084,7 @@
       "opt003",
       "Butik",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -12227,9 +12152,9 @@
     "tags": [
       "opt002",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -12302,9 +12227,9 @@
     "tags": [
       "Gratis",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -12381,7 +12306,7 @@
     "tags": [
       "Kørestolsadgang",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "opt002",
@@ -12391,7 +12316,7 @@
       "Gastronomi",
       "opt023",
       "opt026",
-      "opt032"
+      "Børn/Unge"
     ],
     "icon": [
       {
@@ -12490,9 +12415,9 @@
       "Kørestolsadgang",
       "Handicapparkering",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -12725,7 +12650,7 @@
     "pos": "10.337082 54.406973",
     "teaser": "Spåntækket hollænder-mølle med vindrose",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Regelmæssige rundvisninger"
     ],
@@ -12839,7 +12764,7 @@
       "Kørestolsadgang",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -12921,7 +12846,7 @@
       "Parkering tilgængelig",
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -12997,10 +12922,10 @@
     "teaser": "Skibsfartsmuseum",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Handicapparkering",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -13120,9 +13045,9 @@
       "Kørestolsadgang",
       "Butik",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
@@ -13211,9 +13136,9 @@
       "Kørestolsadgang",
       "opt023",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -13325,9 +13250,9 @@
     "pos": "10.2037851557497 54.3679597",
     "teaser": "Regional kunst",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Parkering tilgængelig",
       "Butik",
@@ -13403,7 +13328,7 @@
     "tags": [
       "opt023",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
       "Gastronomi",
@@ -13498,7 +13423,7 @@
     "tags": [
       "Gratis",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
       "opt014",
@@ -13660,7 +13585,7 @@
       "Gratis",
       "Regelmæssige rundvisninger",
       "Børnevenlig",
-      "opt034"
+      "Seniorer"
     ],
     "icon": [
       {
@@ -13715,7 +13640,7 @@
     "tags": [
       "Gratis",
       "Parkering tilgængelig",
-      "opt018",
+      "Kørestolsadgang",
       "Butik",
       "Gastronomi",
       "Handicaptoilet"
@@ -13780,9 +13705,9 @@
     "teaser": "Kulturcenter i amtet",
     "tags": [
       "opt002",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Gastronomi",
       "Tilbud for skoleklasser"
@@ -13860,9 +13785,9 @@
     "tags": [
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -13968,9 +13893,9 @@
     "teaser": "Samling af landsbykultur",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -14239,9 +14164,9 @@
       "Kørestolsadgang",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Parkering tilgængelig",
       "Friluft",
@@ -14331,7 +14256,7 @@
     "teaser": "Skole- og egnsmuseum",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -14385,7 +14310,7 @@
       "Parkering tilgængelig",
       "Butik",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -14455,9 +14380,9 @@
     "tags": [
       "opt003",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft"
     ],
@@ -14530,7 +14455,7 @@
       "Parkering tilgængelig",
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig"
     ],
     "icon": [
@@ -14588,7 +14513,7 @@
     "teaser": "Et væld af litterære oplevelser",
     "tags": [
       "opt003",
-      "opt018",
+      "Kørestolsadgang",
       "opt023",
       "Handicaptoilet",
       "opt026",
@@ -14656,7 +14581,7 @@
     "pos": "9.818857 53.646484",
     "teaser": "Musikteater for hele familien",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -14710,9 +14635,9 @@
       "Gratis",
       "Regelmæssige rundvisninger",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser"
     ],
     "icon": [
@@ -14778,9 +14703,9 @@
     "teaser": "Musikteater | skuespil | koncert ",
     "tags": [
       "opt002",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -14895,11 +14820,11 @@
     "tags": [
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -15013,7 +14938,7 @@
       "Parkering tilgængelig",
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -15079,9 +15004,9 @@
       "Aktiviteter for dårligt vejr",
       "opt003",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Videoklip tilgængelige"
     ],
@@ -15270,9 +15195,9 @@
       "opt005",
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -15347,9 +15272,9 @@
     "pos": "10.1437158 54.327497",
     "teaser": "Samling om medicin- og farmahistorie",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -15464,9 +15389,9 @@
       "opt002",
       "opt003",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -15540,7 +15465,7 @@
       "Regelmæssige rundvisninger",
       "Handicapparkering",
       "Børnevenlig",
-      "opt034"
+      "Seniorer"
     ],
     "icon": [
       {
@@ -15869,9 +15794,9 @@
     "teaser": "Møllemuseum | historisk udstilling",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -15934,9 +15859,9 @@
     "pos": "9.5560507 54.8043508",
     "teaser": "Mølle | aktiviteter",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -15989,9 +15914,9 @@
       "Handicapparkering",
       "Aktiviteter for dårligt vejr",
       "Tilbud for skoleklasser",
-      "opt034",
+      "Seniorer",
       "Børnevenlig",
-      "opt032",
+      "Børn/Unge",
       "Handicaptoilet",
       "Gastronomi",
       "Butik",
@@ -16112,9 +16037,9 @@
     "teaser": "By- og industrihistorie",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -16184,9 +16109,9 @@
     "tags": [
       "Kørestolsadgang",
       "opt031",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Parkering tilgængelig",
@@ -16274,9 +16199,9 @@
       "opt003",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
@@ -16358,10 +16283,10 @@
     "teaser": "19. århundrede | det klassisk moderne",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -16431,10 +16356,10 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
-      "opt018"
+      "Kørestolsadgang"
     ],
     "icon": [
       {
@@ -16493,12 +16418,12 @@
     "tags": [
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -16599,9 +16524,9 @@
       "Parkering tilgængelig",
       "Aktiviteter for dårligt vejr",
       "Tilbud for skoleklasser",
-      "opt034",
+      "Seniorer",
       "Børnevenlig",
-      "opt032",
+      "Børn/Unge",
       "Gastronomi",
       "Tilbud på dansk",
       "Tilbud på engelsk",
@@ -16715,9 +16640,9 @@
       "Butik",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -16818,7 +16743,7 @@
     "teaser": "Byhistorie | trossamfund",
     "tags": [
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -16963,10 +16888,10 @@
     "tags": [
       "Gastronomi",
       "Regelmæssige rundvisninger",
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -17042,9 +16967,9 @@
     "teaser": "Møllens og øens historie ",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -17210,9 +17135,9 @@
     "teaser": "Heide egnsmuseum | Klaus Groth ",
     "tags": [
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Friluft",
       "Museumskort"
@@ -17343,9 +17268,9 @@
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
@@ -17436,7 +17361,7 @@
       "Børnevenlig",
       "Friluft",
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Tilbud for skoleklasser"
     ],
     "icon": [
@@ -17583,11 +17508,11 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Tilbud for synshæmmede",
-      "opt018",
+      "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Butik",
@@ -17671,9 +17596,9 @@
       "opt003",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Butik"
     ],
@@ -17746,9 +17671,9 @@
     "tags": [
       "Gratis",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft"
@@ -17821,7 +17746,7 @@
     "teaser": "Naturbeskytt., udstill. | oplevelsessti",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Friluft",
       "Tilbud for skoleklasser"
@@ -17888,9 +17813,9 @@
       "opt003",
       "Regelmæssige rundvisninger",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft",
@@ -17972,10 +17897,10 @@
     "teaser": "Regionens naturfænomener",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
-      "opt032",
+      "Kørestolsadgang",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
@@ -18056,9 +17981,9 @@
       "opt003",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft",
       "Museumskort"
@@ -18143,9 +18068,9 @@
     "teaser": "Dyr og planter | geologi",
     "tags": [
       "Aktiviteter for dårligt vejr",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Museumskort"
     ],
@@ -18209,7 +18134,7 @@
     "tags": [
       "Parkering tilgængelig",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -18267,12 +18192,12 @@
       "opt003",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft",
@@ -18372,9 +18297,9 @@
       "Parkering tilgængelig",
       "Kørestolsadgang",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -18449,9 +18374,9 @@
       "opt003",
       "Parkering tilgængelig",
       "Kørestolsadgang",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -18533,9 +18458,9 @@
       "opt003",
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Friluft"
     ],
@@ -18607,9 +18532,9 @@
       "Handicapparkering",
       "Handicaptoilet",
       "opt031",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -18738,7 +18663,7 @@
     "teaser": "Biograf med servering",
     "tags": [
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -18796,9 +18721,9 @@
     "tags": [
       "Gratis",
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Friluft"
     ],
     "icon": [
@@ -18863,7 +18788,7 @@
       "Parkering tilgængelig",
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Friluft"
     ],
@@ -18939,9 +18864,9 @@
       "Kørestolsadgang",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft",
       "Museumskort"
@@ -19026,9 +18951,9 @@
     "teaser": "Sild, boligkultur fra gamle dage ",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -19098,7 +19023,7 @@
     "tags": [
       "opt003",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -19156,9 +19081,9 @@
       "Butik",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Parkering tilgængelig",
@@ -19251,11 +19176,11 @@
     "pos": "9.04412823599823 54.4785839",
     "teaser": "Nedertysk bindingsværkshus",
     "tags": [
-      "opt018",
+      "Kørestolsadgang",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft",
       "Museumskort"
@@ -19471,7 +19396,7 @@
     "teaser": "Lübecks første kunstforening",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -19527,9 +19452,9 @@
     "pos": "11.190282 54.422302",
     "teaser": "Kunst | Kultur | Mellemfolkeligt Forum",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -19595,9 +19520,9 @@
       "opt003",
       "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -19671,9 +19596,9 @@
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Handicaptoilet",
@@ -19804,9 +19729,9 @@
     "pos": "9.41744885911791 53.78593015",
     "teaser": "Stadtpalais | Contemporary art",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -19914,7 +19839,7 @@
     "tags": [
       "opt003",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -19970,7 +19895,7 @@
     "teaser": "Kolonialvarebutik | udstillinger ",
     "tags": [
       "Gratis",
-      "opt018",
+      "Kørestolsadgang",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -20024,9 +19949,9 @@
       "Gratis",
       "Kørestolsadgang",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -20160,11 +20085,11 @@
     "pos": "10.412421 54.158122",
     "teaser": "Nordtysk glassamling ",
     "tags": [
-      "opt018",
+      "Kørestolsadgang",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -20240,9 +20165,9 @@
     "teaser": "Museum om vor planets historie ",
     "tags": [
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -20309,9 +20234,9 @@
     "pos": "10.6365489 53.4799552",
     "teaser": "Historie | kultur",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Gastronomi",
       "Gratis",
@@ -20378,7 +20303,7 @@
     "tags": [
       "opt019",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -20441,7 +20366,7 @@
       "Aktiviteter for dårligt vejr",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig"
     ],
     "icon": [
@@ -20512,7 +20437,7 @@
     "tags": [
       "Parkering tilgængelig",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -20646,9 +20571,9 @@
       "Regelmæssige rundvisninger",
       "Gastronomi",
       "opt023",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Kørestolsadgang"
@@ -20884,9 +20809,9 @@
     "teaser": "Museum med moderne kunst",
     "tags": [
       "Gratis",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
     ],
@@ -20952,7 +20877,7 @@
       "Kørestolsadgang",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Aktiviteter for dårligt vejr"
     ],
@@ -21021,8 +20946,8 @@
     "tags": [
       "Regelmæssige rundvisninger",
       "Gastronomi",
-      "opt032",
-      "opt034",
+      "Børn/Unge",
+      "Seniorer",
       "Tilbud for skoleklasser"
     ],
     "icon": [
@@ -21123,9 +21048,9 @@
       "Regelmæssige rundvisninger",
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser"
     ],
     "icon": [
@@ -21205,9 +21130,9 @@
     "tags": [
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -21284,9 +21209,9 @@
       "Regelmæssige rundvisninger",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Kørestolsadgang",
@@ -21384,7 +21309,7 @@
     "teaser": "Vadehavet som økosystem",
     "tags": [
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Friluft",
@@ -21465,9 +21390,9 @@
     "teaser": "Øen Silds historie",
     "tags": [
       "opt003",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -21543,9 +21468,9 @@
     "pos": "9.3351082 54.455949",
     "teaser": "Skole som for 100 år siden",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -21605,9 +21530,9 @@
     "teaser": "Center for bevaring af naturen",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Friluft",
@@ -21687,7 +21612,7 @@
       "opt003",
       "Parkering tilgængelig",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Friluft"
     ],
@@ -21755,7 +21680,7 @@
     "tags": [
       "Kørestolsadgang",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -21825,14 +21750,14 @@
     "teaser": "Historie og kultur",
     "tags": [
       "Regelmæssige rundvisninger",
-      "opt018",
+      "Kørestolsadgang",
       "Handicapparkering",
       "Butik",
       "Handicaptoilet",
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -21965,9 +21890,9 @@
     "teaser": "Musik | ballet |skuespil | børneteater",
     "tags": [
       "opt002",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Gastronomi"
@@ -22042,9 +21967,9 @@
       "Regelmæssige rundvisninger",
       "Butik",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Parkering tilgængelig",
@@ -22130,9 +22055,9 @@
     "teaser": "Historisk bondehus fra Ditmarsken",
     "tags": [
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
       "Tilbud for skoleklasser"
@@ -22234,9 +22159,9 @@
     "teaser": "Museum | koncerter ",
     "tags": [
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Museumskort"
     ],
     "icon": [
@@ -22332,12 +22257,12 @@
     "tags": [
       "Parkering tilgængelig",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
-      "opt018"
+      "Kørestolsadgang"
     ],
     "icon": [
       {
@@ -22462,9 +22387,9 @@
       "Kørestolsadgang",
       "Butik",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Regelmæssige rundvisninger",
@@ -22549,7 +22474,7 @@
     "pos": "10.688317 53.868197",
     "teaser": "Museumskirke | udstillinger",
     "tags": [
-      "opt018",
+      "Kørestolsadgang",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -22704,9 +22629,9 @@
       "Kørestolsadgang",
       "Handicapparkering",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft",
       "Museumskort"
@@ -22798,9 +22723,9 @@
     "pos": "10.33316993713 53.6554794311523",
     "teaser": "Egnsmuseum",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort",
@@ -22878,9 +22803,9 @@
     "tags": [
       "Kørestolsadgang",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -22953,9 +22878,9 @@
     "tags": [
       "opt002",
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Tilbud for skoleklasser",
       "Videoklip tilgængelige",
@@ -23032,9 +22957,9 @@
     "teaser": "Teater | biograf",
     "tags": [
       "opt002",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -23101,7 +23026,7 @@
     "teaser": "Spillestedet for 'Kiddies & Co.'",
     "tags": [
       "Parkering tilgængelig",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
@@ -23200,7 +23125,7 @@
       "opt002",
       "Gastronomi",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -23263,7 +23188,7 @@
     "teaser": "Teater, musik, gøgl, biograf",
     "tags": [
       "Gastronomi",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Friluft"
     ],
@@ -23323,7 +23248,7 @@
     "teaser": "Udstilling om en nobelprisvinder",
     "tags": [
       "Gratis",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr"
     ],
     "icon": [
@@ -23379,9 +23304,9 @@
     "tags": [
       "opt003",
       "Butik",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr"
     ],
@@ -23490,9 +23415,9 @@
       "Tilbud for hørehæmmede",
       "Kørestolsadgang",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Parkering tilgængelig",
@@ -23590,9 +23515,9 @@
       "Parkering tilgængelig",
       "opt005",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft",
       "Kørestolsadgang",
@@ -23677,9 +23602,9 @@
     "pos": "9.8557753 54.1704958",
     "teaser": "Nortorf som grammofonpladens by",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Videoklip tilgængelige",
       "Museumskort"
@@ -23713,7 +23638,7 @@
     "classification": [
       {
         "type": "kulturtyp",
-        "uri": "http://digicult.vocnet.org/portal/p0110"
+        "uri": "http://digicult.vocnet.org/portal/"
       },
       {
         "type": "tourismustyp",
@@ -23723,7 +23648,7 @@
     "resource": {
       "resourceRepresentation": {
         "type": "image_thumbnail",
-        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m6405c3905fd42/Tysk%2Bplademuseum/Deutsches+Schallplattenmuseum+-+Front"
+        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m65e71551908d9/Tysk%2Bplademuseum/Deutsches+Schallplattenmuseum+-+Front"
       }
     },
     "links": {
@@ -23743,9 +23668,9 @@
       "Kørestolsadgang",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Regelmæssige rundvisninger"
@@ -23996,9 +23921,9 @@
       "Butik",
       "Gastronomi",
       "Handicaptoilet",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Friluft"
     ],
@@ -24139,7 +24064,7 @@
     "pos": "9.6974081 53.5848847",
     "teaser": "Wedel fra 1212 til 1950",
     "tags": [
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
@@ -24199,7 +24124,7 @@
       "Butik",
       "Gastronomi",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Aktiviteter for dårligt vejr",
       "Tilbud for skoleklasser",
       "Museumskort"
@@ -24274,9 +24199,9 @@
       "Gratis",
       "opt003",
       "Regelmæssige rundvisninger",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Museumskort"
@@ -24394,9 +24319,9 @@
     "teaser": "Historiske samlinger | præparerede emner",
     "tags": [
       "opt026",
-      "opt032",
+      "Børn/Unge",
       "Børnevenlig",
-      "opt034",
+      "Seniorer",
       "Tilbud for skoleklasser",
       "Aktiviteter for dårligt vejr",
       "Regelmæssige rundvisninger"

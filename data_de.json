@@ -9,12 +9,12 @@
     "teaser": "Kritische und satirische Graphik",
     "tags": [
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Parkplatz",
-      "opt034",
+      "Senioren",
       "MuseumsCard"
     ],
     "icon": [
@@ -82,7 +82,7 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -147,7 +147,7 @@
     "teaser": "Altes und neues Schmiedehandwerk",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -197,9 +197,9 @@
     "pos": "10.879182 53.960635",
     "teaser": "Maritimes Museum | Aussichtsgalerie",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "opt003"
     ],
@@ -255,9 +255,9 @@
     "teaser": "Alt-Sylter Wohnkultur",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -326,9 +326,9 @@
     "teaser": "Geschichte der Mühle und Insel",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -392,7 +392,7 @@
     "pos": "10.4776773 53.5060722",
     "teaser": "Kunstausstellungen | Veranstaltungen",
     "tags": [
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -447,9 +447,9 @@
     "teaser": "Museumseisenbahn | Fahrten",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -618,9 +618,9 @@
     "pos": "10.1485472418525 54.3303304",
     "teaser": "Lebensräume Nord- und Ostsee",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Barrierefrei zugänglich"
@@ -683,7 +683,7 @@
       "Parkplatz",
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -752,9 +752,9 @@
       "Barrierefrei zugänglich",
       "Behindertenparkplatz",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air",
       "MuseumsCard"
@@ -856,9 +856,9 @@
       "Shop",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air"
     ],
@@ -956,7 +956,7 @@
     "tags": [
       "Kostenfrei",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Angebot für Schulklassen"
     ],
@@ -1017,7 +1017,7 @@
       "Kostenfrei",
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote",
       "Videoclips verfügbar"
@@ -1169,7 +1169,7 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -1302,9 +1302,9 @@
     "tags": [
       "Kostenfrei",
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air"
@@ -1499,7 +1499,7 @@
     "teaser": "Bildende Kunst der BBK-SH Mitglieder",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -1548,12 +1548,12 @@
     "tags": [
       "opt003",
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Shop",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -1720,9 +1720,9 @@
     "teaser": "Zentrum für Naturschutz",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air",
@@ -1805,7 +1805,7 @@
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -1896,9 +1896,9 @@
       "opt003",
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard",
@@ -1980,7 +1980,7 @@
     "tags": [
       "Kostenfrei",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -2047,7 +2047,7 @@
       "Regelmäßige Führungen",
       "Gastronomie",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -2116,9 +2116,9 @@
     "tags": [
       "Regelmäßige Führungen",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -2191,7 +2191,7 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -2256,9 +2256,9 @@
     "pos": "9.8557753 54.1704958",
     "teaser": "Nortorf als Stadt der Schallplatte",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Videoclips verfügbar",
       "MuseumsCard"
@@ -2292,7 +2292,7 @@
     "classification": [
       {
         "type": "kulturtyp",
-        "uri": "http://digicult.vocnet.org/portal/p0110"
+        "uri": "http://digicult.vocnet.org/portal/"
       },
       {
         "type": "tourismustyp",
@@ -2302,7 +2302,7 @@
     "resource": {
       "resourceRepresentation": {
         "type": "image_thumbnail",
-        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m6405c3905fd42/Deutsches%2BSchallplattenmuseum/Deutsches+Schallplattenmuseum+-+Front"
+        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m65e71551908d9/Deutsches%2BSchallplattenmuseum/Deutsches+Schallplattenmuseum+-+Front"
       }
     },
     "links": {
@@ -2323,9 +2323,9 @@
       "Barrierefrei zugänglich",
       "opt023",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -2403,10 +2403,10 @@
     "teaser": "19. Jahrhundert | Klassische Moderne",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -2478,9 +2478,9 @@
       "Barrierefrei zugänglich",
       "Shop",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Regelmäßige Führungen",
@@ -2566,7 +2566,7 @@
     "pos": "10.688317 53.868197",
     "teaser": "Museumskirche | Ausstellungen",
     "tags": [
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -2622,7 +2622,7 @@
       "Parkplatz",
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Open Air"
     ],
@@ -2698,7 +2698,7 @@
       "Schietwetter Angebote",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich"
     ],
     "icon": [
@@ -2769,12 +2769,12 @@
     "teaser": "Geschichte Dithmarschens",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Shop",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -2847,7 +2847,7 @@
     "teaser": "Apotheke, Schifffahrt, Gewerbe",
     "tags": [
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "MuseumsCard"
@@ -2904,7 +2904,7 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -2974,9 +2974,9 @@
     "tags": [
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -3045,9 +3045,9 @@
     "teaser": "Sammlung dörflichen Kulturguts",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -3104,7 +3104,7 @@
       "Kostenfrei",
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -3398,9 +3398,9 @@
       "opt002",
       "Regelmäßige Führungen",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -3513,7 +3513,7 @@
     "tags": [
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -3608,9 +3608,9 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -3685,9 +3685,9 @@
       "Regelmäßige Führungen",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Parkplatz",
@@ -3775,7 +3775,7 @@
       "Parkplatz",
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -3909,9 +3909,9 @@
     "tags": [
       "opt003",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Barrierefrei zugänglich",
@@ -3991,9 +3991,9 @@
     "tags": [
       "Kostenfrei",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -4114,9 +4114,9 @@
       "Parkplatz",
       "opt005",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air",
       "Barrierefrei zugänglich",
@@ -4205,9 +4205,9 @@
       "Shop",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Parkplatz",
@@ -4300,9 +4300,9 @@
     "pos": "10.7735437 53.6982108",
     "teaser": "Museum | Veranstaltungen | Archiv",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -4361,9 +4361,9 @@
     "pos": "9.69899521937041 53.58370285",
     "teaser": "Geburtshaus | Ausstellung",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "opt003"
@@ -4482,7 +4482,7 @@
       "opt003",
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -4568,9 +4568,9 @@
       "Barrierefrei zugänglich",
       "Schietwetter Angebote",
       "Angebot für Schulklassen",
-      "opt034",
+      "Senioren",
       "Familienfreundlich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Gastronomie",
       "Shop",
       "opt003",
@@ -4763,7 +4763,7 @@
     "pos": "11.1965265148209 54.436332",
     "teaser": "Heimatmuseum Fehmarn",
     "tags": [
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -4815,9 +4815,9 @@
       "Regelmäßige Führungen",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -4905,7 +4905,7 @@
       "opt003",
       "Regelmäßige Führungen",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Videoclips verfügbar"
@@ -4984,7 +4984,7 @@
       "Barrierefrei zugänglich",
       "Shop",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -5089,7 +5089,7 @@
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "opt014",
-      "opt032",
+      "Kinder/Jugendliche",
       "MuseumsCard"
     ],
     "icon": [
@@ -5155,82 +5155,6 @@
     }
   },
   {
-    "id": "act0002598",
-    "name": "Focke-Museum",
-    "place": "Bremen",
-    "street": "Schwachhauser Heerstraße 240",
-    "pos": "8.862920761108 53.090335845947",
-    "teaser": "Kunst- und Kulturgeschichte",
-    "tags": [
-      "Barrierefrei zugänglich",
-      "Behindertenparkplatz",
-      "Parkplatz",
-      "opt032",
-      "Familienfreundlich",
-      "opt034",
-      "Angebot für Schulklassen",
-      "Schietwetter Angebote",
-      "Regelmäßige Führungen"
-    ],
-    "icon": [
-      {
-        "type": "general",
-        "id": "opt017"
-      },
-      {
-        "type": "general",
-        "id": "opt020"
-      },
-      {
-        "type": "general",
-        "id": "opt004"
-      },
-      {
-        "type": "general",
-        "id": "opt032"
-      },
-      {
-        "type": "general",
-        "id": "opt033"
-      },
-      {
-        "type": "general",
-        "id": "opt034"
-      },
-      {
-        "type": "general",
-        "id": "opt035"
-      },
-      {
-        "type": "general",
-        "id": "opt036"
-      },
-      {
-        "type": "general",
-        "id": "opt006"
-      }
-    ],
-    "classification": [
-      {
-        "type": "tourismustyp",
-        "uri": "http://digicult.vocnet.org/portal/p0297"
-      },
-      {
-        "type": "kulturtyp",
-        "uri": "http://digicult.vocnet.org/portal/"
-      }
-    ],
-    "resource": {
-      "resourceRepresentation": {
-        "type": "image_thumbnail",
-        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m636a156f43161/Focke-Museum/Focke+Museum+Bremen"
-      }
-    },
-    "links": {
-      "self": "http://xtree-actor-api.digicult-verbund.de/getRepositoryItem?id=act0002598"
-    }
-  },
-  {
     "id": "act0002303",
     "name": "Förderkreis Reepschlägerhaus e.V.",
     "nameAddition": "Reepschlägerhaus Wedel",
@@ -5241,7 +5165,7 @@
     "tags": [
       "Parkplatz",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -5345,13 +5269,13 @@
     "tags": [
       "Parkplatz",
       "opt005",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Behindertenparkplatz",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air",
       "MuseumsCard"
@@ -5500,9 +5424,9 @@
       "Kostenfrei",
       "opt002",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034"
+      "Senioren"
     ],
     "icon": [
       {
@@ -5562,9 +5486,9 @@
     "tags": [
       "opt003",
       "Parkplatz",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Open Air",
       "MuseumsCard"
     ],
@@ -5627,9 +5551,9 @@
     "teaser": "KZ-Gedenkstätte",
     "tags": [
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Parkplatz",
       "Shop",
@@ -5705,7 +5629,7 @@
     "tags": [
       "Kostenfrei",
       "opt023",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote",
       "MuseumsCard",
@@ -5778,10 +5702,10 @@
       "opt023",
       "opt026",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "MuseumsCard"
     ],
     "icon": [
@@ -5851,9 +5775,9 @@
       "Barrierefrei zugänglich",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Regelmäßige Führungen"
@@ -5948,7 +5872,7 @@
     "pos": "10.33374595642 53.530666",
     "teaser": "Tropenhaus und Parkgelände",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -6249,7 +6173,7 @@
     "teaser": "Alfred Nobel | Energie und Forschung",
     "tags": [
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Kostenfrei"
@@ -6310,7 +6234,7 @@
     "teaser": "JVA-Geschichte hautnah erleben",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -6369,7 +6293,7 @@
     "tags": [
       "Kostenfrei",
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -6491,9 +6415,9 @@
     "teaser": "Das früheste bekannte Planetarium",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "MuseumsCard"
     ],
@@ -6562,13 +6486,13 @@
     "teaser": "Forum für Literatur und Bildende Kunst",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Shop",
       "Behinderten-WC",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -6655,7 +6579,7 @@
     "tags": [
       "Regelmäßige Führungen",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Open Air",
       "opt026"
@@ -6770,7 +6694,7 @@
     "teaser": "Ausstellung Naturschutz | Erlebnispfad",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Open Air",
       "Angebot für Schulklassen"
@@ -6837,9 +6761,9 @@
       "opt003",
       "Regelmäßige Führungen",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air",
@@ -6921,7 +6845,7 @@
     "teaser": "Kolonialwarenladen | Ausstellungen",
     "tags": [
       "Kostenfrei",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -6974,7 +6898,7 @@
     "tags": [
       "opt026",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -7075,7 +6999,7 @@
       "Barrierefrei zugänglich",
       "Behindertenparkplatz",
       "opt026",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "opt031"
@@ -7235,7 +7159,7 @@
     "teaser": "Stadtgeschichte",
     "tags": [
       "Kostenfrei",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -7361,9 +7285,9 @@
     "pos": "10.9809840700704 54.372512",
     "teaser": "Stadtgeschichte | Theodor Storm",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -7429,7 +7353,7 @@
     "tags": [
       "Kostenfrei",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -7486,7 +7410,7 @@
     "tags": [
       "Kostenfrei",
       "Parkplatz",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Shop",
       "Gastronomie",
       "Behinderten-WC"
@@ -7551,7 +7475,7 @@
     "teaser": "Heimatmuseum",
     "tags": [
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -7645,7 +7569,7 @@
     "tags": [
       "opt019",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -7803,12 +7727,12 @@
     "pos": "9.991031 54.07181",
     "teaser": "Skulpturenpark | Ausstellungen",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Open Air",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "MuseumsCard"
     ],
     "icon": [
@@ -7928,7 +7852,7 @@
       "Kostenfrei",
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Open Air"
@@ -7996,7 +7920,7 @@
     "pos": "8.94656972067864 54.31509195",
     "teaser": "Tönninger Stadtgeschichte",
     "tags": [
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Kostenfrei"
     ],
@@ -8047,7 +7971,7 @@
       "opt003",
       "Regelmäßige Führungen",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -8107,9 +8031,9 @@
     "teaser": "Fotodokumentation des Stadtteils",
     "tags": [
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Kostenfrei",
       "Barrierefrei zugänglich",
@@ -8183,7 +8107,7 @@
     "teaser": "Politische und militärische Geschichte",
     "tags": [
       "Schietwetter Angebote",
-      "opt032",
+      "Kinder/Jugendliche",
       "Angebot für Schulklassen",
       "Angebot auf Dänisch"
     ],
@@ -8340,9 +8264,9 @@
       "Behindertenparkplatz",
       "Shop",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -8435,10 +8359,10 @@
     "teaser": "Industriegeschichte",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -8573,9 +8497,9 @@
       "Barrierefrei zugänglich",
       "Behindertenparkplatz",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -8665,7 +8589,7 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -8726,7 +8650,7 @@
     "tags": [
       "opt003",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -8887,9 +8811,9 @@
     "pos": "9.6683465 54.2992596",
     "teaser": "Museum | Baudenkmal | Gedenkstätte",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -8958,9 +8882,9 @@
     "teaser": "Museum an der Schleuse",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "opt003",
@@ -9054,9 +8978,9 @@
     "tags": [
       "opt003",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034"
+      "Senioren"
     ],
     "icon": [
       {
@@ -9114,9 +9038,9 @@
     "teaser": "Heimatmuseum | Schulklasse",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -9220,9 +9144,9 @@
     "tags": [
       "Kostenfrei",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -9365,13 +9289,13 @@
     "pos": "10.3704894 54.3949801",
     "teaser": "Kindheit im Wandel",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Parkplatz",
       "Barrierefrei zugänglich",
-      "opt034",
+      "Senioren",
       "MuseumsCard"
     ],
     "icon": [
@@ -9484,7 +9408,7 @@
       "Parkplatz",
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -9543,7 +9467,7 @@
     "teaser": "Verzehrkino",
     "tags": [
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -9602,7 +9526,7 @@
       "Parkplatz",
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich"
     ],
     "icon": [
@@ -9662,9 +9586,9 @@
     "tags": [
       "opt003",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air"
     ],
@@ -9745,7 +9669,7 @@
     "tags": [
       "Gastronomie",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -9802,9 +9726,9 @@
       "opt003",
       "Parkplatz",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen"
     ],
     "icon": [
@@ -9962,9 +9886,9 @@
     "teaser": "Modernes Heimatmuseum mit Schausammlung",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "opt019"
     ],
@@ -10026,7 +9950,7 @@
       "Parkplatz",
       "Shop",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -10149,7 +10073,7 @@
     "pos": "10.337082 54.406973",
     "teaser": "Kellerholländer mit Windrose",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Regelmäßige Führungen"
     ],
@@ -10263,7 +10187,7 @@
       "Barrierefrei zugänglich",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -10345,7 +10269,7 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -10445,10 +10369,10 @@
     "teaser": "Schifffahrtsmuseum",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Behindertenparkplatz",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -10564,7 +10488,7 @@
     "teaser": "Musikschule | Musik | Kultur",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -10614,7 +10538,7 @@
     "teaser": "Alternative Kultur, Kino, Konzerte",
     "tags": [
       "Parkplatz",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -10675,7 +10599,7 @@
       "Parkplatz",
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -10755,9 +10679,9 @@
       "Barrierefrei zugänglich",
       "Shop",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard",
@@ -10974,9 +10898,9 @@
     "pos": "10.2037851557497 54.3679597",
     "teaser": "Regionale Kunst",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Parkplatz",
       "Shop",
@@ -11055,7 +10979,7 @@
       "Behindertenparkplatz",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -11255,7 +11179,7 @@
     "tags": [
       "opt023",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Parkplatz",
       "Regelmäßige Führungen",
       "Gastronomie",
@@ -11351,7 +11275,7 @@
     "tags": [
       "Kostenfrei",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Parkplatz",
       "Regelmäßige Führungen",
       "opt014",
@@ -11658,7 +11582,7 @@
       "Kostenfrei",
       "Regelmäßige Führungen",
       "Familienfreundlich",
-      "opt034"
+      "Senioren"
     ],
     "icon": [
       {
@@ -11841,9 +11765,9 @@
       "Barrierefrei zugänglich",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Parkplatz",
       "Open Air",
@@ -12039,7 +11963,7 @@
     "teaser": "Ein Füllhorn literarischer Erlebnisse",
     "tags": [
       "opt003",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "opt023",
       "Behinderten-WC",
       "opt026",
@@ -12108,7 +12032,7 @@
     "pos": "9.818857 53.646484",
     "teaser": "Musiktheater für die ganze Familie.",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -12163,9 +12087,9 @@
       "Kostenfrei",
       "Regelmäßige Führungen",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen"
     ],
     "icon": [
@@ -12281,9 +12205,9 @@
       "Schietwetter Angebote",
       "opt003",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Videoclips verfügbar"
     ],
@@ -12514,9 +12438,9 @@
       "opt005",
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -12592,9 +12516,9 @@
     "pos": "10.1437158 54.327497",
     "teaser": "Sammlung Medizin und Pharmaziehistorie",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -12672,9 +12596,9 @@
       "Shop",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -12816,9 +12740,9 @@
       "opt002",
       "opt003",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -12890,7 +12814,7 @@
     "tags": [
       "Kostenfrei",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Open Air",
@@ -13034,7 +12958,7 @@
       "Regelmäßige Führungen",
       "Behindertenparkplatz",
       "Familienfreundlich",
-      "opt034"
+      "Senioren"
     ],
     "icon": [
       {
@@ -13096,9 +13020,9 @@
     "teaser": "Stadt- und Gewerbegeschichte",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -13256,9 +13180,9 @@
     "pos": "9.5560507 54.8043508",
     "teaser": "Mühle | Veranstaltungen",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -13313,9 +13237,9 @@
       "opt019",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air"
@@ -13408,9 +13332,9 @@
     "teaser": "Mühlenmuseum | Historische Ausstellung",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -13477,9 +13401,9 @@
       "Behindertenparkplatz",
       "Schietwetter Angebote",
       "Angebot für Schulklassen",
-      "opt034",
+      "Senioren",
       "Familienfreundlich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Behinderten-WC",
       "Gastronomie",
       "Shop",
@@ -13651,9 +13575,9 @@
     "tags": [
       "Barrierefrei zugänglich",
       "opt031",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Parkplatz",
@@ -13739,7 +13663,7 @@
     "teaser": "Stadtgeschichte | Glaubensgemeinschaften",
     "tags": [
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -13801,9 +13725,9 @@
     "tags": [
       "opt003",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -13980,7 +13904,7 @@
     "tags": [
       "Kostenfrei",
       "Schietwetter Angebote",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen"
     ],
@@ -14091,7 +14015,7 @@
     "pos": "9.7602448423296 53.78292905",
     "teaser": "Schlossinsel | Kulturhistorisches Erbe",
     "tags": [
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -14142,11 +14066,11 @@
     "pos": "10.412421 54.158122",
     "teaser": "Norddeutsche Glassammlung",
     "tags": [
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -14225,9 +14149,9 @@
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -14310,9 +14234,9 @@
       "Parkplatz",
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -14387,12 +14311,12 @@
     "tags": [
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -14486,11 +14410,11 @@
     "tags": [
       "Regelmäßige Führungen",
       "Angebot für Sehbehinderte",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Shop",
@@ -14643,7 +14567,7 @@
     "tags": [
       "Schietwetter Angebote",
       "Familienfreundlich",
-      "opt034"
+      "Senioren"
     ],
     "icon": [
       {
@@ -14772,10 +14696,10 @@
     "pos": "7.8872756 54.1851964",
     "teaser": "Geschichte und Informationen",
     "tags": [
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -14834,10 +14758,10 @@
     "teaser": "Wahrzeichen der Hansestadt",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -14912,7 +14836,7 @@
       "opt003",
       "Shop",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -14988,9 +14912,9 @@
       "Parkplatz",
       "Schietwetter Angebote",
       "Angebot für Schulklassen",
-      "opt034",
+      "Senioren",
       "Familienfreundlich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Gastronomie",
       "Angebot auf Dänisch",
       "Angebot auf Englisch",
@@ -15098,10 +15022,10 @@
     "tags": [
       "Regelmäßige Führungen",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard",
-      "opt018"
+      "Rollstuhlzugänglichkeit"
     ],
     "icon": [
       {
@@ -15160,10 +15084,10 @@
     "tags": [
       "Gastronomie",
       "Regelmäßige Führungen",
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -15239,9 +15163,9 @@
     "teaser": "Museum der VHS Bad Segeberg",
     "tags": [
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Regelmäßige Führungen",
       "MuseumsCard"
@@ -15313,9 +15237,9 @@
       "Shop",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -15415,12 +15339,12 @@
     "pos": "10.4819964 53.720098",
     "teaser": "Handwerke verschiedener Epochen",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Kostenfrei",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Behinderten-WC",
       "MuseumsCard"
     ],
@@ -15558,9 +15482,9 @@
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard",
@@ -15651,7 +15575,7 @@
       "Familienfreundlich",
       "Open Air",
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Angebot für Schulklassen"
     ],
     "icon": [
@@ -15713,9 +15637,9 @@
       "Kostenfrei",
       "opt003",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Open Air"
     ],
     "icon": [
@@ -15829,9 +15753,9 @@
     "tags": [
       "opt003",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air"
     ],
@@ -15904,9 +15828,9 @@
     "teaser": "Heimatmuseum Heide | Klaus Groth",
     "tags": [
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Open Air",
       "MuseumsCard"
@@ -15974,9 +15898,9 @@
       "opt003",
       "Parkplatz",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air"
     ],
@@ -16053,7 +15977,7 @@
       "Barrierefrei zugänglich",
       "Shop",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -16184,7 +16108,7 @@
     "teaser": "Die Natur im Wattenmeer entdecken",
     "tags": [
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Open Air",
@@ -16315,7 +16239,7 @@
     "teaser": "Natur erleben mitten im Wattenmeer",
     "tags": [
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -16384,7 +16308,7 @@
       "Barrierefrei zugänglich",
       "Shop",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -16563,10 +16487,10 @@
     "teaser": "Raum für Raum durch die Region",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard",
@@ -16694,9 +16618,9 @@
       "opt003",
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air",
       "MuseumsCard"
@@ -16780,7 +16704,7 @@
     "teaser": "Schutz der Artenvielfalt",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -16842,9 +16766,9 @@
     "teaser": "Tier- und Pflanzenwelt | Geologie",
     "tags": [
       "Schietwetter Angebote",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "MuseumsCard"
     ],
@@ -16909,9 +16833,9 @@
     "tags": [
       "Kostenfrei",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air"
@@ -16987,9 +16911,9 @@
       "opt003",
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Shop"
     ],
@@ -17062,7 +16986,7 @@
     "tags": [
       "Parkplatz",
       "Barrierefrei zugänglich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -17112,7 +17036,7 @@
     "pos": "9.4400844 54.785485",
     "teaser": "Theater | Lesungen",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -17168,7 +17092,7 @@
     "pos": "10.120177 54.324383",
     "teaser": "Günn Di wat - günn Di Platt!",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -17267,7 +17191,7 @@
     "tags": [
       "Parkplatz",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -17322,7 +17246,7 @@
     "pos": "9.841272 54.173474",
     "teaser": "Plattdeutsches Theater seit 1934",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -17378,12 +17302,12 @@
       "opt003",
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air",
@@ -17485,9 +17409,9 @@
       "Behindertenparkplatz",
       "Behinderten-WC",
       "opt031",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -17579,9 +17503,9 @@
       "opt003",
       "Parkplatz",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -17706,9 +17630,9 @@
       "Barrierefrei zugänglich",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air",
       "MuseumsCard"
@@ -17795,7 +17719,7 @@
     "tags": [
       "opt003",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -17891,11 +17815,11 @@
     "pos": "9.04412823599823 54.4785839",
     "teaser": "Niederdeutsches Fachhallenhaus",
     "tags": [
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Open Air",
       "MuseumsCard"
@@ -17971,9 +17895,9 @@
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Behinderten-WC",
@@ -18065,9 +17989,9 @@
       "opt003",
       "Barrierefrei zugänglich",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -18140,9 +18064,9 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -18354,7 +18278,7 @@
     "pos": "10.6903 53.8702",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -18410,9 +18334,9 @@
     "pos": "9.41744885911791 53.78593015",
     "teaser": "Stadtpalais | Zeitgenössische Kunst",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -18524,9 +18448,9 @@
       "Shop",
       "Gastronomie",
       "opt023",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -18611,11 +18535,11 @@
     "tags": [
       "Regelmäßige Führungen",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Kostenfrei",
-      "opt018"
+      "Rollstuhlzugänglichkeit"
     ],
     "icon": [
       {
@@ -18679,9 +18603,9 @@
       "Kostenfrei",
       "Barrierefrei zugänglich",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -18766,7 +18690,7 @@
     "tags": [
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -18839,9 +18763,9 @@
     "pos": "9.0487519 54.4796382",
     "teaser": "Storm | Puppenspielmuseum",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -18899,9 +18823,9 @@
     "pos": "10.6365489 53.4799552",
     "teaser": "Geschichte | Kultur",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Gastronomie",
       "Kostenfrei",
@@ -18969,9 +18893,9 @@
     "tags": [
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -19043,9 +18967,9 @@
     "teaser": "Ausstellung Naturerlebnis Fehmarn",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -19151,9 +19075,9 @@
     "teaser": "Museum für Moderne Kunst",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -19219,7 +19143,7 @@
       "Barrierefrei zugänglich",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -19289,7 +19213,7 @@
       "Kostenfrei",
       "Gastronomie",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -19353,8 +19277,8 @@
     "tags": [
       "Regelmäßige Führungen",
       "Gastronomie",
-      "opt032",
-      "opt034",
+      "Kinder/Jugendliche",
+      "Senioren",
       "Angebot für Schulklassen"
     ],
     "icon": [
@@ -19453,9 +19377,9 @@
       "opt003",
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Open Air"
     ],
@@ -19561,9 +19485,9 @@
     "teaser": "Musik | Ballett |Schauspiel | Kindertheater",
     "tags": [
       "opt002",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Gastronomie"
@@ -19636,9 +19560,9 @@
     "teaser": "Historisches Dithmarscher Bauernhaus",
     "tags": [
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard",
       "Angebot für Schulklassen"
@@ -19747,7 +19671,7 @@
       "Parkplatz",
       "Regelmäßige Führungen",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air",
@@ -19831,9 +19755,9 @@
       "Regelmäßige Führungen",
       "Gastronomie",
       "opt023",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Barrierefrei zugänglich"
@@ -19910,12 +19834,12 @@
     "tags": [
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
-      "opt018"
+      "Rollstuhlzugänglichkeit"
     ],
     "icon": [
       {
@@ -19981,9 +19905,9 @@
     "teaser": "Museum | Konzerte",
     "tags": [
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "MuseumsCard"
     ],
     "icon": [
@@ -20079,7 +20003,7 @@
     "teaser": "Schul- und Heimatmuseum",
     "tags": [
       "Kostenfrei",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -20130,9 +20054,9 @@
     "pos": "9.3351082 54.455949",
     "teaser": "Schule wie vor 100 Jahren",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -20197,9 +20121,9 @@
       "Regelmäßige Führungen",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Barrierefrei zugänglich",
@@ -20302,9 +20226,9 @@
       "Regelmäßige Führungen",
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen"
     ],
     "icon": [
@@ -20381,7 +20305,7 @@
     "pos": "11.19227695465 54.4194831848",
     "teaser": "Seenotkreuzer Arwed Emminghaus",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote"
     ],
@@ -20430,9 +20354,9 @@
     "tags": [
       "Kostenfrei",
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Open Air"
     ],
     "icon": [
@@ -20497,7 +20421,7 @@
       "opt003",
       "Parkplatz",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Open Air"
     ],
@@ -20679,10 +20603,10 @@
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "opt002",
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Open Air"
     ],
     "icon": [
@@ -20915,9 +20839,9 @@
       "Kostenfrei",
       "Regelmäßige Führungen",
       "opt023",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -20993,9 +20917,9 @@
       "Regelmäßige Führungen",
       "opt023",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -21074,9 +20998,9 @@
       "Parkplatz",
       "Barrierefrei zugänglich",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -21149,14 +21073,14 @@
     "teaser": "Geschichte und Kultur",
     "tags": [
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Behindertenparkplatz",
       "Shop",
       "Behinderten-WC",
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -21248,7 +21172,7 @@
     "pos": "9.6974081 53.5848847",
     "teaser": "Wedel von 1212 bis 1950",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
@@ -21335,7 +21259,7 @@
       "opt002",
       "Shop",
       "Schietwetter Angebote",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich"
     ],
     "icon": [
@@ -21450,7 +21374,7 @@
       "Open Air",
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032"
+      "Kinder/Jugendliche"
     ],
     "icon": [
       {
@@ -21525,9 +21449,9 @@
     "teaser": "Kreiskulturzentrum",
     "tags": [
       "opt002",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Gastronomie",
       "Angebot für Schulklassen"
@@ -21605,9 +21529,9 @@
     "teaser": "Schleswig-Holsteinische Adelskultur",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Open Air",
@@ -21692,12 +21616,12 @@
     "tags": [
       "Regelmäßige Führungen",
       "Angebot für Sehbehinderte",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -21784,11 +21708,11 @@
     "tags": [
       "Parkplatz",
       "Regelmäßige Führungen",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -21859,9 +21783,9 @@
     "pos": "10.33316993713 53.6554794311523",
     "teaser": "Heimatmuseum",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard",
@@ -21939,9 +21863,9 @@
     "tags": [
       "opt002",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Angebot für Schulklassen",
       "Videoclips verfügbar",
@@ -22060,9 +21984,9 @@
     "teaser": "Sylter Geschichte",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -22139,10 +22063,10 @@
     "tags": [
       "Kostenfrei",
       "Parkplatz",
-      "opt018",
-      "opt032",
+      "Rollstuhlzugänglichkeit",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "MuseumsCard"
     ],
@@ -22217,7 +22141,7 @@
     "teaser": "die Spielstätte für Kiddy's & Co.",
     "tags": [
       "Parkplatz",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -22355,9 +22279,9 @@
     "teaser": "Theater | Kino",
     "tags": [
       "opt002",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -22426,9 +22350,9 @@
       "Schietwetter Angebote",
       "opt002",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034"
+      "Senioren"
     ],
     "icon": [
       {
@@ -22494,9 +22418,9 @@
     "tags": [
       "opt002",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -22568,7 +22492,7 @@
     "tags": [
       "Barrierefrei zugänglich",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "opt002",
@@ -22578,7 +22502,7 @@
       "Gastronomie",
       "opt023",
       "opt026",
-      "opt032"
+      "Kinder/Jugendliche"
     ],
     "icon": [
       {
@@ -22671,9 +22595,9 @@
     "teaser": "Musiktheater | Schauspiel | Konzert",
     "tags": [
       "opt002",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -22741,7 +22665,7 @@
     "teaser": "Theater, Musik, Kleinkunst, Kino",
     "tags": [
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Open Air"
     ],
@@ -22802,7 +22726,7 @@
       "opt002",
       "Gastronomie",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -22864,7 +22788,7 @@
     "pos": "9.43947982788 54.790641784668",
     "teaser": "Freies Theater in Flensburg",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -22917,7 +22841,7 @@
     "teaser": "Ausstellung über den Nobelpreisträger",
     "tags": [
       "Kostenfrei",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -22973,9 +22897,9 @@
     "tags": [
       "opt003",
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -23040,7 +22964,7 @@
     "tags": [
       "Regelmäßige Führungen",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -23100,9 +23024,9 @@
     "teaser": "Museum für Erdgeschichte",
     "tags": [
       "Shop",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -23215,9 +23139,9 @@
     "teaser": "U-Boot-Besichtigung und Museum",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote"
     ],
     "icon": [
@@ -23276,9 +23200,9 @@
     "pos": "11.190282 54.422302",
     "teaser": "Kunst | Kultur | Völkerforum",
     "tags": [
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],
@@ -23342,7 +23266,7 @@
     "tags": [
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
@@ -23407,9 +23331,9 @@
     "teaser": "Ausstellung an Bord",
     "tags": [
       "opt003",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034"
+      "Senioren"
     ],
     "icon": [
       {
@@ -23523,7 +23447,7 @@
     "tags": [
       "Regelmäßige Führungen",
       "opt031",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Familienfreundlich",
@@ -23595,7 +23519,7 @@
     "tags": [
       "Kostenfrei",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen"
     ],
@@ -23656,7 +23580,7 @@
       "Kostenfrei",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Schietwetter Angebote",
       "Angebot auf Englisch"
@@ -23721,9 +23645,9 @@
     "teaser": "Sammlung zum Thema Weihnachten",
     "tags": [
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Shop",
       "MuseumsCard"
@@ -23790,7 +23714,7 @@
       "Shop",
       "Gastronomie",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Schietwetter Angebote",
       "Angebot für Schulklassen",
       "MuseumsCard"
@@ -23871,7 +23795,7 @@
       "Shop",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Open Air"
@@ -23970,11 +23894,11 @@
       "Angebot für Sehbehinderte",
       "opt014",
       "opt031",
-      "opt034",
+      "Senioren",
       "Barrierefrei zugänglich",
       "Shop",
       "Gastronomie",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
       "Angebot für Schulklassen",
       "Open Air",
@@ -24078,9 +24002,9 @@
       "Shop",
       "Gastronomie",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen"
     ],
     "icon": [
@@ -24178,9 +24102,9 @@
       "Kostenfrei",
       "opt003",
       "Regelmäßige Führungen",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "MuseumsCard"
@@ -24300,9 +24224,9 @@
       "Angebot für Hörbehinderte",
       "Barrierefrei zugänglich",
       "Behinderten-WC",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Parkplatz",
@@ -24396,7 +24320,7 @@
     "teaser": "Dänisches Industriemonument",
     "tags": [
       "Parkplatz",
-      "opt018",
+      "Rollstuhlzugänglichkeit",
       "Behinderten-WC",
       "Schietwetter Angebote",
       "opt005",
@@ -24468,9 +24392,9 @@
     "teaser": "Historische Sammlungen | Präparate",
     "tags": [
       "opt026",
-      "opt032",
+      "Kinder/Jugendliche",
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote",
       "Regelmäßige Führungen"
@@ -24540,7 +24464,7 @@
     "teaser": "Arbeitswelt mit Pferden",
     "tags": [
       "Familienfreundlich",
-      "opt034",
+      "Senioren",
       "Angebot für Schulklassen",
       "Schietwetter Angebote"
     ],

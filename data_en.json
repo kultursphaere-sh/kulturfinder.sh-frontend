@@ -74,7 +74,7 @@
     "pos": "9.9960026 53.6639516",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -239,7 +239,7 @@
       "Parking available",
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -303,7 +303,7 @@
       "Open air",
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032"
+      "Children/Teenagers"
     ],
     "icon": [
       {
@@ -378,7 +378,7 @@
       "Free of charge",
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -625,7 +625,7 @@
     "tags": [
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -695,7 +695,7 @@
       "Wheelchair accessible",
       "Shop",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -784,7 +784,7 @@
       "Wheelchair accessible",
       "Shop",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -866,7 +866,7 @@
     "teaser": "Experience nature in the heart of the Wadden Sea",
     "tags": [
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -1009,7 +1009,7 @@
     "street": "Burgstaaken 89",
     "pos": "11.19227695465 54.4194831848",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -1062,7 +1062,7 @@
       "Wheelchair accessible",
       "Shop",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -1161,7 +1161,7 @@
     "tags": [
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -1263,7 +1263,7 @@
       "Free of charge",
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather",
       "Video clips available"
@@ -1369,9 +1369,9 @@
     "tags": [
       "Wheelchair accessible",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -1438,9 +1438,9 @@
     "teaser": "Exhibition on Fehmarn’s natural history",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -1494,9 +1494,9 @@
     "teaser": "Submarine tour and museum",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -1553,7 +1553,7 @@
     "pos": "9.43947982788 54.790641784668",
     "teaser": "Independent theatre in Flensburg",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -1614,7 +1614,7 @@
       "Shop",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Open air"
@@ -1712,7 +1712,7 @@
     "tags": [
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -1777,9 +1777,9 @@
     "teaser": "World War 2 memorial",
     "tags": [
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Parking available",
       "Shop",
@@ -1853,7 +1853,7 @@
     "teaser": "Protecting biodiversity",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -1917,7 +1917,7 @@
       "Disabled parking",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -1993,7 +1993,7 @@
     "teaser": "Industrial heritage",
     "tags": [
       "Parking available",
-      "opt018",
+      "Wheelchair accessibility",
       "Accessible toilet",
       "Activities for bad weather",
       "opt005",
@@ -2064,7 +2064,7 @@
     "tags": [
       "Parking available",
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Activities for bad weather"
     ],
     "icon": [
@@ -2228,7 +2228,7 @@
     "pos": "10.33374595642 53.530666",
     "teaser": "Tropical house and park",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -2279,81 +2279,6 @@
     },
     "links": {
       "self": "http://xtree-actor-api.digicult-verbund.de/getRepositoryItem?id=act0002583"
-    }
-  },
-  {
-    "id": "act0002598",
-    "name": "Focke-Museum",
-    "place": "Bremen",
-    "street": "Schwachhauser Heerstraße 240",
-    "pos": "8.862920761108 53.090335845947",
-    "tags": [
-      "Wheelchair accessible",
-      "Disabled parking",
-      "Parking available",
-      "opt032",
-      "Family-friendly",
-      "opt034",
-      "Offers for school classes",
-      "Activities for bad weather",
-      "Regular tours"
-    ],
-    "icon": [
-      {
-        "type": "general",
-        "id": "opt017"
-      },
-      {
-        "type": "general",
-        "id": "opt020"
-      },
-      {
-        "type": "general",
-        "id": "opt004"
-      },
-      {
-        "type": "general",
-        "id": "opt032"
-      },
-      {
-        "type": "general",
-        "id": "opt033"
-      },
-      {
-        "type": "general",
-        "id": "opt034"
-      },
-      {
-        "type": "general",
-        "id": "opt035"
-      },
-      {
-        "type": "general",
-        "id": "opt036"
-      },
-      {
-        "type": "general",
-        "id": "opt006"
-      }
-    ],
-    "classification": [
-      {
-        "type": "tourismustyp",
-        "uri": "http://digicult.vocnet.org/portal/p0297"
-      },
-      {
-        "type": "kulturtyp",
-        "uri": "http://digicult.vocnet.org/portal/"
-      }
-    ],
-    "resource": {
-      "resourceRepresentation": {
-        "type": "image_thumbnail",
-        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m636a156f43161/Focke-Museum/Focke+Museum+Bremen"
-      }
-    },
-    "links": {
-      "self": "http://xtree-actor-api.digicult-verbund.de/getRepositoryItem?id=act0002598"
     }
   },
   {
@@ -2425,9 +2350,9 @@
       "opt019",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air"
@@ -2974,7 +2899,7 @@
       "Free of charge",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather",
       "Offerings in English"
@@ -3038,7 +2963,7 @@
     "tags": [
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -3151,7 +3076,7 @@
       "Regular tours",
       "Catering services",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -3219,9 +3144,9 @@
     "pos": "9.65356201557692 53.7553927",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "opt019"
     ],
@@ -3393,12 +3318,12 @@
     "teaser": "Critical and satirical graphic art ",
     "tags": [
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
       "Parking available",
-      "opt034",
+      "Seniors",
       "Museums card"
     ],
     "icon": [
@@ -3466,9 +3391,9 @@
     "tags": [
       "Free of charge",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -3605,7 +3530,7 @@
     "tags": [
       "Free of charge",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes"
     ],
@@ -3665,7 +3590,7 @@
     "tags": [
       "Free of charge",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Open air",
@@ -3794,12 +3719,12 @@
     "pos": "10.4819964 53.720098",
     "teaser": "Crafts and trades from various eras",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
       "Free of charge",
-      "opt018",
+      "Wheelchair accessibility",
       "Accessible toilet",
       "Museums card"
     ],
@@ -3869,7 +3794,7 @@
     "pos": "9.4400844 54.785485",
     "teaser": "Theatre | Readings",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -3924,7 +3849,7 @@
     "pos": "10.120177 54.324383",
     "teaser": "Enjoy Low German!",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -3970,7 +3895,7 @@
     "pos": "9.841272 54.173474",
     "teaser": "Low German theatre since 1934",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -4069,11 +3994,11 @@
     "tags": [
       "Regular tours",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Free of charge",
-      "opt018"
+      "Wheelchair accessibility"
     ],
     "icon": [
       {
@@ -4201,9 +4126,9 @@
     "teaser": "Aristocratic culture",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air",
@@ -4328,9 +4253,9 @@
     "teaser": "History of the mill and the island ",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -4395,9 +4320,9 @@
     "tags": [
       "Free of charge",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air"
@@ -4470,7 +4395,7 @@
     "teaser": "Urban history | Religious communities",
     "tags": [
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -4530,9 +4455,9 @@
     "teaser": "Heritage railway | Rides ",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -4598,9 +4523,9 @@
       "Wheelchair accessible",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Parking available",
       "Open air",
@@ -4733,9 +4658,9 @@
       "Parking available",
       "Regular tours",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -4816,9 +4741,9 @@
       "Shop",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air"
     ],
@@ -4915,9 +4840,9 @@
     "tags": [
       "opt003",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air"
     ],
@@ -4998,7 +4923,7 @@
     "tags": [
       "Free of charge",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Offers for school classes"
     ],
@@ -5058,9 +4983,9 @@
     "teaser": "Museum at the lock ",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "opt003",
@@ -5155,9 +5080,9 @@
       "Free of charge",
       "Regular tours",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes"
     ],
     "icon": [
@@ -5314,9 +5239,9 @@
       "opt003",
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -5389,7 +5314,7 @@
     "tags": [
       "Free of charge",
       "Activities for bad weather",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes"
     ],
@@ -5444,7 +5369,7 @@
     "teaser": "Theatre, music, cabaret, cinema",
     "tags": [
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Open air"
     ],
@@ -5504,10 +5429,10 @@
     "teaser": "19th century | Classical modern era",
     "tags": [
       "Regular tours",
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -5577,9 +5502,9 @@
     "tags": [
       "Free of charge",
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air"
@@ -5839,7 +5764,7 @@
     "teaser": "History of the town ",
     "tags": [
       "Free of charge",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -5890,7 +5815,7 @@
     "teaser": "Visual arts from BBK-SH members",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Activities for bad weather"
     ],
     "icon": [
@@ -5938,12 +5863,12 @@
     "tags": [
       "opt003",
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Shop",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -6110,9 +6035,9 @@
     "teaser": "Conservation centre",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air",
@@ -6191,9 +6116,9 @@
     "tags": [
       "opt003",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034"
+      "Seniors"
     ],
     "icon": [
       {
@@ -6252,7 +6177,7 @@
     "tags": [
       "opt023",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Parking available",
       "Regular tours",
       "Catering services",
@@ -6348,9 +6273,9 @@
       "opt003",
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Shop"
     ],
@@ -6422,9 +6347,9 @@
     "teaser": "Christmas collection",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Shop",
       "Museums card"
@@ -6489,7 +6414,7 @@
     "tags": [
       "Catering services",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -6547,9 +6472,9 @@
       "Free of charge",
       "Regular tours",
       "opt023",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -6743,7 +6668,7 @@
       "Regular tours",
       "Wheelchair accessible",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -6833,7 +6758,7 @@
       "Wheelchair accessible",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -6913,10 +6838,10 @@
     "teaser": "Shipping museum",
     "tags": [
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Disabled parking",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -6982,9 +6907,9 @@
       "opt003",
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card",
@@ -7066,7 +6991,7 @@
     "tags": [
       "Free of charge",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -7131,9 +7056,9 @@
     "tags": [
       "Regular tours",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -7205,7 +7130,7 @@
     "pos": "10.4776773 53.5060722",
     "teaser": "Art exhibitions | Events ",
     "tags": [
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -7262,7 +7187,7 @@
       "Parking available",
       "Shop",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -7331,12 +7256,12 @@
     "teaser": "History of Dithmarschen",
     "tags": [
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Shop",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -7408,7 +7333,7 @@
     "teaser": "Pharmacy, shipping, trade",
     "tags": [
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Museums card"
@@ -7465,7 +7390,7 @@
     "tags": [
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -7534,10 +7459,10 @@
     "tags": [
       "Free of charge",
       "Parking available",
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -7650,7 +7575,7 @@
     "teaser": "Working with horses",
     "tags": [
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -7749,9 +7674,9 @@
       "Regular tours",
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -7841,9 +7766,9 @@
       "Shop",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes"
     ],
     "icon": [
@@ -7939,9 +7864,9 @@
     "tags": [
       "opt003",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Wheelchair accessible",
@@ -8021,7 +7946,7 @@
       "Parking available",
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -8215,9 +8140,9 @@
       "Disabled parking",
       "Shop",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -8309,9 +8234,9 @@
     "pos": "10.7735437 53.6982108",
     "teaser": "Museum | Events | Archives",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -8370,9 +8295,9 @@
     "pos": "9.69899521937041 53.58370285",
     "teaser": "Birthplace | Exhibition",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "opt003"
@@ -8491,7 +8416,7 @@
       "opt003",
       "Regular tours",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -8577,9 +8502,9 @@
       "Wheelchair accessible",
       "Activities for bad weather",
       "Offers for school classes",
-      "opt034",
+      "Seniors",
       "Family-friendly",
-      "opt032",
+      "Children/Teenagers",
       "Catering services",
       "Shop",
       "opt003",
@@ -8700,12 +8625,12 @@
     "tags": [
       "Regular tours",
       "Offers for the visually impaired",
-      "opt018",
+      "Wheelchair accessibility",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -8863,7 +8788,7 @@
     "pos": "11.1965265148209 54.436332",
     "teaser": "Fehmarn Museum of Local History*",
     "tags": [
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -8913,7 +8838,7 @@
       "opt003",
       "Regular tours",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Video clips available"
@@ -8988,9 +8913,9 @@
       "Free of charge",
       "opt003",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Open air"
     ],
     "icon": [
@@ -9059,9 +8984,9 @@
       "Regular tours",
       "Wheelchair accessible",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card",
@@ -9157,7 +9082,7 @@
       "Offers for school classes",
       "Activities for bad weather",
       "opt014",
-      "opt032",
+      "Children/Teenagers",
       "Museums card"
     ],
     "icon": [
@@ -9234,9 +9159,9 @@
       "opt003",
       "Parking available",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air"
     ],
@@ -9350,7 +9275,7 @@
     "tags": [
       "Regular tours",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -9412,9 +9337,9 @@
     "tags": [
       "opt003",
       "Parking available",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Open air",
       "Museums card"
     ],
@@ -9480,9 +9405,9 @@
       "opt002",
       "Regular tours",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -9560,9 +9485,9 @@
       "Free of charge",
       "opt002",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034"
+      "Seniors"
     ],
     "icon": [
       {
@@ -9623,9 +9548,9 @@
       "Wheelchair accessible",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Regular tours"
@@ -9723,7 +9648,7 @@
     "tags": [
       "Free of charge",
       "opt023",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather",
       "Museums card",
@@ -9796,10 +9721,10 @@
       "opt023",
       "opt026",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Museums card"
     ],
     "icon": [
@@ -9865,9 +9790,9 @@
     "teaser": "Museum of the history of the Earth ",
     "tags": [
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -9972,7 +9897,7 @@
     "teaser": "Alfred Nobel | Energy and research ",
     "tags": [
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Free of charge"
@@ -10034,7 +9959,7 @@
     "tags": [
       "Free of charge",
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -10108,9 +10033,9 @@
     "pos": "10.1485472418525 54.3303304",
     "teaser": "Habitats in the North and Baltic Sea",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Wheelchair accessible"
@@ -10170,9 +10095,9 @@
     "pos": "9.8557753 54.1704958",
     "teaser": "Nortorf, home of the vinyl record",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Video clips available",
       "Museums card"
@@ -10206,7 +10131,7 @@
     "classification": [
       {
         "type": "kulturtyp",
-        "uri": "http://digicult.vocnet.org/portal/p0110"
+        "uri": "http://digicult.vocnet.org/portal/"
       },
       {
         "type": "tourismustyp",
@@ -10216,7 +10141,7 @@
     "resource": {
       "resourceRepresentation": {
         "type": "image_thumbnail",
-        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m6405c3905fd42/German%2BRecord%2BMuseum/Deutsches+Schallplattenmuseum+-+Front"
+        "link": "https://museumsbilder.digicult-verbund.de/thumbnail/m65e71551908d9/German%2BRecord%2BMuseum/Deutsches+Schallplattenmuseum+-+Front"
       }
     },
     "links": {
@@ -10368,13 +10293,13 @@
     "teaser": "Forum for Literature and Visual Arts ",
     "tags": [
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Shop",
       "Accessible toilet",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -10497,7 +10422,7 @@
     "tags": [
       "Regular tours",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Open air",
       "opt026"
@@ -10567,7 +10492,7 @@
     "tags": [
       "opt026",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -10624,11 +10549,11 @@
       "Offers for the visually impaired",
       "opt014",
       "opt031",
-      "opt034",
+      "Seniors",
       "Wheelchair accessible",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Open air",
@@ -10721,9 +10646,9 @@
     "pos": "10.2037851557497 54.3679597",
     "teaser": "Regional art",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Parking available",
       "Shop",
@@ -10838,9 +10763,9 @@
     "pos": "10.9809840700704 54.372512",
     "teaser": "History of the town | Theodor Storm ",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -10904,10 +10829,10 @@
     "pos": "7.8872756 54.1851964",
     "teaser": "History and information",
     "tags": [
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -10965,12 +10890,12 @@
     "pos": "9.991031 54.07181",
     "teaser": "Sculpture park | Exhibitions",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Open air",
-      "opt018",
+      "Wheelchair accessibility",
       "Museums card"
     ],
     "icon": [
@@ -11041,10 +10966,10 @@
     "teaser": "Industrial history",
     "tags": [
       "Regular tours",
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -11163,9 +11088,9 @@
     "pos": "10.1437158 54.327497",
     "teaser": "Medical and pharmaceutical collection*",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -11236,7 +11161,7 @@
       "opt003",
       "Regular tours",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -11295,7 +11220,7 @@
     "pos": "8.94656972067864 54.31509195",
     "teaser": "History of Tönning ",
     "tags": [
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Free of charge"
     ],
@@ -11344,7 +11269,7 @@
     "tags": [
       "Free of charge",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -11400,9 +11325,9 @@
     "teaser": "Photo documentary of the district ",
     "tags": [
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Free of charge",
       "Wheelchair accessible",
@@ -11476,10 +11401,10 @@
     "teaser": "The Hanseatic city’s landmark",
     "tags": [
       "Regular tours",
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -11589,7 +11514,7 @@
     "teaser": "Nature conservation | Discovery trail* ",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Open air",
       "Offers for school classes"
@@ -11656,9 +11581,9 @@
       "opt003",
       "Regular tours",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air",
@@ -11797,9 +11722,9 @@
     "teaser": "Museum | Concerts",
     "tags": [
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Museums card"
     ],
     "icon": [
@@ -11855,10 +11780,10 @@
       "Offers for school classes",
       "Activities for bad weather",
       "opt002",
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Open air"
     ],
     "icon": [
@@ -11931,9 +11856,9 @@
       "Regular tours",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Parking available",
@@ -12019,7 +11944,7 @@
     "teaser": "Political and military history ",
     "tags": [
       "Activities for bad weather",
-      "opt032",
+      "Children/Teenagers",
       "Offers for school classes",
       "Offerings in Danish"
     ],
@@ -12173,9 +12098,9 @@
       "Shop",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Parking available",
@@ -12268,7 +12193,7 @@
     "teaser": "Music school | Music | Culture",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Activities for bad weather"
     ],
     "icon": [
@@ -12320,9 +12245,9 @@
       "Activities for bad weather",
       "opt002",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034"
+      "Seniors"
     ],
     "icon": [
       {
@@ -12388,9 +12313,9 @@
     "teaser": "Mill museum | Historical exhibition",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -12521,9 +12446,9 @@
       "opt003",
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air",
       "Museums card"
@@ -12649,9 +12574,9 @@
     "teaser": "Local history | School classroom",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -12752,7 +12677,7 @@
     "teaser": "Alternative culture, cinema, concerts",
     "tags": [
       "Parking available",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -12814,7 +12739,7 @@
       "opt003",
       "Shop",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -12885,9 +12810,9 @@
       "Wheelchair accessible",
       "Shop",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card",
@@ -12976,9 +12901,9 @@
       "Regular tours",
       "opt023",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -13056,9 +12981,9 @@
     "tags": [
       "Free of charge",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -13135,9 +13060,9 @@
     "tags": [
       "opt002",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -13209,7 +13134,7 @@
     "tags": [
       "Wheelchair accessible",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "opt002",
@@ -13219,7 +13144,7 @@
       "Catering services",
       "opt023",
       "opt026",
-      "opt032"
+      "Children/Teenagers"
     ],
     "icon": [
       {
@@ -13314,9 +13239,9 @@
       "opt003",
       "Parking available",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes"
     ],
     "icon": [
@@ -13471,7 +13396,7 @@
     "pos": "10.337082 54.406973",
     "teaser": "Shingled smock mill",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Regular tours"
     ],
@@ -13585,7 +13510,7 @@
       "Parking available",
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -13720,9 +13645,9 @@
       "Wheelchair accessible",
       "Disabled parking",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -13878,7 +13803,7 @@
     "tags": [
       "Free of charge",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Parking available",
       "Regular tours",
       "opt014",
@@ -13974,7 +13899,7 @@
     "tags": [
       "Free of charge",
       "Parking available",
-      "opt018",
+      "Wheelchair accessibility",
       "Shop",
       "Catering services",
       "Accessible toilet"
@@ -14039,9 +13964,9 @@
     "teaser": "District cultural centre ",
     "tags": [
       "opt002",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Catering services",
       "Offers for school classes"
@@ -14119,10 +14044,10 @@
     "tags": [
       "Catering services",
       "Regular tours",
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -14199,9 +14124,9 @@
     "tags": [
       "opt003",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air"
     ],
@@ -14271,7 +14196,7 @@
     "pos": "9.818857 53.646484",
     "teaser": "Music theatre for the whole family.",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -14325,7 +14250,7 @@
       "Parking available",
       "Regular tours",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air",
@@ -14407,7 +14332,7 @@
     "tags": [
       "Parking available",
       "Wheelchair accessible",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -14458,7 +14383,7 @@
     "tags": [
       "Parking available",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -14513,9 +14438,9 @@
     "teaser": "Musicals | Theatre | Concerts",
     "tags": [
       "opt002",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -14584,7 +14509,7 @@
       "opt002",
       "Catering services",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -14694,9 +14619,9 @@
     "teaser": "Local history and culture | Klaus Groth",
     "tags": [
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Open air",
       "Museums card"
@@ -14814,7 +14739,7 @@
       "Parking available",
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -14886,9 +14811,9 @@
       "Shop",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -14984,7 +14909,7 @@
     "teaser": "Museum of local history and culture ",
     "tags": [
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -15184,9 +15109,9 @@
       "opt005",
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -15374,9 +15299,9 @@
       "opt002",
       "opt003",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -15446,9 +15371,9 @@
     "pos": "9.5560507 54.8043508",
     "teaser": "Mill | Events",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -15500,13 +15425,13 @@
     "tags": [
       "Parking available",
       "opt005",
-      "opt018",
+      "Wheelchair accessibility",
       "Disabled parking",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air",
       "Museums card"
@@ -15612,7 +15537,7 @@
     "tags": [
       "Regular tours",
       "opt031",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Family-friendly",
@@ -15683,9 +15608,9 @@
     "teaser": "Industrial history of the city",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -15755,7 +15680,7 @@
     "tags": [
       "Wheelchair accessible",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -15863,7 +15788,7 @@
       "Regular tours",
       "Disabled parking",
       "Family-friendly",
-      "opt034"
+      "Seniors"
     ],
     "icon": [
       {
@@ -15927,9 +15852,9 @@
       "Disabled parking",
       "Activities for bad weather",
       "Offers for school classes",
-      "opt034",
+      "Seniors",
       "Family-friendly",
-      "opt032",
+      "Children/Teenagers",
       "Accessible toilet",
       "Catering services",
       "Shop",
@@ -16106,12 +16031,12 @@
     "tags": [
       "Parking available",
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -16203,13 +16128,13 @@
     "pos": "10.3704894 54.3949801",
     "teaser": "Childhood in transition",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
       "Parking available",
       "Wheelchair accessible",
-      "opt034",
+      "Seniors",
       "Museums card"
     ],
     "icon": [
@@ -16287,9 +16212,9 @@
       "Shop",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -16391,7 +16316,7 @@
     "tags": [
       "Activities for bad weather",
       "Family-friendly",
-      "opt034"
+      "Seniors"
     ],
     "icon": [
       {
@@ -16477,7 +16402,7 @@
       "Wheelchair accessible",
       "Disabled parking",
       "opt026",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "opt031"
@@ -16551,11 +16476,11 @@
     "tags": [
       "Regular tours",
       "Offers for the visually impaired",
-      "opt018",
+      "Wheelchair accessibility",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Shop",
@@ -16638,10 +16563,10 @@
     "tags": [
       "Regular tours",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card",
-      "opt018"
+      "Wheelchair accessibility"
     ],
     "icon": [
       {
@@ -16775,9 +16700,9 @@
       "Parking available",
       "Activities for bad weather",
       "Offers for school classes",
-      "opt034",
+      "Seniors",
       "Family-friendly",
-      "opt032",
+      "Children/Teenagers",
       "Catering services",
       "Offerings in Danish",
       "Offerings in English",
@@ -16932,9 +16857,9 @@
     "tags": [
       "opt003",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -17008,9 +16933,9 @@
     "tags": [
       "Wheelchair accessible",
       "opt031",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Parking available",
@@ -17137,10 +17062,10 @@
     "teaser": "Natural phenomena in the region ",
     "tags": [
       "Regular tours",
-      "opt018",
-      "opt032",
+      "Wheelchair accessibility",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card",
@@ -17220,7 +17145,7 @@
       "Free of charge",
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Open air"
@@ -17291,12 +17216,12 @@
       "opt003",
       "Parking available",
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Open air",
@@ -17396,9 +17321,9 @@
       "Parking available",
       "Wheelchair accessible",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -17473,9 +17398,9 @@
       "opt003",
       "Parking available",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -17595,7 +17520,7 @@
     "teaser": "Cinema with table service",
     "tags": [
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -17656,9 +17581,9 @@
       "Disabled parking",
       "Accessible toilet",
       "opt031",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -17749,9 +17674,9 @@
       "opt003",
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Open air"
     ],
@@ -17820,9 +17745,9 @@
     "tags": [
       "Free of charge",
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Open air"
     ],
     "icon": [
@@ -17921,9 +17846,9 @@
     "teaser": "Old style of home décor on Sylt ",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -17990,9 +17915,9 @@
     "pos": "10.879182 53.960635",
     "teaser": "Maritime museum | Viewing platform ",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "opt003"
     ],
@@ -18047,7 +17972,7 @@
     "teaser": "Old and new smithing",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -18099,9 +18024,9 @@
     "teaser": "Museum of the VHS, Bad Segeberg ",
     "tags": [
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Regular tours",
       "Museums card"
@@ -18170,9 +18095,9 @@
       "Wheelchair accessible",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air",
       "Museums card"
@@ -18258,7 +18183,7 @@
     "tags": [
       "opt003",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -18313,9 +18238,9 @@
     "tags": [
       "Wheelchair accessible",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -18387,11 +18312,11 @@
     "pos": "9.04412823599823 54.4785839",
     "teaser": "Low German house",
     "tags": [
-      "opt018",
+      "Wheelchair accessibility",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air",
       "Museums card"
@@ -18466,9 +18391,9 @@
       "Regular tours",
       "Wheelchair accessible",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Accessible toilet",
@@ -18701,7 +18626,7 @@
     "teaser": "Lübeck’s first art club",
     "tags": [
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -18757,9 +18682,9 @@
     "pos": "11.190282 54.422302",
     "teaser": "Art | Culture| Forum of nations",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -18822,9 +18747,9 @@
     "pos": "9.41744885911791 53.78593015",
     "teaser": "City palace | Contemporary art ",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -18881,7 +18806,7 @@
     "tags": [
       "opt003",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -18942,9 +18867,9 @@
       "Shop",
       "Catering services",
       "opt023",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -19030,9 +18955,9 @@
       "Free of charge",
       "Wheelchair accessible",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -19117,7 +19042,7 @@
     "tags": [
       "Regular tours",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -19189,11 +19114,11 @@
     "pos": "10.412421 54.158122",
     "teaser": "Glass from Northern Germany* ",
     "tags": [
-      "opt018",
+      "Wheelchair accessibility",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -19271,7 +19196,7 @@
     "tags": [
       "opt019",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -19330,9 +19255,9 @@
     "pos": "10.6365489 53.4799552",
     "teaser": "History | Culture",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Catering services",
       "Free of charge",
@@ -19501,9 +19426,9 @@
     "tags": [
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -19579,7 +19504,7 @@
       "Activities for bad weather",
       "Catering services",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly"
     ],
     "icon": [
@@ -19649,9 +19574,9 @@
     "pos": "9.0487519 54.4796382",
     "teaser": "Storm | Puppeteer museum",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -19709,7 +19634,7 @@
     "pos": "9.7602448423296 53.78292905",
     "teaser": "Castle island | Cultural heritage*",
     "tags": [
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -19761,7 +19686,7 @@
     "tags": [
       "Parking available",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -19827,9 +19752,9 @@
       "Regular tours",
       "Catering services",
       "opt023",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Wheelchair accessible"
@@ -20012,9 +19937,9 @@
     "ISIL": "DE-MUS-296815",
     "pos": "9.6683465 54.2992596",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -20134,9 +20059,9 @@
     "teaser": "Museum of modern art",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -20202,7 +20127,7 @@
       "Wheelchair accessible",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -20272,7 +20197,7 @@
       "Free of charge",
       "Catering services",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -20377,7 +20302,7 @@
     "tags": [
       "Wheelchair accessible",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -20447,14 +20372,14 @@
     "teaser": "History and culture",
     "tags": [
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Disabled parking",
       "Shop",
       "Accessible toilet",
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -20595,9 +20520,9 @@
       "Regular tours",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -20681,7 +20606,7 @@
     "teaser": "A cornucopia of literary experiences ",
     "tags": [
       "opt003",
-      "opt018",
+      "Wheelchair accessibility",
       "opt023",
       "Accessible toilet",
       "opt026",
@@ -20751,9 +20676,9 @@
     "teaser": "Historical Dithmarschen farmhouse",
     "tags": [
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Museums card",
       "Offers for school classes"
@@ -20854,9 +20779,9 @@
     "teaser": "Music | Ballet | Theatre* ",
     "tags": [
       "opt002",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Catering services"
@@ -20971,11 +20896,11 @@
     "tags": [
       "Parking available",
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -21110,9 +21035,9 @@
     "pos": "9.3351082 54.455949",
     "teaser": "School 100 years ago",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -21172,7 +21097,7 @@
     "teaser": "School and local history museum",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Activities for bad weather"
     ],
@@ -21226,7 +21151,7 @@
       "Free of charge",
       "Regular tours",
       "Family-friendly",
-      "opt034"
+      "Seniors"
     ],
     "icon": [
       {
@@ -21280,9 +21205,9 @@
     "teaser": "Fauna and flora | Geology",
     "tags": [
       "Activities for bad weather",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Museums card"
     ],
@@ -21348,7 +21273,7 @@
       "opt003",
       "Parking available",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Open air"
     ],
@@ -21420,9 +21345,9 @@
       "Regular tours",
       "Shop",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Wheelchair accessible",
@@ -21524,9 +21449,9 @@
       "Regular tours",
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes"
     ],
     "icon": [
@@ -21606,7 +21531,7 @@
       "Family-friendly",
       "Open air",
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Offers for school classes"
     ],
     "icon": [
@@ -21666,7 +21591,7 @@
       "Parking available",
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly"
     ],
     "icon": [
@@ -21766,12 +21691,12 @@
     "tags": [
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
-      "opt018"
+      "Wheelchair accessibility"
     ],
     "icon": [
       {
@@ -21897,9 +21822,9 @@
       "Wheelchair accessible",
       "opt023",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -21978,9 +21903,9 @@
       "Wheelchair accessible",
       "Shop",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Regular tours",
@@ -22065,7 +21990,7 @@
     "pos": "10.688317 53.868197",
     "teaser": "Museum church | Exhibitions",
     "tags": [
-      "opt018",
+      "Wheelchair accessibility",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -22217,7 +22142,7 @@
       "opt002",
       "Shop",
       "Activities for bad weather",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly"
     ],
     "icon": [
@@ -22280,9 +22205,9 @@
       "Wheelchair accessible",
       "Disabled parking",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air",
       "Museums card"
@@ -22374,9 +22299,9 @@
     "pos": "10.33316993713 53.6554794311523",
     "teaser": "Museum of local history and culture ",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card",
@@ -22454,9 +22379,9 @@
     "tags": [
       "opt002",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Offers for school classes",
       "Video clips available",
@@ -22534,9 +22459,9 @@
     "teaser": "History of Sylt",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -22613,9 +22538,9 @@
     "teaser": "On-board exhibition",
     "tags": [
       "opt003",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034"
+      "Seniors"
     ],
     "icon": [
       {
@@ -22668,9 +22593,9 @@
     "pos": "9.5417712 54.5095562",
     "tags": [
       "Regular tours",
-      "opt018",
+      "Wheelchair accessibility",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Museums card"
     ],
@@ -22740,7 +22665,7 @@
       "Parking available",
       "Wheelchair accessible",
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Open air"
     ],
@@ -22812,7 +22737,7 @@
     "teaser": "Colonial goods shop | Exhibitions ",
     "tags": [
       "Free of charge",
-      "opt018",
+      "Wheelchair accessibility",
       "Activities for bad weather",
       "Museums card"
     ],
@@ -22865,8 +22790,8 @@
     "tags": [
       "Regular tours",
       "Catering services",
-      "opt032",
-      "opt034",
+      "Children/Teenagers",
+      "Seniors",
       "Offers for school classes"
     ],
     "icon": [
@@ -23002,7 +22927,7 @@
     "teaser": "The stage for young and old",
     "tags": [
       "Parking available",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather"
@@ -23058,9 +22983,9 @@
     "teaser": "Theatre | Cinema",
     "tags": [
       "opt002",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -23128,7 +23053,7 @@
     "teaser": "Exhibition on the Nobel prize winner ",
     "tags": [
       "Free of charge",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -23184,9 +23109,9 @@
     "tags": [
       "opt003",
       "Shop",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather"
     ],
@@ -23253,9 +23178,9 @@
       "Parking available",
       "opt005",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Open air",
       "Wheelchair accessible",
@@ -23393,9 +23318,9 @@
       "Activities for bad weather",
       "opt003",
       "Wheelchair accessible",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Video clips available"
     ],
@@ -23468,9 +23393,9 @@
     "tags": [
       "Parking available",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -23576,9 +23501,9 @@
     "teaser": "Cultural assets from the village*",
     "tags": [
       "Free of charge",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather"
     ],
     "icon": [
@@ -23866,7 +23791,7 @@
     "teaser": "Wadden Sea ecosystem",
     "tags": [
       "Catering services",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Open air",
@@ -24039,7 +23964,7 @@
     "pos": "9.6974081 53.5848847",
     "teaser": "Wedel between 1212 and 1950",
     "tags": [
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
       "Offers for school classes",
       "Activities for bad weather",
@@ -24099,7 +24024,7 @@
       "Shop",
       "Catering services",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Activities for bad weather",
       "Offers for school classes",
       "Museums card"
@@ -24174,9 +24099,9 @@
       "Free of charge",
       "opt003",
       "Regular tours",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Museums card"
@@ -24298,9 +24223,9 @@
       "Offers for the hearing impaired",
       "Wheelchair accessible",
       "Accessible toilet",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Parking available",
@@ -24395,9 +24320,9 @@
     "teaser": "Historical collections | Specimens* ",
     "tags": [
       "opt026",
-      "opt032",
+      "Children/Teenagers",
       "Family-friendly",
-      "opt034",
+      "Seniors",
       "Offers for school classes",
       "Activities for bad weather",
       "Regular tours"

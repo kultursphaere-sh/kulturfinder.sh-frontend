@@ -93,6 +93,23 @@ const tagDefinitions = {
     "de": "Angebot auf Dänisch",
     "en": "Offerings in Danish",
     "da": "Tilbud på dansk",
+  },
+  "opt032": {
+    "de": "Kinder/Jugendliche",
+    "en": "Children/Teenagers",
+    "da": "Børn/Unge"
+  },
+
+  "opt034": {
+    "de": "Senioren",
+    "en": "Seniors",
+    "da": "Seniorer"
+  },
+
+  "opt018": {
+    "de": "Rollstuhlzugänglichkeit",
+    "en": "Wheelchair accessibility",
+    "da": "Kørestolsadgang"
   }
   // Fügen Sie hier bei Bedarf weitere Tags hinzu...
 };
