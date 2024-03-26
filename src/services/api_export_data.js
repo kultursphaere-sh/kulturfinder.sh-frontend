@@ -122,21 +122,26 @@ locales.forEach(locale => {
       const responseBody = await response.json();
       console.log(`Fetched data for locale ${locale}:`, JSON.stringify(responseBody, null, 2));
       console.log(`Fetched data for locale ${locale}:`, responseBody);
+      return data.Actor.map(actor => actor.id);
+      // export.js -> exportData.address = institution.address.find(item => item.type === 'visitor')
+      // console.log(exportData.address.zip)
 
       // Erstellen der Daten unter Beibehaltung der Original-IDs
-      const data = responseBody.Actor.map((actor, index) => {
+      /*const data = responseBody.Actor.map((actor, index) => {
         // Tags übersetzen, falls verfügbar, sonst Original-ID verwenden
         const tags = Array.isArray(actor.icon) ? actor.icon.map(icon =>
           tagDefinitions[icon.id] && tagDefinitions[icon.id][locale] ? tagDefinitions[icon.id][locale] : icon.id
         ) : [];
+        const address = actor.address?.find(item => item.type === 'visitor') || {street: '', zip: '', place: ''}
 
         // Die restlichen Actor Eigenschaften einbeziehen
         return {
           id: actor.id, // Beibehaltung der ursprünglichen ID
           name: actor.name,
           nameAddition: actor.nameAddition,
-          place: actor.place,
-          street: actor.street,
+          place: address.place,
+          street: address.street,
+          zip:address.zip,
           ISIL: actor.ISIL,
           pos: actor.pos,
           teaser: actor.teaser,
@@ -146,13 +151,14 @@ locales.forEach(locale => {
           resource: actor.resource,
           links: actor.links
         };
-      });
+      }*/
 
       // Datenstruktur in eine JSON-Datei schreiben
-      await fs.writeFile(`./data_${locale}.json`, JSON.stringify(data, null, 2));
-      console.log(`Data has been written to file: data_${locale}.json`);
+      /*await fs.writeFile(`./data_${locale}.json`, JSON.stringify(data, null, 2));
+      console.log(`Data has been written to file: data_${locale}.json`);*/
     } catch (error) {
       console.error(`Failed to write to data_${locale}.json:`, error);
+      return [];
     }
   };
 
