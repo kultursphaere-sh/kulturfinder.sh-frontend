@@ -19,3 +19,4 @@ jobs:
       - run: npm run lint
       - run: npm audit --omit=dev
         continue-on-error: true
+      - run: npm run license-compliance-check
