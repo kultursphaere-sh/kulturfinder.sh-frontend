@@ -2,12 +2,12 @@
   <div class="list">
     <vue-headful
       v-if="changeTitle"
-      :title="(this.$store.state.filters.isFavorite ? $t('common.favorites') : $t('common.list')) + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :title="(this.$store.state.filters.isFavorite ? $t('common.favorites') : $t('common.list')) + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <list-render :institutions="institutions" :list-type="listType"/>
     <scroll-to-top-button display-height="1000"/>
@@ -58,7 +58,12 @@ export default {
   computed: {
     currentPath() {
       return this.listType || this.$route.path
-    }
+    },
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT }
   },
   methods: {
     onFavoriteClick: async function (favInstitution) {
@@ -172,14 +177,12 @@ export default {
   display: block;
   background-color: $light;
   width: 120px;
-  // height: 24px;
   margin-bottom: 8px;
 }
 .pre-claim{
   display: block;
   background-color: $light;
   width: 160px;
-  // height: 12px;
 }
 .claim {
   display: block;

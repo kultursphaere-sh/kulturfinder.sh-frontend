@@ -1,12 +1,12 @@
 <template>
   <div class="map">
     <vue-headful
-      :title="$t('common.map') + ' | ' + $t('SEO.title')"
-      :description="$t('SEO.description')"
-      :keywords="$t('SEO.commonKeywords')"
+      :title="$t('common.map') + ' | ' + appName"
+      :description="appDescription"
+      :keywords="appKeywords"
       :lang="`/${$route.params.locale}/`"
       og-locale="de"
-      url="https://kulturfinder.sh"
+      :url="appURL"
     />
     <map-render :institutions="institutions"/>
   </div>
@@ -38,6 +38,13 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+  computed: {
+    appURL: function () { return process.env.VUE_APP_URL },
+    appName: function () { return process.env.VUE_APP_NAME },
+    appDescription: function () { return process.env.VUE_APP_DESCRIPTION },
+    appKeywords: function () { return process.env.VUE_APP_KEYWORDS },
+    tenant: function () { return process.env.VUE_APP_TENANT }
   }
 }
 </script>
@@ -46,35 +53,23 @@ export default {
 .map {
   height:100%;
 }
+
 .info-window-header {
   display: flex;
   flex: 0 0 100%;
   height: 50%;
   align-items: center;
-  /* padding-top: 2vh; */
-  /* padding-left: 3vw; */
   padding-left: 16px;
   background-color: $primary;
 }
+
 .info-window {
   font-family: "Roboto", sans-serif;
-  // height: 94px;
-  /* height: 18vh;
-  width: 63vw; */
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
 }
-.info-window-header {
-  display: flex;
-  flex: 0 0 100%;
-  height: 50%;
-  align-items: center;
-  /* padding-top: 2vh; */
-  /* padding-left: 3vw; */
-  padding-left: 16px;
-  background-color: $primary;
-}
+
 .info-window-header .label {
   flex-grow: 1;
   font-size: 1rem;
@@ -85,29 +80,31 @@ export default {
   letter-spacing: -0.3px;
   color: white !important;
 }
+
 .info-window-header .label:hover {
   text-decoration: none;
   color: white !important;
 }
+
 .info-window-close {
   justify-content: flex-end;
   cursor: pointer;
   margin: 11px;
 }
+
 .info-window-footer {
   height: 50%;
   width: 100%;
   display: flex;
 }
+
 .leaflet-popup-tip {
   background-color: #f6f6f6 !important;
 }
+
 .drive-to {
-  // height: 100%;
-  /* width: 8vh; */
   width: 47px;
   background-color: $info;
-  // padding-top: 0.1rem;
 }
 
 .drive-to:hover {
@@ -140,7 +137,6 @@ export default {
 
 .link-to {
   height: 100%;
-  /* width: 10vw; */
   padding-right: 11px;
   background-color: #f6f6f6;
   display: flex;
@@ -153,7 +149,6 @@ export default {
   @import "~leaflet/dist/leaflet.css";
   @import "~leaflet.markercluster/dist/MarkerCluster.css";
   @import "~leaflet.markercluster/dist/MarkerCluster.Default.css";
-  @import "~leaflet/dist/leaflet.css";
   @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 </style>
 
@@ -169,7 +164,6 @@ export default {
   }
 }
 
-/* bug fix */
 .vue-map {
   height: 100% !important;
 }
@@ -202,7 +196,7 @@ export default {
 
 /* prevent bad mobile styling */
 .leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;
   border: none;
 }
 
