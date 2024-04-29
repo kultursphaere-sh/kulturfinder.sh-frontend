@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const fs = require('fs').promises;
 const URL = 'https://kultursphaere.sh/corsproxy.php?url=http://xtree-actor-api.digicult-verbund.de';
 const locales = ['de', 'da', 'en'];
-const tagDefinitions = {
+/*const tagDefinitions = {
   "opt001": {
     "de": "Kostenfrei",
     "en": "Free of charge",
@@ -111,7 +111,7 @@ const tagDefinitions = {
     "da": "Kørestolsadgang"
   }
   // Fügen Sie hier bei Bedarf weitere Tags hinzu...
-};
+};*/
 
 const fetchDetails = async (id, locale) => {
   let detailResponse = await fetch(`${URL}/getRepositoryItem?id=${id}&lang=${locale}`);
