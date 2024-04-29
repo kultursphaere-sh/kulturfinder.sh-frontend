@@ -2,7 +2,6 @@ const fetch = require('node-fetch');
 const fs = require('fs').promises;
 const URL = 'https://kultursphaere.sh/corsproxy.php?url=http://xtree-actor-api.digicult-verbund.de';
 const locales = ['de', 'da', 'en'];
-
 const tagDefinitions = {
   "opt001": {
     "de": "Kostenfrei",
@@ -114,48 +113,45 @@ const tagDefinitions = {
   // Fügen Sie hier bei Bedarf weitere Tags hinzu...
 };
 
+const fetchDetails = async (id, locale) => {
+  let detailResponse = await fetch(`${URL}/getRepositoryItem?id=${id}&lang=${locale}`);
+  if (!detailResponse.ok) {
+    // If the first request is not successful, try the alternative URL
+    detailResponse = await fetch(`${URL}/getRepositoryItem?info030=${id}&lang=${locale}`);
+  }
+  return detailResponse.ok ? await detailResponse.json() : null;
+};
+
+
 locales.forEach(locale => {
   const fetchDataAndExport = async () => {
+    let allInstitutionsDetails = []; // Initialize an array to store details
     try {
       // Fetch-Anfrage
       const response = await fetch(`${URL}/getRepositoryList?portalURI=http://digicult.vocnet.org/portal/p0287&count=9999&lang=${locale}`);
       const responseBody = await response.json();
-      console.log(`Fetched data for locale ${locale}:`, JSON.stringify(responseBody, null, 2));
-      console.log(`Fetched data for locale ${locale}:`, responseBody);
-      return data.Actor.map(actor => actor.id);
-      // export.js -> exportData.address = institution.address.find(item => item.type === 'visitor')
-      // console.log(exportData.address.zip)
+      // Create a temporary map for quick access to institution tags by ID
+      const tagsMap = responseBody.Actor.reduce((acc, current) => {
+        acc[current.id] = current.tags; // Assuming 'tags' is the attribute you need
+        return acc;
+      }, {});
 
-      // Erstellen der Daten unter Beibehaltung der Original-IDs
-      /*const data = responseBody.Actor.map((actor, index) => {
-        // Tags übersetzen, falls verfügbar, sonst Original-ID verwenden
-        const tags = Array.isArray(actor.icon) ? actor.icon.map(icon =>
-          tagDefinitions[icon.id] && tagDefinitions[icon.id][locale] ? tagDefinitions[icon.id][locale] : icon.id
-        ) : [];
-        const address = actor.address?.find(item => item.type === 'visitor') || {street: '', zip: '', place: ''}
-
-        // Die restlichen Actor Eigenschaften einbeziehen
-        return {
-          id: actor.id, // Beibehaltung der ursprünglichen ID
-          name: actor.name,
-          nameAddition: actor.nameAddition,
-          place: address.place,
-          street: address.street,
-          zip:address.zip,
-          ISIL: actor.ISIL,
-          pos: actor.pos,
-          teaser: actor.teaser,
-          tags: tags, // Hier werden die übersetzten oder originalen Tags verwendet
-          icon: actor.icon, // Direktes Einbeziehen ohne Modifikation
-          classification: actor.classification, // Auch direkt einbezogen
-          resource: actor.resource,
-          links: actor.links
-        };
-      }*/
-
-      // Datenstruktur in eine JSON-Datei schreiben
-      /*await fs.writeFile(`./data_${locale}.json`, JSON.stringify(data, null, 2));
-      console.log(`Data has been written to file: data_${locale}.json`);*/
+      // Fetch details for each institution
+      for (const actor of responseBody.Actor) {
+        const detailResponseBody = await fetchDetails(actor.id, locale);
+        if (detailResponseBody) {// Append tags from the tagsMap by institution ID before adding to details array
+          const detailsWithTags = { ...detailResponseBody, tags: tagsMap[actor.id] };// Add the fetched details to the array
+          //allInstitutionsDetails.push(detailResponseBody);
+          allInstitutionsDetails.push(detailsWithTags);
+        } else {
+          console.log(`Failed to fetch details for institution ID ${actor.id}`);
+          continue; // Skip to next institution if both attempts fail
+        }
+      }
+      // After collecting all details, export them into a single JSON file for the current locale
+      const filename = `institutions_details_${locale}.json`;
+      await fs.writeFile(filename, JSON.stringify(allInstitutionsDetails, null, 2));
+      console.log(`Exported details for all institutions to file: ${filename}`);
     } catch (error) {
       console.error(`Failed to write to data_${locale}.json:`, error);
       return [];
@@ -163,4 +159,6 @@ locales.forEach(locale => {
   };
 
   fetchDataAndExport();
+
 });
+
