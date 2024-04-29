@@ -145,7 +145,6 @@ locales.forEach(locale => {
           allInstitutionsDetails.push(detailsWithTags);
         } else {
           console.log(`Failed to fetch details for institution ID ${actor.id}`);
-          continue; // Skip to next institution if both attempts fail
         }
       }
       // After collecting all details, export them into a single JSON file for the current locale
