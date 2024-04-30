@@ -13,7 +13,7 @@
           <span>{{ $t('details.feedbackIntro') }}</span>
         </b-row>
         <b-row class="my-3">
-          <a :href="` mailto:${$t('details.feedbackEmail')}?subject=Feedback ${institutionName}`" class="text-primary">{{ $t('details.feedbackEmail') }}</a>
+          <a :href="`mailto:${email}?subject=Feedback ${institutionName}`" class="text-primary">{{ email }}</a>
         </b-row>
         <b-row class="my-2">
           <span class="headline-feedback">{{ $t('details.feedbackInstitutionHeadline') }}</span>
@@ -40,6 +40,9 @@ export default {
       type: String,
       default: ''
     }
+  },
+  computed: {
+    email: function () { return process.env.VUE_APP_EMAIL }
   }
 }
 </script>
