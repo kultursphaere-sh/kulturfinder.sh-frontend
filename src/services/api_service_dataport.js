@@ -51,7 +51,7 @@ import router from '@/router'
  * @property {!string} place
  * @property {string} tel
  * @property {string} email
- * @property {string} website
+ * @property {Object<{label: string, identifier: string}>} website
  * @property {Object<{identifier: string}>} eventCalender
  * @property {string} facebook
  * @property {string} twitter
@@ -330,7 +330,7 @@ export class ApiServiceDataport {
           institution.email = communication.value
           break
         case 'Website':
-          institution.website = communication.value
+          institution.website = { label: 'Website', identifier: communication.value }
           break
         case 'EventUrl':
           institution.eventCalender = {
