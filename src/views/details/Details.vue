@@ -188,7 +188,7 @@
                   </template>
                   <template #text>
                     <div class="text-primary">
-                      {{ institution.address.street }}<br>
+                      <div v-if="institution.address.street">{{ institution.address.street }}<br></div>
                       {{ institution.address.zip }} {{ institution.address.place }}
                     </div>
                   </template>
