@@ -143,7 +143,7 @@
                 >
                   <icon-globe/>
                 </icon-base>
-                <a :href="'https://' + 'dataport.de'" target="_blank">
+                <a :href="'https://dataport.de'" target="_blank">
                   {{ $t('about.hb.imprint9') }}<br>
                 </a>
               </span>
@@ -156,7 +156,7 @@
                 >
                   <icon-mail/>
                 </icon-base>
-                <a :href="'mailto:' + 'poststelle@dataport.de'">
+                <a :href="'mailto:kulturfinder@dataport.de'">
                   {{ $t('about.hb.imprint10') }}<br>
                 </a>
               </span>
@@ -387,8 +387,8 @@ export default {
     getCookie(cname) {
       const name = cname + '='
       const ca = document.cookie.split(';')
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i]
+      for (const element of ca) {
+        let c = element
         while (c.startsWith(' ')) {
           c = c.substring(1)
         }
