@@ -304,7 +304,7 @@
     "feedbackWrongOpeningHoursHeadline": "Öffnungszeiten falsch?",
     "feedbackWrongOpeningHoursText": "Trotz größter Sorgfalt können wir leider keine Gewähr für die Richtigkeit und Vollständigkeit der Öffnungszeiten geben. Vor allem an Feiertagen können diese abweichen oder werden saisonal mehrmals jährlich geändert. Es tut uns leid, wenn Ihnen hierdurch Unannehmlichkeiten entstanden sind und würden uns freuen, wenn Sie uns auf Fehler aufmerksam machen würden. Vielen Dank!",
     "museumscard": {
-      "title": "MuseumsCard 2023",
+      "title": "MuseumsCard 2024",
       "text1": "Kostenloser Eintritt",
       "text2": "für alle unter 18 Jahren.",
       "url": "www.meine-museumscard.de"
@@ -323,9 +323,8 @@
     "all": "(alle)"
   },
   "museumscard": {
-    "description": "Vom 1. Juli bis 12. November hast Du freien Eintritt in über 130 Museen in Schleswig-Holstein! Das gilt für alle unter 18 Jahren und Inhaber*innen einer Juleica.",
-    "nahverkehr": "Am 19. und 26. Oktober gilt Deine MuseumsCard als Fahrkarte (für alle unter 18 Jahren oder mit Juleica) in allen Zügen des Nahverkehrs, 2. Klasse, in Schleswig-Holstein sowie bis Hamburg Altona bzw. Hamburg Hbf. und in den Linienbussen in Schleswig-Holstein.",
-    "info": "Die MuseumsCard kann online bestellt, unter www.meine-museumscard.de ausgedruckt oder digital hier im kulturfinder.sh genutzt werden.",
+    "description": "Vom 6. Juni bis 17. November 2024 hast Du freien Eintritt in über 130 Museen in Schleswig-Holstein! Das gilt für alle unter 18 Jahren und Inhaber*innen einer Juleica.",
+    "nahverkehr": "Am 24. und 31. Oktober 2024 gilt Deine MuseumsCard als Fahrkarte (für alle unter 18 Jahren oder mit Juleica) in allen Zügen des Nahverkehrs, 2. Klasse, in Schleswig-Holstein sowie bis Hamburg Altona bzw. Hamburg Hbf. und in den Linienbussen in Schleswig-Holstein.",
     "description2": "Die MuseumsCard ist eine Initiative des Ministeriums für Allgemeine und Berufliche Bildung, Wissenschaft, Forschung und Kultur des Landes Schleswig-Holstein und des Sparkassen- und Giroverbandes Schleswig-Holstein in Zusammenarbeit mit dem Landesjugendring Schleswig-Holstein und dem Museumsverband Schleswig-Holstein und Hamburg. Weiterer Kooperationspartner ist der Nahverkehr Schleswig-Holstein.",
     "tickets": "Eintrittskarte",
     "website": "Webseite"
