@@ -11,7 +11,7 @@
         {{ $t('details.museumscard.text2') }}<br>
       </b-col>
       <img
-        src="@/assets/images/logos/museumscard_logo_2023_rotbeige.svg"
+        src="@/assets/images/logos/museumsCard2024greenBackground.png"
         height="103px"
         class="museumscard-logo alert-success"
         alt="Museumscard"
