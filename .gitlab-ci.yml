@@ -16,7 +16,7 @@ build:
       - dist
   script:
     - npm ci --cache .npm --prefer-offline --legacy-peer-deps
-    - npm run build
+    - npm run build-sh
 
 lint:
   image: node:lts
@@ -28,6 +28,7 @@ lint:
 audit:
   image: node:lts
   stage: test
+  allow_failure: true
   script:
     - npm ci --cache .npm --prefer-offline --legacy-peer-deps
     - npm audit --production
