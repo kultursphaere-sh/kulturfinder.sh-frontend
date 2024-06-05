@@ -305,7 +305,7 @@
     "feedbackWrongOpeningHoursHeadline": "Wrong opening hours?",
     "feedbackWrongOpeningHoursText": "Despite taking the utmost care, we cannot guarantee the accuracy of the opening hours. Especially on public holidays, they can vary, or they may change several times a year depending on the season. We apologise for any inconvenience this may cause and would be grateful if you could inform us of any mistakes we have made. Thank you!",
     "museumscard": {
-      "title": "MuseumsCard 2023",
+      "title": "MuseumsCard 2024",
       "text1": "Free admission",
       "text2": "for everyone under 18.",
       "url": "www.meine-museumscard.de"
@@ -324,9 +324,8 @@
     "all": "(all)"
   },
   "museumscard": {
-    "description": "From 1 July to 12 November you have free admission to over 130 museums in Schleswig-Holstein! This applies to all under 18s and holders of a Juleica.",
-    "nahverkehr": "On 19 and 26 October, your MuseumsCard is valid as a ticket (for anyone under 18 or with a Juleica) on all local trains, 2nd class, in Schleswig-Holstein as well as Hamburg Altona and Hamburg Hbf and on scheduled buses in Schleswig-Holstein.",
-    "info": "The MuseumsCard can be ordered online, printed out at www.meine-museumscard.de or used digitally here in kulturfinder.sh.",
+    "description": "From 6 June to 17 November you have free admission to over 130 museums in Schleswig-Holstein! This applies to all under 18s and holders of a Juleica.",
+    "nahverkehr": "On 24 and 31 October, your MuseumsCard is valid as a ticket (for anyone under 18 or with a Juleica) on all local trains, 2nd class, in Schleswig-Holstein as well as Hamburg Altona and Hamburg Hbf and on scheduled buses in Schleswig-Holstein.",
     "description2": "The MuseumsCard is an initiative of the Ministry of Education, Science, Research and Culture of the State of Schleswig-Holstein and the Savings Banks and Giro Association of Schleswig-Holstein in cooperation with the Landesjugendring Schleswig-Holstein and the Museumsverband Schleswig-Holstein und Hamburg. Another cooperation partner is Nahverkehr Schleswig-Holstein.",
     "tickets": "Ticket",
     "website": "Website"
