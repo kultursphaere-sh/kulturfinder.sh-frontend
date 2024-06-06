@@ -46,7 +46,7 @@ import router from '@/router'
  * @property {!string} description
  * @property {!string} claim
  * @property {!string} teaser
- * @property {Object.<{street: string, zip: string, place: string}>} address
+ * @property {Array.<{street: string, zip: string, place: string}>} address
  * @property {!string} street
  * @property {!string} place
  * @property {string} tel
@@ -104,11 +104,11 @@ function migrateCommonValues(element) {
   institution.teaser = element.nameAddition
   institution.claim = element.nameAddition
   institution.description = element.description
-  institution.address = {
+  institution.address = [{
     street: element.address,
     zip: element.zipCode,
     place: element.city
-  }
+  }]
   institution.street = element.address
   institution.place = element.city
   institution.hasLivingImages = element.hasLivingImages
