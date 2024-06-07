@@ -15,7 +15,8 @@
     "http-server": "http-server dist -c-1 --proxy http://localhost:8080?",
     "build-report": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service build --report",
     "generate-sbom": "npx @cyclonedx/cyclonedx-npm --omit dev --omit optional --omit peer --output-file public/sbom.json",
-    "db-export": "node ./data-migration/export-digicult-api.js"
+    "db-export": "node ./data-migration/export-digicult-api.js",
+    "db-migration": "node ./data-migration/migrate-data.js"
   },
   "dependencies": {
     "ajv": "^6.12.6",
