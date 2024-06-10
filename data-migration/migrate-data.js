@@ -1,168 +1,24 @@
-const locales = ['de', 'da', 'en']
 const exportData = require('./output/export_data.json')
-/** @type [Tag] */
+/** @type [ApiDpTag] */
 const tags = require('./tags.json')
-/** @type [Category] */
+/** @type [ApiDpCategory] */
 const categories = require('./categories.json')
-const fs = require("fs");
+const fs = require('fs')
 const localeFiles = {
   de: require('../src/locales/de.json'),
   en: require('../src/locales/en.json'),
   da: require('../src/locales/da.json')
 }
 
-/** @typedef {'de' | 'en' | 'da'}  Locale
- */
-
-/** @typedef ExportData
- * @property {string} actId
- * @property {ExportDataTranslation} de
- * @property {ExportDataTranslation} en
- * @property {ExportDataTranslation} da
- */
-
-/** @typedef ExportDataTranslation
- * @property {ExportDataBasicInfo} basicInfo
- * @property {ExportDataDetails} details
- */
-
-/** @typedef ExportDataBasicInfo
- * @property {string} id
- * @property {string} name
- * @property {string} place
- * @property {string} street
- * @property {string} pos
- * @property {string} teaser
- * @property {[ExportDataIcon]} icon
- * @property {[ExportDataClassification]} classification
- */
-
-/** @typedef ExportDataIcon
- * @property {string} type
- * @property {string} id
- */
-
-/** @typedef ExportDataClassification
- * @property {string} type
- * @property {string} uri
- */
-
-/** @typedef ExportDataWebResource
- * @property {string} source_id
- * @property {string} type
- * @property {string} identifier
- * @property {string} label
- */
-
-/** @typedef ExportDataDetails
- * @property {string} id
- * @property {[]} name
- * @property {[]} address
- * @property {[ExportDataClassification]} classification
- * @property {[ExportDataCommunication]} communication
- * @property {[ExportDataWebResource]} webResource
- * @property {[ExportDataDescription]} description
- * @property {[ExportDataResource]} resource
- */
-
-/** @typedef ExportDataCommunication
- * @property {string} id
- * @property {string} item
- */
-
-/** @typedef ExportDataDescription
- * @property {string} id
- * @property {[string]} noteValue
- */
-
-/** @typedef ExportDataResource
- * @property {[ExportDataResourceRepresentation]} resourceRepresentation
- * @property {string} type
- * @property {string} rightsHolder
- * @property {string} rightsType
- * @property {string} photographer
- * @property {string} title
- * @property {string} description
- * @property {string} tag
- */
-
-/** @typedef ExportDataResourceRepresentation
- * @property {string} type
- * @property {string} link
- */
-
-/** @typedef Translation
- * @property {string} language
- * @property {string} text
- */
-
-/** @typedef Tag
- * @property {number} id
- * @property {Translation} text
- */
-
-/** @typedef Category
- * @property {number} id
- * @property {Translation} name
- */
-
-/** @typedef Communication
- * @property {number} id
- * @property {string} communicationType
- * @property {string} value
- */
-
-/** @typedef Media
- * @property {number} id
- * @property {string} mediaType
- * @property {string} alternateText
- * @property {string} filename
- * @property {string} copyright
- * @property {string} artist
- * @property {number} order
- */
-
-/** @typedef InstitutionsDtoElement
- * @property {number} id
- * @property {[Category]} categories
- * @property {[Tag]} tags
- * @property {[Communication]} communications
- * @property {[Media]} media
- * @property {Array.<{id: number, activeStartDate: string, activeEndDate: string, priority: boolean,
- * isEveryYear: boolean, comment: string, openedTimes: Array.<{weekday: number, openTime: string, closeTime: string}>,
- * closedDays: Array.<{date: string, text: string, isEveryYear: boolean}>}>} openingHours
- * @property {Array.<{date: string, text: string, isEveryYear: boolean}>} closedDays
- * @property {string} specialOpeningHours
- * @property {string} specialClosedDays
- * @property {boolean} visible
- * @property {string} dataRights
- * @property {string} workingState
- * @property {Array.<Translation>} name
- * @property {Array.<Translation>} nameAddition
- * @property {string} description
- * @property {id: number, state: string, name: string} region
- * @property {Array.<Translation>} address
- * @property {string} name_c_o
- * @property {string} zipCode
- * @property {Array.<Translation>} city
- * @property {string} latitude
- * @property {string} longitude
- * @property {boolean} hasLivingImages
- */
-
-/** @typedef InstitutionsDto
- * @type Array.<InstitutionsDtoElement>
- */
-
 /**
  * @type Function
  * @param {[ExportDataIcon]} iconsArray
- * @param {Locale} locale
+ * @param {ApiDpLocale} locale
  * @param {string} actorId
- * @return {[Tag]}
+ * @return {[ApiDpTag]}
  */
 function migrateIconsIntoTags(iconsArray, locale, actorId) {
-  /** @type [Tag] */
+  /** @type [ApiDpTag] */
   let migratedTags = []
   iconsArray.forEach(icon => {
     const iconText = localeFiles[locale].tags[icon.id]
@@ -185,9 +41,9 @@ function migrateIconsIntoTags(iconsArray, locale, actorId) {
 /**
  * @type Function
  * @param {[ExportDataClassification]} classificationsArray
- * @param {Locale} locale
+ * @param {ApiDpLocale} locale
  * @param {string} actorId
- * @return {[Category]}
+ * @return {[ApiDpCategory]}
  */
 function migrateClassificationsToCategories(classificationsArray, locale, actorId) {
   let migratedCategories = []
@@ -215,8 +71,9 @@ function migrateClassificationsToCategories(classificationsArray, locale, actorI
 /**
  * @type Function
  * @param {ExportDataBasicInfo} basicInfo
- * @param {InstitutionsDtoElement} institution
- * @param {Locale} locale
+ * @param {ApiDpPostInstitutionsDto} institution
+ * @param {ApiDpLocale} locale
+ * @return void
  */
 function migrateBasicInformation(basicInfo, institution, locale) {
   if (Number(basicInfo.id.replace('act', '1')) !== institution.id) {
@@ -230,22 +87,6 @@ function migrateBasicInformation(basicInfo, institution, locale) {
     institution.name = []
   }
   institution.name.push({ language: locale, text: basicInfo.name })
-
-  if (!basicInfo.place) {
-    throw new Error(`ERROR: no place available ${JSON.stringify(basicInfo)} ${locale}`)
-  }
-  if (!institution.city) {
-    institution.city = []
-  }
-  institution.city.push({ language: locale, text: basicInfo.place })
-
-  if (!basicInfo.street) {
-    throw new Error(`ERROR: no street available ${JSON.stringify(basicInfo)} ${locale}`)
-  }
-  if (!institution.address) {
-    institution.address = []
-  }
-  institution.address.push({ language: locale, text: basicInfo.street })
 
   if (!basicInfo.pos) {
     throw new Error(`ERROR: no pos available ${JSON.stringify(basicInfo)} ${locale}`)
@@ -289,16 +130,92 @@ function migrateBasicInformation(basicInfo, institution, locale) {
       }
     })
   }
-
   // resource only sends thumbnails on basicInformation
   // links not needed
 }
 
 /**
  * @type Function
+ * @param {[ExportDataOpeningTime]} openingTimesDay
+ * @return [ApiDpOpeningHourOpenedTimes]
+ */
+function migrateOpeningHours(openingTimesDay) {
+  /** @type [ApiDpOpeningHourOpenedTimes] */
+  let migratedOpeningTimes = []
+
+  if (!openingTimesDay) {
+    return []
+  }
+
+  if (openingTimesDay[0].mon) {
+    migratedOpeningTimes.push(...migrateOpeningHoursDay(openingTimesDay[0].mon, 0))
+  }
+
+  if (openingTimesDay[0].tue) {
+    migratedOpeningTimes.push(...migrateOpeningHoursDay(openingTimesDay[0].tue, 1))
+  }
+
+  if (openingTimesDay[0].wed) {
+    migratedOpeningTimes.push(...migrateOpeningHoursDay(openingTimesDay[0].wed, 2))
+  }
+
+  if (openingTimesDay[0].thu) {
+    migratedOpeningTimes.push(...migrateOpeningHoursDay(openingTimesDay[0].thu, 3))
+  }
+
+  if (openingTimesDay[0].fri) {
+    migratedOpeningTimes.push(...migrateOpeningHoursDay(openingTimesDay[0].fri, 4))
+  }
+
+  if (openingTimesDay[0].sat) {
+    migratedOpeningTimes.push(...migrateOpeningHoursDay(openingTimesDay[0].sat, 5))
+  }
+
+  if (openingTimesDay[0].sun) {
+    migratedOpeningTimes.push(...migrateOpeningHoursDay(openingTimesDay[0].sun, 6))
+  }
+
+  return migratedOpeningTimes
+}
+
+/**
+ * @type Function
+ * @param {ExportDataOpeningTimeDay} openingTimesDay
+ * @param {number} indexDay
+ * @return [ApiDpOpeningHourOpenedTimes]
+ */
+function migrateOpeningHoursDay(openingTimesDay, indexDay) {
+  /** @type [ApiDpOpeningHourOpenedTimes] */
+  let migratedDays = []
+
+  if (!openingTimesDay) {
+    return []
+  }
+
+  if (openingTimesDay[0]['first']) {
+    migratedDays.push({
+      weekday: indexDay,
+      openTime: openingTimesDay[0]['first'].timeStart || '',
+      closeTime: openingTimesDay[0]['first']['timeEnd'] || ''
+    })
+  }
+
+  if (openingTimesDay[0]['second']) {
+    migratedDays.push({
+      weekday: indexDay,
+      openTime: openingTimesDay[0]['second'].timeStart || '',
+      closeTime: openingTimesDay[0]['second']['timeEnd'] || ''
+    })
+  }
+  return migratedDays
+}
+
+/**
+ * @type Function
  * @param {ExportDataDetails} details
- * @param {InstitutionsDtoElement} institution
- * @param {Locale} locale
+ * @param {ApiDpPostInstitutionsDto} institution
+ * @param {ApiDpLocale} locale
+ * @return void
  */
 function migrateDetails(details, institution, locale) {
   if (Number(details.id.replace('act', '1')) !== institution.id) {
@@ -309,17 +226,39 @@ function migrateDetails(details, institution, locale) {
   // address is set via basicInfo
   // city is set via basicInfo
 
-  if (!details.address[0].zip) {
+  if (!details.address) {
     throw new Error(`ERROR: no zip available ${details.id}`)
   }
-  if (details.address.length > 1) {
-    throw new Error(`ERROR: more than one address available ${details.id}`)
-  }
-  institution.zipCode = details.address[0].zip
+  details.address.forEach(addressItem => {
+    if (addressItem.type === 'visitor') {
+      if (!addressItem.place) {
+        throw new Error(`ERROR: no place available ${JSON.stringify(details)} ${locale}`)
+      }
+      if (!institution.city) {
+        institution.city = []
+      }
+      institution.city.push({ language: locale, text: addressItem.place })
+
+      if (!addressItem.street) {
+        throw new Error(`ERROR: no street available ${JSON.stringify(details)} ${locale}`)
+      }
+      if (!institution.address) {
+        institution.address = []
+      }
+      institution.address.push({ language: locale, text: addressItem.street })
+
+      if (!addressItem.zip) {
+        throw new Error(`ERROR: no zip available ${JSON.stringify(details)} ${locale}`)
+      }
+      if (!institution.zipCode) {
+        institution.zipCode = addressItem.zip
+      }
+    }
+  })
 
   // classification -> categories migrated via basicInfo
 
-  /** @type [Communication] */
+  /** @type [ApiDpCommunication] */
   let newCommunications = []
   if (details.communication) {
     details.communication.forEach(communication => {
@@ -345,11 +284,11 @@ function migrateDetails(details, institution, locale) {
     })
   }
 
-  /** @type [Media] */
+  /** @type [ApiDpMediaItem] */
   let videoResources = []
-  /** @type [Media] */
+  /** @type [ApiDpMediaItem] */
   let audioResources = []
-  /** @type [Media] */
+  /** @type [ApiDpMediaItem] */
   let livingImages = []
   if (details.webResource) {
     details.webResource.forEach(webResource => {
@@ -474,6 +413,13 @@ function migrateDetails(details, institution, locale) {
             description += element
           })
           break
+        case 'info028':
+          if (!description) {
+            value.noteValue.forEach(element => {
+              description += element
+            })
+          }
+          break
         case 'info029':
           value.noteValue.forEach(element => {
             ksdescription += element
@@ -497,7 +443,6 @@ function migrateDetails(details, institution, locale) {
         case 'info023': // Finanzierung
         case 'info026': // Kosten
         case 'info027': // Führungen
-        case 'info028':
         case 'info030':
         case 'info031':
           break
@@ -511,7 +456,7 @@ function migrateDetails(details, institution, locale) {
 
   // icon set via basicInfo
 
-  /** @type [Media] */
+  /** @type [ApiDpMediaItem] */
   let imageResources = []
   if (details.resource) {
     details.resource.forEach(resource => {
@@ -539,41 +484,57 @@ function migrateDetails(details, institution, locale) {
     })
   }
 
-  // TODO OpeningTimes
-  // TODO ClosedHolidays
-  // TODO jsDoc types as file on root dir
+  if (!details.openingTimes) {
+    console.error(`ERROR: no opening times available: ${details.id}`)
+  } else {
+    if (!institution.openingHours) {
+      institution.openingHours = []
+    }
+    institution.openingHours.push({
+      id: 0,
+      activeStartDate: '',
+      activeEndDate: '',
+      priority: true,
+      visible: true,
+      isEveryYear: false,
+      comment: [],
+      openedTimes: migrateOpeningHours(details.openingTimes)
+    })
+  }
+
+  if (Object.prototype.toString.call(details.closedHolidays) === '[object Array]') {
+    if (!institution.specialClosedDays) {
+      institution.specialClosedDays = []
+    }
+    details.closedHolidays.forEach(closedHoliday => {
+      institution.specialClosedDays.push({
+        language: locale,
+        text: closedHoliday.name
+      })
+    })
+  }
 
   // recordMetadataDate not necessary
 
-  console.log(institution)
-  throw new Error('break')
+  /** @type [ApiDpMediaItem] */
+  let media = []
+  media.push(...imageResources)
+  media.push(...videoResources)
+  media.push(...audioResources)
+  media.push(...livingImages)
 
-  // TODO in details:  teaser
+  media.forEach((mediaItem, index) => {
+    mediaItem.order = index
+  })
+
   // TODO keep Media Order
-  /*
-  details.media = []
-  videoResources.forEach(resource => {
-    if (resource.type === 'URL') {
-      details.media.push({
-        mediaType: 'Video',
-        link: resource.label
-      })
-    } else {
-      console.error('ERROR: video without type=URL', resource)
-    }
-  })
-
-  audioResources.forEach(resource => {
-    console.log(resource)
-  })
-  */
 }
 
-/** @type InstitutionsDto */
+/** @type [ApiDpPostInstitutionsDto] */
 let importData = []
 
-for (/** @type {ExportData} */ let data of exportData) {
-  /** @type InstitutionsDtoElement */
+for (/** @type {ExportDataItem} */ let data of exportData) {
+  /** @type ApiDpPostInstitutionsDto */
   let institution = {}
 
   if (!data.actId) {
@@ -592,5 +553,4 @@ for (/** @type {ExportData} */ let data of exportData) {
   importData.push(institution)
 }
 
-const filename = `./data-migration/output/import_data.json`
-await fs.writeFile(filename, JSON.stringify(importData), _ => {})
+fs.writeFile(`./data-migration/output/import_data.json`, JSON.stringify(importData), _ => {})

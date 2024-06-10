@@ -1,86 +1,142 @@
-import Vue from 'vue'
-import { some } from 'lodash'
-import { localforageFavorites } from '@/localforage'
-import router from '@/router'
+/// <reference path="../../node_modules/vue/dist/vue.runtime.esm.js" />
 
-/** @typedef InstitutionsDtoElement
+/** @typedef {'de' | 'en' | 'da'}  ApiDpLocale
+ */
+
+/** @typedef ApiDpGetInstitutesBasicInformationItemDto
  * @property {number} id
- * @property {Array.<{id: number, name: string}>} categories
- * @property {Array.<{id: number, text: string}>} tags
- * @property {Array.<{id: number, mediaType: string, alternateText: string, filename: string, copyright: string,
- * artist: string, order: number}>} media
- * @property {Array.<{id: number, value: string, communicationType: string}>} communications
- * @property {Array.<{id: number, activeStartDate: string, activeEndDate: string, priority: boolean,
- * isEveryYear: boolean, comment: string, openedTimes: Array.<{weekday: number, openTime: string, closeTime: string}>,
- * closedDays: Array.<{date: string, text: string, isEveryYear: boolean}>}>} openingHours
- * @property {Array.<{date: string, text: string, isEveryYear: boolean}>} closedDays
+ * @property {[ApiDpCategory]} categories
+ * @property {[ApiDpTag]} tags
+ * @property {[ApiDpCommunication]} communications
+ * @property {[ApiDpMediaItem]} media
+ * @property {[ApiDpOpeningHour]} openingHours
  * @property {string} specialOpeningHours
- * @property {string} specialClosedDays
+ * @property {ApiDpClosedDaysItem} closedDays
+ * @property {[ApiDpTranslation]} specialClosedDays
  * @property {boolean} visible
  * @property {string} dataRights
  * @property {string} workingState
- * @property {string} name
- * @property {string} nameAddition
+ * @property {[ApiDpTranslation]} name
+ * @property {[ApiDpTranslation]} nameAddition
  * @property {string} description
  * @property {id: number, state: string, name: string} region
- * @property {string} address
+ * @property {[ApiDpTranslation]} address
  * @property {string} name_c_o
  * @property {string} zipCode
- * @property {string} city
+ * @property {[ApiDpTranslation]} city
  * @property {string} latitude
  * @property {string} longitude
  * @property {boolean} hasLivingImages
  */
 
-/** @typedef InstitutionsDto
- * @type Array.<InstitutionsDtoElement>
+/** @typedef ApiDpGetInstituteDetailsDto
+ * @property {number} id
+ * @property {[ApiDpCategory]} categories
+ * @property {[ApiDpTag]} tags
+ * @property {[ApiDpCommunication]} communications
+ * @property {[ApiDpMediaItem]} media
+ * @property {[ApiDpOpeningHour]} openingHours
+ * @property {string} specialOpeningHours
+ * @property {[ApiDpTranslation]} specialClosedDays
+ * @property {boolean} visible
+ * @property {string} dataRights
+ * @property {string} workingState
+ * @property {[ApiDpTranslation]} name
+ * @property {[ApiDpTranslation]} nameAddition
+ * @property {string} description
+ * @property {id: number, state: string, name: string} region
+ * @property {[ApiDpTranslation]} address
+ * @property {string} name_c_o
+ * @property {string} zipCode
+ * @property {[ApiDpTranslation]} city
+ * @property {string} latitude
+ * @property {string} longitude
+ * @property {boolean} hasLivingImages
  */
 
-/** @typedef InstitutionDto
- * @extends InstitutionsDtoElement
+/** @typedef ApiDpPostInstitutionsDto
+ * @property {number} id
+ * @property {[ApiDpCategory]} categories
+ * @property {[ApiDpTag]} tags
+ * @property {[ApiDpCommunication]} communications
+ * @property {[ApiDpMediaItem]} media
+ * @property {[ApiDpOpeningHour]} openingHours
+ * @property {string} specialOpeningHours
+ * @property {[ApiDpTranslation]} specialClosedDays
+ * @property {boolean} visible
+ * @property {string} dataRights
+ * @property {string} workingState
+ * @property {[ApiDpTranslation]} name
+ * @property {[ApiDpTranslation]} nameAddition
+ * @property {string} description
+ * @property {id: number, state: string, name: string} region
+ * @property {[ApiDpTranslation]} address
+ * @property {string} name_c_o
+ * @property {string} zipCode
+ * @property {[ApiDpTranslation]} city
+ * @property {string} latitude
+ * @property {string} longitude
+ * @property {boolean} hasLivingImages
  */
 
-/** @typedef Institution
- * @property {!string} id
- * @property {!string} name
- * @property {!string} description
- * @property {!string} claim
- * @property {!string} teaser
- * @property {Object.<{street: string, zip: string, place: string}>} address
- * @property {!string} street
- * @property {!string} place
- * @property {string} tel
- * @property {string} email
- * @property {Object<{label: string, identifier: string}>} website
- * @property {Object<{identifier: string}>} eventCalender
- * @property {string} facebook
- * @property {string} twitter
- * @property {string} youtube
- * @property {string} instagram
- * @property {string} vimeo
- * @property {string} audio
- * @property {string} video
- * @property {string} digitalServices
- * @property {Object.<{thumbnail: string, preview: string, provided: string}>} imageList
- * @property {Array.<{imageList: {thumbnail: string, preview: string, provided: string}}>} images
- * @property {Object.<{ios: string, android: string}>} apps
- * @property {!Object.<{lat: !string, lng: !string}>} position
- * @property {!string} coords
- * @property {!boolean} hasLivingImages
- * @property {!boolean} isFavorite
- * @property {Array.<any>} categories
- * @property {Array.<any>} tags
- * @property {Object.<{week: {
- * mon: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}}
- * tue: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
- * wen: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
- * thu: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
- * fri: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
- * sat: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
- * sun: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}}
- * }, description: string}>} openingTimes
- * @property {Array.<{string}>} closedHolidays
+/** @typedef ApiDpTranslation
+ * @property {string} language
+ * @property {string} text
  */
+
+/** @typedef ApiDpTag
+ * @property {number} id
+ * @property {ApiDpTranslation} text
+ */
+
+/** @typedef ApiDpCategory
+ * @property {number} id
+ * @property {ApiDpTranslation} name
+ */
+
+/** @typedef ApiDpCommunication
+ * @property {number} id
+ * @property {string} communicationType
+ * @property {string} value
+ */
+
+/** @typedef ApiDpMediaItem
+ * @property {number} id
+ * @property {string} mediaType
+ * @property {string} alternateText
+ * @property {string} filename
+ * @property {string} copyright
+ * @property {string} artist
+ * @property {number} order
+ */
+
+/** @typedef ApiDpOpeningHour
+ * @property {number} id
+ * @property {string} activeStartDate
+ * @property {string} activeEndDate
+ * @property {boolean} priority
+ * @property {boolean} visible
+ * @property {boolean} isEveryYear
+ * @property {[ApiDpTranslation]} comment
+ * @property {[ApiDpOpeningHourOpenedTimes]} openedTimes
+ */
+
+/** @typedef ApiDpOpeningHourOpenedTimes
+ * @property {number} weekday
+ * @property {string} openTime
+ * @property {string} closeTime
+ */
+
+/** @typedef ApiDpClosedDaysItem
+ * @property {string} date
+ * @property {string} text
+ * @property {boolean} isEveryYear
+ */
+
+import Vue from 'vue'
+import { some } from 'lodash'
+import { localforageFavorites } from '@/localforage'
+import router from '@/router'
 
 const TIMEOUT = 15000
 const URL = '/api'
@@ -94,7 +150,7 @@ function latLngToPos(latitude, longitude) {
 
 /**
  * @type Function
- * @param {InstitutionsDtoElement} element
+ * @param {ApiDpGetInstitutesBasicInformationItemDto} element
  * @return {Institution}
  */
 function migrateCommonValues(element) {
@@ -204,7 +260,7 @@ function createOpeningTimesObject(openingTimes) {
 
 /**
  * @type Function
- * @param {InstitutionsDtoElement} dto
+ * @param {ApiDpGetInstitutesBasicInformationItemDto} dto
  * @return {Object.<{week: {
  * mon: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}}
  * tue: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
@@ -280,13 +336,13 @@ export class ApiServiceDataport {
         params: { 'language': locale },
         timeout: TIMEOUT
       })
-    /** @type InstitutionsDto */
+    /** @type [ApiDpGetInstituteDetailsDto] */
     const data = await response.json()
     const favorites = await localforageFavorites.keys()
 
     return Promise.all(data.map(
       /** @type {Function}
-       * @param {InstitutionsDtoElement} element
+       * @param {ApiDpGetInstitutesBasicInformationItemDto} element
        * @return {Institution}}
        */
       async (element) => {
@@ -307,7 +363,7 @@ export class ApiServiceDataport {
         params: { 'language': locale },
         timeout: TIMEOUT
       })
-    /** @type {InstitutionDto} */
+    /** @type {ApiDpGetInstitutesBasicInformationItemDto} */
     const institutionDto = await response.json()
     const favorites = await localforageFavorites.keys()
 

@@ -1,3 +1,45 @@
+/** @typedef Institution
+ * @property {!string} id
+ * @property {!string} name
+ * @property {!string} description
+ * @property {!string} claim
+ * @property {!string} teaser
+ * @property {Object.<{street: string, zip: string, place: string}>} address
+ * @property {!string} street
+ * @property {!string} place
+ * @property {string} tel
+ * @property {string} email
+ * @property {Object<{label: string, identifier: string}>} website
+ * @property {Object<{identifier: string}>} eventCalender
+ * @property {string} facebook
+ * @property {string} twitter
+ * @property {string} youtube
+ * @property {string} instagram
+ * @property {string} vimeo
+ * @property {string} audio
+ * @property {string} video
+ * @property {string} digitalServices
+ * @property {Object.<{thumbnail: string, preview: string, provided: string}>} imageList
+ * @property {Array.<{imageList: {thumbnail: string, preview: string, provided: string}}>} images
+ * @property {Object.<{ios: string, android: string}>} apps
+ * @property {!Object.<{lat: !string, lng: !string}>} position
+ * @property {!string} coords
+ * @property {!boolean} hasLivingImages
+ * @property {!boolean} isFavorite
+ * @property {Array.<any>} categories
+ * @property {Array.<any>} tags
+ * @property {Object.<{week: {
+ * mon: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}}
+ * tue: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
+ * wen: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
+ * thu: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
+ * fri: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
+ * sat: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}},
+ * sun: {first: {timeStart: string, timeEnd: string}, second: {timeStart: string, timeEnd: string}}
+ * }, description: string}>} openingTimes
+ * @property {Array.<{string}>} closedHolidays
+ */
+
 import { some } from 'lodash'
 import Vue from 'vue'
 import { localforageFavorites } from '@/localforage'
