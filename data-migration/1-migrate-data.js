@@ -1,8 +1,6 @@
+/** @type {{}} */
 const exportData = require('./output/export_data.json')
-/** @type [ApiDpTag] */
-const tags = require('./tags.json')
-/** @type [ApiDpCategory] */
-const categories = require('./categories.json')
+const fetch = require('node-fetch')
 const fs = require('fs')
 const localeFiles = {
   de: require('../src/locales/de.json'),
@@ -14,16 +12,17 @@ const localeFiles = {
  * @type Function
  * @param {[ExportDataIcon]} iconsArray
  * @param {ApiDpLocale} locale
- * @param {string} actorId
  * @return {[ApiDpTag]}
  */
-function migrateIconsIntoTags(iconsArray, locale, actorId) {
+function migrateIconsIntoTags(iconsArray, locale) {
   /** @type [ApiDpTag] */
   let migratedTags = []
   iconsArray.forEach(icon => {
     const iconText = localeFiles[locale].tags[icon.id]
     if (!iconText) {
-      console.error(`ERROR: Tag not found. Icon id = ${icon.id} Actor id = ${actorId}`)
+      if (!tagsUnknown.some(tag => tag === icon.id)) {
+        tagsUnknown.push(icon.id)
+      }
     } else {
       const availableTag = tags.find(tag => {
         return tag.text.find(tagText => { return tagText.text === iconText })
@@ -31,7 +30,9 @@ function migrateIconsIntoTags(iconsArray, locale, actorId) {
       if (availableTag) {
         migratedTags.push(availableTag)
       } else {
-        console.error(`ERROR: Tag not mapped. Locale = ${locale} Icon id = ${iconText} Actor id = ${actorId}`)
+        if (!tagsNotInNewApiAvailable.some(tag => tag === icon.id)) {
+          tagsNotInNewApiAvailable.push(icon.id)
+        }
       }
     }
   })
@@ -52,7 +53,9 @@ function migrateClassificationsToCategories(classificationsArray, locale, actorI
       let classificationId = classification.uri.replace('http://digicult.vocnet.org/portal/', '')
       let classificationText = localeFiles[locale].categories['http://digicult']['vocnet'][`org/portal/${classificationId}`]
       if (!classificationText) {
-        console.error(`ERROR: Category not found. Classification = ${JSON.stringify(classification)} Actor id = https://kulturfinder.sh/de/institutions/dashboard/details/${actorId}`)
+        if (!categoriesUnknown.some(category => category === classificationText)) {
+          categoriesUnknown.push(actorId)
+        }
       } else {
         const availableCategory = categories.find(category => {
           return category.name.find(categoryName => { return categoryName.text === classificationText })
@@ -60,7 +63,9 @@ function migrateClassificationsToCategories(classificationsArray, locale, actorI
         if (availableCategory) {
           migratedCategories.push(availableCategory)
         } else {
-          console.error(`ERROR: Category not mapped. Locale = ${locale} Icon id = ${classificationText} Actor id = ${actorId}`)
+          if (!categoriesNotInNewApiAvailable.some(category => category === classificationText)) {
+            categoriesNotInNewApiAvailable.push(classificationText)
+          }
         }
       }
     }
@@ -96,12 +101,10 @@ function migrateBasicInformation(basicInfo, institution, locale) {
     institution.longitude = basicInfo.pos.split(' ')[0]
   }
 
-  if (!basicInfo.teaser) {
-    console.error(`ERROR: no teaser available ${basicInfo.id} ${basicInfo.name} ${locale}`)
-  } else {
-    if (!institution.nameAddition) {
-      institution.nameAddition = []
-    }
+  if (!institution.nameAddition) {
+    institution.nameAddition = []
+  }
+  if (basicInfo.teaser) {
     institution.nameAddition.push({ language: locale, text: basicInfo.teaser })
   }
 
@@ -111,7 +114,7 @@ function migrateBasicInformation(basicInfo, institution, locale) {
     if (!institution.tags) {
       institution.tags = []
     }
-    migrateIconsIntoTags(basicInfo.icon, locale, basicInfo.id).forEach(newTag => {
+    migrateIconsIntoTags(basicInfo.icon, locale).forEach(newTag => {
       if (!institution.tags.find(existingTag => JSON.stringify(existingTag) === JSON.stringify(newTag))) {
         institution.tags.push(newTag)
       }
@@ -414,11 +417,9 @@ function migrateDetails(details, institution, locale) {
           })
           break
         case 'info028':
-          if (!description) {
-            value.noteValue.forEach(element => {
-              description += element
-            })
-          }
+          value.noteValue.forEach(element => {
+            institution.nameAddition.push({ language: locale, text: element })
+          })
           break
         case 'info029':
           value.noteValue.forEach(element => {
@@ -464,17 +465,19 @@ function migrateDetails(details, institution, locale) {
         if (resource.resourceRepresentation) {
           resource.resourceRepresentation.forEach(image => {
             if (image.type === 'provided_image') {
-              imageResources.push(
-                {
-                  id: 0,
-                  mediaType: 'Image',
-                  alternateText: resource.title + (resource.description ? ' - ' + resource.description : ''),
-                  filename: resource.link,
-                  copyright: (resource.rightsType ? resource.rightsType + ' - ' : '') + resource.rightsHolder,
-                  artist: resource.photographer,
-                  order: 0
-                }
-              )
+              if (!institution.media?.some(media => { return media.filename === image.link })) {
+                imageResources.push(
+                  {
+                    id: 0,
+                    mediaType: 'Image',
+                    alternateText: resource.title + (resource.description ? ' - ' + resource.description : ''),
+                    filename: image.link,
+                    copyright: (resource.rightsType ? resource.rightsType + ' - ' : '') + resource.rightsHolder,
+                    artist: resource.photographer,
+                    order: 0
+                  }
+                )
+              }
             }
           })
         } else {
@@ -484,9 +487,7 @@ function migrateDetails(details, institution, locale) {
     })
   }
 
-  if (!details.openingTimes) {
-    console.error(`ERROR: no opening times available: ${details.id}`)
-  } else {
+  if (details.openingTimes) {
     if (!institution.openingHours) {
       institution.openingHours = []
     }
@@ -516,41 +517,102 @@ function migrateDetails(details, institution, locale) {
 
   // recordMetadataDate not necessary
 
-  /** @type [ApiDpMediaItem] */
-  let media = []
-  media.push(...imageResources)
-  media.push(...videoResources)
-  media.push(...audioResources)
-  media.push(...livingImages)
+  if (!institution.media) {
+    institution.media = []
+  }
+  institution.media.push(...imageResources)
+  institution.media.push(...videoResources)
+  institution.media.push(...audioResources)
+  institution.media.push(...livingImages)
 
-  media.forEach((mediaItem, index) => {
+  institution.media.map((mediaItem, index) => {
     mediaItem.order = index
   })
 
   // TODO keep Media Order
 }
 
-/** @type [ApiDpPostInstitutionsDto] */
-let importData = []
+/** @type Promise[ApiDpPostInstitutionsDto] */
+const importData = []
+/** @type [ApiDpTag] */
+const tags = []
+/** @type [ApiDpCategory] */
+const categories = []
 
-for (/** @type {ExportDataItem} */ let data of exportData) {
-  /** @type ApiDpPostInstitutionsDto */
-  let institution = {}
+/** @type {[string]} */
+const tagsUnknown = []
+/** @type {[string]} */
+const tagsNotInNewApiAvailable = []
+/** @type {[string]} */
+const categoriesUnknown = []
+/** @type {[string]} */
+const categoriesNotInNewApiAvailable = []
 
-  if (!data.actId) {
-    throw new Error('ERROR: no actor Id in exported data')
-  }
-  institution.id = Number(data.actId.replace('act', '1'))
+const promiseTags = fetch('https://kulturfinder.bremen.de/api/Tag/GetTags')
+  .then(response => {
+    return response.json()
+  })
+  .then(json => {
+    tags.push(...json)
+    return true
+  })
 
-  migrateBasicInformation(data.de.basicInfo, institution, 'de')
-  migrateBasicInformation(data.en.basicInfo, institution, 'en')
-  migrateBasicInformation(data.da.basicInfo, institution, 'da')
+const promiseCategories = fetch('https://kulturfinder.bremen.de/api/Category/GetCategories')
+  .then(response => {
+    return response.json()
+  })
+  .then(json => {
+    categories.push(...json)
+    return true
+  })
 
-  migrateDetails(data.de.details, institution, 'de')
-  migrateDetails(data.en.details, institution, 'en')
-  migrateDetails(data.da.details, institution, 'da')
+Promise.all([promiseTags, promiseCategories])
+  .then(() => {
+    if (!tags || !categories) {
+      throw new Error(`ERROR: Tags or Categories not set`)
+    }
 
-  importData.push(institution)
-}
+    exportData.map(/** @type {ExportDataItem} */ data => {
+    /** @type ApiDpPostInstitutionsDto */
+      let institution = {}
 
-fs.writeFile(`./data-migration/output/import_data.json`, JSON.stringify(importData), _ => {})
+      if (!data.actId) {
+        throw new Error('ERROR: no actor Id in exported data')
+      }
+      institution.id = Number(data.actId.replace('act', '1'))
+
+      migrateBasicInformation(data.de.basicInfo, institution, 'de')
+      migrateBasicInformation(data.en.basicInfo, institution, 'en')
+      migrateBasicInformation(data.da.basicInfo, institution, 'da')
+
+      migrateDetails(data.de.details, institution, 'de')
+      migrateDetails(data.en.details, institution, 'en')
+      migrateDetails(data.da.details, institution, 'da')
+
+      importData.push(institution)
+    })
+
+    if (tagsUnknown) {
+      console.error(`ERROR: Tag not found. Icon id = ${JSON.stringify(tagsUnknown)}`)
+    }
+    if (tagsNotInNewApiAvailable) {
+      console.error(`ERROR: Tag not available in new API. Icon id = ${JSON.stringify(tagsNotInNewApiAvailable)}`)
+    }
+    if (categoriesUnknown) {
+      console.error(`ERROR: Category not found. Icon id = ${JSON.stringify(categoriesUnknown)}`)
+    }
+    if (categoriesNotInNewApiAvailable) {
+      console.error(`ERROR: Category not available in new API. Icon id = ${JSON.stringify(categoriesNotInNewApiAvailable)}`)
+    }
+
+    console.log(`DONE. Migrated ${importData.length} institutions`)
+  })
+  .then(() => {
+    fs.writeFile(`./data-migration/output/import_data.json`, JSON.stringify(importData), err => {
+      if (err) {
+        console.error('ERROR: ', err)
+      } else {
+        console.log(`File written`)
+      }
+    })
+  })

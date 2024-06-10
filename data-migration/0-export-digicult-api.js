@@ -137,6 +137,7 @@ async function fetchDataAndExport() {
   const responseBodyEN = await responseEN.json()
   const responseBodyDA = await responseDA.json()
 
+  /** @type {ExportData} */
   let allInstitutionsDetails = responseBodyDE.Actor.map(entry => { return { actId: entry.id, de: {}, en: {}, da: {} } })
 
   for (let institution of allInstitutionsDetails) {
