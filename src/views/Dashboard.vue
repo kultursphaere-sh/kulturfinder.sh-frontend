@@ -278,14 +278,15 @@ export default {
   },
   methods: {
     onToggleSearchbar() {
-      if (this.searchbarOpen) {
-        this.$refs.searchbar.blurInput()
-        this.searchbarOpen = !this.searchbarOpen
-        this.$store.dispatch('filters/updateSearchQuery', '')
-      } else {
-        this.searchbarOpen = !this.searchbarOpen
-        this.$refs.searchbar.focusInput()
-      }
+      this.searchbarOpen = !this.searchbarOpen
+      this.$nextTick(() => {
+        if (this.searchbarOpen) {
+          this.$refs.searchbar.$el.querySelector('input').focus()
+        } else {
+          this.$refs.searchbar.blurInput()
+          this.$store.dispatch('filters/updateSearchQuery', '')
+        }
+      })
     },
     searchBarEnterHandler(value) {
       this.$router.push(`/${this.$route.params.locale}/institutions/list?searchQuery=${value}`)
