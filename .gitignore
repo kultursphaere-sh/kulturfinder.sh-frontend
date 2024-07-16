@@ -4,6 +4,7 @@ dist
 .history
 .npmrc
 .npm
+data-migration/output
 
 # local env files
 .env.local
