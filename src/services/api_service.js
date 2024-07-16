@@ -15,7 +15,7 @@ const LivingImagesIds = [
   'act001610', // Computermuseum
   'act001651', // Weihnachtskarte-Storm-2021
   'act0002598', // Focke-Museum
-  'act0002741' //Ozeaneum
+  'act0002741' // Ozeaneum
 ]
 
 function getCategories(array) {
