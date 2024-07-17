@@ -15,7 +15,7 @@
           id="reset-button"
           class="labeled-button"
           pill
-          :to="`/${$route.params.locale}/institutions/${listType}/filters?tags=`"
+          @click="onResetFilters()"
           data-cy="resetButton"
         >
           <icon-base
@@ -173,9 +173,7 @@ export default {
       this.activeCategories = !checked ? this.categories.slice() : []
     },
     onResetFilters() {
-      this.$store.dispatch('filters/resetFilters').then(
-        () => this.$router.push({ name: this.listType })
-      )
+      this.$store.dispatch('filters/resetFilters')
     }
   }
 }
