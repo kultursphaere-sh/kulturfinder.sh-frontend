@@ -100,6 +100,7 @@
                   <b-button
                     id="li-button"
                     class="px-4"
+                    variant="light"
                     :to="`/${$route.params.locale}/institutions/${listType}/details/${actId}/living-images`"
                     :disabled="!livingImagesEnabled"
                   >
