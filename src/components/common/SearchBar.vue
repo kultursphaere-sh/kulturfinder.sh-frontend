@@ -179,6 +179,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 #search-form {
   border: 0;
   box-shadow: none !important;
+  letter-spacing: 0.001px;
 }
 
 .input-group-append .btn:not(:last-child) {
