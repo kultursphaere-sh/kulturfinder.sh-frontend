@@ -17,7 +17,8 @@
     "generate-sbom": "npx @cyclonedx/cyclonedx-npm --omit dev --omit optional --omit peer --output-file public/sbom.json",
     "db-export": "node data-migration/0-export-digicult-api.js",
     "db-migration": "node data-migration/1-migrate-data.js",
-    "db-exportMedia": "node data-migration/2-export-media.js"
+    "db-exportMedia": "node data-migration/2-export-digicult-media.js",
+    "db-importData": "node data-migration/3-import-data-to-dataport.js"
   },
   "dependencies": {
     "ajv": "^6.12.6",
@@ -73,6 +74,8 @@
     "node": "^20.14.0",
     "node-fetch": "^2.6.7",
     "node-sass": "9.0.0",
+    "prompt-sync": "^4.2.0",
+    "readline-sync": "^1.4.10",
     "sass-loader": "^8.0.2",
     "style-loader": "^0.23.1",
     "vue-cli-plugin-i18n": "^0.6.1",
