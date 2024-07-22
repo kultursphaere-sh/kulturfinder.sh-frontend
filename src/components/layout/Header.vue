@@ -12,9 +12,8 @@
             <b-button class="backButton" pill @click="goBack">
               <icon-base
                 :title="$t('common.back')"
-                color="#3c4d61"
+                class="icon-18"
                 role="img"
-                height="18"
                 data-cy="backButton"
               >
                 <icon-arrow-left/>
@@ -165,6 +164,10 @@ header {
   }
   .backButton:focus, .backButton:hover {
     border: 1px solid #fff;
+  }
+
+  .backButton svg {
+    width: 24px;
   }
 }
 

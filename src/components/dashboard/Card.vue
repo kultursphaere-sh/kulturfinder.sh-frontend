@@ -13,10 +13,8 @@
       >
       <icon-base
         :title="text"
-        width="50"
-        height="50"
         role="img"
-        class="card-icon mx-auto"
+        class="card-icon mx-auto icon-50"
         v-if="icon"
       >
         <component :is="icon"/>
@@ -130,7 +128,9 @@ img, .card-icon {
 #living-images-icon {
   height: 100%;
 }
-
+.icon-50 {
+  width: 50px;
+}
 @media (min-width: $breakpoint-md) {
   .ks-card {
     width: 200px;

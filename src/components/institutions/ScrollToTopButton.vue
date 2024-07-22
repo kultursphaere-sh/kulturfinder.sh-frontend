@@ -5,11 +5,7 @@
       v-if="display"
       @click="scrollToTop"
     >
-      <icon-base
-        title="Scroll to top"
-        width="24"
-        height="24"
-      >
+      <icon-base title="Scroll to top">
         <icon-arrow-up/>
       </icon-base>
     </b-button>

@@ -16,7 +16,7 @@
   >
     <template v-slot:modal-header class="gps-info">
       <b-row class="gps-info w-100 pt-0 d-flex pl-3 mt-0">
-        <icon-base height="48" width="48">
+        <icon-base class="icon-48">
           <icon-distance :aria-label="$t('common.distance')"/>
         </icon-base>
         <div class="col-10">
@@ -31,8 +31,7 @@
         >
           <icon-base
             :title="$t('common.close')"
-            width="22"
-            height="22"
+            class="icon-22"
             role="img"
           >
             <icon-close :aria-label="$t('common.close')"/>
@@ -46,12 +45,7 @@
           <p id="no-gps-benefits" class="my-auto">{{ $t('noGPS.yourBenefits') }}</p>
         </b-row>
         <b-row class="py-2">
-          <icon-base
-            height="48"
-            width="48"
-            class="ml-3"
-            color="#509500"
-          >
+          <icon-base class="ml-3 icon-48">
             <icon-distance :aria-label="$t('common.distance')"/>
           </icon-base>
           <span class="benefit-text col-8 my-auto">
@@ -59,12 +53,7 @@
           </span>
         </b-row>
         <b-row class="mb-3 py-2">
-          <icon-base
-            height="48"
-            width="48"
-            class="ml-3"
-            color="#509500"
-          >
+          <icon-base class="ml-3 icon-48">
             <icon-distance :aria-label="$t('common.distance')"/>
           </icon-base>
           <span class="benefit-text col-8 my-auto">
@@ -139,5 +128,10 @@ export default {
 }
 #no-gps-benefits{
   font-size: 0.8rem;
+}
+
+.icon-48 {
+  height: 48px;
+  width: 48px;
 }
 </style>

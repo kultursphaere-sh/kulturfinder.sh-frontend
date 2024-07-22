@@ -10,9 +10,8 @@
         >
           <b-input-group-prepend is-text>
             <icon-base
-              height="20"
               title="Suche"
-              width="20"
+              class="icon-20"
               :color="inputSearchIconColor"
             >
               <icon-search/>
@@ -42,8 +41,7 @@
             >
               <icon-base
                 title="Zurücksetzen"
-                height="20"
-                width="20"
+                class="icon-20"
               >
                 <icon-reset-input/>
               </icon-base>
@@ -55,11 +53,7 @@
               :to="`/${$route.params.locale}/institutions/list?searchQuery=${$store.state.filters.searchQuery}`"
               role="button"
             >
-              <icon-base
-                :title="$t('dashboard.toResultsPage')"
-                height="22"
-                width="22"
-              >
+              <icon-base :title="$t('dashboard.toResultsPage')" class="icon-22">
                 <icon-arrow-right/>
               </icon-base>
             </b-button>

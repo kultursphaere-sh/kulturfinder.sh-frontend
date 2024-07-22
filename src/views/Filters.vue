@@ -20,21 +20,15 @@
         >
           <icon-base
             :title="$t('filter.resetButtonLabel')"
-            color="#ad013d"
-            width="18"
-            height="18"
-            class="m-auto"
+            class="m-auto icon-18"
           >
             <icon-reset-settings/>
           </icon-base>
-          <label id="reset-label" class="labeled-button-label">{{ $t("filter.resetButtonLabel") }}</label>
+          <label class="labeled-button-label">{{ $t("filter.resetButtonLabel") }}</label>
         </b-button>
         <!-- Home Button -->
         <b-nav-item router-link :to="`/${locale}`">
-          <icon-base
-            title="Home-Button"
-            class="homeButton"
-          >
+          <icon-base title="Home-Button">
             <icon-home/>
           </icon-base>
         </b-nav-item>
@@ -118,7 +112,6 @@
 <script>
 import { mapGetters } from 'vuex'
 import KsHeader from '@/components/layout/Header.vue'
-import IconHome from '@/components/icons/IconHome.vue'
 import i18n from '@/i18n'
 
 export default {
@@ -130,7 +123,6 @@ export default {
     }
   },
   components: {
-    IconHome,
     KsHeader
   },
   computed: {
@@ -180,10 +172,6 @@ export default {
 </script>
 
 <style lang="scss">
-.homeButton {
-  fill: $primary
-}
-
 .control-group .custom-control.custom-checkbox {
   padding-left: 0;
   padding-right: 1.5rem
@@ -256,18 +244,16 @@ h2 span {
 }
 #reset-button {
   border: 0;
+  color: $red-dark;
 }
 #reset-button:focus:not(:hover) {
   background-color: #fff;
   box-shadow: none;
   border: 0;
 }
-#reset-label {
-  color: $red-dark;
-}
-#reset-label:hover,
-#reset-label:active,
-#reset-label:visited {
+#reset-button:hover,
+#reset-button:active,
+#reset-button:visited {
   color: $red;
 }
 #results{

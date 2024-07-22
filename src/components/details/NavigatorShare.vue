@@ -7,10 +7,7 @@
     >
       <icon-base
         :title="$t('details.share')"
-        color="#003064"
-        width="18"
-        height="18"
-        class="m-auto"
+        class="m-auto icon-20 text-primary"
         role="img"
       >
         <icon-share/>

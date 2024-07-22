@@ -33,12 +33,7 @@
           pill
           @click="iosBanner = false"
         >
-          <icon-base
-            title="Schließen"
-            width="18"
-            height="18"
-            color="#000000"
-          >
+          <icon-base title="Schließen" class="icon-18">
             <icon-close/>
           </icon-base>
         </b-button>

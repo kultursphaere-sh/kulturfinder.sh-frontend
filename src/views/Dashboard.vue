@@ -170,11 +170,7 @@
             class="footer-text px-2 pt-0 pb-3 text-decoration-none"
             v-if="showDownloadLink"
           >
-            <icon-base
-              width="18"
-              height="18"
-              color="#576165"
-            >
+            <icon-base class="icon-20">
               <icon-download/>
             </icon-base>
             {{ $t("common.downloadApp") }}
@@ -185,11 +181,7 @@
             class="footer-text px-2 pt-0 pb-3 text-decoration-none"
             data-cy="signLanguage"
           >
-            <icon-base
-              width="18"
-              height="18"
-              color="#576165"
-            >
+            <icon-base class="icon-18">
               <icon-sign-language/>
             </icon-base>
             {{ $t("dashboard.signLanguage") }}
@@ -200,11 +192,7 @@
             class="footer-text px-2 pt-0 pb-3"
             data-cy="impressum"
           >
-            <icon-base
-              width="18"
-              height="18"
-              color="#576165"
-            >
+            <icon-base class="icon-18">
               <icon-privacy/>
             </icon-base>
             {{ $t("navbar.legalNotice") }}

@@ -5,8 +5,9 @@
          v-if="facebook"
       >
         <b-col class="social">
-          <img :alt="$t('common.facebook')" src="@/assets/images/icons/social-media/facebook.svg">
-          <!-- <p>{{ $t("common.facebook") }}</p> -->
+          <icon-base :title="$t('common.facebook')" class="icon-35">
+            <icon-facebook/>
+          </icon-base>
         </b-col>
       </a>
       <a
@@ -15,18 +16,21 @@
         v-if="twitter"
       >
         <b-col class="social">
-          <img :alt="$t('common.twitter')" src="@/assets/images/icons/social-media/twitter.svg">
-          <!-- <p>{{ $t("common.twitter") }}</p> -->
-        </b-col>
-      </a>
+          <b-col class="social">
+            <icon-base :title="$t('common.twitter')" class="icon-35">
+              <icon-twitter/>
+            </icon-base>
+          </b-col>
+        </b-col></a>
       <a
         :href="instagram"
         target="_blank"
         v-if="instagram"
       >
         <b-col class="social">
-          <img :alt="$t('common.instagram')" src="@/assets/images/icons/social-media/instagram.svg">
-          <!-- <p>{{ $t("common.instagram") }}</p> -->
+          <icon-base :title="$t('common.instagram')" class="icon-35">
+            <icon-instagram/>
+          </icon-base>
         </b-col>
       </a>
       <a
@@ -35,8 +39,9 @@
         v-if="youtube"
       >
         <b-col class="social">
-          <img :alt="$t('common.youtube')" src="@/assets/images/icons/social-media/youtube.svg">
-          <!-- <p>{{ $t("common.youtube") }}</p> -->
+          <icon-base :title="$t('common.youtube')" class="icon-35">
+            <icon-youtube/>
+          </icon-base>
         </b-col>
       </a>
       <a
@@ -45,8 +50,9 @@
         v-if="vimeo"
       >
         <b-col class="social">
-          <img :alt="$t('common.vimeo')" src="@/assets/images/icons/social-media/vimeo.svg">
-          <!-- <p>{{ $t("common.vimeo") }}</p> -->
+          <icon-base :title="$t('common.vimeo')" class="icon-35">
+            <icon-vimeo/>
+          </icon-base>
         </b-col>
       </a>
     </b-row>
@@ -106,5 +112,10 @@ export default {
   margin-top: 1vh;
   font-size: 1rem;
   text-align: center;
+}
+
+.icon-35 {
+  height: 35px;
+  width: 35px;
 }
 </style>

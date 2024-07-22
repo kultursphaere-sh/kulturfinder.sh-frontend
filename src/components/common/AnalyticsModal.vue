@@ -36,12 +36,7 @@
           pill
           @click="showAnalyticsModal = false"
         >
-          <icon-base
-            title="Schließen"
-            width="14"
-            height="14"
-            color="#000000"
-          >
+          <icon-base title="Schließen">
             <icon-close/>
           </icon-base>
         </b-button>
@@ -83,26 +78,32 @@ export default {
   bottom: 0;
   z-index: 1000;
 }
-#analytics-container{
+#analytics-container {
   position:relative;
   height: 100%;
 }
-#analytics-banner-close-icon{
+#analytics-banner-close-icon {
   position:absolute;
   right:0;
   top:7px;
 }
-#analytics-logo{
+
+#analytics-banner-close-icon svg {
+  height: 14px;
+}
+
+#analytics-logo {
   height: 40px;
 }
-span,p{
+span, p {
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
-p{
+p {
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
+
 .slide-enter-active, .slide-leave-active {
   transition: transform 0.5s ease-in-out;
 }

@@ -42,13 +42,13 @@
                 <ks-card
                   :route="`/${$route.params.locale}/institutions/map?tags=CityOfLiterature`"
                   :text="$t('common.map')"
-                  :image-source="require(`@/assets/images/icons/cards/map.svg`)"
+                  icon="IconMap"
                   data-cy="mapCard"
                 />
                 <ks-card
                   :route="`/${$route.params.locale}/institutions/list?tags=CityOfLiterature`"
                   :text="$t('common.list')"
-                  :image-source="require(`@/assets/images/icons/cards/list.svg`)"
+                  icon="IconList"
                   data-cy="listCard"
                 />
               </b-row>

@@ -18,10 +18,7 @@
         >
           <icon-base
             :title="$t('noData.reload')"
-            color="#ad013d"
-            width="18"
-            height="18"
-            class="m-auto"
+            class="m-auto icon-18"
           >
             <icon-reset-settings/>
           </icon-base>
@@ -69,11 +66,7 @@
               v-b-modal.sign-language-modal
               class="footer-text px-2 pt-0 pb-3 text-decoration-none"
             >
-              <icon-base
-                width="18"
-                height="18"
-                color="#576165"
-              >
+              <icon-base class="icon-18">
                 <icon-sign-language/>
               </icon-base>
               {{ $t("dashboard.signLanguage") }}
@@ -83,11 +76,7 @@
               :to="`/${$route.params.locale}/no-data/about`"
               class="footer-text px-2 pt-0 pb-3"
             >
-              <icon-base
-                width="18"
-                height="18"
-                color="#576165"
-              >
+              <icon-base class="icon-18">
                 <icon-privacy/>
               </icon-base>
               {{ $t("navbar.legalNotice") }}

@@ -12,10 +12,7 @@
       >
         <icon-base
           :title="$t('navbar.saveAsFavorite')"
-          color="#869094"
-          width="18"
-          height="18"
-          class="m-auto"
+          class="m-auto icon-18"
           role="img"
         >
           <icon-favorite :filled="true"/>
@@ -39,10 +36,7 @@
             <span class="list-item-info mr-3">
               <icon-base
                 :title="$t('common.distance')"
-                color="#869094"
-                width="18"
-                height="18"
-                class="mr-1"
+                class="mr-1 icon-18"
                 role="img"
               >
                 <icon-distance :aria-label="$t('common.distance')"/>
@@ -52,9 +46,7 @@
             <div class="list-item-info">
               <icon-base
                 :title="$t('dashboard.living-images')"
-                width="18"
-                height="18"
-                color="#869094"
+                class="icon-18"
                 role="img"
               >
                 <icon-living-images/>
@@ -65,9 +57,7 @@
         <div class="icon-container">
           <icon-base
             :title="$t('list.showDetails')"
-            color="#869094"
-            width="22"
-            height="22"
+            class="icon-22"
             role="img"
           >
             <icon-arrow-right :aria-label="$t('list.showDetails')"/>

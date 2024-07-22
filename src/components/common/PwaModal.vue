@@ -11,8 +11,8 @@
   >
     <template v-slot:modal-header class="gps-info">
       <b-row class="gps-info w-100 pt-0 d-flex pl-3 mt-0">
-        <icon-base height="26" width="26" color="#509500">
-          <icon-download :aria-label="$t('common.downloadApp')"/>
+        <icon-base :title="$t('common.downloadApp')" class="icon-26">
+          <icon-download/>
         </icon-base>
         <div class="col-10">
           <h3 class="m-0">{{ $t('common.downloadApp') }}</h3>
@@ -26,8 +26,7 @@
         >
           <icon-base
             :title="$t('common.close')"
-            width="22"
-            height="22"
+            class="icon-22"
             role="img"
           >
             <icon-close :aria-label="$t('common.close')"/>
@@ -138,5 +137,10 @@ export default {
   }
   img {
     border: 1px solid #ccc;
+  }
+
+  .icon-26 {
+    height: 26px;
+    width: 26px;
   }
 </style>

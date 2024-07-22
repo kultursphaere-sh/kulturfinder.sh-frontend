@@ -207,7 +207,7 @@ h6 {
   font-size: 0.7rem;
   font-weight: 400;
   margin-bottom: 0;
-  color: $primary;
+  //color: $primary;
   cursor: pointer;
 }
 
@@ -215,4 +215,20 @@ hr {
   margin-right: 4rem;
   margin-left: 4rem;
 }
+
+.icon {
+        height: 24px;
+      }
+
+      .icon-18 {
+        height: 18px;
+      }
+
+      .icon-20 {
+        height: 20px;
+      }
+
+      .icon-22 {
+        height: 22px;
+      }
 </style>

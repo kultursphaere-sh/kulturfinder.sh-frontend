@@ -7,13 +7,13 @@
     role="tablist"
   >
     <template #button-content>
-      <img
-        height="22px"
-        class="flag p-0"
-        :src="currentLocale.icon"
-        :alt="$t('navbar.logo')"
+      <icon-base
+        :title="currentLocale.name"
         role="img"
+        class="flag icon-22"
       >
+        <component :is="currentLocale.icon"/>
+      </icon-base>
     </template>
     <b-dropdown-item
       variant="light"
@@ -23,22 +23,19 @@
       @click="changeLocale(key)"
       role="tab"
     >
-      <img
-        height="22px"
-        class="flag p-0"
-        :src="locale.icon"
-        :alt="locale.name"
+      <icon-base
+        :title="locale.name"
         role="img"
+        class="flag icon-22"
       >
+        <component :is="locale.icon"/>
+      </icon-base>
     </b-dropdown-item>
   </b-dropdown>
 </template>
 
 <script>
 import i18n from '@/i18n'
-import localeIconDeutsch from '@/assets/images/icons/locales/deutsch.svg'
-import localeIconEnglish from '@/assets/images/icons/locales/english.svg'
-import localeIconDansk from '@/assets/images/icons/locales/dansk.svg'
 
 export default {
   name: 'LocaleChanger',
@@ -47,19 +44,19 @@ export default {
       locales: {
         ...(process.env.VUE_APP_LANGUAGES.includes('de') && {
           de: {
-            icon: localeIconDeutsch,
+            icon: 'IconDeutsch',
             name: i18n.t('locales.de.name')
           }
         }),
         ...(process.env.VUE_APP_LANGUAGES.includes('en') && {
           en: {
-            icon: localeIconEnglish,
+            icon: 'IconEnglish',
             name: i18n.t('locales.en.name')
           }
         }),
         ...(process.env.VUE_APP_LANGUAGES.includes('da') && {
           da: {
-            icon: localeIconDansk,
+            icon: 'IconDansk',
             name: i18n.t('locales.da.name')
           }
         })
@@ -94,6 +91,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   height: 30px;
 }
 .dropdown-item.active {

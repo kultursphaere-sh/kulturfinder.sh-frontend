@@ -22,13 +22,10 @@
         </b-nav-item>
       </template>
       <template class="d-flex" #right>
-        <b-button pill class="labeled-button pr-0" @click="onFavoriteClick">
+        <b-button pill class="labeled-button pr-0 text-primary" @click="onFavoriteClick">
           <icon-base
             :title="$t('navbar.saveAsFavorite')"
-            color="#003064"
-            width="18"
-            height="18"
-            class="m-auto"
+            class="m-auto icon-18"
             role="img"
             data-cy="favoriteButton"
           >
@@ -105,11 +102,9 @@
                     :disabled="!livingImagesEnabled"
                   >
                     {{ $t('details.livingImagesCallToAction') }}
-                    <img
-                      :alt="$t('dashboard.living-images')"
-                      class="li-image ml-2"
-                      src="@/assets/images/icons/livingP.svg"
-                    >
+                    <icon-base :title="$t('dashboard.living-images')" class="li-image ml-2 text-primary">
+                      <icon-living-images/>
+                    </icon-base>
                   </b-button>
                 </b-col>
               </b-row>
@@ -122,7 +117,7 @@
                   >
                     <b-row>
                       <b-col class="col-auto pr-0">
-                        <icon-base width="20" height="20">
+                        <icon-base class="icon-20">
                           <icon-error/>
                         </icon-base>
                       </b-col>
@@ -552,7 +547,6 @@ import { mapGetters, mapState } from 'vuex'
 import moment from 'moment'
 import detectRTC from 'detectrtc'
 import { lt } from 'semver'
-import IconCalender from '@/components/icons/IconCalender.vue'
 
 export default {
   name: 'Details',
@@ -792,7 +786,6 @@ export default {
   },
   mixins: [ScrollPosition, Navigation],
   components: {
-    IconCalender,
     KsHeader,
     KsCarousel,
     SkeletonScreen,

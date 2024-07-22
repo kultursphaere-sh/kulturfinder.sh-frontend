@@ -10,9 +10,7 @@
         <icon-base
           :title="$t('common.distance')"
           color="#333333"
-          width="20"
-          height="20"
-          class="mr-1"
+          class="mr-1 icon-20"
           role="img"
         >
           <icon-distance :aria-label="$t('common.distance')"/>
@@ -30,8 +28,7 @@
       >
         <icon-base
           :title="$t('common.close')"
-          width="18"
-          height="18"
+          class="icon-18"
           role="img"
         >
           <icon-close :aria-label="$t('common.close')"/>

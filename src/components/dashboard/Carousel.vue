@@ -38,10 +38,7 @@
     >
       <icon-base
         :title="$t('common.distance')"
-        :alt="$t('common.distance')"
-        width="17"
-        height="17"
-        class="mr-1"
+        class="mr-1 icon-17"
         role="img"
       >
         <icon-distance/>
@@ -229,5 +226,10 @@ export default {
   .no-gps:active {
     color: $warning-light !important;
   }
+}
+
+.icon-17 {
+  height: 17px;
+  width: 17px;
 }
 </style>

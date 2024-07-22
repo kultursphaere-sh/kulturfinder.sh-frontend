@@ -56,7 +56,6 @@
         <b-nav-item router-link :to="`/${locale}`">
           <icon-base
             title="Home-Button"
-            class="homeButton"
           >
             <icon-home/>
           </icon-base>
@@ -134,7 +133,6 @@ import SearchBar from '@/components/common/SearchBar.vue'
 import KsHeader from '@/components/layout/Header.vue'
 import NoGpsBar from '@/components/institutions/NoGpsBar.vue'
 import { mapGetters } from 'vuex'
-import IconHome from '@/components/icons/IconHome.vue'
 import i18n from '@/i18n'
 
 export default {
@@ -206,7 +204,6 @@ export default {
     }
   },
   components: {
-    IconHome,
     KsHeader,
     SearchBar,
     NoGpsBar
@@ -218,11 +215,6 @@ export default {
 header .btn {
   padding: 4px;
 }
-
-.homeButton {
-  fill: $primary
-}
-
 .tab {
   display: flex;
   align-items: center;
