@@ -85,6 +85,8 @@
               </a>
               <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="claim-info">
                 <span v-if="currentInstitution.teaser" class="py-2 px-2 flex-fill">{{ currentInstitution.teaser }}</span>
+              </router-link>
+              <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="link-to my-auto">
                 <icon-base title="Zur Detailseite">
                   <icon-arrow-right/>
                 </icon-base>
@@ -319,12 +321,15 @@ export default {
   text-align: center;
 }
 
+.link-to, .claim-info {
+  background-color: #f6f6f6;
+  color: #667074;
+}
+
 .claim-info {
   display: flex;
   flex: 1;
-  background-color: #f6f6f6;
   align-items: center;
-  color: #667074;
 }
 
 .claim-info:hover {
@@ -336,14 +341,17 @@ export default {
   letter-spacing: -0.3px;
 }
 
-.claim-info svg {
+.link-to {
   height: 100%;
-  max-height: 24px;
-  max-width: 14px;
-  margin-right: 11px;
+  padding-right: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.link-to svg {
+  height: 24px;
+  width: 14px;
 }
 </style>
 

@@ -2,12 +2,12 @@
   <div class="navigator-share">
     <b-button
       pill
-      class="labeled-button"
+      class="labeled-button text-primary"
       @click="share()"
     >
       <icon-base
         :title="$t('details.share')"
-        class="m-auto icon-20 text-primary"
+        class="m-auto icon-20"
         role="img"
       >
         <icon-share/>

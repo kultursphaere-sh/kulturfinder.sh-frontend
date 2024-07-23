@@ -161,6 +161,7 @@ header {
 
   .backButton {
     padding: 5px;
+    color: #3c4d61;
   }
   .backButton:focus, .backButton:hover {
     border: 1px solid #fff;
