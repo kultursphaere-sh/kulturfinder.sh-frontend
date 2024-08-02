@@ -11,7 +11,7 @@
   >
     <template v-slot:modal-header class="gps-info">
       <b-row class="gps-info w-100 pt-0 d-flex pl-3 mt-0">
-        <icon-base :title="$t('common.downloadApp')" class="icon-26">
+        <icon-base :title="$t('common.downloadApp')" class="icon-26 text-success">
           <icon-download/>
         </icon-base>
         <div class="col-10">
@@ -22,7 +22,7 @@
           id="header-close-button"
           pill
           @click="hide"
-          class="py-0"
+          class="py-0 text-body"
         >
           <icon-base
             :title="$t('common.close')"
@@ -133,10 +133,10 @@ export default {
 <style scoped>
   .step-text {
     font-size: 0.9rem;
-    color: #565656;
+    color: var(--muted);
   }
   img {
-    border: 1px solid #ccc;
+    border: 1px solid var(--body-bg);
   }
 
   .icon-26 {

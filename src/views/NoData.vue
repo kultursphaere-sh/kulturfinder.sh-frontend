@@ -12,8 +12,9 @@
       <template #left>
         <b-button
           id="reset-button"
-          class="labeled-button"
+          class="labeled-button text-danger"
           pill
+          variant="transparent"
           @click="onReload()"
         >
           <icon-base
@@ -48,7 +49,6 @@
           <p>
             <span class="contact">
               <icon-base
-                color="#003064"
                 title="Email-Adresse"
                 class="mr-2"
                 role="img"
@@ -64,7 +64,7 @@
             <b-btn
               variant="link"
               v-b-modal.sign-language-modal
-              class="footer-text px-2 pt-0 pb-3 text-decoration-none"
+              class="footer-text text-muted px-2 pt-0 pb-3 text-decoration-none"
             >
               <icon-base class="icon-18">
                 <icon-sign-language/>
@@ -74,7 +74,7 @@
             <sign-language-modal/>
             <router-link
               :to="`/${$route.params.locale}/no-data/about`"
-              class="footer-text px-2 pt-0 pb-3"
+              class="footer-text px-2 pt-0 pb-3 text-muted"
             >
               <icon-base class="icon-18">
                 <icon-privacy/>
@@ -128,7 +128,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.btn.text-danger:hover, .btn.text-danger:focus {
+  color: lighten($red, 15%) !important;
+}
 
 .about-logo {
   display: flex;
@@ -143,5 +146,7 @@ export default {
 .contact {
   display: flex;
   align-items: center;
+
+  .icon { color: var(--primary) }
 }
 </style>

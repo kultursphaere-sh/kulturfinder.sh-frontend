@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard-carousel bg-white" data-cy="intitutionCarousel">
+  <div class="dashboard-carousel bg-light" data-cy="intitutionCarousel">
     <vue-slick-carousel
       v-bind="settings"
       class="carousel-slick"
@@ -200,7 +200,7 @@ export default {
   #distance-container {
     border-radius: 0rem 0rem 0.75rem 0.75rem;
     background-color: var(--primary);
-    color: #fff;
+    color: var(--white);
     font-size: 10px;
     font-weight: 500;
     letter-spacing: -0.21px;

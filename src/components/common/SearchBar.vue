@@ -1,6 +1,6 @@
 <template>
-  <div class="search-bar" data-cy="searchBarInput">
-    <div class="search-input w-100">
+  <div class="search-bar bg-light" data-cy="searchBarInput">
+    <div class="search-input w-100 text-body">
       <b-nav-form @submit.prevent>
         <b-input-group
           :class="{
@@ -12,13 +12,14 @@
             <icon-base
               title="Suche"
               class="icon-20"
-              :color="inputSearchIconColor"
+              :class="inputSearchIconColor"
             >
               <icon-search/>
             </icon-base>
           </b-input-group-prepend>
           <b-form-input
             id="search-form"
+            class="bg-light"
             ref="searchbar"
             list="auto-complete"
             type="search"
@@ -35,7 +36,7 @@
               variant="outline-light"
               v-if="searchInput"
               id="search-reset-icon"
-              class="border-0 text-muted"
+              class="border-0 text-body"
               @click="searchInput = ''"
               role="button"
             >
@@ -48,8 +49,8 @@
             </b-button>
             <b-button
               v-if="showToListButton"
-              variant="outline-primary"
-              class="align-items-center flex-shrink-0 border-0"
+              variant="themed"
+              class="align-items-center flex-shrink-0"
               :to="`/${$route.params.locale}/institutions/list?searchQuery=${$store.state.filters.searchQuery}`"
               role="button"
             >
@@ -66,6 +67,7 @@
 
 <script>
 import { debounce } from 'lodash'
+import { mapGetters } from 'vuex'
 
 const debounceTrackSiteSearch = debounce(fn => fn(), 1000)
 
@@ -87,6 +89,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      filteredInstitutions: 'institutions/getFiltered'
+    }),
     searchInput: {
       get() {
         return this.$store.state.filters.searchQuery
@@ -100,10 +105,10 @@ export default {
     },
     inputSearchIconColor() {
       return this.searchInput === ''
-        ? '#869094'
-        : (this.institutions === null || this.institutions.length) === 0
-          ? '#c01252'
-          : '#003064'
+        ? 'text-reset'
+        : (this.filteredInstitutions === null || this.filteredInstitutions.length === 0)
+          ? 'text-danger'
+          : 'text-icon-primary'
     },
     matomoActive: function () { return process.env.VUE_APP_MATOMO === 'true' }
   },
@@ -140,7 +145,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 100%;
   height: 56px;
   padding-top: 4px;
-  background-color: #fff;
   border-radius: 0 5px 5px 0;
 }
 
@@ -149,24 +153,28 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .inputFocused {
-  border-color: #000 !important;
+  border-color: var(--body-color) !important;
 }
 
 .inputNoResults {
-  border-color: #c01252 !important;
+  border-color: var(--danger) !important;
+}
+
+.text-icon-primary {
+  color: var(--primary);
 }
 
 .input-group {
-  border: 1px solid #ced4da;
+  border: 1px solid var(--muted);
   border-radius: 5px;
 }
 
 .input-group-prepend {
-  border-color: #ced4da;
+  border-color: var(--muted);
 }
 
 .input-group-text {
-  background-color: #fff;
+  background-color: var(--light);
   padding-right: 0;
   border: 0;
 }
@@ -174,6 +182,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border: 0;
   box-shadow: none !important;
   letter-spacing: 0.001px;
+  color: var(--body-color);
 }
 
 .input-group-append .btn:not(:last-child) {
@@ -186,7 +195,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     right: -3px;
     top: 6px;
     bottom: 6px;
-    border-right: 1px solid #ced4da;
+    border-right: 1px solid var(--muted);
   }
+}
+
+a.btn-themed:hover, a.btn-themed:active, a.btn-themed.active {
+  background-color: var(--primary) !important;
+  color: $white;
+}
+
+a.btn-themed:focus, a.btn-themed.focus {
+  box-shadow: 0 0 0 .2rem var(--primary-shadow);
 }
 </style>

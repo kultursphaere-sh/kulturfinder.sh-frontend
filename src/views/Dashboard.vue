@@ -11,6 +11,7 @@
     <ks-header :shadow="false" :toggle-bar-open="searchbarOpen">
       <template #left>
         <locale-changer data-cy="localeChanger"/>
+        <colormode-changer data-cy="colormodeChanger"/>
       </template>
       <!-- Kulturfinder Logo -->
       <template #center>
@@ -27,6 +28,7 @@
       </template>
       <template #right>
         <b-button
+          variant="themed"
           pill
           class="align-items-center border-0 p-2 mr-1"
           @click="onToggleSearchbar"
@@ -35,7 +37,6 @@
         >
           <icon-base
             :title="searchbarOpen ? $t('common.close') : $t('navbar.search')"
-            color="#3c4d61"
             :alt="$t('navbar.search')"
             role="img"
           >
@@ -61,7 +62,7 @@
           />
           <div
             id="search-preview"
-            class="position-absolute flex-column justify-content-center bg-white rounded-bottom"
+            class="position-absolute flex-column justify-content-center rounded-bottom"
             :class="{
               'has-results': $store.state.filters.searchQuery && filteredInstitutions.length,
               'show-more-results-button': $store.state.filters.searchQuery && filteredInstitutions.length > first5FilteredInstitutions.length
@@ -211,6 +212,7 @@ import KsCard from '@/components/dashboard/Card.vue'
 import KsHeader from '@/components/layout/Header'
 import { mapGetters } from 'vuex'
 import LocaleChanger from '../components/dashboard/LocaleChanger'
+import ColormodeChanger from '../components/dashboard/ColormodeChanger'
 import SignLanguageModal from '../components/dashboard/SignLanguageModal.vue'
 import ScrollPosition from '@/mixins/scrollposition'
 import detectRTC from 'detectrtc'
@@ -231,6 +233,7 @@ export default {
   },
   components: {
     LocaleChanger,
+    ColormodeChanger,
     KsCarousel,
     KsCard,
     KsHeader,
@@ -292,7 +295,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 #main-content {
-  background-color: $gray;
+  background-color: var(--body-bg);
+}
+
+.ks-card-container {
+  background-color: var(--body-bg);
 }
 
 #search-collapse {
@@ -314,6 +321,7 @@ export default {
   right: 0;
   padding: 4px;
   top: 46px;
+  background-color: var(--light);
 
   > .list {
     max-height: calc(100vh - 200px);
@@ -332,12 +340,8 @@ export default {
   }
 }
 
-.ks-card-container {
-  background-color: $gray;
-}
-
 .b-dropdown {
-  background-color: var(--white) !important;
+  background-color: var(--light) !important;
   > .dropdown-menu {
     min-width: 0;
     padding: 0;
@@ -353,7 +357,7 @@ export default {
 
 .footer-text{
   font-size: 0.7rem;
-  color: #576165;
+  color: var(--muted);
 }
 
 .logo {
@@ -365,4 +369,20 @@ export default {
   width: auto;
   height: 30px;
 }
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  color: $white;
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem var(--primary-shadow);
+}
+
 </style>

@@ -3,7 +3,7 @@
     <div
       id="ios-pwa-banner"
       v-if="iosBanner && ios"
-      class="bg-white w-100 shadow"
+      class="w-100 shadow bg-light"
     >
       <!-- ios && iosBanner -->
       <b-container id="ios-pwa-banner-container">
@@ -73,6 +73,7 @@ export default {
   bottom: 0;
   z-index: 1000;
   height: 130px;
+  color: var(--body-color);
   /* max-width: 992px; */
 }
 #ios-pwa-banner-container{

@@ -126,12 +126,12 @@ export default {
   margin-bottom: 50px;
 }
 .ks-card {
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
   border-radius: 9px;
 }
 .footer-text{
   font-size: 0.8rem;
-  color: #576165;
+  color: var(--muted);
   margin-bottom: 5px;
 }
 </style>

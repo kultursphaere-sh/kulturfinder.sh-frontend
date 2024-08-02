@@ -54,6 +54,14 @@
       "name": "Dansk"
     }
   },
+  "colormodes": {
+    "light": {
+      "name": "Hell"
+    },
+    "dark": {
+      "name": "Dunkel"
+    }
+  },
   "navbar": {
     "aboutUs": "Über uns",
     "logo": "Logo des kulturfinders",

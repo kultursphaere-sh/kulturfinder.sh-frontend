@@ -8,6 +8,21 @@ import VuexGeolocation from 'vuex-geolocation'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
+  state: {
+    darkmode: false
+  },
+  mutations: {
+    toggleDarkmode(state) {
+      state.darkmode = !state.darkmode
+    }
+  },
+  actions: {
+    switchColormode({ commit }) {
+      document.documentElement.classList.toggle('light')
+      document.documentElement.classList.toggle('dark')
+      commit('toggleDarkmode')
+    }
+  },
   modules: {
     institutions,
     filters,

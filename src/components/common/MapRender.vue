@@ -63,7 +63,7 @@
               <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="label py-3">
                 <span>{{ currentInstitution.name }}</span>
               </router-link>
-              <a @click="closePopup" class="text-secondary">
+              <a @click="closePopup" class="text-white">
                 <icon-base
                   title="Schließen"
                   class="info-window-close"
@@ -72,9 +72,9 @@
                 </icon-base>
               </a>
             </div>
-            <div class="info-window-footer">
+            <div class="info-window-footer bg-light">
               <a
-                class="drive-to pb-2 pt-1 d-flex justify-content-center flex-column text-secondary"
+                class="drive-to pb-2 pt-1 d-flex justify-content-center flex-column text-white"
                 :href="getGoogleMapsLink(currentInstitution.street, currentInstitution.place)"
                 target="_blank"
               >
@@ -261,7 +261,7 @@ export default {
   height: 50%;
   align-items: center;
   padding-left: 16px;
-  background-color: $primary;
+  background-color: var(--primary);
 }
 .info-window {
   font-family: "Roboto", sans-serif;
@@ -275,7 +275,7 @@ export default {
   height: 50%;
   align-items: center;
   padding-left: 16px;
-  background-color: $primary;
+  background-color: var(--primary);
 }
 .info-window-header .label {
   flex-grow: 1;
@@ -304,7 +304,7 @@ export default {
   display: flex;
 }
 .leaflet-popup-tip {
-  background-color: #f6f6f6 !important;
+  background-color: var(--light) !important;
 }
 .drive-to {
   width: 47px;
@@ -322,8 +322,7 @@ export default {
 }
 
 .link-to, .claim-info {
-  background-color: #f6f6f6;
-  color: #667074;
+  color: var(--muted);
 }
 
 .claim-info {
@@ -387,7 +386,7 @@ export default {
 .leaflet-popup-content-wrapper {
   overflow: hidden;
   padding: 0;
-  background-color: #f6f6f6;
+  background-color: var(--body-bg);
 }
 
 .leaflet-popup-content {
@@ -399,24 +398,25 @@ export default {
 }
 
 .leaflet-popup-tip {
-  background-color: #f6f6f6 !important;
+  background-color: var(--light) !important;
 }
 
 .cluster-marker {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  background-color: #ffffff;
+  background-color: var(--light);
   border-radius: 50%;
   text-align: center;
-  border-color: $primary;
+  border-color: var(--primary);
+  color: var(--primary);
   border-style: solid;
   border-width: 2px;
   font-weight: bold;
 }
 
 .leaflet-control-locate.active {
-    color: #1c3f6e !important; /* has to be css*/
+    color: var(--primary) !important; /* has to be css*/
 }
 
 /* prevent bad mobile styling */

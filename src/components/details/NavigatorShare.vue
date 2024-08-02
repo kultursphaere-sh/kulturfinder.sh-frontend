@@ -1,8 +1,9 @@
 <template>
   <div class="navigator-share">
     <b-button
+      variant="themed"
       pill
-      class="labeled-button text-primary"
+      class="labeled-button"
       @click="share()"
     >
       <icon-base
@@ -117,18 +118,6 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.btn:focus, .btn:hover {
-  background-color: #fff !important;
-  box-shadow: none;
-  border: 1px solid #fff;
-}
-.btn:active {
-  background-color: rgb(247, 247, 247) !important;
-}
-</style>
-
 <style>
 .navigator-share .modal-body {
   text-align: center;

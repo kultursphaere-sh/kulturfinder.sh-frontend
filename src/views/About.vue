@@ -92,7 +92,6 @@
             <p>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   :title="$t('common.website')"
                   class="mr-2"
                   role="img"
@@ -105,7 +104,6 @@
               </span>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   title="Email-Adresse"
                   class="mr-2"
                   role="img"
@@ -139,7 +137,6 @@
             <p>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   :title="$t('common.website')"
                   class="mr-2"
                   role="img"
@@ -152,7 +149,6 @@
               </span>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   title="Email-Adresse"
                   class="mr-2"
                   role="img"
@@ -440,5 +436,9 @@ export default {
 .icon-35 {
   height: 35px;
   width: 35px;
+}
+
+.icon {
+  color: var(--primary)
 }
 </style>

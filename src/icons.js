@@ -36,6 +36,7 @@ import IconLivingImages from './components/icons/IconLivingImages.vue'
 import IconMail from './components/icons/IconMail.vue'
 import IconMap from './components/icons/IconMap.vue'
 import IconMapSkeleton from './components/icons/IconMapSkeleton.vue'
+import IconMoon from './components/icons/IconMoon.vue'
 import IconMultimedia from './components/icons/IconMultimedia.vue'
 import IconNahSh from './components/icons/IconNahSh.vue'
 import IconNavigation from './components/icons/IconNavigation.vue'
@@ -48,6 +49,7 @@ import IconSearch from './components/icons/IconSearch.vue'
 import IconSettings from './components/icons/IconSettings.vue'
 import IconShare from './components/icons/IconShare.vue'
 import IconSignLanguage from './components/icons/IconSignLanguage.vue'
+import IconSun from './components/icons/IconSun.vue'
 import IconTickets from './components/icons/IconTickets.vue'
 import IconTriangleDown from './components/icons/IconTriangleDown.vue'
 import IconTriangleUp from './components/icons/IconTriangleUp.vue'
@@ -97,6 +99,7 @@ Vue.component('IconLivingImages', IconLivingImages)
 Vue.component('IconMail', IconMail)
 Vue.component('IconMap', IconMap)
 Vue.component('IconMapSkeleton', IconMapSkeleton)
+Vue.component('IconMoon', IconMoon)
 Vue.component('IconMultimedia', IconMultimedia)
 Vue.component('IconNahSh', IconNahSh)
 Vue.component('IconNavigation', IconNavigation)
@@ -109,6 +112,7 @@ Vue.component('IconSearch', IconSearch)
 Vue.component('IconSettings', IconSettings)
 Vue.component('IconShare', IconShare)
 Vue.component('IconSignLanguage', IconSignLanguage)
+Vue.component('IconSun', IconSun)
 Vue.component('IconTickets', IconTickets)
 Vue.component('IconTriangleDown', IconTriangleDown)
 Vue.component('IconTriangleUp', IconTriangleUp)

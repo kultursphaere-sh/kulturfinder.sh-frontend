@@ -22,7 +22,9 @@
         </b-nav-item>
       </template>
       <template class="d-flex" #right>
-        <b-button pill class="labeled-button pr-0 text-primary" @click="onFavoriteClick">
+        <b-button variant="themed" pill class="labeled-button pr-0"
+                  @click="onFavoriteClick"
+        >
           <icon-base
             :title="$t('navbar.saveAsFavorite')"
             class="m-auto icon-18"
@@ -55,7 +57,7 @@
         <template v-if="!loading">
           <b-container class="w-md-90 px-4 pt-4 pt-sm-5 pb-3">
             <!-- Headline -->
-            <div class="headline text-primary" data-cy="institutionHeadline">
+            <div class="headline" data-cy="institutionHeadline">
               <h2 class="mb-1">{{ institution.name }}</h2>
               <p id="claim" v-if="institution.claim">
                 {{ institution.claim }}
@@ -97,12 +99,12 @@
                   <b-button
                     id="li-button"
                     class="px-4"
-                    variant="light"
+                    variant="transparent"
                     :to="`/${$route.params.locale}/institutions/${listType}/details/${actId}/living-images`"
                     :disabled="!livingImagesEnabled"
                   >
                     {{ $t('details.livingImagesCallToAction') }}
-                    <icon-base :title="$t('dashboard.living-images')" class="li-image ml-2 text-primary">
+                    <icon-base :title="$t('dashboard.living-images')" class="li-image ml-2">
                       <icon-living-images/>
                     </icon-base>
                   </b-button>
@@ -135,132 +137,134 @@
           <hr v-else class="my-4">
           <b-container class="px-4">
             <!-- Navigation -->
-            <section id="navigation" class="py-3" data-cy="navigation">
-              <div class="row p-0 m-0 justify-content-between">
-                <!-- Show on Map -->
-                <info-detail :img-alt="$t('common.map')" data-cy="showOnMap">
-                  <template #icon>
-                    <icon-pin/>
-                  </template>
-                  <template #text>
-                    <router-link :to="`/${$route.params.locale}/institutions/${listType}/details/${actId}/map`">
-                      {{ $t('details.showOnMap') }}
-                    </router-link>
-                  </template>
-                </info-detail>
-                <!-- Drive-To -->
-                <info-detail :img-alt="$t('common.route')" v-if="institution.address" data-cy="driveToDestination">
-                  <template #icon>
-                    <icon-navigation/>
-                  </template>
-                  <template #text>
-                    <a
-                      :href="getGoogleMapsLink(institution.address.street, institution.address.place)"
-                      target="_blank"
-                    >
-                      {{ $t('details.routeViaNavigationApp') }}
-                    </a>
-                  </template>
-                </info-detail>
-                <!-- Connection NAH.SH -->
-                <nah-sh-link
-                  v-if="hasNahShLink"
-                  :start-pos="userPosition"
-                  :end-pos="institution.position"
-                  :end-name="institution.name"
-                  data-cy="nahSH"
-                />
-              </div>
-            </section>
-            <hr class="mb-4">
-            <!-- Contact -->
-            <section id="contact" class="py-3" data-cy="contact">
-              <h3 class="mb-3">{{ $t('common.contact') }}</h3>
-              <div class="row m-0 p-0 justify-content-between">
-                <!-- Address -->
-                <info-detail v-if="institution.address" :img-alt="$t('details.address')">
-                  <template #icon>
-                    <icon-address/>
-                  </template>
-                  <template #text>
-                    <div class="text-primary">
-                      <div v-if="institution.address.street">{{ institution.address.street }}<br></div>
-                      {{ institution.address.zip }} {{ institution.address.place }}
-                    </div>
-                  </template>
-                </info-detail>
-                <!-- Website -->
-                <info-detail
-                  v-if="institution.website && institution.website.label"
-                  :img-alt="$t('common.website')"
-                >
-                  <template #icon>
-                    <icon-globe/>
-                  </template>
-                  <template #text>
-                    <a :href="institution.website.identifier" target="_blank">
-                      {{ institution.website.label }}
-                    </a>
-                  </template>
-                </info-detail>
-                <!-- E-Mail -->
-                <info-detail v-if="institution.email" :img-alt="$t('common.email')">
-                  <template #icon>
-                    <icon-mail/>
-                  </template>
-                  <template #text>
-                    <a :href="'mailto:' + institution.email">{{ institution.email }}</a>
-                  </template>
-                </info-detail>
-                <!-- Telephone -->
-                <info-detail v-if="institution.tel" :img-alt="$t('details.telephone')">
-                  <template #icon>
-                    <icon-phone/>
-                  </template>
-                  <template #text>
-                    <a
-                      :href="'tel:' + institution.tel"
-                      v-if="institution.tel.length > 6 && institution.tel.length <= 16"
-                    >
-                      {{ institution.tel }}
-                    </a>
-                    <!-- fallback without link if no valid tel format -->
-                    <span v-else>{{ institution.tel }}</span>
-                  </template>
-                </info-detail>
-              </div>
-            </section>
-            <hr class="mb-4">
-            <!-- MuseumsCard XS & SM -->
-            <section
-              id="museumscard"
-              class="d-md-none"
-              v-if="museumsCardEnabled && institution.tags && institution.tags.includes('MuseumsCard')"
-            >
-              <museums-card class="mt-5 mt-md-0"/>
-              <hr class="mb-4 mt-5">
-            </section>
-            <!-- Event Calender -->
-            <section
-              id="event-calender"
-              class="py-3"
-              v-if="institution.eventCalender"
-            >
-              <h3>{{ $t('details.eventCalender') }}</h3>
-              <b-container>
-                <info-detail :img-alt="$t('details.eventCalender')" class="pt-3">
-                  <template #icon>
-                    <icon-calender/>
-                  </template>
-                  <template #text>
-                    <a :href="institution.eventCalender.identifier" target="_blank">
-                      {{ $t('details.showEvents') }}
-                    </a>
-                  </template>
-                </info-detail>
-              </b-container>
-              <hr class="mb-4 mt-4">
-            </section>
+            <div id="primary-text">
+              <section id="navigation" class="py-3" data-cy="navigation">
+                <div class="row p-0 m-0 justify-content-between">
+                  <!-- Show on Map -->
+                  <info-detail :img-alt="$t('common.map')" data-cy="showOnMap">
+                    <template #icon>
+                      <icon-pin/>
+                    </template>
+                    <template #text>
+                      <router-link :to="`/${$route.params.locale}/institutions/${listType}/details/${actId}/map`">
+                        {{ $t('details.showOnMap') }}
+                      </router-link>
+                    </template>
+                  </info-detail>
+                  <!-- Drive-To -->
+                  <info-detail :img-alt="$t('common.route')" v-if="institution.address" data-cy="driveToDestination">
+                    <template #icon>
+                      <icon-navigation/>
+                    </template>
+                    <template #text>
+                      <a
+                        :href="getGoogleMapsLink(institution.address.street, institution.address.place)"
+                        target="_blank"
+                      >
+                        {{ $t('details.routeViaNavigationApp') }}
+                      </a>
+                    </template>
+                  </info-detail>
+                  <!-- Connection NAH.SH -->
+                  <nah-sh-link
+                    v-if="hasNahShLink"
+                    :start-pos="userPosition"
+                    :end-pos="institution.position"
+                    :end-name="institution.name"
+                    data-cy="nahSH"
+                  />
+                </div>
+              </section>
+              <hr class="mb-4">
+              <!-- Contact -->
+              <section id="contact" class="py-3" data-cy="contact">
+                <h3 class="mb-3">{{ $t('common.contact') }}</h3>
+                <div class="row m-0 p-0 justify-content-between">
+                  <!-- Address -->
+                  <info-detail v-if="institution.address" :img-alt="$t('details.address')">
+                    <template #icon>
+                      <icon-address/>
+                    </template>
+                    <template #text>
+                      <div>
+                        <div v-if="institution.address.street">{{ institution.address.street }}<br></div>
+                        {{ institution.address.zip }} {{ institution.address.place }}
+                      </div>
+                    </template>
+                  </info-detail>
+                  <!-- Website -->
+                  <info-detail
+                    v-if="institution.website && institution.website.label"
+                    :img-alt="$t('common.website')"
+                  >
+                    <template #icon>
+                      <icon-globe/>
+                    </template>
+                    <template #text>
+                      <a :href="institution.website.identifier" target="_blank">
+                        {{ institution.website.label }}
+                      </a>
+                    </template>
+                  </info-detail>
+                  <!-- E-Mail -->
+                  <info-detail v-if="institution.email" :img-alt="$t('common.email')">
+                    <template #icon>
+                      <icon-mail/>
+                    </template>
+                    <template #text>
+                      <a :href="'mailto:' + institution.email">{{ institution.email }}</a>
+                    </template>
+                  </info-detail>
+                  <!-- Telephone -->
+                  <info-detail v-if="institution.tel" :img-alt="$t('details.telephone')">
+                    <template #icon>
+                      <icon-phone/>
+                    </template>
+                    <template #text>
+                      <a
+                        :href="'tel:' + institution.tel"
+                        v-if="institution.tel.length > 6 && institution.tel.length <= 16"
+                      >
+                        {{ institution.tel }}
+                      </a>
+                      <!-- fallback without link if no valid tel format -->
+                      <span v-else>{{ institution.tel }}</span>
+                    </template>
+                  </info-detail>
+                </div>
+              </section>
+              <hr class="mb-4">
+              <!-- MuseumsCard XS & SM -->
+              <section
+                id="museumscard"
+                class="d-md-none"
+                v-if="museumsCardEnabled && institution.tags && institution.tags.includes('MuseumsCard')"
+              >
+                <museums-card class="mt-5 mt-md-0"/>
+                <hr class="mb-4 mt-5">
+              </section>
+              <!-- Event Calender -->
+              <section
+                id="event-calender"
+                class="py-3"
+                v-if="institution.eventCalender"
+              >
+                <h3>{{ $t('details.eventCalender') }}</h3>
+                <b-container>
+                  <info-detail :img-alt="$t('details.eventCalender')" class="pt-3">
+                    <template #icon>
+                      <icon-calender/>
+                    </template>
+                    <template #text>
+                      <a :href="institution.eventCalender.identifier" target="_blank">
+                        {{ $t('details.showEvents') }}
+                      </a>
+                    </template>
+                  </info-detail>
+                </b-container>
+                <hr class="mb-4 mt-4">
+              </section>
+            </div>
             <!-- Opening Times -->
             <section
               id="opening-times"
@@ -431,7 +435,7 @@
                   </p>
                 </b-alert>
 
-                <p class="info-text" v-if="institution.openingTimes.week">
+                <p class="info-text text-muted" v-if="institution.openingTimes.week">
                   {{ $t('details.noGuarantee') }}
                   <a v-b-modal.feedback-modal
                      href="#"
@@ -508,7 +512,7 @@
             <!-- Footer -->
             <section
               id="footer"
-              class="w-100 m-0 pb-3 text-center"
+              class="w-100 m-0 pb-3 text-center text-muted"
             >
               <b-button
                 variant="link"
@@ -836,7 +840,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .logo {
   @media (max-width: $breakpoint-logo-xs) {
     width: 120px;
@@ -853,37 +856,49 @@ input[type=submit] {
 }
 
 #living-images-info{
-  background-color: $gray;
+  background-color: var(--body-bg);
 }
 #claim {
   font-size: 1.1rem;
   font-weight: 400;
   font-style: italic;
-  color: $primary;
+  color: var(--primary);
 }
 
 .text-padding{
   padding: 1.5em;
 }
 
-.living-images-button{
-  border-radius: 0.5rem !important;
-}
 #li-button {
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
   border-radius: 7px;
   min-width: 320px;
+  color: var(--body-color);
+
+  .icon {
+    color: var(--primary);
+  }
 }
+
+#li-button:hover, #li-button:focus, #li-button:active {
+  background-color: var(--light);
+}
+
 .li-image{
   width: 2.5rem;
   height: 100%;
 }
+
+#primary-text {
+  color: var(--primary);
+}
+
 .readonly {
-  border-color: #869094;
-  color: #869094;
+  border-color: var(--muted);
+  color: var(--muted);
 }
 #opening-hours-container{
-  color: $dark !important;
+  color: var(--body-color);
 }
 #opening-status{
   font-size: 1.0rem;
@@ -915,7 +930,8 @@ input[type=submit] {
 }
 
 .opening-hours-row-active {
-  background-color: #d6e8fc;
+  background-color: rgba(#d6e8fc, 0.8);
+  color: $dark;
   border-radius: 0.5rem;
 }
 
@@ -926,7 +942,7 @@ input[type=submit] {
 }
 
 .opening-hours-closed-text {
-  color: #576165;
+  color: var(--muted) !important;
 }
 
 .warning {
@@ -939,7 +955,6 @@ input[type=submit] {
 
 .info-text {
   font-size: 0.8rem;
-  color: #576165;
 }
 
 .chip-container {
@@ -949,14 +964,14 @@ input[type=submit] {
 }
 
 .chip {
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
   border-radius: 20px;
   display: flex;
   margin: 4px;
   padding: 7px 18px;
   text-decoration: none;
   cursor: pointer;
-  color: $primary!important;
+  color: var(--primary)!important;
 }
 
 .chip:active,
@@ -966,17 +981,9 @@ input[type=submit] {
   color: $white !important;
 }
 
-.btn:focus, .btn:hover {
-  background-color: #fff !important;
-  box-shadow: none;
-  border: 1px solid #fff;
-}
-.btn:active {
-  background-color: rgb(247, 247, 247) !important;
-}
 .footer-text{
   font-size: 0.8rem;
-  color: #576165;
+  color: var(--muted);
 }
 
 @media (max-width: $breakpoint-md) {

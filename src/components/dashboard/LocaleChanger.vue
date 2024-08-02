@@ -1,8 +1,10 @@
 <template>
   <b-dropdown
     id="locales-dropdown"
+    variant="transparent"
     size="sm"
     class="d-flex"
+    toggle-class="text-reset"
     right
     role="tablist"
   >
@@ -16,7 +18,7 @@
       </icon-base>
     </template>
     <b-dropdown-item
-      variant="light"
+      variant="transparent"
       v-for="(locale, key) in locales"
       :key="key"
       :active="getLocale() === key"
@@ -86,6 +88,7 @@ export default {
 #locales-dropdown .dropdown-menu {
   min-width: 0;
   width: 52px;
+  background-color: var(--light);
 }
 .dropdown-item {
   display: flex;
@@ -94,17 +97,17 @@ export default {
   padding: 0;
   height: 30px;
 }
-.dropdown-item.active {
-  background: $gray-dark;
+.dropdown-item.active, .dropdown-item:active,
+.dropdown-item:hover, .dropdown-item:focus{
+  background-color: var(--primary);
+  color: $white;
 }
-.dropdown-item:active {
-  background: $gray-dark;
-}
+
 .dropdown-toggle { /* important for focus border fix */
   border: 0;
 }
 .dropdown-toggle:focus {
-  background: #fff;
+  background: var(--primary);
   box-shadow: none;
   border: 0;
 }

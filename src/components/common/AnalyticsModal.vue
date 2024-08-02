@@ -1,6 +1,6 @@
 <template>
   <transition appear name="slide">
-    <div id="analytics-modal" v-if="showAnalyticsModal" class="bg-white w-100 shadow px-3">
+    <div id="analytics-modal" v-if="showAnalyticsModal" class="w-100 shadow px-3 bg-light">
       <b-container id="analytics-container" class="py-3">
         <b-row>
           <div class="ios-pwa-info-text col-sm-12 p-0 d-flex flex-column justify-between">
@@ -77,6 +77,7 @@ export default {
   position:fixed;
   bottom: 0;
   z-index: 1000;
+  color: var(--body-color);
 }
 #analytics-container {
   position:relative;
