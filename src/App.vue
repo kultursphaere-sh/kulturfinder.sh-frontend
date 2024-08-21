@@ -271,6 +271,11 @@ hr {
   background-color: var(--light) !important;
 }
 
+// Images that need to switch with the mode
+.dark .img-light, .light .img-dark {
+  display: none !important;
+}
+
 // Button with transparent BG, primary Text and secondary hover/focus-shadow
 .btn-themed {
   background-color: transparent;

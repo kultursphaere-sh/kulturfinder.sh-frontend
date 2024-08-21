@@ -23,7 +23,12 @@
       <div id="main-content">
         <b-container class="p-4">
           <b-container class="about-logo">
-            <img :alt="$t('navbar.logo')" id="logo" :src="'/' + tenant + '/img/logos/kf_logo.png'">
+            <img :alt="$t('navbar.logo')" id="logo" class="img-light"
+                 :src="'/' + tenant + '/img/logos/kf_logo_light.png'"
+            >
+            <img :alt="$t('navbar.logo')" id="logo" class="img-dark"
+                 :src="'/' + tenant + '/img/logos/kf_logo_dark.png'"
+            >
           </b-container>
           <hr>
           <b-row class="social-media">
@@ -426,6 +431,10 @@ export default {
 
 #logo {
   max-height: 75px;
+}
+
+.dark #partners div {
+  background-color: var(--body-color);
 }
 
 .contact {

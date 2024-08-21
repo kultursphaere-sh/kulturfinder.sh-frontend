@@ -35,7 +35,14 @@
             <img
               :alt="$t('navbar.logo')"
               id="logo"
-              :src="'/' + tenant + '/img/logos/kf_logo.png'"
+              class="img-light"
+              :src="'/' + tenant + '/img/logos/kf_logo_light.png'"
+            >
+            <img
+              :alt="$t('navbar.logo')"
+              id="logo"
+              class="img-dark"
+              :src="'/' + tenant + '/img/logos/kf_logo_dark.png'"
             >
           </b-container>
           <hr>

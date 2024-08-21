@@ -18,8 +18,16 @@
         <b-nav-item router-link :to="`/${$route.params.locale}/`">
           <img
             height="56px"
-            class="logo p-0"
-            :src="'/' + tenant + '/img/logos/kf_logo.png'"
+            class="logo p-0 img-light"
+            :src="'/' + tenant + '/img/logos/kf_logo_light.png'"
+            :alt="$t('navbar.logo')"
+            role="img"
+            data-cy="mainLogo"
+          >
+          <img
+            height="56px"
+            class="logo p-0 img-dark"
+            :src="'/' + tenant + '/img/logos/kf_logo_dark.png'"
             :alt="$t('navbar.logo')"
             role="img"
             data-cy="mainLogo"
