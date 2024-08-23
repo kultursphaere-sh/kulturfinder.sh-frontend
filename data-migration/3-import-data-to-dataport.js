@@ -39,8 +39,8 @@ async function upload(institution) {
 // TODO migrate media
 
 // AUTH
-let apiUrl = readline.question('Api-Url: ') || 'https://localhost:7262'
-let apiToken = readline.question('API-Token: ') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjE2ODMwNDd9.ItQGOgv_dImhxXi09cFMrNLjI6tKRZvMr-yoRjHIGYA'
+let apiUrl = /* readline.question('Api-Url: ') || */ 'https://localhost:7262'
+let apiToken = /* readline.question('API-Token: ') || */ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjE2ODMwNDd9.ItQGOgv_dImhxXi09cFMrNLjI6tKRZvMr-yoRjHIGYA'
 
 console.log(`Api-Url: ${apiUrl}`)
 
