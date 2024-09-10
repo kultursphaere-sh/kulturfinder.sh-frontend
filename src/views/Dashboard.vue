@@ -11,14 +11,23 @@
     <ks-header :shadow="false" :toggle-bar-open="searchbarOpen">
       <template #left>
         <locale-changer data-cy="localeChanger"/>
+        <colormode-changer data-cy="colormodeChanger"/>
       </template>
       <!-- Kulturfinder Logo -->
       <template #center>
         <b-nav-item router-link :to="`/${$route.params.locale}/`">
           <img
             height="56px"
-            class="logo p-0"
-            :src="'/' + tenant + '/img/logos/kf_logo.png'"
+            class="logo p-0 img-light"
+            :src="'/' + tenant + '/img/logos/kf_logo_light.png'"
+            :alt="$t('navbar.logo')"
+            role="img"
+            data-cy="mainLogo"
+          >
+          <img
+            height="56px"
+            class="logo p-0 img-dark"
+            :src="'/' + tenant + '/img/logos/kf_logo_dark.png'"
             :alt="$t('navbar.logo')"
             role="img"
             data-cy="mainLogo"
@@ -27,6 +36,7 @@
       </template>
       <template #right>
         <b-button
+          variant="themed"
           pill
           class="align-items-center border-0 p-2 mr-1"
           @click="onToggleSearchbar"
@@ -35,7 +45,6 @@
         >
           <icon-base
             :title="searchbarOpen ? $t('common.close') : $t('navbar.search')"
-            color="#3c4d61"
             :alt="$t('navbar.search')"
             role="img"
           >
@@ -61,7 +70,7 @@
           />
           <div
             id="search-preview"
-            class="position-absolute flex-column justify-content-center bg-white rounded-bottom"
+            class="position-absolute flex-column justify-content-center rounded-bottom"
             :class="{
               'has-results': $store.state.filters.searchQuery && filteredInstitutions.length,
               'show-more-results-button': $store.state.filters.searchQuery && filteredInstitutions.length > first5FilteredInstitutions.length
@@ -170,11 +179,7 @@
             class="footer-text px-2 pt-0 pb-3 text-decoration-none"
             v-if="showDownloadLink"
           >
-            <icon-base
-              width="18"
-              height="18"
-              color="#576165"
-            >
+            <icon-base class="icon-20">
               <icon-download/>
             </icon-base>
             {{ $t("common.downloadApp") }}
@@ -185,11 +190,7 @@
             class="footer-text px-2 pt-0 pb-3 text-decoration-none"
             data-cy="signLanguage"
           >
-            <icon-base
-              width="18"
-              height="18"
-              color="#576165"
-            >
+            <icon-base class="icon-18">
               <icon-sign-language/>
             </icon-base>
             {{ $t("dashboard.signLanguage") }}
@@ -200,11 +201,7 @@
             class="footer-text px-2 pt-0 pb-3"
             data-cy="impressum"
           >
-            <icon-base
-              width="18"
-              height="18"
-              color="#576165"
-            >
+            <icon-base class="icon-18">
               <icon-privacy/>
             </icon-base>
             {{ $t("navbar.legalNotice") }}
@@ -223,6 +220,7 @@ import KsCard from '@/components/dashboard/Card.vue'
 import KsHeader from '@/components/layout/Header'
 import { mapGetters } from 'vuex'
 import LocaleChanger from '../components/dashboard/LocaleChanger'
+import ColormodeChanger from '../components/dashboard/ColormodeChanger'
 import SignLanguageModal from '../components/dashboard/SignLanguageModal.vue'
 import ScrollPosition from '@/mixins/scrollposition'
 import detectRTC from 'detectrtc'
@@ -243,6 +241,7 @@ export default {
   },
   components: {
     LocaleChanger,
+    ColormodeChanger,
     KsCarousel,
     KsCard,
     KsHeader,
@@ -304,7 +303,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 #main-content {
-  background-color: $gray;
+  background-color: var(--body-bg);
+}
+
+.ks-card-container {
+  background-color: var(--body-bg);
 }
 
 #search-collapse {
@@ -326,6 +329,7 @@ export default {
   right: 0;
   padding: 4px;
   top: 46px;
+  background-color: var(--light);
 
   > .list {
     max-height: calc(100vh - 200px);
@@ -344,12 +348,8 @@ export default {
   }
 }
 
-.ks-card-container {
-  background-color: $gray;
-}
-
 .b-dropdown {
-  background-color: var(--white) !important;
+  background-color: var(--light) !important;
   > .dropdown-menu {
     min-width: 0;
     padding: 0;
@@ -365,7 +365,7 @@ export default {
 
 .footer-text{
   font-size: 0.7rem;
-  color: #576165;
+  color: var(--muted);
 }
 
 .logo {
@@ -377,4 +377,20 @@ export default {
   width: auto;
   height: 30px;
 }
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  color: $white;
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem var(--primary-shadow);
+}
+
 </style>

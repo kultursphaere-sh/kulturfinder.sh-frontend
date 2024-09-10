@@ -12,12 +12,9 @@
       <template #right>
         <!-- Home Button -->
         <b-nav-item router-link :to="`/${locale}`">
-          <img
-            alt="HomeButton"
-            height="20px"
-            src="@/assets/images/icons/cards/HomeFull1.svg"
-            class="homeButton"
-          >
+          <icon-base title="HomeButton" class="icon-20">
+            <icon-home/>
+          </icon-base>
         </b-nav-item>
       </template>
     </ks-header>
@@ -26,23 +23,34 @@
       <div id="main-content">
         <b-container class="p-4">
           <b-container class="about-logo">
-            <img :alt="$t('navbar.logo')" id="logo" :src="'/' + tenant + '/img/logos/kf_logo.png'">
+            <img :alt="$t('navbar.logo')" id="logo" class="img-light"
+                 :src="'/' + tenant + '/img/logos/kf_logo_light.png'"
+            >
+            <img :alt="$t('navbar.logo')" id="logo" class="img-dark"
+                 :src="'/' + tenant + '/img/logos/kf_logo_dark.png'"
+            >
           </b-container>
           <hr>
           <b-row class="social-media">
             <a href="https://www.facebook.com/kultursphaere" target="_blank">
               <b-col class="social">
-                <img :alt="$t('common.facebook')" src="@/assets/images/icons/social-media/facebook.svg">
+                <icon-base :title="$t('common.facebook')" class="icon-35">
+                  <icon-facebook/>
+                </icon-base>
               </b-col>
             </a>
             <a href="https://twitter.com/kultursphaere" target="_blank">
               <b-col class="social">
-                <img :alt="$t('common.twitter')" src="@/assets/images/icons/social-media/twitter.svg">
+                <icon-base :title="$t('common.twitter')" class="icon-35">
+                  <icon-twitter/>
+                </icon-base>
               </b-col>
             </a>
             <a href="http://www.instagram.com/kultursphaere" target="_blank">
               <b-col class="social">
-                <img :alt="$t('common.instagram')" src="@/assets/images/icons/social-media/instagram.svg">
+                <icon-base :title="$t('common.instagram')" class="icon-35">
+                  <icon-instagram/>
+                </icon-base>
               </b-col>
             </a>
           </b-row>
@@ -89,7 +97,6 @@
             <p>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   :title="$t('common.website')"
                   class="mr-2"
                   role="img"
@@ -102,7 +109,6 @@
               </span>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   title="Email-Adresse"
                   class="mr-2"
                   role="img"
@@ -136,7 +142,6 @@
             <p>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   :title="$t('common.website')"
                   class="mr-2"
                   role="img"
@@ -149,7 +154,6 @@
               </span>
               <span class="contact">
                 <icon-base
-                  color="#003064"
                   title="Email-Adresse"
                   class="mr-2"
                   role="img"
@@ -429,8 +433,21 @@ export default {
   max-height: 75px;
 }
 
+.dark #partners div {
+  background-color: var(--body-color);
+}
+
 .contact {
   display: flex;
   align-items: center;
+}
+
+.icon-35 {
+  height: 35px;
+  width: 35px;
+}
+
+.icon {
+  color: var(--primary)
 }
 </style>

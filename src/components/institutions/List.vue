@@ -123,16 +123,21 @@ export default {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-color: #d7e0e5;
+  border-color: var(--body-bg);
   border-style: solid;
+  background-color: var(--light);
+}
+
+.list-group-item-action:hover {
+  background-color: var(--window-bg);
 }
 
 .list-group-item:first-child {
   border-top-color: transparent;
 }
 
-.list-group-item-action:active {
-  background-color: #f1f4f6;
+.list-group .list-group-item-action:active {
+  background-color: var(--body-bg);
 }
 .li-container {
   min-height: 113px;
@@ -168,32 +173,31 @@ export default {
 }
 .title {
   display: block;
-  color: #3c4d61;
+  color: var(--primary);
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 8px;
 }
 .pre-title {
   display: block;
-  background-color: $light;
+  background-color: var(--light);
   width: 120px;
   margin-bottom: 8px;
 }
 .pre-claim{
   display: block;
-  background-color: $light;
+  background-color: var(--light);
   width: 160px;
 }
 .claim {
   display: block;
-  color: #576165;
   font-size: 0.8rem;
   line-height: 1.08;
 }
 .list-item-info {
   display: flex;
   align-items: center;
-  color: #576165;
+  color: var(--muted);
   font-size: 0.7rem;
   margin-bottom: 0;
 }

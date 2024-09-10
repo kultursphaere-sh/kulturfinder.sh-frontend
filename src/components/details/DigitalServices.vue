@@ -36,9 +36,7 @@
         <b-col class="digital-service my-2" v-if="service.label && service.icon">
           <icon-base
             :title="`${$t('details.digitalContent')}: ${service.label}`"
-            color="#003064"
-            width="40"
-            height="40"
+            class="icon-40"
             role="img"
           >
             <component :is="`icon-${service.icon}`"/>
@@ -67,6 +65,10 @@ export default {
   margin-top: 1vh;
   font-size: 1rem;
   text-align: center;
+}
+.icon-40 {
+  height: 40px;
+  width: 40px;
 }
 div {
   text-align: center;

@@ -31,7 +31,8 @@ export default {
   data() {
     return {
       loading: true,
-      showPWABanner: false
+      showPWABanner: false,
+      prefersDarkmode: window.matchMedia('(prefers-color-scheme: dark)')
     }
   },
   computed: {
@@ -70,6 +71,11 @@ export default {
         if (loadingScreen) {
           loadingScreen.style.display = 'none'
         }
+      }
+    },
+    prefersDarkmode(value) {
+      if (value !== this.darkmode) {
+        this.$store.dispatch('switchColormode')
       }
     }
   },
@@ -111,6 +117,17 @@ export default {
         if (this.$route.name !== 'arWrapper') this.showPWABanner = true
       }, 20000)
     }
+
+    // sets up to use Dark- or Light-Mode preference (including in Developer Tools)
+    if (this.prefersDarkmode.matches) {
+      this.$store.dispatch('switchColormode')
+    }
+
+    this.prefersDarkmode.addEventListener('change', () => {
+      if (this.prefersDarkmode.matches !== this.$store.state.darkmode) {
+        this.$store.dispatch('switchColormode')
+      }
+    })
   }
 }
 </script>
@@ -120,11 +137,41 @@ export default {
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
 
+:root.light {
+  --window-bg: #{$window-bg};
+  --body-bg: #{$body-bg};
+  --body-color: #{$body-color};
+  --muted: #{$muted-light};
+  --light: #{$light};
+  --primary: #{$primary};
+  --primary-light: #{$primary-light};
+  --secondary: #{$secondary};
+  --secondary-light: #{$secondary-light};
+  --primary-shadow: #{$primary-shadow};
+  --secondary-shadow: #{$secondary-shadow};
+  --warning-light: #{$yellow};
+}
+
+:root.dark {
+  --window-bg: #{$dark-window-bg};
+  --body-bg: #{$dark-body-bg};
+  --body-color: #{$dark-body-color};
+  --muted: #{$muted-dark};
+  --light: #{$dark};
+  --primary: #{$dark-primary};
+  --primary-light: #{$dark-primary-light};
+  --secondary: #{$dark-secondary};
+  --secondary-light: #{$dark-secondary-light};
+  --primary-shadow: #{$dark-primary-shadow};
+  --secondary-shadow: #{$dark-secondary-shadow};
+  --warning-light: #{$yellow-dark};
+}
+
 html, body {
   height: 100%;
   width: 100%;
-  background-color: $gray; // background behind page for mobile devices when scrolling beyond border
-  color: $gray-very-dark;
+  background-color: var(--window-bg); // background behind page for mobile devices when scrolling beyond border
+  color: var(--body-color);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -135,7 +182,6 @@ html, body {
   height: 100%;
   width: 100%;
   min-width: 312px;
-  background-color: $background;
 }
 
 #main-container {
@@ -146,7 +192,7 @@ html, body {
 
 #main-content {
   min-height: 100%;
-  background-color: #fff;
+  background-color: var(--light);
   max-width: $breakpoint-lg;
   margin: auto;
 }
@@ -157,18 +203,16 @@ html, body {
   border: none;
 }
 
-a {
-  color: $primary;
-}
+a { color: var(--primary) }
 
 a:active, a:hover {
-  color: $primary-light;
+  color: var(--primary-light);
   text-decoration: none;
 }
 
 // header title
 h1 {
-  color: $primary;
+  color: var(--primary);
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0;
@@ -177,14 +221,14 @@ h1 {
 // page title like institutiton name one details page
 h2 {
   font-size: 1.4rem;
-  color: $primary
+  color: var(--primary);
 }
 
 // section titles
 h3 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: $gray-very-dark;
+  color: var(--body-color);
 }
 
 // institutions list/map header-buttons
@@ -207,12 +251,75 @@ h6 {
   font-size: 0.7rem;
   font-weight: 400;
   margin-bottom: 0;
-  color: $primary;
   cursor: pointer;
 }
 
+//makes Line visible regardless of Color-Mode
 hr {
   margin-right: 4rem;
   margin-left: 4rem;
+  background-color: rgba(0 0 0 / 0.1);
 }
+
+.rounded { border-radius: 7px; }
+
+.text-body { color: var(--body-color) !important }
+
+.text-muted { color: var(--muted) !important }
+
+.bg-light, a.bg-light:hover {
+  background-color: var(--light) !important;
+}
+
+// Images that need to switch with the mode
+.dark .img-light, .light .img-dark {
+  display: none !important;
+}
+
+// Button with transparent BG, primary Text and secondary hover/focus-shadow
+.btn-themed {
+  background-color: transparent;
+  color: var(--primary);
+  border: none !important;
+}
+
+.btn-themed:hover { color: var(--primary-light) }
+
+.btn-themed:focus,
+.btn-themed.focus {
+  box-shadow: 0 0 0 0.2rem var(--secondary-shadow);
+}
+
+.btn-themed:focus:active,
+.btn-themed.focus.active {
+  background-color: var(--secondary);
+}
+
+// Button with transparent BG, secondary Text and primary hover/focus-shadow
+.btn-themed-switch {
+  background-color: transparent;
+  color: var(--secondary);
+  border: none !important;
+}
+
+.btn-themed-switch:hover { color: var(--secondary-light) }
+
+.btn-themed-switch:focus,
+.btn-themed-switch.focus {
+  box-shadow: 0 0 0 0.2rem var(--primary-shadow);
+}
+
+.btn-themed-switch:active,
+.btn-themed-switch.active {
+  background-color: var(--primary);
+}
+
+// Most common Icon-sizes
+.icon { height: 24px }
+
+.icon-18 { height: 18px }
+
+.icon-20 { height: 20px }
+
+.icon-22 { height: 22px }
 </style>

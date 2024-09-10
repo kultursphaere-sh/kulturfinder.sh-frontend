@@ -54,6 +54,14 @@
       "name": "Dansk"
     }
   },
+  "colormodes": {
+    "light": {
+      "name": "Lyse"
+    },
+    "dark": {
+      "name": "Mørk"
+    }
+  },
   "navbar": {
     "aboutUs": "Om os",
     "logo": "kulturfinder.sh-logo",
