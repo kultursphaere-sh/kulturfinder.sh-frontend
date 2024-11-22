@@ -39,3 +39,12 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.close {
+  color: var(--muted);
+}
+
+.close:hover, .close:focus {
+  color: var(--body-color);
+}
+</style>

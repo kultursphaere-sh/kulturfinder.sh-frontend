@@ -6,14 +6,3 @@
     />
   </g>
 </template>
-
-<script>
-export default {
-  props: {
-    strokeColor: {
-      type: String,
-      default: '#869094'
-    }
-  }
-}
-</script>

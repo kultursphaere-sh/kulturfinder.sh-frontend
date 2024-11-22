@@ -13,7 +13,7 @@
           <span>{{ $t('details.feedbackIntro') }}</span>
         </b-row>
         <b-row class="my-3">
-          <a :href="`mailto:${email}?subject=Feedback ${institutionName}`" class="text-primary">{{ email }}</a>
+          <a :href="`mailto:${email}?subject=Feedback ${institutionName}`">{{ email }}</a>
         </b-row>
         <b-row class="my-2">
           <span class="headline-feedback">{{ $t('details.feedbackInstitutionHeadline') }}</span>

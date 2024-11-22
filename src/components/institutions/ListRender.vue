@@ -9,15 +9,12 @@
       <b-button
         pill
         variant="link"
-        class="list-favorite-icon"
+        class="list-favorite-icon text-light"
         @click="onFavoriteClick(institution)"
       >
         <icon-base
           :title="$t('navbar.saveAsFavorite')"
-          color="#fff"
-          width="18"
-          height="18"
-          class="m-auto"
+          class="m-auto icon-18"
           role="img"
           data-cy="favoriteButton"
         >
@@ -39,17 +36,14 @@
         </div>
         <div class="text-container">
           <p class="title">{{ institution.name | trimTitle }}</p>
-          <p class="claim">
+          <p class="claim text-body">
             <span v-if="institution.teaser">{{ institution.teaser }}</span>
           </p>
           <div class="d-flex">
             <span class="list-item-info mr-3" v-if="institution.distance">
               <icon-base
                 :title="$t('common.distance')"
-                color="#869094"
-                width="18"
-                height="18"
-                class="mr-1"
+                class="mr-1 icon-18"
                 role="img"
               >
                 <icon-distance :aria-label="$t('common.distance')"/>
@@ -59,9 +53,7 @@
             <div class="list-item-info" v-if="institution.hasLivingImages">
               <icon-base
                 :title="$t('dashboard.living-images')"
-                width="18"
-                height="18"
-                color="#869094"
+                class="icon-18"
                 role="img"
               >
                 <icon-living-images/>
@@ -72,9 +64,7 @@
         <div class="icon-container">
           <icon-base
             :title="$t('list.showDetails')"
-            color="#869094"
-            width="22"
-            height="22"
+            class="icon-22 text-muted"
             role="img"
           >
             <icon-arrow-right :aria-label="$t('list.showDetails')"/>
@@ -167,17 +157,23 @@ export default {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-color: #d7e0e5;
+  border-color: var(--body-bg);
   border-style: solid;
+  background-color: var(--light);
 }
 
 .list-group-item:first-child {
   border-top-color: transparent;
 }
 
-.list-group-item-action:active {
-  background-color: #f1f4f6;
+.list-group .list-group-item-action:active {
+  background-color: var(--body-bg);
 }
+
+.list-group-item-action:hover {
+  background-color: var(--window-bg);
+}
+
 .li-container {
   min-height: 113px;
   display: flex;
@@ -212,34 +208,33 @@ export default {
 }
 .title {
   display: block;
-  color: #3c4d61;
+  color: var(--primary);
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 8px;
 }
 .pre-title {
   display: block;
-  background-color: $light;
+  background-color: var(--light);
   width: 120px;
   // height: 24px;
   margin-bottom: 8px;
 }
 .pre-claim{
   display: block;
-  background-color: $light;
+  background-color: var(--light);
   width: 160px;
   // height: 12px;
 }
 .claim {
   display: block;
-  color: #576165;
   font-size: 0.8rem;
   line-height: 1.08;
 }
 .list-item-info {
   display: flex;
   align-items: center;
-  color: #576165;
+  color: var(--muted);
   font-size: 0.7rem;
   margin-bottom: 0;
 }

@@ -1,7 +1,7 @@
 <template>
   <g>
     <path
-      :stroke="color"
+      stroke="currentColor"
       stroke-width=".8"
       fill="none"
       d="M6,22h9s-.12-1.65.4-1.85,3,.25,3.71-.23a1.56,1.56,0,0,0,.65-2.2.67.67,0,0,0,.44-.54.9.9,0,0,0-.21-.64s.5-.34.35-.69-.55-1,
@@ -23,21 +23,9 @@
     />
     <path
       fill="#fff"
-      :stroke="color"
+      stroke="currentColor"
       d="M16.26,8.32l.37,3.21a.61.61,0,0,0,.61.54h4.19a.61.61,0,0,0,.61-.54L22.5,7a.61.61,0,0,0-.67-.66l-4.26.38A1.42,1.42,0,0,0,16.26,8.32Z"
     />
     <path d="M2.91,11.25H17.85a.51.51,0,0,0,.53-.5v-2a.51.51,0,0,0-.53-.5H2.91C2,8.25,2,11.25,2.91,11.25Z"/>
   </g>
 </template>
-
-<script>
-export default {
-  name: 'IconVirtualReality',
-  props: {
-    color: {
-      type: String,
-      default: '#003064'
-    }
-  }
-}
-</script>

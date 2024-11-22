@@ -1,7 +1,7 @@
 <template>
   <div
     id="no-gps-bar"
-    class="py-2"
+    class="py-2 text-dark"
     v-b-modal.no-gps-modal
     data-cy="noGPSBar"
   >
@@ -9,15 +9,12 @@
       <div id="no-gps-center-box">
         <icon-base
           :title="$t('common.distance')"
-          color="#333333"
-          width="20"
-          height="20"
-          class="mr-1"
+          class="mr-1 icon-20"
           role="img"
         >
           <icon-distance :aria-label="$t('common.distance')"/>
         </icon-base>
-        <div id="no-gps-text" class="text-dark">
+        <div id="no-gps-text">
           {{ $t("noGPS.enableGPS") }}
         </div>
       </div>
@@ -30,8 +27,7 @@
       >
         <icon-base
           :title="$t('common.close')"
-          width="18"
-          height="18"
+          class="icon-18 text-dark"
           role="img"
         >
           <icon-close :aria-label="$t('common.close')"/>
@@ -49,7 +45,7 @@ export default {
 <style lang="scss" scoped>
 #no-gps-bar {
   width: 100%;
-  background-color: $yellow;
+  background-color: var(--warning-light);
   cursor: pointer;
 }
 #no-gps-bar-wrapper {
@@ -58,7 +54,7 @@ export default {
   margin: auto;
 }
 #no-gps-close-button {
-  background-color: $yellow;
+  background-color: var(--warning-light);
   border: 0;
   position: absolute;
   padding: 4px;
@@ -67,11 +63,11 @@ export default {
   margin-right: 12px;
 }
 #no-gps-close-button:focus {
-  background-color: $yellow !important;
+  background-color: var(--warning-light) !important;
 }
 #no-gps-close-button:hover,
 #no-gps-close-button:active  {
-  background-color: $yellow-dark !important;
+  background-color: rgba(0 0 0 / 0.05) !important;
 }
 #no-gps-center-box {
   display: flex;

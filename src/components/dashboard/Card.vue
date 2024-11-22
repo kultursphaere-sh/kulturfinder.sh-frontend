@@ -1,9 +1,10 @@
 <template>
   <b-button
+    variant="transparent"
     :to="route"
     :href="href"
     :class="{'ks-card-sm': small, 'ks-card-sm-mc': museumscardSmall, 'ks-card-mc': museumscard, 'ks-card-tc': ticket}"
-    class="ks-card p-3 m-2 bg-white d-flex flex-column justify-content-center"
+    class="ks-card p-3 m-2 d-flex flex-column justify-content-center bg-light"
   >
     <div class="ks-card-icon-container">
       <img
@@ -13,10 +14,8 @@
       >
       <icon-base
         :title="text"
-        width="50"
-        height="50"
         role="img"
-        class="card-icon mx-auto"
+        class="card-icon mx-auto icon-50"
         v-if="icon"
       >
         <component :is="icon"/>
@@ -77,11 +76,9 @@ export default {
 <style lang="scss" scoped>
 .ks-card-text {
   font-weight: 500;
-  color: $primary;
 }
 img, .card-icon {
   height: 100%;
-  fill: $primary;
   object-fit: contain;
 }
 .ks-card-icon-container {
@@ -92,6 +89,7 @@ img, .card-icon {
   width: 150px;
   height: 110px;
   border-radius: 7px;
+  color: var(--primary);
 }
 .ks-card-sm {
   height: 80px !important;
@@ -109,7 +107,6 @@ img, .card-icon {
   }
   .ks-card-text {
     font-weight: 500;
-    color: $primary;
   }
 }
 .ks-card-tc{
@@ -125,12 +122,14 @@ img, .card-icon {
 }
 .li-text-box {
   font-weight: 500;
-  color: $primary !important;
+  color: var(--primary) !important;
 }
 #living-images-icon {
   height: 100%;
 }
-
+.icon-50 {
+  width: 50px;
+}
 @media (min-width: $breakpoint-md) {
   .ks-card {
     width: 200px;

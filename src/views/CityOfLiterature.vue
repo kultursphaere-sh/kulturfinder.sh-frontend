@@ -13,8 +13,15 @@
         <b-nav-item router-link :to="`/${$route.params.locale}/`">
           <img
             height="40px"
-            class="logo p-0"
-            :src="'/' + tenant + '/img/logos/kf_logo.png'"
+            class="logo p-0 img-light"
+            :src="'/' + tenant + '/img/logos/kf_logo_light.png'"
+            :alt="$t('navbar.logo')"
+            data-cy="kulturfinderLogo"
+          >
+          <img
+            height="40px"
+            class="logo p-0 img-dark"
+            :src="'/' + tenant + '/img/logos/kf_logo_dark.png'"
             :alt="$t('navbar.logo')"
             data-cy="kulturfinderLogo"
           >
@@ -42,13 +49,13 @@
                 <ks-card
                   :route="`/${$route.params.locale}/institutions/map?tags=CityOfLiterature`"
                   :text="$t('common.map')"
-                  :image-source="require(`@/assets/images/icons/cards/map.svg`)"
+                  icon="IconMap"
                   data-cy="mapCard"
                 />
                 <ks-card
                   :route="`/${$route.params.locale}/institutions/list?tags=CityOfLiterature`"
                   :text="$t('common.list')"
-                  :image-source="require(`@/assets/images/icons/cards/list.svg`)"
+                  icon="IconList"
                   data-cy="listCard"
                 />
               </b-row>
@@ -115,12 +122,12 @@ export default {
   margin-bottom: 50px;
 }
 .ks-card {
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
   border-radius: 9px;
 }
 .footer-text{
   font-size: 0.8rem;
-  color: #576165;
+  color: var(--muted);
   margin-bottom: 5px;
 }
 </style>

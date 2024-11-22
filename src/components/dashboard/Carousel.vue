@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard-carousel bg-white" data-cy="intitutionCarousel">
+  <div class="dashboard-carousel bg-light" data-cy="intitutionCarousel">
     <vue-slick-carousel
       v-bind="settings"
       class="carousel-slick"
@@ -38,10 +38,7 @@
     >
       <icon-base
         :title="$t('common.distance')"
-        :alt="$t('common.distance')"
-        width="17"
-        height="17"
-        class="mr-1"
+        class="mr-1 icon-17"
         role="img"
       >
         <icon-distance/>
@@ -203,7 +200,7 @@ export default {
   #distance-container {
     border-radius: 0rem 0rem 0.75rem 0.75rem;
     background-color: var(--primary);
-    color: #fff;
+    color: var(--white);
     font-size: 10px;
     font-weight: 500;
     letter-spacing: -0.21px;
@@ -229,5 +226,10 @@ export default {
   .no-gps:active {
     color: $warning-light !important;
   }
+}
+
+.icon-17 {
+  height: 17px;
+  width: 17px;
 }
 </style>

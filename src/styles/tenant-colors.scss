@@ -1,4 +1,12 @@
 // File to be replaces in CI/CD or local to use tenant specific colors
-$primary: #003064; // SH Blau
-$primary-light: #014b99;
-$secondary: #fff;
+//Color used for Darkmode-Development
+
+//SH Colors
+$primary: #003064;
+$secondary: #d4004b;
+
+//Bremen Colors
+// $primary: #002b4b; 
+// $secondary: #ab2600;
+// $dark-primary: rgb(180, 62, 28);
+// $dark-secondary: $primary;
