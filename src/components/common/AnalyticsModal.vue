@@ -1,6 +1,6 @@
 <template>
   <transition appear name="slide">
-    <div id="analytics-modal" v-if="showAnalyticsModal" class="bg-white w-100 shadow px-3">
+    <div id="analytics-modal" v-if="showAnalyticsModal" class="w-100 shadow px-3 bg-light">
       <b-container id="analytics-container" class="py-3">
         <b-row>
           <div class="ios-pwa-info-text col-sm-12 p-0 d-flex flex-column justify-between">
@@ -36,12 +36,7 @@
           pill
           @click="showAnalyticsModal = false"
         >
-          <icon-base
-            title="Schließen"
-            width="14"
-            height="14"
-            color="#000000"
-          >
+          <icon-base title="Schließen">
             <icon-close/>
           </icon-base>
         </b-button>
@@ -82,27 +77,34 @@ export default {
   position:fixed;
   bottom: 0;
   z-index: 1000;
+  color: var(--body-color);
 }
-#analytics-container{
+#analytics-container {
   position:relative;
   height: 100%;
 }
-#analytics-banner-close-icon{
+#analytics-banner-close-icon {
   position:absolute;
   right:0;
   top:7px;
 }
-#analytics-logo{
+
+#analytics-banner-close-icon svg {
+  height: 14px;
+}
+
+#analytics-logo {
   height: 40px;
 }
-span,p{
+span, p {
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
-p{
+p {
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
+
 .slide-enter-active, .slide-leave-active {
   transition: transform 0.5s ease-in-out;
 }

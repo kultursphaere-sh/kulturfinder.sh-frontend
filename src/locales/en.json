@@ -54,6 +54,14 @@
       "name": "Dansk"
     }
   },
+  "colormodes": {
+    "light": {
+      "name": "Light"
+    },
+    "dark": {
+      "name": "Dark"
+    }
+  },
   "navbar": {
     "aboutUs": "About us",
     "logo": "Logo of kulturfinder.sh",

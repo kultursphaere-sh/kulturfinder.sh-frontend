@@ -60,7 +60,7 @@ export default {
   height: 50%;
   align-items: center;
   padding-left: 16px;
-  background-color: $primary;
+  background-color: var(--primary);
 }
 
 .info-window {
@@ -99,7 +99,7 @@ export default {
 }
 
 .leaflet-popup-tip {
-  background-color: #f6f6f6 !important;
+  background-color: var(--light) !important;
 }
 
 .drive-to {
@@ -121,7 +121,7 @@ export default {
 .claim-info {
   display: flex;
   flex: 1;
-  background-color: #f6f6f6;
+  background-color: var(--body-bg);
   align-items: center;
 }
 
@@ -132,13 +132,13 @@ export default {
 .claim-info span {
   font-size: 13px;
   letter-spacing: -0.3px;
-  color: #667074;
+  color: var(--muted);
 }
 
 .link-to {
   height: 100%;
   padding-right: 11px;
-  background-color: #f6f6f6;
+  background-color: var(--body-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +175,7 @@ export default {
 .leaflet-popup-content-wrapper {
   overflow: hidden;
   padding: 0;
-  background-color: #f6f6f6;
+  background-color: var(--body-bg);
 }
 
 .leaflet-popup-content {
@@ -187,11 +187,11 @@ export default {
 }
 
 .leaflet-popup-tip {
-  background-color: #f6f6f6 !important;
+  background-color: var(--light) !important;
 }
 
 .leaflet-control-locate.active {
-    color: #1c3f6e !important; /* has to be css*/
+    color: var(--primary) !important; /* has to be css*/
 }
 
 /* prevent bad mobile styling */
@@ -200,17 +200,42 @@ export default {
   border: none;
 }
 
+.leaflet-control-attribution {
+  background-color: var(--light) !important;
+  color: var(--body-color) !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--primary) !important;
+}
+
 /* UI styling */
 .leaflet-control-layers-toggle {
   width: 40px !important;
   height: 40px !important;
+  background-color: var(--light);
+  border-radius: 6px;
 }
+
+.leaflet-control-layers-expanded {
+  background-color: var(--light) !important;
+  color: var(--body-color) !important;
+}
+
 .leaflet-control-zoom * {
   width: 40px !important;
   height: 40px !important;
   line-height: 40px !important;
   font-size: 1.4rem !important;
+  background-color: var(--light) !important;
+  color: var(--body-color) !important;
 }
+
+.leaflet-control-zoom *:hover,
+.leaflet-control-zoom *:focus  {
+  background-color: var(--body-bg) !important;
+}
+
 .leaflet-control-zoom {
   border-radius: 7px !important;
 }
@@ -232,5 +257,12 @@ export default {
   align-items: center !important;
   justify-content: center !important;
   border-radius: 7px !important;
+  background-color: var(--light) !important;
+  color: var(--body-color) !important;
+}
+
+.leaflet-control-locate .leaflet-bar-part-single:hover,
+.leaflet-control-locate .leaflet-bar-part-single:focus {
+  background-color: var(--body-bg) !important;
 }
 </style>

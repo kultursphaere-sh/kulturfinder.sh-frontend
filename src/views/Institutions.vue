@@ -38,13 +38,13 @@
         <!-- Searchbar Button-->
         <b-button
           pill
+          variant="themed"
           class="align-items-center border-0"
           @click="onToggleSearchbar"
           role="button"
         >
           <icon-base
             :title="searchbarOpen ? $t('common.close') : $t('navbar.search')"
-            color="#3c4d61"
             :alt="$t('navbar.search')"
             role="img"
           >
@@ -53,10 +53,9 @@
           </icon-base>
         </b-button>
         <!-- Home Button -->
-        <b-nav-item router-link :to="`/${locale}`">
+        <b-nav-item router-link :to="`/${locale}`" link-classes="btn btn-themed rounded-pill">
           <icon-base
             title="Home-Button"
-            class="homeButton"
           >
             <icon-home/>
           </icon-base>
@@ -109,16 +108,16 @@
       <b-button
         v-if="!isFavorite"
         id="filter-btn"
+        variant="none"
         data-cy="filterButton"
         :class="[isFilterActive
-          ? 'bg-primary text-white filter-btn-active'
-          : 'bg-white text-primary filter-btn-passive']"
+          ? 'filter-btn-active'
+          : 'filter-btn-passive']"
         class="position-fixed fixed-bottom mx-auto mb-4"
         :to="`/${$route.params.locale}/institutions/${listType}/filters`"
       >
         <icon-base
           :title="$t('common.filters')"
-          :color="isFilterActive ? '#fff' : '#3c4d61'"
           class="mr-2"
         >
           <icon-controls/>
@@ -134,7 +133,6 @@ import SearchBar from '@/components/common/SearchBar.vue'
 import KsHeader from '@/components/layout/Header.vue'
 import NoGpsBar from '@/components/institutions/NoGpsBar.vue'
 import { mapGetters } from 'vuex'
-import IconHome from '@/components/icons/IconHome.vue'
 import i18n from '@/i18n'
 
 export default {
@@ -206,7 +204,6 @@ export default {
     }
   },
   components: {
-    IconHome,
     KsHeader,
     SearchBar,
     NoGpsBar
@@ -218,20 +215,16 @@ export default {
 header .btn {
   padding: 4px;
 }
-
-.homeButton {
-  fill: $primary
-}
-
 .tab {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 25vw;
   max-width: 200px;
-  border: solid 1px #d7e0e5;
+  border: solid 1px var(--muted);
   border-radius: 0;
-  color: $primary !important;
+  color: var(--primary) !important;
+  background-color: var(--light);
   font-weight: 500;
   cursor: pointer;
 }
@@ -245,48 +238,61 @@ header .btn {
 }
 
 .activeTab, a.activeTab:visited {
-  border: 1px solid $primary;
-  background-color: $primary;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
   color: $white !important;
 }
 a.activeTab:hover {
-  background-color: $primary-light !important;
+  background-color: var(--primary-light) !important;
   color: $white !important;
 }
 #filter-btn {
   width: 140px;
   height: 40px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
+  background-color: var(--light);
   border-radius: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.filter-btn-active:active{
-  background-color: $primary-light !important;
+
+.filter-btn-active {
+  background-color: var(--primary) !important;
+  color: white;
 }
-.filter-btn-active:hover{
-  background-color: $primary-light !important;
+.filter-btn-passive {
+  color: var(--primary);
+  backround-color: var(--light) !important;
+}
+.filter-btn-active:active{
+  background-color: var(--primary-light) !important;
+}
+.filter-btn-active:hover,.filter-btn-active:focus {
+  background-color: var(--primary-light) !important;
 }
 .filter-btn-passive:active {
-  background-color: $gray-dark !important;
+  background-color: var(--body-bg) !important;
 }
-.filter-btn-passive:hover {
-  background-color: $light !important;
+.filter-btn-passive:hover, .filter-btn-passive:focus {
+  background-color: var(--body-bg) !important;
 }
-.btn-secondary:focus:not(.activeTab, #filter-btn) {
-  background-color: #fff !important;
+.tab:focus:not(.activeTab) {
+  background-color: var(--light) !important;
   box-shadow: none;
 }
-.btn-secondary:focus:not(.activeTab, :active) {
+.tab:focus.activeTab, .tab:focus:active {
+  box-shadow: 0 0 0 0.2rem var(--primary-shadow);
+}
+.tab:focus:not(.activeTab, :active) {
   box-shadow: none;
 }
-.btn-secondary:hover:not(.activeTab, #filter-btn) {
-  background-color: #fff !important;
+.tab:hover:not(.activeTab) {
+  background-color: var(--body-bg) !important;
 }
-.btn-secondary:active:not(.activeTab, #filter-btn) {
-  background-color: rgb(247, 247, 247) !important;
+.tab:active:not(.activeTab) {
+  background-color: var(--body-bg) !important;
 }
 
 .no-gps-bar-slide-enter-active,

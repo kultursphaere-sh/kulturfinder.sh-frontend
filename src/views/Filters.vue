@@ -13,28 +13,23 @@
         <!-- Reset Button -->
         <b-button
           id="reset-button"
-          class="labeled-button"
+          class="labeled-button text-danger"
           pill
           @click="onResetFilters()"
           data-cy="resetButton"
+          variant="transparent"
         >
           <icon-base
             :title="$t('filter.resetButtonLabel')"
-            color="#ad013d"
-            width="18"
-            height="18"
-            class="m-auto"
+            class="m-auto icon-18"
           >
             <icon-reset-settings/>
           </icon-base>
-          <label id="reset-label" class="labeled-button-label">{{ $t("filter.resetButtonLabel") }}</label>
+          <label class="labeled-button-label">{{ $t("filter.resetButtonLabel") }}</label>
         </b-button>
         <!-- Home Button -->
-        <b-nav-item router-link :to="`/${locale}`">
-          <icon-base
-            title="Home-Button"
-            class="homeButton"
-          >
+        <b-nav-item router-link :to="`/${locale}`" link-classes="btn btn-themed rounded-pill">
+          <icon-base title="Home-Button">
             <icon-home/>
           </icon-base>
         </b-nav-item>
@@ -57,7 +52,7 @@
               data-cy="allCategoriesCheckbox"
             >
               <legend id="categories-label" data-cy="categoriesLabel">
-                <h2 class="mr-1 ml-md-3 text-dark">
+                <h2 class="mr-1 ml-md-3 text-body">
                   {{ $t('common.categories') }}
                   <span>{{ $t('filter.all') }}</span>
                 </h2>
@@ -80,7 +75,7 @@
           <hr class="mb-5">
           <!-- Tags -->
           <legend id="tags-label" data-cy="tagsLabel">
-            <h2 class="mt-4 mb-3 mx-md-3 text-dark">{{ $t('common.tags') }}</h2>
+            <h2 class="mt-4 mb-3 mx-md-3 text-body">{{ $t('common.tags') }}</h2>
           </legend>
           <div class="mx-md-3">
             <b-form-group id="tags-group" aria-labeledby="tags-label">
@@ -88,7 +83,7 @@
                 v-model="activeTags"
                 :options="tags"
                 name="tags"
-                class="checkbox-pill text-primary"
+                class="checkbox-pill"
                 stacked
                 data-cy="filterTags"
               />
@@ -118,7 +113,6 @@
 <script>
 import { mapGetters } from 'vuex'
 import KsHeader from '@/components/layout/Header.vue'
-import IconHome from '@/components/icons/IconHome.vue'
 import i18n from '@/i18n'
 
 export default {
@@ -130,7 +124,6 @@ export default {
     }
   },
   components: {
-    IconHome,
     KsHeader
   },
   computed: {
@@ -180,24 +173,20 @@ export default {
 </script>
 
 <style lang="scss">
-.homeButton {
-  fill: $primary
-}
-
 .control-group .custom-control.custom-checkbox {
   padding-left: 0;
   padding-right: 1.5rem
 }
 .control-group .custom-control-label {
     width: 100%;
-    color: $primary
+    color: var(--primary);
 }
 #filter-categories .custom-control {
-  background-color: #fff;
+  background-color: var(--light);
   border-radius: 7px;
 }
 #filter-categories .custom-control:nth-child(odd) {
-  background-color: $gray;
+  background-color: var(--body-bg);
 }
 #filter-categories {
   .custom-control-label {
@@ -232,7 +221,8 @@ export default {
   cursor: pointer;
   height: 32px;
   padding: 18px;
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
+  color: var(--primary);
   user-select: none;
 }
 .checkbox-pill .custom-control-input:checked ~ .custom-control-label {
@@ -250,25 +240,13 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+.btn.text-danger:hover, .btn.text-danger:focus {
+  color: lighten($red, 15%) !important;
+}
+
 h2 span {
   font-weight: 300;
   font-size: 1.1rem;
-}
-#reset-button {
-  border: 0;
-}
-#reset-button:focus:not(:hover) {
-  background-color: #fff;
-  box-shadow: none;
-  border: 0;
-}
-#reset-label {
-  color: $red-dark;
-}
-#reset-label:hover,
-#reset-label:active,
-#reset-label:visited {
-  color: $red;
 }
 #results{
   font-style: italic;
@@ -276,12 +254,12 @@ h2 span {
 #results-button, #results-button {
   border: 0;
   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  background-color: $primary;
+  background-color: var(--primary);
   color: $white;
   font-size: 1rem;
 }
 #results-button:hover {
-  background-color: $primary-light;
+  background-color: var(--primary-light);
   color: $white;
 }
 @media (min-width: $breakpoint-md) {

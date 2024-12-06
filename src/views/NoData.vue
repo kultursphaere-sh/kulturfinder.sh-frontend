@@ -12,16 +12,14 @@
       <template #left>
         <b-button
           id="reset-button"
-          class="labeled-button"
+          class="labeled-button text-danger"
           pill
+          variant="transparent"
           @click="onReload()"
         >
           <icon-base
             :title="$t('noData.reload')"
-            color="#ad013d"
-            width="18"
-            height="18"
-            class="m-auto"
+            class="m-auto icon-18"
           >
             <icon-reset-settings/>
           </icon-base>
@@ -37,7 +35,14 @@
             <img
               :alt="$t('navbar.logo')"
               id="logo"
-              :src="'/' + tenant + '/img/logos/kf_logo.png'"
+              class="img-light"
+              :src="'/' + tenant + '/img/logos/kf_logo_light.png'"
+            >
+            <img
+              :alt="$t('navbar.logo')"
+              id="logo"
+              class="img-dark"
+              :src="'/' + tenant + '/img/logos/kf_logo_dark.png'"
             >
           </b-container>
           <hr>
@@ -51,7 +56,6 @@
           <p>
             <span class="contact">
               <icon-base
-                color="#003064"
                 title="Email-Adresse"
                 class="mr-2"
                 role="img"
@@ -67,13 +71,9 @@
             <b-btn
               variant="link"
               v-b-modal.sign-language-modal
-              class="footer-text px-2 pt-0 pb-3 text-decoration-none"
+              class="footer-text text-muted px-2 pt-0 pb-3 text-decoration-none"
             >
-              <icon-base
-                width="18"
-                height="18"
-                color="#576165"
-              >
+              <icon-base class="icon-18">
                 <icon-sign-language/>
               </icon-base>
               {{ $t("dashboard.signLanguage") }}
@@ -81,13 +81,9 @@
             <sign-language-modal/>
             <router-link
               :to="`/${$route.params.locale}/no-data/about`"
-              class="footer-text px-2 pt-0 pb-3"
+              class="footer-text px-2 pt-0 pb-3 text-muted"
             >
-              <icon-base
-                width="18"
-                height="18"
-                color="#576165"
-              >
+              <icon-base class="icon-18">
                 <icon-privacy/>
               </icon-base>
               {{ $t("navbar.legalNotice") }}
@@ -139,7 +135,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.btn.text-danger:hover, .btn.text-danger:focus {
+  color: lighten($red, 15%) !important;
+}
 
 .about-logo {
   display: flex;
@@ -154,5 +153,7 @@ export default {
 .contact {
   display: flex;
   align-items: center;
+
+  .icon { color: var(--primary) }
 }
 </style>

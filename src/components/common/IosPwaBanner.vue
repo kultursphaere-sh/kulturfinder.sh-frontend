@@ -3,7 +3,7 @@
     <div
       id="ios-pwa-banner"
       v-if="iosBanner && ios"
-      class="bg-white w-100 shadow"
+      class="w-100 shadow bg-light"
     >
       <!-- ios && iosBanner -->
       <b-container id="ios-pwa-banner-container">
@@ -33,12 +33,7 @@
           pill
           @click="iosBanner = false"
         >
-          <icon-base
-            title="Schließen"
-            width="18"
-            height="18"
-            color="#000000"
-          >
+          <icon-base title="Schließen" class="icon-18">
             <icon-close/>
           </icon-base>
         </b-button>
@@ -78,6 +73,7 @@ export default {
   bottom: 0;
   z-index: 1000;
   height: 130px;
+  color: var(--body-color);
   /* max-width: 992px; */
 }
 #ios-pwa-banner-container{

@@ -1,15 +1,12 @@
 <template>
   <transition name="fade">
     <b-button
-      class="scroll-to-top-button"
+      variant="transparent"
+      class="scroll-to-top-button bg-light"
       v-if="display"
       @click="scrollToTop"
     >
-      <icon-base
-        title="Scroll to top"
-        width="24"
-        height="24"
-      >
+      <icon-base title="Scroll to top">
         <icon-arrow-up/>
       </icon-base>
     </b-button>
@@ -64,14 +61,12 @@ export default {
   right:  1.5rem;
   padding: 0;
   z-index: 11;
-  border: 1px solid $primary;
-  background-color: #fff;
+  color: var(--primary) !important;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px !important;
 }
 .scroll-to-top-button:active, .scroll-to-top-button:hover {
-  background-color: rgb(247, 247, 247) !important;
-  border: 1px solid $primary !important;
+  border: 1px solid var(--primary) !important;
 }
 
 .fade-enter-active, .fade-leave-active {

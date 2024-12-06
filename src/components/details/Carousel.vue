@@ -1,5 +1,5 @@
 <template>
-  <div class="detail-carousel bg-white">
+  <div class="detail-carousel">
     <vue-slick-carousel
       v-bind="settings"
       class="carousel-slick"
@@ -177,6 +177,7 @@ export default {
 
 .detail-carousel {
   position: relative;
+  background-color: (--light);
 
   // TODO: NEEDS TO BE ADJUSTED WHEN MERGED WITH HIGH RES IMAGES
   .carousel-image {

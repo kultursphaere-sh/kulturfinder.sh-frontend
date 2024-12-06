@@ -15,12 +15,12 @@
     data-cy="noGPSModal"
   >
     <template v-slot:modal-header class="gps-info">
-      <b-row class="gps-info w-100 pt-0 d-flex pl-3 mt-0">
-        <icon-base height="48" width="48">
+      <b-row class="gps-info w-100 pt-0 d-flex pl-3 mt-0 text-dark">
+        <icon-base class="icon-48">
           <icon-distance :aria-label="$t('common.distance')"/>
         </icon-base>
         <div class="col-10">
-          <h3>{{ $t('noGPS.title') }}</h3>
+          <h3 class="text-dark">{{ $t('noGPS.title') }}</h3>
           <span class="">{{ $t('noGPS.description') }}</span>
         </div>
         <b-button
@@ -31,8 +31,7 @@
         >
           <icon-base
             :title="$t('common.close')"
-            width="22"
-            height="22"
+            class="icon-22"
             role="img"
           >
             <icon-close :aria-label="$t('common.close')"/>
@@ -46,12 +45,7 @@
           <p id="no-gps-benefits" class="my-auto">{{ $t('noGPS.yourBenefits') }}</p>
         </b-row>
         <b-row class="py-2">
-          <icon-base
-            height="48"
-            width="48"
-            class="ml-3"
-            color="#509500"
-          >
+          <icon-base class="ml-3 icon-48 text-success">
             <icon-distance :aria-label="$t('common.distance')"/>
           </icon-base>
           <span class="benefit-text col-8 my-auto">
@@ -59,12 +53,7 @@
           </span>
         </b-row>
         <b-row class="mb-3 py-2">
-          <icon-base
-            height="48"
-            width="48"
-            class="ml-3"
-            color="#509500"
-          >
+          <icon-base class="ml-3 icon-48 text-success">
             <icon-distance :aria-label="$t('common.distance')"/>
           </icon-base>
           <span class="benefit-text col-8 my-auto">
@@ -73,7 +62,7 @@
         </b-row>
         <b-row class="how-to-container px-2" v-if="geolocationDenied">
           <!-- geolocationDenied -->
-          <div class="how-to-box w-100 bg-light rounded p-3 d-flex align-content-around flex-column">
+          <div class="how-to-box w-100 rounded p-3 d-flex align-content-around flex-column">
             <b-row class="mb-3">
               <span id="no-gps-handle" class="col-12 mb-2">{{ $t('noGPS.howToHandle') }}</span>
               <span id="no-gps-handle-2" class="col-12">{{ $t('noGPS.howToHandle2') }}</span>
@@ -111,12 +100,17 @@ export default {
 <style lang="scss">
 #no-gps-modal .gps-info{
   border-bottom:0;
-  background-color: $yellow !important;
+  background-color: var(--warning-light) !important;
 }
 #no-gps-modal .modal-header {
-  background-color: $yellow !important;
+  background-color: var(--warning-light) !important;
   position: relative;
 }
+
+div.modal-content {
+  background-color: var(--light);
+}
+
 #header-close-button{
   position: absolute;
   right: 10px;
@@ -139,5 +133,10 @@ export default {
 }
 #no-gps-benefits{
   font-size: 0.8rem;
+}
+
+svg.icon-48 {
+  height: 48px;
+  width: 48px;
 }
 </style>

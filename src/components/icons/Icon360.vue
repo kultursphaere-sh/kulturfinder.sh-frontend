@@ -21,25 +21,13 @@
     />
     <path
       fill="none"
-      :stroke="color"
+      stroke="currentColor"
       d="M3.77,11C2,11.53,1,12.25,1,13c0,1.59,4.74,3,10.36,3.11"
     />
     <path
       fill="none"
-      :stroke="color"
+      stroke="currentColor"
       d="M15.59,16c4.61-.38,7.7-1.6,7.7-3,0-.82-.57-1.4-2.43-1.95"
     />
   </g>
 </template>
-
-<script>
-export default {
-  name: 'Icon360',
-  props: {
-    color: {
-      type: String,
-      default: '#003064'
-    }
-  }
-}
-</script>

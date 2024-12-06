@@ -1,20 +1,21 @@
 <template>
-  <header id="app-header" :class="{'shadow-sm': shadow}">
-    <div id="header-wrapper">
+  <header id="app-header" :class="{'shadow-sm': shadow}" class="bg-light">
+    <div id="header-wrapper" class="bg-light">
       <b-navbar
         id="navbar"
-        class="w-100 p-0 align-items-center justify-content-center"
-        type="light"
+        class="w-100 p-0 align-items-center justify-content-center bg-light"
+        type="transparent"
       >
-        <div class="left ml-2 ml-lg-1">
+        <div class="left ml-2 ml-lg-1 d-flex">
           <slot name="left">
             <!-- Back Button -->
-            <b-button class="backButton" pill @click="goBack">
+            <b-button class="backButton" variant="themed" pill
+                      @click="goBack"
+            >
               <icon-base
                 :title="$t('common.back')"
-                color="#3c4d61"
+                class="icon-18"
                 role="img"
-                height="18"
                 data-cy="backButton"
               >
                 <icon-arrow-left/>
@@ -38,7 +39,7 @@
 
       <div
         id="toggle-bar"
-        class="py-0 px-2 px-lg-0 w-100"
+        class="py-0 px-2 px-lg-0 w-100 bg-light"
         v-if="$slots['toggle-bar']"
       >
         <transition name="toggle-bar-slide">
@@ -104,24 +105,20 @@ export default {
 <style lang="scss">
 header {
   z-index: 11;
-  background-color: #fff !important;
 
   #header-wrapper {
-    background-color: #fff;
     width: 100%;
     z-index: 12;
     position: relative;
   }
 
   #navbar {
-    background-color: #fff;
     max-width: $breakpoint-lg;
     margin: auto;
     height: 56px;
     z-index: 13;
   }
   #toggle-bar {
-    background-color: #fff;
     max-width: $breakpoint-lg;
     margin: auto;
     z-index: 12;
@@ -163,8 +160,9 @@ header {
   .backButton {
     padding: 5px;
   }
-  .backButton:focus, .backButton:hover {
-    border: 1px solid #fff;
+
+  .backButton svg {
+    width: 24px;
   }
 }
 

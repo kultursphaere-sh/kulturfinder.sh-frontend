@@ -63,39 +63,31 @@
               <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="label py-3">
                 <span>{{ currentInstitution.name }}</span>
               </router-link>
-              <a @click="closePopup">
+              <a @click="closePopup" class="text-white">
                 <icon-base
                   title="Schließen"
-                  width="16"
-                  height="24"
-                  color="#fff"
                   class="info-window-close"
                 >
                   <icon-close/>
                 </icon-base>
               </a>
             </div>
-            <div class="info-window-footer">
+            <div class="info-window-footer bg-light">
               <a
-                class="drive-to pb-2 pt-1 d-flex justify-content-center flex-column"
+                class="drive-to pb-2 pt-1 d-flex justify-content-center flex-column text-white"
                 :href="getGoogleMapsLink(currentInstitution.street, currentInstitution.place)"
                 target="_blank"
               >
-                <icon-base
-                  title="Anfahrt"
-                  color="#fff"
-                  height="18"
-                  class="mx-auto"
-                >
+                <icon-base title="Anfahrt" class="mx-auto icon-18">
                   <icon-navigation/>
                 </icon-base>
                 <span>{{ $t("common.route") }}</span>
               </a>
               <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="claim-info">
-                <span v-if="currentInstitution.teaser" class="py-2 px-2">{{ currentInstitution.teaser }}</span>
+                <span v-if="currentInstitution.teaser" class="py-2 px-2 flex-fill">{{ currentInstitution.teaser }}</span>
               </router-link>
               <router-link :to="`/${$route.params.locale}/institutions/map/details/${currentInstitution.name}`" class="link-to my-auto">
-                <icon-base title="Zur Detailseite" color="#869094" width="14">
+                <icon-base title="Zur Detailseite">
                   <icon-arrow-right/>
                 </icon-base>
               </router-link>
@@ -268,16 +260,11 @@ export default {
   flex: 0 0 100%;
   height: 50%;
   align-items: center;
-  /* padding-top: 2vh; */
-  /* padding-left: 3vw; */
   padding-left: 16px;
-  background-color: $primary;
+  background-color: var(--primary);
 }
 .info-window {
   font-family: "Roboto", sans-serif;
-  // height: 94px;
-  /* height: 18vh;
-  width: 63vw; */
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
@@ -287,10 +274,8 @@ export default {
   flex: 0 0 100%;
   height: 50%;
   align-items: center;
-  /* padding-top: 2vh; */
-  /* padding-left: 3vw; */
   padding-left: 16px;
-  background-color: $primary;
+  background-color: var(--primary);
 }
 .info-window-header .label {
   flex-grow: 1;
@@ -310,6 +295,8 @@ export default {
   justify-content: flex-end;
   cursor: pointer;
   margin: 11px;
+  width: 16px;
+  height: 24px;
 }
 .info-window-footer {
   height: 50%;
@@ -317,14 +304,11 @@ export default {
   display: flex;
 }
 .leaflet-popup-tip {
-  background-color: #f6f6f6 !important;
+  background-color: var(--light) !important;
 }
 .drive-to {
-  // height: 100%;
-  /* width: 8vh; */
   width: 47px;
   background-color: $info;
-  // padding-top: 0.1rem;
 }
 
 .drive-to:hover {
@@ -335,13 +319,15 @@ export default {
   font-size: 10px;
   font-weight: 500;
   text-align: center;
-  color: white;
+}
+
+.link-to, .claim-info {
+  color: var(--muted);
 }
 
 .claim-info {
   display: flex;
   flex: 1;
-  background-color: #f6f6f6;
   align-items: center;
 }
 
@@ -352,17 +338,19 @@ export default {
 .claim-info span {
   font-size: 13px;
   letter-spacing: -0.3px;
-  color: #667074;
 }
 
 .link-to {
   height: 100%;
-  /* width: 10vw; */
   padding-right: 11px;
-  background-color: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.link-to svg {
+  height: 24px;
+  width: 14px;
 }
 </style>
 
@@ -398,7 +386,7 @@ export default {
 .leaflet-popup-content-wrapper {
   overflow: hidden;
   padding: 0;
-  background-color: #f6f6f6;
+  background-color: var(--body-bg);
 }
 
 .leaflet-popup-content {
@@ -410,24 +398,25 @@ export default {
 }
 
 .leaflet-popup-tip {
-  background-color: #f6f6f6 !important;
+  background-color: var(--light) !important;
 }
 
 .cluster-marker {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  background-color: #ffffff;
+  background-color: var(--light);
   border-radius: 50%;
   text-align: center;
-  border-color: $primary;
+  border-color: var(--primary);
+  color: var(--primary);
   border-style: solid;
   border-width: 2px;
   font-weight: bold;
 }
 
 .leaflet-control-locate.active {
-    color: #1c3f6e !important; /* has to be css*/
+    color: var(--primary) !important; /* has to be css*/
 }
 
 /* prevent bad mobile styling */

@@ -1,5 +1,7 @@
 @import "@/styles/tenant-colors.scss";
 
+
+// Changed/Added Colors
 $yellow: #fdf8da; // Light-Yellow
 $yellow-dark: #f8f1c6; // Light-Yellow
 $red: #d4004b; // SH Rot
@@ -9,15 +11,46 @@ $green: #509500; // Used for "Drive-To" in Map-Window
 $white: #fff;
 $gray: #f0f0f0; // Grau
 $gray-dark: #e6e6e6;  // SH Dark Grey
-$background: #fcfcfc;
 $gray-very-dark: #333333; // SH Very Dark Grey for Text
 
+// Overwritten Bootstrap-Classes
 $info: $cyan;
 $warning: #efce0d;
-$warning-light: rgb(255, 227, 68);
+$warning-light: #ffe344;
 $muted: $gray-dark;
-$light: $gray;
+$light: $white;
 $dark: $gray-very-dark;
+
+// Colors for the UI-Backgrounds
+$window-bg: #fcfcfc;
+$body-bg: $gray;
+$body-color: $gray-very-dark;
+// Dark for Darkmode
+$dark-window-bg: #2a2a2a;
+$dark-body-bg: #1c1b1b;
+$dark-body-color: $body-bg;
+
+// Primary/Secondary Colors for Darkmode
+$dark-primary: $secondary !default;
+$dark-secondary: $primary !default;
+
+
+//Primary/Secondary Variants for Accents
+$primary-light: lighten($primary, 15%) !default;
+$primary-shadow: rgba($primary, 0.5);
+$secondary-light: lighten($secondary, 15%) !default;
+$secondary-shadow: rgba($secondary, 0.5);
+$dark-primary-light: lighten($dark-primary, 15%) !default;
+$dark-primary-shadow: rgba($dark-primary, 0.5);
+$dark-secondary-light: lighten($dark-secondary, 15%) !default;
+$dark-secondary-shadow: rgba($dark-secondary, 0.5);
+
+// Muted Text-Colors
+$muted-dark: rgba($body-bg, 0.6) !default;
+$muted-light: rgba($body-color, 0.8) !default;
+
+//slightly darker shadow 
+$box-shadow-sm: 0 .125rem .25rem rgba(#000, .15) !default;
 
 // breakpoints
 $breakpoint-xs: 0;
@@ -40,12 +73,3 @@ $grid-breakpoints: (
 $container-max-widths: (
   xs: 920px
 );
-
-.btn-secondary {
-  background-color: unset;
-  border: none;
-}
-
-.rounded {
-  border-radius: 7px;
-}
